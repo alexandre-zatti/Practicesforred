@@ -37,6 +37,25 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>4.9.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>virtuoso.jena.driver</groupId>
+			<artifactId>virt_jena</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>virtuoso</groupId>
+			<artifactId>virtjdbc4</artifactId>
+			<version>4.3</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
