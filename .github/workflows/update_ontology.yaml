@@ -1,0 +1,20 @@
+name: Update Ontology
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ontology.rdf'
+
+jobs:
+  update-ontology:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Send RDF file to Endpoint
+        run: |
+          curl -X POST -F "file=@ontology.rdf" http://35.247.197.219:8080/api/load
