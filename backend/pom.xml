@@ -46,17 +46,31 @@
 		</dependency>
 
 		<dependency>
-			<groupId>virtuoso.jena.driver</groupId>
-			<artifactId>virt_jena</artifactId>
-			<version>4.0</version>
+			<groupId>com.openlinksw</groupId>
+			<artifactId>virt_jena_v3_10</artifactId>
+			<version>1.42</version>
 		</dependency>
+
+
 		<dependency>
 			<groupId>virtuoso</groupId>
-			<artifactId>virtjdbc4</artifactId>
-			<version>4.3</version>
+			<artifactId>virtjdbc</artifactId>
+			<version>4.1</version>
 		</dependency>
 
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>dai-labor</id>
+			<url>https://maven.aksw.org/repository/internal/</url>
+		</repository>
+
+		<repository>
+			<id>K-Int Releases</id>
+			<url>https://maven.k-int.com/content/repositories/releases/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

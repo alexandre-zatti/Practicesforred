@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy
+  labels:
+    name: backend-deploy
+    app: backend-gke-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: backend-pod
+      app: backend-gke-deployment
+  template:
+    metadata:
+      name: backend-pod
+      labels:
+        name: backend-pod
+        app: backend-gke-deployment
+    spec:
+      containers:
+        - name: backend
+          image: zatti/tcc-backend
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "500Mi"
+            limits:
+              cpu: "200m"
+              memory: "500Mi"
