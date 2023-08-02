@@ -4,7 +4,7 @@ FROM maven:3.8.5-openjdk AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 # Build the application
-RUN mvn -X -f /usr/src/app/pom.xml clean package
+RUN mvn -f /usr/src/app/pom.xml clean package
 
 # ---- Runtime Stage ----
 FROM openjdk AS runtime
