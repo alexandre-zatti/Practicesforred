@@ -1,13 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-8/"
-     xml:base="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-8/"
+<rdf:RDF xmlns="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-10/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:cbo="http://comicmeta.org/cbo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-8">
-        <owl:imports rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ale/ontologies/2023/7/untitled-ontology-10">
+        <owl:imports rdf:resource="http://comicmeta.org/cbo/"/>
     </owl:Ontology>
 </rdf:RDF>
 
