@@ -1,6 +1,6 @@
 package zatti.alexandre.backend.controller;
 
-import org.apache.jena.query.Dataset;
+import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +19,12 @@ public class RDFController {
 
     private final Dataset dataset;
 
+    private final Model model;
+
     @Autowired
-    public RDFController(Dataset dataset) {
+    public RDFController(Dataset dataset, Model model) {
         this.dataset = dataset;
+        this.model =  model;
     }
 
     @PostMapping("/load")
@@ -38,13 +41,32 @@ public class RDFController {
                 sb.append(line);
             }
 
-            // Loading new data
-            Model model = ModelFactory.createDefaultModel();
             model.read(new StringReader(sb.toString()), null, "RDF/XML"); // Specify the correct RDF language
             dataset.getDefaultModel().add(model);
             return new ResponseEntity<>("Data loaded successfully.", HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>("Error loading data: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+
+    @GetMapping("/getData")
+    public ResponseEntity<String> getData() {
+        // Define SPARQL query
+        String queryString = """
+                                  SELECT DISTINCT ?class WHERE {
+                                        ?instance a ?class .
+                                  }
+                             """;
+        Query query = QueryFactory.create(queryString);
+
+        // Execute query
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+            if (results.hasNext()) {
+                return new ResponseEntity<>(results.next().toString(), HttpStatus.OK);
+            }
+        }
+
+        return new ResponseEntity<>("No result found", HttpStatus.OK);
     }
 }

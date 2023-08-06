@@ -3,6 +3,7 @@ package zatti.alexandre.backend.config;
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.DatasetFactory;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,6 +34,11 @@ public class VirtuosoConfiguration {
     public Dataset dataset(VirtGraph virtGraph) {
         Model model = new VirtModel(virtGraph);
         return DatasetFactory.create(model);
+    }
+
+    @Bean
+    public Model rdfModel() {
+        return ModelFactory.createDefaultModel();
     }
 
 }

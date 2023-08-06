@@ -42,7 +42,7 @@
 			<groupId>org.apache.jena</groupId>
 			<artifactId>apache-jena-libs</artifactId>
 			<type>pom</type>
-			<version>4.9.0</version>
+			<version>3.0.0</version>
 		</dependency>
 
 		<dependency>
@@ -51,12 +51,12 @@
 			<version>1.42</version>
 		</dependency>
 
-
 		<dependency>
-			<groupId>virtuoso</groupId>
-			<artifactId>virtjdbc</artifactId>
-			<version>4.1</version>
+			<groupId>com.openlinksw</groupId>
+			<artifactId>virtjdbc4_3</artifactId>
+			<version>3.122</version>
 		</dependency>
+
 
 	</dependencies>
 
