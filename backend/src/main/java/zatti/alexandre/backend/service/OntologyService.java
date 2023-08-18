@@ -4,9 +4,11 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import zatti.alexandre.backend.model.AbstractOntologyModel;
+import zatti.alexandre.backend.dto.ConsequenciaCausasRequestDTO;
+import zatti.alexandre.backend.dto.ConsequenciaCausasResponseDTO;
+import zatti.alexandre.backend.dto.FaseEngenhariaConsequenciasResponseDTO;
+import zatti.alexandre.backend.model.Causa;
 import zatti.alexandre.backend.model.Consequencia;
-import zatti.alexandre.backend.model.FaseEngenharia;
 
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -29,7 +31,8 @@ public class OntologyService {
             // Clearing existing data
             dataset.getDefaultModel().removeAll();
 
-            model.read(new StringReader(rdfContent), null, "RDF/XML"); // Specify the correct RDF language
+            model.read(new StringReader(rdfContent), null,
+                       "RDF/XML"); // Specify the correct RDF language
             dataset.getDefaultModel().add(model);
             return true;
         } catch (Exception e) {
@@ -38,40 +41,51 @@ public class OntologyService {
         }
     }
 
-    public List<FaseEngenharia> getFaseEngenhariaData() {
+    public List<FaseEngenhariaConsequenciasResponseDTO> getConsequenciasByFaseEngenharia() {
         String queryString =
-        """
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        
-        SELECT ?nomeFase ?nomeConsequencia
-        WHERE {
-          ?fase rdf:type <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos> .
-          ?fase <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeFase .
-          ?fase <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor> ?evidenciadaPor .
-          ?evidenciadaPor rdf:type <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD> .
-          ?evidenciadaPor <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeConsequencia .
-        }
-        """;
+                """
+                        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                
+                        SELECT ?nomeFase (?fase AS ?uriFase) ?nomeConsequencia ?descricaoConsequencia (?evidenciadaPor AS ?uriConsequencia)
+                        WHERE {
+                          ?fase rdf:type <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos> .
+                          ?fase <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeFase .
+                          ?fase <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor> ?evidenciadaPor .
+                          ?evidenciadaPor rdf:type <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD> .
+                          ?evidenciadaPor <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeConsequencia .
+                          ?evidenciadaPor <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoConsequencia .
+                        }
+                        """;
+
         Query query = QueryFactory.create(queryString);
 
-        List<FaseEngenharia> resultList = new ArrayList<>();
+        List<FaseEngenhariaConsequenciasResponseDTO> resultList = new ArrayList<>();
 
         try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
             ResultSet results = qe.execSelect();
             while (results.hasNext()) {
                 QuerySolution solution = results.next();
 
-                int foundPreviousFaseEngenhariaIndex = findIndexOfItem(resultList, solution.get("nomeFase").toString());
+                int foundPreviousFaseEngenhariaIndex =
+                        isFaseEngenhariaAlreadyPresent(resultList, solution.get("nomeFase").toString());
 
                 if (foundPreviousFaseEngenhariaIndex != -1) {
-                    FaseEngenharia faseEngenharia = resultList.get(foundPreviousFaseEngenhariaIndex);
-                    faseEngenharia.addConsequencia(new Consequencia(solution.get("nomeConsequencia").toString()));
+                    var faseEngenharia = resultList.get(foundPreviousFaseEngenhariaIndex);
+                    faseEngenharia.addFaseEngenhariaConsequencia(new Consequencia(
+                            solution.get("nomeConsequencia").toString(),
+                            solution.get("uriConsequencia").toString(),
+                            solution.get("descricaoConsequencia").toString()));
                     resultList.set(foundPreviousFaseEngenhariaIndex, faseEngenharia);
                     continue;
                 }
 
-                FaseEngenharia faseEngenharia = new FaseEngenharia(solution.get("nomeFase").toString());
-                faseEngenharia.addConsequencia(new Consequencia(solution.get("nomeConsequencia").toString()));
+                var faseEngenharia = new FaseEngenhariaConsequenciasResponseDTO(solution.get("nomeFase").toString(),
+                                                                                solution.get("uriFase").toString());
+                faseEngenharia.addFaseEngenhariaConsequencia(
+                        new Consequencia(solution.get("nomeConsequencia").toString(),
+                                         solution.get("uriConsequencia").toString(),
+                                         solution.get("descricaoConsequencia").toString()));
+
                 resultList.add(faseEngenharia);
             }
         }
@@ -79,14 +93,55 @@ public class OntologyService {
         return resultList;
     }
 
-    private <T extends AbstractOntologyModel> int findIndexOfItem(List<T> list, String name) {
+    private int isFaseEngenhariaAlreadyPresent(
+            List<FaseEngenhariaConsequenciasResponseDTO> list, String name) {
         for (int i = 0; i < list.size(); i++) {
-            T item = list.get(i);
-            if (item.getNome().equals(name)) {
+            var item = list.get(i);
+            if (item.getFaseEngenhariaNome().equals(name)) {
                 return i;
             }
         }
-        return -1; // Return -1 if not found
+        return -1;
     }
 
+    public List<ConsequenciaCausasResponseDTO> getCausasByConsequencia(
+            List<ConsequenciaCausasRequestDTO> consequencias) {
+
+        var listaCausasConsequencias = new ArrayList<ConsequenciaCausasResponseDTO>();
+
+        for (int i = 0; i < consequencias.size(); i++) {
+            var consequencia = consequencias.get(i);
+            var queryString = createCausaByConsequenciaQuery(consequencia);
+            var query = QueryFactory.create(queryString);
+            var causaConsequencia = new ConsequenciaCausasResponseDTO(consequencia.getConsequenciaUri(),
+                                                                      consequencia.getConsequenciaNome());
+
+            try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+                ResultSet results = qe.execSelect();
+                while (results.hasNext()) {
+                    QuerySolution solution = results.next();
+                    causaConsequencia.addCausa(new Causa(solution.get("nomeCausa").toString(),
+                                                         solution.get("uriCausa").toString(),
+                                                         solution.get("descricaoCausa").toString()));
+                }
+
+            }
+
+            listaCausasConsequencias.add(causaConsequencia);
+        }
+
+        return listaCausasConsequencias;
+    }
+
+    private String createCausaByConsequenciaQuery(ConsequenciaCausasRequestDTO consequencia) {
+
+        return "SELECT ?nomeConsequencia ?uriCausa ?nomeCausa ?descricaoCausa " +
+               "WHERE {" +
+               "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeConsequencia ." +
+               "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor> ?uriCausa ." +
+               "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeCausa ." +
+               "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoCausa ." +
+               "}";
+
+    }
 }

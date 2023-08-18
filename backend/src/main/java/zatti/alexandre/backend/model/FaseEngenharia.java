@@ -1,15 +1,15 @@
 package zatti.alexandre.backend.model;
 
-import java.util.ArrayList;
-import java.util.List;
+public class FaseEngenharia implements OntologyModel {
 
-public class FaseEngenharia implements AbstractOntologyModel{
+    private String uri;
     private String nome;
-    private List<Consequencia> consequencias;
+    private String sigla;
 
-    public FaseEngenharia(String nome) {
+    public FaseEngenharia(String uri, String nome, String sigla) {
+        this.uri = uri;
         this.nome = nome;
-        this.consequencias = new ArrayList<>();
+        this.sigla = sigla;
     }
 
     public String getNome() {
@@ -20,11 +20,19 @@ public class FaseEngenharia implements AbstractOntologyModel{
         this.nome = nome;
     }
 
-    public List<Consequencia> getConsequencias() {
-        return consequencias;
+    public String getUri() {
+        return uri;
     }
 
-    public void addConsequencia(Consequencia consequencia) {
-        consequencias.add(consequencia);
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
     }
 }

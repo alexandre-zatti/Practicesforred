@@ -1,14 +1,12 @@
 package zatti.alexandre.backend.model;
 
-public class Consequencia implements OntologyModel {
+public class Causa implements OntologyModel {
 
     private String nome;
-
     private String uri;
-
     private String descricao;
 
-    public Consequencia(String nome, String uri, String descricao) {
+    public Causa(String nome, String uri, String descricao) {
         this.nome = nome;
         this.uri = uri;
         this.descricao = descricao;

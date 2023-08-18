@@ -5,7 +5,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import zatti.alexandre.backend.model.FaseEngenharia;
+import zatti.alexandre.backend.dto.ConsequenciaCausasRequestDTO;
+import zatti.alexandre.backend.dto.ConsequenciaCausasResponseDTO;
+import zatti.alexandre.backend.dto.FaseEngenhariaConsequenciasResponseDTO;
 import zatti.alexandre.backend.service.OntologyService;
 
 import java.io.BufferedReader;
@@ -24,7 +26,7 @@ public class OntologyController {
     }
 
     @PostMapping("/load")
-    public ResponseEntity<String> loadRdf(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> loadOntology(@RequestParam("file") MultipartFile file) {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()));
             StringBuilder sb = new StringBuilder();
@@ -44,8 +46,8 @@ public class OntologyController {
     }
 
     @GetMapping("/fase-engenharia/consequencia")
-    public ResponseEntity<List<FaseEngenharia>> getData() {
-        List<FaseEngenharia> resultList = ontologyService.getFaseEngenhariaData();
+    public ResponseEntity<List<FaseEngenhariaConsequenciasResponseDTO>> getConsequenciasByFaseEngenharia() {
+        List<FaseEngenhariaConsequenciasResponseDTO> resultList = ontologyService.getConsequenciasByFaseEngenharia();
 
         if (!resultList.isEmpty()) {
             return new ResponseEntity<>(resultList, HttpStatus.OK);
@@ -53,4 +55,17 @@ public class OntologyController {
             return new ResponseEntity<>(resultList, HttpStatus.NOT_FOUND);
         }
     }
+
+    @PostMapping("/consequencia/causas")
+    public ResponseEntity<List<ConsequenciaCausasResponseDTO>> getCausasByConsequencia(
+            @RequestBody List<ConsequenciaCausasRequestDTO> consequencias) {
+
+        return new ResponseEntity<>(ontologyService.getCausasByConsequencia(consequencias), HttpStatus.OK);
+    }
+
+
+//     TODO: Implementar baseado na matrix de impacto
+//      public ResponseEntity<List<RelevanciaConsequenciaResponseDTO>> calculateRelevanciaConsequencia(
+//              @RequestBody List<RelevanciaConsequenciaRequestDTO> consequencias){
+//     }
 }
