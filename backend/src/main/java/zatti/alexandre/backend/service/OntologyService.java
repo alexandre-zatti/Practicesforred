@@ -4,11 +4,10 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import zatti.alexandre.backend.dto.ConsequenciaCausasRequestDTO;
-import zatti.alexandre.backend.dto.ConsequenciaCausasResponseDTO;
-import zatti.alexandre.backend.dto.FaseEngenhariaConsequenciasResponseDTO;
+import zatti.alexandre.backend.dto.*;
 import zatti.alexandre.backend.model.Causa;
 import zatti.alexandre.backend.model.Consequencia;
+import zatti.alexandre.backend.utils.MatrizImpacto;
 
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -42,7 +41,7 @@ public class OntologyService {
     }
 
     public List<FaseEngenhariaConsequenciasResponseDTO> getConsequenciasByFaseEngenharia() {
-        String queryString =
+        var queryString =
                 """
                         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                                 
@@ -57,14 +56,14 @@ public class OntologyService {
                         }
                         """;
 
-        Query query = QueryFactory.create(queryString);
+        var query = QueryFactory.create(queryString);
 
         List<FaseEngenhariaConsequenciasResponseDTO> resultList = new ArrayList<>();
 
         try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
-            ResultSet results = qe.execSelect();
+            var results = qe.execSelect();
             while (results.hasNext()) {
-                QuerySolution solution = results.next();
+                var solution = results.next();
 
                 int foundPreviousFaseEngenhariaIndex =
                         isFaseEngenhariaAlreadyPresent(resultList, solution.get("nomeFase").toString());
@@ -111,7 +110,7 @@ public class OntologyService {
 
         for (int i = 0; i < consequencias.size(); i++) {
             var consequencia = consequencias.get(i);
-            var queryString = createCausaByConsequenciaQuery(consequencia);
+            var queryString = getCausaByConsequenciaQuery(consequencia);
             var query = QueryFactory.create(queryString);
             var causaConsequencia = new ConsequenciaCausasResponseDTO(consequencia.getConsequenciaUri(),
                                                                       consequencia.getConsequenciaNome());
@@ -133,7 +132,7 @@ public class OntologyService {
         return listaCausasConsequencias;
     }
 
-    private String createCausaByConsequenciaQuery(ConsequenciaCausasRequestDTO consequencia) {
+    private String getCausaByConsequenciaQuery(ConsequenciaCausasRequestDTO consequencia) {
 
         return "SELECT ?nomeConsequencia ?uriCausa ?nomeCausa ?descricaoCausa " +
                "WHERE {" +
@@ -143,5 +142,27 @@ public class OntologyService {
                "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoCausa ." +
                "}";
 
+    }
+
+    public List<RelevanciaConsequenciaResponseDTO> calculateRelevanciaConsequencia(
+            List<RelevanciaConsequenciaRequestDTO> consequencias) {
+
+        var consequenciasRelevancia = new ArrayList<RelevanciaConsequenciaResponseDTO>();
+
+        for (int i = 0; i < consequencias.size(); i++) {
+            var consequencia = consequencias.get(i);
+
+            var frequencia = consequencia.getFrequencia();
+            var impacto = consequencia.getImpacto();
+
+            var consequenciaRelevancia = new RelevanciaConsequenciaResponseDTO(consequencia.getConsequenciaUri(),
+                                                                               frequencia,
+                                                                               impacto,
+                                                                               MatrizImpacto.MATRIZ[frequencia.getValue()][impacto.getValue()]);
+
+            consequenciasRelevancia.add(consequenciaRelevancia);
+        }
+
+        return consequenciasRelevancia;
     }
 }
