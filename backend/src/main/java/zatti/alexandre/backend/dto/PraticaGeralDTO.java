@@ -2,11 +2,17 @@ package zatti.alexandre.backend.dto;
 
 import zatti.alexandre.backend.model.Pratica;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PraticaGeralDTO {
     private Pratica praticaGeral;
     private List<Pratica> praticas;
+
+    public PraticaGeralDTO(Pratica praticaGeral) {
+        this.praticaGeral = praticaGeral;
+        this.praticas = new ArrayList<>();
+    }
 
     public PraticaGeralDTO(Pratica praticaGeral, List<Pratica> praticas) {
         this.praticaGeral = praticaGeral;

@@ -66,4 +66,10 @@ public class OntologyController {
             @RequestBody List<RelevanciaConsequenciaRequestDTO> consequencias) {
         return new ResponseEntity<>(ontologyService.calculateRelevanciaConsequencia(consequencias), HttpStatus.OK);
     }
+
+    @PostMapping("/causa/praticas")
+    public ResponseEntity<List<CausaPraticasResponseDTO>> getPraticasByCausa(
+            @RequestBody List<CausaPraticasRequestDTO> causas) {
+        return new ResponseEntity<>(ontologyService.getPraticasByCausa(causas), HttpStatus.OK);
+    }
 }

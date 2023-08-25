@@ -5,8 +5,11 @@ import org.apache.jena.rdf.model.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import zatti.alexandre.backend.dto.*;
+import zatti.alexandre.backend.enums.ClassificacaoPratica;
+import zatti.alexandre.backend.model.AreaGestao;
 import zatti.alexandre.backend.model.Causa;
 import zatti.alexandre.backend.model.Consequencia;
+import zatti.alexandre.backend.model.Pratica;
 import zatti.alexandre.backend.utils.MatrizImpacto;
 
 import java.io.StringReader;
@@ -130,6 +133,122 @@ public class OntologyService {
         }
 
         return listaCausasConsequencias;
+    }
+
+    public List<CausaPraticasResponseDTO> getPraticasByCausa(List<CausaPraticasRequestDTO> causas) {
+        var listaCausasPraticas = new ArrayList<CausaPraticasResponseDTO>();
+
+        for (int i = 0; i < causas.size(); i++) {
+            var causa = causas.get(i);
+            var queryString = getPraticasByCausaQuery(causa);
+            var query = QueryFactory.create(queryString);
+
+            try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+                ResultSet results = qe.execSelect();
+                while (results.hasNext()) {
+                    QuerySolution solution = results.next();
+                    var foundPreviousAreaGestaoIndex =
+                            checkIfAreaGestaoAlreadyPresent(listaCausasPraticas,
+                                                            solution.get("uriAreaGestao").toString());
+
+                    if (foundPreviousAreaGestaoIndex != -1) {
+                        var causaPraticas = listaCausasPraticas.get(foundPreviousAreaGestaoIndex);
+                        var foundPreviousPraticaGeralIndex =
+                                checkIfPraticaGeralAlreadyPresent(causaPraticas.getPraticasGerais(),
+                                                                  solution.get("uriPraticaGeral").toString());
+
+                        if (foundPreviousPraticaGeralIndex != -1) {
+                            var praticaGeral = causaPraticas.getPraticasGerais().get(foundPreviousPraticaGeralIndex);
+                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                                solution.get("uriPratica").toString(),
+                                                                solution.get("descricaoPratica").toString(),
+                                                                ClassificacaoPratica.fromValue(solution.get(
+                                                                        "classificacaoPratica").toString()),
+                                                                causa.getGrauRelevancia())
+                            );
+                            causaPraticas.getPraticasGerais().set(foundPreviousPraticaGeralIndex, praticaGeral);
+                            listaCausasPraticas.set(foundPreviousAreaGestaoIndex, causaPraticas);
+                        } else {
+                            var praticaGeral =
+                                    new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
+                                                                    solution.get("uriPraticaGeral").toString(),
+                                                                    ClassificacaoPratica.GERAL));
+                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                                solution.get("uriPratica").toString(),
+                                                                solution.get("descricaoPratica").toString(),
+                                                                ClassificacaoPratica.fromValue(solution.get(
+                                                                        "classificacaoPratica").toString()),
+                                                                causa.getGrauRelevancia())
+                            );
+                            causaPraticas.addPraticaGeral(praticaGeral);
+                            listaCausasPraticas.set(foundPreviousAreaGestaoIndex, causaPraticas);
+                        }
+                    } else {
+                        var causaPraticas =
+                                new CausaPraticasResponseDTO(new AreaGestao(solution.get("uriAreaGestao").toString(),
+                                                                            solution.get("nomeAreaGestao").toString(),
+                                                                            solution.get(
+                                                                                    "descricaoAreaGestao").toString()));
+                        var praticaGeral =
+                                new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
+                                                                solution.get("uriPraticaGeral").toString(),
+                                                                ClassificacaoPratica.GERAL));
+                        praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                            solution.get("uriPratica").toString(),
+                                                            solution.get("descricaoPratica").toString(),
+                                                            ClassificacaoPratica.fromValue(solution.get(
+                                                                    "classificacaoPratica").toString()),
+                                                            causa.getGrauRelevancia())
+                        );
+                        causaPraticas.addPraticaGeral(praticaGeral);
+                        listaCausasPraticas.add(causaPraticas);
+                    }
+                }
+            }
+        }
+
+        return listaCausasPraticas;
+    }
+
+    private int checkIfPraticaGeralAlreadyPresent(List<PraticaGeralDTO> listaPraticasGerais,
+                                                  String uriPraticaGeral) {
+        for (int i = 0; i < listaPraticasGerais.size(); i++) {
+            var item = listaPraticasGerais.get(i);
+            if (item.getPraticaGeral().getUri().equals(uriPraticaGeral)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private int checkIfAreaGestaoAlreadyPresent(List<CausaPraticasResponseDTO> listaCausasPraticas,
+                                                String uriAreaGestao) {
+        for (int i = 0; i < listaCausasPraticas.size(); i++) {
+            var item = listaCausasPraticas.get(i);
+            if (item.getAreaGestao().getUri().equals(uriAreaGestao)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private String getPraticasByCausaQuery(CausaPraticasRequestDTO causa) {
+
+        return "SELECT *" +
+               "WHERE {" +
+               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar> " + causa.getCausaPraticaUri() + " ." +
+               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePratica ." +
+               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPratica ." +
+               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPratica ." +
+               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa> ?uriPraticaGeral ." +
+               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePraticaGeral ." +
+//               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPraticaGeral ." +
+               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPraticaGeral ." +
+               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eParteDe> ?uriAreaGestao ." +
+               "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomeAreaGestao ." +
+               "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoAreaGestao ." +
+               " }";
+
     }
 
     private String getCausaByConsequenciaQuery(ConsequenciaCausasRequestDTO consequencia) {

@@ -15,6 +15,13 @@ public class Pratica implements OntologyModel {
 
     private GrauRelevancia grauRelevancia = null;
 
+    public Pratica(String nome, String uri, ClassificacaoPratica classificacaoPratica) {
+        this.nome = nome;
+        this.uri = uri;
+        this.descricao = "";
+        this.classificacaoPratica = classificacaoPratica;
+    }
+
     public Pratica(String nome, String uri, String descricao, ClassificacaoPratica classificacaoPratica) {
         this.nome = nome;
         this.uri = uri;
