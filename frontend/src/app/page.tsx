@@ -2,6 +2,7 @@
 
 import styles from './page.module.css'
 import { Button, Typography } from "@mui/material";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
       </div>
 
       <div className={styles.buttonsContainer}>
-        <Button variant={'contained'} className={styles.button}>Iniciar análise</Button>
+        <Button variant={'contained'} className={styles.button}>
+          <Link href={'/analise'}>Iniciar análise</Link>
+        </Button>
         <Button variant={'outlined'} className={styles.button}>Sobre</Button>
       </div>
     </div>

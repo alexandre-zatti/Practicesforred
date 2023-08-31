@@ -1,0 +1,14 @@
+.container {
+    padding: 5rem;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pageTitle {
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
