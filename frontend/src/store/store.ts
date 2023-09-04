@@ -1,11 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { FaseEngenhariaSlice } from "@/store/FaseEngenhariaSlice";
+import { FasesEngenhariaSlice } from "@/store/FasesEngenhariaSlice";
 import { LoadingSlice } from "@/store/LoadingSlice";
 import { ToastSlice } from "@/store/ToastSlice";
+import { ConsequenciasSlice } from "@/store/ConsequenciasSlice";
+import { EtapasSlice } from "@/store/EtapasSlice";
 
 export const store = configureStore({
   reducer: {
-    faseEngenharia: FaseEngenhariaSlice.reducer,
+    fasesEngenharia: FasesEngenhariaSlice.reducer,
+    consequencias: ConsequenciasSlice.reducer,
+    etapas: EtapasSlice.reducer,
     loading: LoadingSlice.reducer,
     toast: ToastSlice.reducer
   },

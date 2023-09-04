@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.stepper {
+    min-width: 75%;
+}
+
+.buttonNext {
+    margin-left: 2rem;
+}
+
+.buttonBack {
+    margin-right: 2rem;
+}

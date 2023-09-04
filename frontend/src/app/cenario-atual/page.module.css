@@ -36,7 +36,7 @@
     margin-bottom: 1.5rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 0.1fr 3fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 0.05fr 1fr 0.05fr 1fr;
     grid-gap: 1rem;
 }
 
@@ -55,6 +55,6 @@
 
     .cardConsequenciaActions {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
