@@ -48,6 +48,12 @@
     font-style: oblique;
 }
 
+.grauRelevanciaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         padding: 1rem;

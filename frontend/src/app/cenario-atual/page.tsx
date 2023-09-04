@@ -22,8 +22,8 @@ import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
-import { setFaseEngenharia } from "@/store/FasesEngenhariaSlice";
 import { showToast } from "@/store/ToastSlice";
+import { setConsequencias } from "@/store/ConsequenciasSlice";
 
 const CenarioAtual = () => {
 
@@ -35,11 +35,37 @@ const CenarioAtual = () => {
 
   useEffect(() => {
     dispatch(showLoading())
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/fase-engenharia/consequencia`)
+
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/consequencia/relevancia`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(consequenciasSelecionadas.map((consequencia) => {
+        return {
+          consequenciaUri: consequencia.uri,
+          consequenciaNome: consequencia.nome,
+          consequenciaDescricao: consequencia.descricao,
+          frequencia: Frequencia[consequencia.frequencia!],
+          impacto: Impacto[consequencia.impacto!]
+        }
+      })),
+    })
       .then((response) => {
         if (response.ok) {
           response.json().then((data) => {
-            dispatch(setFaseEngenharia(data))
+            const consequenciasWithGrauRelevancia = data.map((consequencia: any) => {
+              return {
+                nome: consequencia.consequenciaNome,
+                descricao: consequencia.consequenciaDescricao,
+                uri: consequencia.consequenciaUri,
+                frequencia: Frequencia[consequencia.frequencia],
+                impacto: Impacto[consequencia.impacto],
+                grauRelevancia: consequencia.grauRelevancia
+              }
+            })
+
+            dispatch(setConsequencias(consequenciasWithGrauRelevancia))
           })
         } else {
           dispatch(showToast({
@@ -51,13 +77,15 @@ const CenarioAtual = () => {
       dispatch(hideLoading())
     })
 
+  }, []);
+
+  useEffect(() => {
     setFasesEngenhariaWithConsequenciasSelecionadas(
       filterOnlyConsequenciasSelecionadas(
         filterFasesEngenhariaWithConsequenciasSelecionadas(faseEngenhariaConsequencias)
       )
     )
-
-  }, []);
+  }, [consequenciasSelecionadas]);
 
   const filterFasesEngenhariaWithConsequenciasSelecionadas = (fasesEngenharia: FaseEngenharia[]): FaseEngenharia[] => {
     return fasesEngenharia.filter((faseEngenharia) => {
@@ -150,6 +178,12 @@ const CenarioAtual = () => {
                         </FormControl>
 
                         <Typography variant={'h6'}>=</Typography>
+
+                        <div className={styles.grauRelevanciaContainer}>
+                          <Typography>Grau de Relevância</Typography>
+                          <Typography variant={'h6'}>{consequencia.grauRelevancia}</Typography>
+                        </div>
+
                       </div>
                       <p className={styles.consequenciaDescricao}>
                         {consequencia.descricao}
