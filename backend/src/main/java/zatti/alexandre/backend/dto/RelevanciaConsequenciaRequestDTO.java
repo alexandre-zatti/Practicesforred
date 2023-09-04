@@ -5,6 +5,8 @@ import zatti.alexandre.backend.enums.Impacto;
 
 public class RelevanciaConsequenciaRequestDTO {
     private String consequenciaUri;
+    private String consequenciaNome;
+    private String consequenciaDescricao;
     private Frequencia frequencia;
     private Impacto impacto;
 
@@ -30,5 +32,21 @@ public class RelevanciaConsequenciaRequestDTO {
 
     public void setImpacto(Impacto impacto) {
         this.impacto = impacto;
+    }
+
+    public String getConsequenciaNome() {
+        return consequenciaNome;
+    }
+
+    public void setConsequenciaNome(String consequenciaNome) {
+        this.consequenciaNome = consequenciaNome;
+    }
+
+    public String getConsequenciaDescricao() {
+        return consequenciaDescricao;
+    }
+
+    public void setConsequenciaDescricao(String consequenciaDescricao) {
+        this.consequenciaDescricao = consequenciaDescricao;
     }
 }

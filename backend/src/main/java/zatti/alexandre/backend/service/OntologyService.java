@@ -275,6 +275,8 @@ public class OntologyService {
             var impacto = consequencia.getImpacto();
 
             var consequenciaRelevancia = new RelevanciaConsequenciaResponseDTO(consequencia.getConsequenciaUri(),
+                                                                               consequencia.getConsequenciaNome(),
+                                                                               consequencia.getConsequenciaDescricao(),
                                                                                frequencia,
                                                                                impacto,
                                                                                MatrizImpacto.MATRIZ[frequencia.getValue()][impacto.getValue()]);
