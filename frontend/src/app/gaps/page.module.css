@@ -22,30 +22,42 @@
     color: white;
 }
 
-.accordionAreaGestao {
+.accordionContent {
     color: white;
     background-color: var(--mui-primary);
 }
 
-.cardConsequencia {
+.card {
     margin-bottom: 1rem;
 }
 
-.cardConsequenciaActions {
+.cardActions {
     width: 100%;
     margin-bottom: 1.5rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 0.1fr 3fr 1fr 1fr;
+    grid-template-columns: 0.1fr 3fr;
     grid-gap: 1rem;
 }
 
-.consequenciaNome {
+.nome {
     text-decoration: underline;
 }
 
-.consequenciaDescricao {
+.descricao {
     font-style: oblique;
+}
+
+.grauRelevanciaBaixo {
+    background-color: lightblue;
+}
+
+.grauRelevanciaMedio {
+    background-color: yellowgreen;
+}
+
+.grauRelevanciaAlto {
+    background-color: lightcoral;
 }
 
 @media screen and (max-width: 600px) {
@@ -53,8 +65,12 @@
         padding: 1rem;
     }
 
-    .cardConsequenciaActions {
+    .accordionContainer {
+        min-width: 20rem;
+    }
+
+    .cardActions {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }

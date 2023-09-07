@@ -91,7 +91,7 @@ const Analise = () => {
               id="panel1a-header"
               className={styles.accordionAreaGestao}
             >
-              <Typography variant={'h6'}>{faseEngenharia.faseEngenhariaNome}</Typography>
+              <Typography variant={'h6'} style={{fontWeight: 600}}>{faseEngenharia.faseEngenhariaNome}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {

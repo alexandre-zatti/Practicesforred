@@ -12,7 +12,8 @@ import { ArrowBack } from "@mui/icons-material";
 const steps = [
   {label: 'Análise', route: '/analise'},
   {label: 'Cenário Atual', route: '/cenario-atual'},
-  {label: 'Praticas', route: '/cenario-atual'},
+  {label: 'Gaps', route: '/gaps'},
+  {label: 'Práticas', route: '/praticas'},
 ];
 
 const Steps = () => {
