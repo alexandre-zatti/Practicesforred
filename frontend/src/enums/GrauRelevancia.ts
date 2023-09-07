@@ -1,5 +1,5 @@
 export enum GrauRelevancia {
-  ALTO,
-  MEDIO,
-  BAIXO,
+  ALTO = 0,
+  MEDIO = 1,
+  BAIXO = 2,
 }

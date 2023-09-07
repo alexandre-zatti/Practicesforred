@@ -24,7 +24,7 @@
 
 .accordionAreaGestao {
     color: white;
-    background-color: #1976d2;
+    background-color: var(--mui-primary);
 }
 
 .cardConsequencia {

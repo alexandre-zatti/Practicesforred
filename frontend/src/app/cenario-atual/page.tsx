@@ -24,6 +24,7 @@ import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
 import { showToast } from "@/store/ToastSlice";
 import { setConsequencias } from "@/store/ConsequenciasSlice";
+import { GrauRelevancia } from "@/enums/GrauRelevancia";
 
 const CenarioAtual = () => {
 
@@ -61,7 +62,7 @@ const CenarioAtual = () => {
                 uri: consequencia.consequenciaUri,
                 frequencia: Frequencia[consequencia.frequencia],
                 impacto: Impacto[consequencia.impacto],
-                grauRelevancia: consequencia.grauRelevancia
+                grauRelevancia: GrauRelevancia[consequencia.grauRelevancia]
               }
             })
 
@@ -117,12 +118,41 @@ const CenarioAtual = () => {
     })
   }
 
+  const getGrauRelevanciaStyle = (grauRelevancia: number): string => {
+
+    switch (grauRelevancia) {
+      case GrauRelevancia.BAIXO:
+        return styles.grauRelevanciaBaixo
+      case GrauRelevancia.MEDIO:
+        return styles.grauRelevanciaMedio
+      case GrauRelevancia.ALTO:
+        return styles.grauRelevanciaAlto
+      default:
+        return ''
+    }
+  }
+
+  const getGrauRelevanciaNomeStyle = (grauRelevancia: number): string => {
+
+    switch (grauRelevancia) {
+      case GrauRelevancia.BAIXO:
+        return styles.grauRelevanciaNomeBaixo
+      case GrauRelevancia.MEDIO:
+        return styles.grauRelevanciaNomeMedio
+      case GrauRelevancia.ALTO:
+        return styles.grauRelevanciaNomeAlto
+      default:
+        return ''
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Steps/>
 
       <Typography className={styles.pageTitle} variant={'h4'}>
-        Informe o(s) problema(s) que ocorre(m) no cenário atual voltado ao processo de requisitos
+        Cenário atual da(s) consequência(s) associada(s) as dívidas de requisitos e seus respectivos graus de
+        relevância
       </Typography>
       {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {
         return (
@@ -140,7 +170,7 @@ const CenarioAtual = () => {
 
                 return (
                   <Card key={consequencia.uri} className={styles.cardConsequencia}>
-                    <CardContent>
+                    <CardContent className={getGrauRelevanciaStyle(consequencia.grauRelevancia!)}>
                       <div className={styles.cardConsequenciaActions}>
 
                         <Typography variant={'h6'} className={styles.consequenciaNome}>{consequencia.nome}</Typography>
@@ -179,9 +209,15 @@ const CenarioAtual = () => {
 
                         <Typography variant={'h6'}>=</Typography>
 
-                        <div className={styles.grauRelevanciaContainer}>
+                        <div
+                          className={`${styles.grauRelevanciaContainer}`}>
                           <Typography>Grau de Relevância</Typography>
-                          <Typography variant={'h6'}>{consequencia.grauRelevancia}</Typography>
+                          <Typography
+                            variant={'h6'}
+                            className={getGrauRelevanciaNomeStyle(consequencia.grauRelevancia!)}
+                          >
+                            {GrauRelevancia[consequencia.grauRelevancia!] === 'MEDIO' ? 'MÉDIO' : GrauRelevancia[consequencia.grauRelevancia!]}
+                          </Typography>
                         </div>
 
                       </div>
