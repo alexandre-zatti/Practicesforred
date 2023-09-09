@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { Causa } from "@/types/Causa";
 import { showToast } from "@/store/ToastSlice";
+import { setAreasGestaoPraticas } from "@/store/AreasGestaoPraticasSlice";
 
 const Praticas = () => {
   const areasGestaoPraticas = useSelector((state: any) => state.areasGestaoPraticas.areasGestaoPraticas)
@@ -33,7 +34,7 @@ const Praticas = () => {
       .then((response) => {
         if (response.ok) {
           response.json().then((data) => {
-            console.log(data)
+            dispatch(setAreasGestaoPraticas(data))
           })
         } else {
           dispatch(showToast({

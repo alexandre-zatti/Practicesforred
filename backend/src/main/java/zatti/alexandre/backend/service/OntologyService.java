@@ -13,8 +13,10 @@ import zatti.alexandre.backend.model.Pratica;
 import zatti.alexandre.backend.utils.MatrizImpacto;
 
 import java.io.StringReader;
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class OntologyService {
@@ -174,9 +176,11 @@ public class OntologyService {
                                                                  "classificacaoPratica").toString()),
                                                          causa.getGrauRelevancia());
 
-                            if (praticaAlreadyPresent != -1) {
-                                praticaGeral.removePratica(praticaAlreadyPresent);
-                                praticaGeral.addPratica(newPratica);
+                            if (praticaAlreadyPresent.getKey()) {
+                                if (praticaAlreadyPresent.getValue() != -1) {
+                                    praticaGeral.removePratica(praticaAlreadyPresent.getValue());
+                                    praticaGeral.addPratica(newPratica);
+                                }
                             } else {
                                 praticaGeral.addPratica(newPratica);
                             }
@@ -202,9 +206,11 @@ public class OntologyService {
                                                                  "classificacaoPratica").toString()),
                                                          causa.getGrauRelevancia());
 
-                            if (praticaAlreadyPresent != -1) {
-                                praticaGeral.removePratica(praticaAlreadyPresent);
-                                praticaGeral.addPratica(newPratica);
+                            if (praticaAlreadyPresent.getKey()) {
+                                if (praticaAlreadyPresent.getValue() != -1) {
+                                    praticaGeral.removePratica(praticaAlreadyPresent.getValue());
+                                    praticaGeral.addPratica(newPratica);
+                                }
                             } else {
                                 praticaGeral.addPratica(newPratica);
                             }
@@ -234,9 +240,11 @@ public class OntologyService {
                                                              "classificacaoPratica").toString()),
                                                      causa.getGrauRelevancia());
 
-                        if (praticaAlreadyPresent != -1) {
-                            praticaGeral.removePratica(praticaAlreadyPresent);
-                            praticaGeral.addPratica(newPratica);
+                        if (praticaAlreadyPresent.getKey()) {
+                            if (praticaAlreadyPresent.getValue() != -1) {
+                                praticaGeral.removePratica(praticaAlreadyPresent.getValue());
+                                praticaGeral.addPratica(newPratica);
+                            }
                         } else {
                             praticaGeral.addPratica(newPratica);
                         }
@@ -251,17 +259,19 @@ public class OntologyService {
         return listaCausasPraticas;
     }
 
-    private int checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
-                                             String uriPratica, Integer grauRelevancia) {
+    private Map.Entry<Boolean, Integer> checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
+                                                                     String uriPratica, Integer grauRelevancia) {
         for (int i = 0; i < listaPraticas.size(); i++) {
             var item = listaPraticas.get(i);
             if (item.getUri().equals(uriPratica)) {
-                if (item.getGrauRelevancia().ordinal() <= grauRelevancia) {
-                    return i;
+                if (item.getGrauRelevancia().ordinal() >= grauRelevancia) {
+                    return new AbstractMap.SimpleEntry<>(true, i);
+                } else {
+                    return new AbstractMap.SimpleEntry<>(true, -1);
                 }
             }
         }
-        return -1;
+        return new AbstractMap.SimpleEntry<>(false, -1);
     }
 
     private int checkIfPraticaGeralAlreadyPresent(List<PraticaGeralDTO> listaPraticasGerais,
