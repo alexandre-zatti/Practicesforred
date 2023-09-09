@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Consequencia } from "@/types/Consequencia";
 import { Causa } from "@/types/Causa";
 
 interface CausasState {
-  causas: Consequencia[]
+  causas: Causa[]
 }
 
 const initialState: CausasState = {
@@ -18,13 +17,13 @@ export const CausasSlice = createSlice({
       state.causas = action.payload
     },
     addCausa: (state, action: { payload: Causa }) => {
-      const alreadyExists = state.causas.some(causa => causa.uri === action.payload.uri);
+      const alreadyExists = state.causas.some(causa => causa.uri === action.payload.uri && causa.uriConsequencia === action.payload.uriConsequencia);
       if (!alreadyExists) {
         state.causas.push(action.payload);
       }
     },
     removeCausa: (state, action: { payload: Causa }) => {
-      state.causas = state.causas.filter(causa => causa.uri !== action.payload.uri)
+      state.causas = state.causas.filter(causa => causa.uri !== action.payload.uri || causa.uriConsequencia !== action.payload.uriConsequencia)
     }
   }
 });

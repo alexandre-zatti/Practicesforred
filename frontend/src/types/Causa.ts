@@ -5,4 +5,5 @@ export type Causa = {
   uri: string;
   descricao?: string;
   grauRelevancia?: GrauRelevancia;
+  uriConsequencia?: string;
 }

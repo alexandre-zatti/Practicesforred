@@ -13,7 +13,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Causa } from "@/types/Causa";
 import { addCausa, removeCausa } from "@/store/CausasSlice";
 import { Consequencia } from "@/types/Consequencia";
-import { GrauRelevancia } from "@/enums/GrauRelevancia";
 
 const Gaps = () => {
   const causasSelecionadas = useSelector((state: RootState) => state.causas.causas)
@@ -43,7 +42,11 @@ const Gaps = () => {
               })
 
               causa.causas.forEach((causa: Causa) => {
-                dispatch(addCausa({...causa, grauRelevancia: consequencia?.grauRelevancia}))
+                dispatch(addCausa({
+                  ...causa,
+                  grauRelevancia: consequencia?.grauRelevancia,
+                  uriConsequencia: consequencia?.uri
+                }))
               })
 
               return {
@@ -65,31 +68,25 @@ const Gaps = () => {
     })
   }, [dispatch])
 
-  const isCausaSelected = (causaUri: string): Causa | undefined => {
-    return causasSelecionadas.find((causa) => {
-      return causa.uri === causaUri
+  const isCausaSelected = (causaUri: string, consequenciaUri: string): Causa | undefined => {
+    return causasSelecionadas.find((causa: Causa) => {
+      return causa.uri === causaUri && causa.uriConsequencia === consequenciaUri
     })
   }
 
   const handleCausaCheckboxChange = (checked: boolean, causa: Causa, consequencia: Consequencia) => {
     if (checked) {
-      dispatch(addCausa({...causa, grauRelevancia: consequencia.grauRelevancia}))
+      dispatch(addCausa({
+        ...causa,
+        grauRelevancia: consequencia.grauRelevancia,
+        uriConsequencia: consequencia.uri
+      }))
     } else {
-      dispatch(removeCausa(causa))
-    }
-  }
-
-  const getGrauRelevanciaStyle = (grauRelevancia: number): string => {
-
-    switch (grauRelevancia) {
-      case GrauRelevancia.BAIXO:
-        return styles.grauRelevanciaBaixo
-      case GrauRelevancia.MEDIO:
-        return styles.grauRelevanciaMedio
-      case GrauRelevancia.ALTO:
-        return styles.grauRelevanciaAlto
-      default:
-        return ''
+      dispatch(removeCausa({
+        ...causa,
+        grauRelevancia: consequencia.grauRelevancia,
+        uriConsequencia: consequencia.uri
+      }))
     }
   }
 
@@ -115,16 +112,16 @@ const Gaps = () => {
             </AccordionSummary>
             <AccordionDetails>
               {consequencia.causas && consequencia.causas!.map((causa, index) => {
-                const consequenciaSelected = isCausaSelected(causa.uri)
+                const causaSelected = isCausaSelected(causa.uri, consequencia.uri)
 
                 return (
-                  <Card key={causa.uri} className={styles.card}>
+                  <Card key={causa.uri + consequencia.uri} className={styles.card}>
                     <CardContent>
                       <div className={styles.cardActions}>
 
                         <Checkbox onChange={(event) => {
                           handleCausaCheckboxChange(event.target.checked, causa, consequencia)
-                        }} checked={!!consequenciaSelected}/>
+                        }} checked={!!causaSelected}/>
 
                         <Typography variant={'h6'} className={styles.nome}>{causa.nome}</Typography>
 

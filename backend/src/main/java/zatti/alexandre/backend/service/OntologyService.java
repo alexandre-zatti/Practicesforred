@@ -161,13 +161,20 @@ public class OntologyService {
 
                         if (foundPreviousPraticaGeralIndex != -1) {
                             var praticaGeral = causaPraticas.getPraticasGerais().get(foundPreviousPraticaGeralIndex);
-                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                                solution.get("uriPratica").toString(),
-                                                                solution.get("descricaoPratica").toString(),
-                                                                ClassificacaoPratica.fromValue(solution.get(
-                                                                        "classificacaoPratica").toString()),
-                                                                causa.getGrauRelevancia())
-                            );
+
+                            if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                              solution.get("uriPratica").toString(),
+                                                              causa.getGrauRelevancia().ordinal())) {
+                                praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                                    solution.get("uriPratica").toString(),
+                                                                    solution.get("descricaoPratica").toString(),
+                                                                    ClassificacaoPratica.fromValue(solution.get(
+                                                                            "classificacaoPratica").toString()),
+                                                                    causa.getGrauRelevancia())
+                                );
+                            }
+
+
                             causaPraticas.getPraticasGerais().set(foundPreviousPraticaGeralIndex, praticaGeral);
                             listaCausasPraticas.set(foundPreviousAreaGestaoIndex, causaPraticas);
                         } else {
@@ -175,13 +182,20 @@ public class OntologyService {
                                     new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
                                                                     solution.get("uriPraticaGeral").toString(),
                                                                     ClassificacaoPratica.GERAL));
-                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                                solution.get("uriPratica").toString(),
-                                                                solution.get("descricaoPratica").toString(),
-                                                                ClassificacaoPratica.fromValue(solution.get(
-                                                                        "classificacaoPratica").toString()),
-                                                                causa.getGrauRelevancia())
-                            );
+
+                            if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                              solution.get("uriPratica").toString(),
+                                                              causa.getGrauRelevancia().ordinal())) {
+
+                                praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                                    solution.get("uriPratica").toString(),
+                                                                    solution.get("descricaoPratica").toString(),
+                                                                    ClassificacaoPratica.fromValue(solution.get(
+                                                                            "classificacaoPratica").toString()),
+                                                                    causa.getGrauRelevancia())
+                                );
+                            }
+
                             causaPraticas.addPraticaGeral(praticaGeral);
                             listaCausasPraticas.set(foundPreviousAreaGestaoIndex, causaPraticas);
                         }
@@ -195,13 +209,21 @@ public class OntologyService {
                                 new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
                                                                 solution.get("uriPraticaGeral").toString(),
                                                                 ClassificacaoPratica.GERAL));
-                        praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                            solution.get("uriPratica").toString(),
-                                                            solution.get("descricaoPratica").toString(),
-                                                            ClassificacaoPratica.fromValue(solution.get(
-                                                                    "classificacaoPratica").toString()),
-                                                            causa.getGrauRelevancia())
-                        );
+
+                        if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                          solution.get("uriPratica").toString(),
+                                                          causa.getGrauRelevancia().ordinal())) {
+
+                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
+                                                                solution.get("uriPratica").toString(),
+                                                                solution.get("descricaoPratica").toString(),
+                                                                ClassificacaoPratica.fromValue(solution.get(
+                                                                        "classificacaoPratica").toString()),
+                                                                causa.getGrauRelevancia())
+                            );
+                        }
+
+
                         causaPraticas.addPraticaGeral(praticaGeral);
                         listaCausasPraticas.add(causaPraticas);
                     }
@@ -210,6 +232,19 @@ public class OntologyService {
         }
 
         return listaCausasPraticas;
+    }
+
+    private boolean checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
+                                                 String uriPratica, Integer grauRelevancia) {
+        for (int i = 0; i < listaPraticas.size(); i++) {
+            var item = listaPraticas.get(i);
+            if (item.getUri().equals(uriPratica)) {
+                if (item.getGrauRelevancia().ordinal() < grauRelevancia) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     private int checkIfPraticaGeralAlreadyPresent(List<PraticaGeralDTO> listaPraticasGerais,
