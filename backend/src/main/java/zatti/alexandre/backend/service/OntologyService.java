@@ -162,16 +162,23 @@ public class OntologyService {
                         if (foundPreviousPraticaGeralIndex != -1) {
                             var praticaGeral = causaPraticas.getPraticasGerais().get(foundPreviousPraticaGeralIndex);
 
-                            if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                              solution.get("uriPratica").toString(),
-                                                              causa.getGrauRelevancia().ordinal())) {
-                                praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                                    solution.get("uriPratica").toString(),
-                                                                    solution.get("descricaoPratica").toString(),
-                                                                    ClassificacaoPratica.fromValue(solution.get(
-                                                                            "classificacaoPratica").toString()),
-                                                                    causa.getGrauRelevancia())
-                                );
+                            var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                                                     solution.get(
+                                                                                             "uriPratica").toString(),
+                                                                                     causa.getGrauRelevancia().ordinal());
+
+                            var newPratica = new Pratica(solution.get("nomePratica").toString(),
+                                                         solution.get("uriPratica").toString(),
+                                                         solution.get("descricaoPratica").toString(),
+                                                         ClassificacaoPratica.fromValue(solution.get(
+                                                                 "classificacaoPratica").toString()),
+                                                         causa.getGrauRelevancia());
+
+                            if (praticaAlreadyPresent != -1) {
+                                praticaGeral.removePratica(praticaAlreadyPresent);
+                                praticaGeral.addPratica(newPratica);
+                            } else {
+                                praticaGeral.addPratica(newPratica);
                             }
 
 
@@ -183,17 +190,23 @@ public class OntologyService {
                                                                     solution.get("uriPraticaGeral").toString(),
                                                                     ClassificacaoPratica.GERAL));
 
-                            if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                              solution.get("uriPratica").toString(),
-                                                              causa.getGrauRelevancia().ordinal())) {
+                            var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                                                     solution.get(
+                                                                                             "uriPratica").toString(),
+                                                                                     causa.getGrauRelevancia().ordinal());
 
-                                praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                                    solution.get("uriPratica").toString(),
-                                                                    solution.get("descricaoPratica").toString(),
-                                                                    ClassificacaoPratica.fromValue(solution.get(
-                                                                            "classificacaoPratica").toString()),
-                                                                    causa.getGrauRelevancia())
-                                );
+                            var newPratica = new Pratica(solution.get("nomePratica").toString(),
+                                                         solution.get("uriPratica").toString(),
+                                                         solution.get("descricaoPratica").toString(),
+                                                         ClassificacaoPratica.fromValue(solution.get(
+                                                                 "classificacaoPratica").toString()),
+                                                         causa.getGrauRelevancia());
+
+                            if (praticaAlreadyPresent != -1) {
+                                praticaGeral.removePratica(praticaAlreadyPresent);
+                                praticaGeral.addPratica(newPratica);
+                            } else {
+                                praticaGeral.addPratica(newPratica);
                             }
 
                             causaPraticas.addPraticaGeral(praticaGeral);
@@ -210,19 +223,23 @@ public class OntologyService {
                                                                 solution.get("uriPraticaGeral").toString(),
                                                                 ClassificacaoPratica.GERAL));
 
-                        if (!checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                          solution.get("uriPratica").toString(),
-                                                          causa.getGrauRelevancia().ordinal())) {
+                        var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
+                                                                                 solution.get("uriPratica").toString(),
+                                                                                 causa.getGrauRelevancia().ordinal());
 
-                            praticaGeral.addPratica(new Pratica(solution.get("nomePratica").toString(),
-                                                                solution.get("uriPratica").toString(),
-                                                                solution.get("descricaoPratica").toString(),
-                                                                ClassificacaoPratica.fromValue(solution.get(
-                                                                        "classificacaoPratica").toString()),
-                                                                causa.getGrauRelevancia())
-                            );
+                        var newPratica = new Pratica(solution.get("nomePratica").toString(),
+                                                     solution.get("uriPratica").toString(),
+                                                     solution.get("descricaoPratica").toString(),
+                                                     ClassificacaoPratica.fromValue(solution.get(
+                                                             "classificacaoPratica").toString()),
+                                                     causa.getGrauRelevancia());
+
+                        if (praticaAlreadyPresent != -1) {
+                            praticaGeral.removePratica(praticaAlreadyPresent);
+                            praticaGeral.addPratica(newPratica);
+                        } else {
+                            praticaGeral.addPratica(newPratica);
                         }
-
 
                         causaPraticas.addPraticaGeral(praticaGeral);
                         listaCausasPraticas.add(causaPraticas);
@@ -234,17 +251,17 @@ public class OntologyService {
         return listaCausasPraticas;
     }
 
-    private boolean checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
-                                                 String uriPratica, Integer grauRelevancia) {
+    private int checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
+                                             String uriPratica, Integer grauRelevancia) {
         for (int i = 0; i < listaPraticas.size(); i++) {
             var item = listaPraticas.get(i);
             if (item.getUri().equals(uriPratica)) {
                 if (item.getGrauRelevancia().ordinal() <= grauRelevancia) {
-                    return true;
+                    return i;
                 }
             }
         }
-        return false;
+        return -1;
     }
 
     private int checkIfPraticaGeralAlreadyPresent(List<PraticaGeralDTO> listaPraticasGerais,

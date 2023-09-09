@@ -38,4 +38,8 @@ public class PraticaGeralDTO {
     public void addPratica(Pratica pratica) {
         this.praticas.add(pratica);
     }
+
+    public void removePratica(int praticaIndex) {
+        this.praticas.remove(praticaIndex);
+    }
 }
