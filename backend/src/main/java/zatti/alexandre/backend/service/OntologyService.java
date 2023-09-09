@@ -239,7 +239,7 @@ public class OntologyService {
         for (int i = 0; i < listaPraticas.size(); i++) {
             var item = listaPraticas.get(i);
             if (item.getUri().equals(uriPratica)) {
-                if (item.getGrauRelevancia().ordinal() < grauRelevancia) {
+                if (item.getGrauRelevancia().ordinal() <= grauRelevancia) {
                     return true;
                 }
             }
