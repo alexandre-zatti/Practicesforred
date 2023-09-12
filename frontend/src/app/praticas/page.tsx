@@ -14,6 +14,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { PraticaGeral } from "@/types/PraticaGeral";
 import { Pratica } from "@/types/Pratica";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
+import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 
 const Praticas = () => {
   const areasGestaoPraticas = useSelector((state: any) => state.areasGestaoPraticas.areasGestaoPraticas)
@@ -38,8 +39,25 @@ const Praticas = () => {
     })
       .then((response) => {
         if (response.ok) {
-          response.json().then((data) => {
-            dispatch(setAreasGestaoPraticas(data))
+          response.json().then((data: AreaGestaoPratica[]) => {
+            dispatch(setAreasGestaoPraticas(data.map((areaGestaoPraticas: AreaGestaoPratica) => {
+              return {
+                areaGestao: areaGestaoPraticas.areaGestao,
+                praticasGerais: areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
+                  return {
+                    praticaGeral: praticaGeral.praticaGeral,
+                    praticas: praticaGeral.praticas.map((pratica: Pratica) => {
+                      return {
+                        uri: pratica.uri,
+                        nome: pratica.nome,
+                        descricao: pratica.descricao,
+                        grauRelevancia: GrauRelevanciaEnum[pratica.grauRelevancia!]
+                      }
+                    })
+                  }
+                })
+              }
+            })))
           })
         } else {
           dispatch(showToast({
@@ -96,10 +114,14 @@ const Praticas = () => {
                                 </Typography>
 
                                 <div
-                                  className={`${styles.grauRelevanciaContainer}`}>
+                                  className={styles.grauRelevanciaContainer}>
                                   <Typography>Grau de Relevância</Typography>
-                                  <GrauRelevancia
-                                    grauRelevancia={praticaEspecifica.grauRelevancia!}/>
+                                  <div className={styles.grauRelevanciaChipContainer}>
+                                    <GrauRelevancia
+                                      grauRelevancia={praticaEspecifica.grauRelevancia!}
+                                    />
+                                  </div>
+
                                 </div>
 
                               </div>

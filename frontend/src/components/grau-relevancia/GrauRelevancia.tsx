@@ -5,11 +5,11 @@ import { Chip } from "@mui/material";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 
 interface GrauRelevanciaProps {
-  grauRelevancia: GrauRelevanciaEnum | number
+  grauRelevancia: GrauRelevanciaEnum
 }
 
 const GrauRelevancia = ({grauRelevancia}: GrauRelevanciaProps) => {
-  const getGrauRelevanciaIcon = (grauRelevancia: GrauRelevanciaEnum): ReactElement<any, string | JSXElementConstructor<any>> | undefined => {
+  const getGrauRelevanciaIcon = (grauRelevancia: number): ReactElement<any, string | JSXElementConstructor<any>> | undefined => {
 
     switch (grauRelevancia) {
       case GrauRelevanciaEnum.BAIXO:
@@ -19,8 +19,6 @@ const GrauRelevancia = ({grauRelevancia}: GrauRelevanciaProps) => {
       case GrauRelevanciaEnum.ALTO:
         return <CrisisAlertOutlined style={{color: "red"}}/>
       default:
-        console.log(grauRelevancia)
-        console.log('caiu no default do icon')
         return <></>
     }
   }
