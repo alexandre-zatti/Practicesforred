@@ -13,7 +13,7 @@ import { AreaGestaoPratica } from "@/types/AreaGestaoPratica";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { PraticaGeral } from "@/types/PraticaGeral";
 import { Pratica } from "@/types/Pratica";
-import { GrauRelevancia } from "@/enums/GrauRelevancia";
+import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 
 const Praticas = () => {
   const areasGestaoPraticas = useSelector((state: any) => state.areasGestaoPraticas.areasGestaoPraticas)
@@ -53,25 +53,11 @@ const Praticas = () => {
       })
   }, []);
 
-  const getGrauRelevanciaNomeStyle = (grauRelevancia: number): string => {
-    // @ts-ignore
-    switch (GrauRelevancia[grauRelevancia as string]) {
-      case GrauRelevancia.BAIXO:
-        return styles.grauRelevanciaNomeBaixo
-      case GrauRelevancia.MEDIO:
-        return styles.grauRelevanciaNomeMedio
-      case GrauRelevancia.ALTO:
-        return styles.grauRelevanciaNomeAlto
-      default:
-        return ''
-    }
-  }
-
   return (
     <div className={styles.container}>
       <Steps/>
       <Typography className={styles.pageTitle} variant={'h4'}>
-        Praticas
+        Práticas gerais e específicas para mitigar os Gaps (causas) que ocasionam as dívidas de requisitos informadas
       </Typography>
 
       {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {
@@ -81,7 +67,9 @@ const Praticas = () => {
               expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
               className={styles.accordionAreaGestao}
             >
-              <Typography variant={'h6'} style={{fontWeight: 600}}>{areaGestaoPraticas.areaGestao.nome}</Typography>
+              <Typography variant={'h6'}>
+                Área da gestão da dívida - <span style={{fontWeight: 600}}>{areaGestaoPraticas.areaGestao.nome}</span>
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               {areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
@@ -91,7 +79,9 @@ const Praticas = () => {
                       className={styles.accordionAreaGestao}
                       expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
                     >
-                      <Typography variant={'h6'} style={{fontWeight: 600}}>{praticaGeral.praticaGeral.nome}</Typography>
+                      <Typography variant={'h6'}>
+                        Prática - <span style={{fontWeight: 600}}>{praticaGeral.praticaGeral.nome}</span>
+                      </Typography>
                     </AccordionSummary>
 
                     <AccordionDetails>
@@ -108,12 +98,8 @@ const Praticas = () => {
                                 <div
                                   className={`${styles.grauRelevanciaContainer}`}>
                                   <Typography>Grau de Relevância</Typography>
-                                  <Typography
-                                    variant={'h6'}
-                                    className={getGrauRelevanciaNomeStyle(praticaEspecifica.grauRelevancia!)}
-                                  >
-                                    {praticaEspecifica.grauRelevancia! === GrauRelevancia.MEDIO ? 'MÉDIO' : praticaEspecifica.grauRelevancia!}
-                                  </Typography>
+                                  <GrauRelevancia
+                                    grauRelevancia={praticaEspecifica.grauRelevancia!}/>
                                 </div>
 
                               </div>

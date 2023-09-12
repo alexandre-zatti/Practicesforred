@@ -107,8 +107,9 @@ const Gaps = () => {
               id="panel1a-header"
               className={`${styles.accordionContent}`}
             >
-              <Typography variant={'h6'}>Causas que ocasionam | <span
-                style={{fontWeight: 600}}>{consequencia.nome}</span></Typography>
+              <Typography variant={'h6'}>
+                Causas que ocasionam - <span style={{fontWeight: 600}}>{consequencia.nome}</span>
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               {consequencia.causas && consequencia.causas!.map((causa, index) => {

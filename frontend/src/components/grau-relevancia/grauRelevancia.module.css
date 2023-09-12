@@ -1,0 +1,18 @@
+.grauRelevanciaChip {
+    min-width: 70%;
+}
+
+.grauRelevanciaNomeAlto {
+    color: red;
+    font-weight: bold;
+}
+
+.grauRelevanciaNomeMedio {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.grauRelevanciaNomeBaixo {
+    color: dodgerblue;
+    font-weight: bold;
+}

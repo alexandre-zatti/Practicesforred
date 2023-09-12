@@ -48,39 +48,6 @@
     font-style: oblique;
 }
 
-.grauRelevanciaContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.grauRelevanciaBaixo {
-    background-color: lightblue;
-}
-
-.grauRelevanciaMedio {
-    background-color: lightyellow;
-}
-
-.grauRelevanciaAlto {
-    background-color: lightcoral;
-}
-
-.grauRelevanciaNomeAlto {
-    color: darkred;
-    font-weight: bold;
-}
-
-.grauRelevanciaNomeMedio {
-    color: yellowgreen;
-    font-weight: bold;
-}
-
-.grauRelevanciaNomeBaixo {
-    color: dodgerblue;
-    font-weight: bold;
-}
-
 @media screen and (max-width: 600px) {
     .container {
         padding: 1rem;

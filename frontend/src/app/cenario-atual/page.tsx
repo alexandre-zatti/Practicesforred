@@ -19,12 +19,13 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Frequencia } from "@/enums/Frequencia";
 import { Impacto } from "@/enums/Impacto";
 import styles from "./page.module.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
 import { showToast } from "@/store/ToastSlice";
 import { setConsequencias } from "@/store/ConsequenciasSlice";
-import { GrauRelevancia } from "@/enums/GrauRelevancia";
+import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
+import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 
 const CenarioAtual = () => {
 
@@ -62,7 +63,7 @@ const CenarioAtual = () => {
                 uri: consequencia.consequenciaUri,
                 frequencia: Frequencia[consequencia.frequencia],
                 impacto: Impacto[consequencia.impacto],
-                grauRelevancia: GrauRelevancia[consequencia.grauRelevancia]
+                grauRelevancia: GrauRelevanciaEnum[consequencia.grauRelevancia]
               }
             })
 
@@ -118,34 +119,6 @@ const CenarioAtual = () => {
     })
   }
 
-  const getGrauRelevanciaStyle = (grauRelevancia: number): string => {
-
-    switch (grauRelevancia) {
-      case GrauRelevancia.BAIXO:
-        return styles.grauRelevanciaBaixo
-      case GrauRelevancia.MEDIO:
-        return styles.grauRelevanciaMedio
-      case GrauRelevancia.ALTO:
-        return styles.grauRelevanciaAlto
-      default:
-        return ''
-    }
-  }
-
-  const getGrauRelevanciaNomeStyle = (grauRelevancia: number): string => {
-
-    switch (grauRelevancia) {
-      case GrauRelevancia.BAIXO:
-        return styles.grauRelevanciaNomeBaixo
-      case GrauRelevancia.MEDIO:
-        return styles.grauRelevanciaNomeMedio
-      case GrauRelevancia.ALTO:
-        return styles.grauRelevanciaNomeAlto
-      default:
-        return ''
-    }
-  }
-
   return (
     <div className={styles.container}>
       <Steps/>
@@ -170,7 +143,7 @@ const CenarioAtual = () => {
 
                 return (
                   <Card key={consequencia.uri} className={styles.cardConsequencia}>
-                    <CardContent className={getGrauRelevanciaStyle(consequencia.grauRelevancia!)}>
+                    <CardContent>
                       <div className={styles.cardConsequenciaActions}>
 
                         <Typography variant={'h6'} className={styles.consequenciaNome}>{consequencia.nome}</Typography>
@@ -212,12 +185,7 @@ const CenarioAtual = () => {
                         <div
                           className={`${styles.grauRelevanciaContainer}`}>
                           <Typography>Grau de Relevância</Typography>
-                          <Typography
-                            variant={'h6'}
-                            className={getGrauRelevanciaNomeStyle(consequencia.grauRelevancia!)}
-                          >
-                            {GrauRelevancia[consequencia.grauRelevancia!] === 'MEDIO' ? 'MÉDIO' : GrauRelevancia[consequencia.grauRelevancia!]}
-                          </Typography>
+                          <GrauRelevancia grauRelevancia={consequencia.grauRelevancia!}/>
                         </div>
 
                       </div>
