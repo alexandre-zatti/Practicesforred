@@ -9,6 +9,13 @@ let theme = createTheme({
       main: '#4A4A4A',
     },
   },
+  components: {
+    MuiAccordionSummary: {
+      defaultProps: {
+        style: {borderRadius: '5px'},
+      },
+    },
+  },
 });
 theme = responsiveFontSizes(theme);
 

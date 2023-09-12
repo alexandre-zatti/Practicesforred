@@ -8,6 +8,7 @@ import { RootState } from "@/store/store";
 import { setEtapa } from "@/store/EtapasSlice";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { ArrowBack } from "@mui/icons-material";
+import { useEffect } from "react";
 
 const steps = [
   {label: 'Análise', route: '/analise'},
@@ -21,6 +22,10 @@ const Steps = () => {
   const dispatch = useDispatch()
 
   const activeStep = useSelector((state: RootState) => state.etapas.etapa)
+
+  useEffect(() => {
+    router.push(steps[activeStep].route);
+  }, []);
 
   const handleStepClick = (index: number) => {
     dispatch(setEtapa(index))
