@@ -30,3 +30,15 @@ spec:
             limits:
               cpu: "200m"
               memory: "500Mi"
+          env:
+            - name: VIRTUOSO_JDBC_URL
+              value: "jdbc:virtuoso://virtuoso-service:1111/"
+            - name: VIRTUOSO_JDBC_USER
+              value: "dba"
+            - name: VIRTUOSO_JDBC_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: virtuoso-secret
+                  key: virtuoso-password
+            - name: VIRTUOSO_GRAPH
+              value: "http://zatti.alexandre/OntoReD"
