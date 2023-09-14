@@ -1,6 +1,6 @@
 import React, { JSXElementConstructor, ReactElement } from "react";
 import { CrisisAlertOutlined, InfoOutlined, WarningAmberOutlined } from "@mui/icons-material";
-import styles from "./GrauRelevancia.module.css";
+import styles from "./grauRelevancia.module.css";
 import { Chip } from "@mui/material";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 

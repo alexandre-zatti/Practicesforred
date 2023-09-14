@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  labels:
+    name: frontend-service
+    app: frontend-gke-deployment
+spec:
+  type: LoadBalancer
+  selector:
+    name: frontend-pod
+    app: frontend-gke-deployment
+  ports:
+    - name: frontend
+      port: 3000
+      targetPort: 3000

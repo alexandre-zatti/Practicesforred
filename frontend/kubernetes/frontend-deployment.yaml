@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+  labels:
+    name: frontend-deploy
+    app: frontend-gke-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: frontend-pod
+      app: frontend-gke-deployment
+  template:
+    metadata:
+      name: frontend-pod
+      labels:
+        name: frontend-pod
+        app: frontend-gke-deployment
+    spec:
+      containers:
+        - name: frontend
+          image: zatti/tcc-frontend
+          env:
+            - name: NEXT_PUBLIC_API_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: NEXT_PUBLIC_API_URL
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "500Mi"
+            limits:
+              cpu: "200m"
+              memory: "500Mi"
