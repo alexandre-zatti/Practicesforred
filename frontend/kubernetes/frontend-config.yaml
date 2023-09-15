@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: frontend-config
 data:
-  NEXT_PUBLIC_API_URL: "http://35.247.197.219:8080/"
+  NEXT_PUBLIC_API_URL: "http://35.247.197.219:8080"
