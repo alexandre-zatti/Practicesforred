@@ -38,7 +38,7 @@ spec:
             - name: VIRTUOSO_JDBC_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: virtuoso-secret
+                  name: backend-secret
                   key: virtuoso-password
             - name: VIRTUOSO_GRAPH
               value: "http://zatti.alexandre/OntoReD"
