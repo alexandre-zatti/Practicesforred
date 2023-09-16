@@ -34,7 +34,7 @@ public class OntologyController {
             }
 
             if (ontologyService.loadRdfData(sb.toString())) {
-                return new ResponseEntity<>("Data loaded successfully using v3.", HttpStatus.OK);
+                return new ResponseEntity<>("Data loaded successfully using v4.", HttpStatus.OK);
             } else {
                 return new ResponseEntity<>("Error loading data.", HttpStatus.INTERNAL_SERVER_ERROR);
             }
