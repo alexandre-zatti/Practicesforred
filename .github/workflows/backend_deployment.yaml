@@ -31,7 +31,7 @@ jobs:
         tags: ${{ env.IMAGE }}:${{ github.sha }}
 
     - name: Setup Google Cloud SDK
-      uses: google-github-actions/setup-gcloud@master
+      uses: google-github-actions/setup-gcloud@v1.1.1
       with:
         project_id: ${{ env.GCP_PROJECT }}
         service_account_key: ${{ env.GCP_SA_KEY }}
