@@ -8,10 +8,9 @@ on:
       - 'backend/**'
 
 env:
-  KUBECONFIG_FILE: kubeconfig.yaml
-  GCP_PROJECT: your-gcp-project-id
+  GCP_PROJECT: tcc-ii-392618
   GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-  IMAGE: your-docker-username/spring-boot-app
+  IMAGE: zatti/tcc-backend
 
 jobs:
   deploy:
