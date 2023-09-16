@@ -8,8 +8,9 @@ on:
       - 'backend/**'
 
 env:
-  GCP_PROJECT: light-zenith-392618
-  GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+  GCP_PROJECT_ID: light-zenith-392618
+  GKE_CLUSTER_NAME: tcc-cluster
+  GKE_CLUSTER_ZONE: southamerica-east1
   IMAGE: zatti/tcc-backend
 
 jobs:
@@ -36,15 +37,21 @@ jobs:
     - name: Setup Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v1.1.1
       with:
-        project_id: ${{ env.GCP_PROJECT }}
-        service_account_key: ${{ env.GCP_SA_KEY }}
+        project_id: ${{ env.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+        
+    - name: Get GKE credentials
+      run: |
+        gcloud container clusters get-credentials ${{ env.GKE_CLUSTER_NAME }} --zone ${{ env.GKE_CLUSTER_ZONE }} --project ${{ env.GCP_PROJECT_ID }}
+
+    - name: Use gcloud as kubectl authenticator
+      run: |
+        kubectl config use-context ${{ env.GKE_CLUSTER_NAME }}
+        kubectl config set-credentials ${{ env.GKE_CLUSTER_NAME }} --auth-provider=gcp
 
     - name: Deploy to Kubernetes
       run: |
-        echo "$GCP_SA_KEY" > gcp-sa.json
-        gcloud auth activate-service-account --key-file=gcp-sa.json
-        gcloud container clusters get-credentials tcc-cluster --zone southamerica-east1
-
         # Update the Kubernetes Deployment to use the new image tag
         kubectl set image deployment/backend-deploy backend=${{ env.IMAGE }}:${{ github.sha }}
-
+        
