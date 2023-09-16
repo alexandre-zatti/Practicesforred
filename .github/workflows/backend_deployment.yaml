@@ -8,7 +8,7 @@ on:
       - 'backend/**'
 
 env:
-  GCP_PROJECT: tcc-ii-392618
+  GCP_PROJECT: light-zenith-392618
   GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
   IMAGE: zatti/tcc-backend
 
@@ -43,7 +43,7 @@ jobs:
       run: |
         echo "$GCP_SA_KEY" > gcp-sa.json
         gcloud auth activate-service-account --key-file=gcp-sa.json
-        gcloud container clusters get-credentials your-cluster-name --zone your-zone
+        gcloud container clusters get-credentials tcc-cluster --zone southamerica-east1
 
         # Update the Kubernetes Deployment to use the new image tag
         kubectl set image deployment/backend-deploy backend=${{ env.IMAGE }}:${{ github.sha }}
