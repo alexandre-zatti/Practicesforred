@@ -9,7 +9,7 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.titleContainer}>
         <Typography variant={'h1'}>Dívida de requisitos</Typography>
-        <Typography variant={'h1'} className={styles.titleSecondary}>Gap Analysis v2</Typography>
+        <Typography variant={'h1'} className={styles.titleSecondary}>Gap Analysis v3</Typography>
       </div>
 
       <div className={styles.buttonsContainer}>
