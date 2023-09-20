@@ -21,12 +21,6 @@ spec:
       containers:
         - name: frontend
           image: zatti/tcc-frontend
-          env:
-            - name: NEXT_PUBLIC_API_URL
-              valueFrom:
-                configMapKeyRef:
-                  name: frontend-config
-                  key: NEXT_PUBLIC_API_URL
           ports:
             - containerPort: 3000
           resources:
