@@ -22,28 +22,92 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apoia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apoia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eApoiadaPor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Referencia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descreve -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descreve">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eApoiadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eApoiadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Referencia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eConstituidaDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eConstituidaDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eParteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eParteDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eProduzidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eProduzidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
     </owl:ObjectProperty>
     
 
@@ -51,25 +115,34 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementadaPor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
     </owl:ObjectProperty>
     
 
@@ -77,20 +150,11 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#mitigadoPor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#mitigadoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#mitigadoPor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
     </owl:ObjectProperty>
     
 
@@ -98,20 +162,11 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasiona -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasiona">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasiona"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasiona"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
     </owl:ObjectProperty>
     
 
@@ -119,19 +174,10 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
     </owl:ObjectProperty>
     
 
@@ -139,19 +185,20 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
     </owl:ObjectProperty>
     
 
@@ -191,6 +238,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#coisasFazerProdutoTrabalho -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#coisasFazerProdutoTrabalho"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#custoBeneficioQuantificado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#custoBeneficioQuantificado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#coisasFazerProdutoTrabalho"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#dadosPratica -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#dadosPratica">
@@ -207,6 +268,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#faseER -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#faseER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#itensColetados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#itensColetados">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#coisasFazerProdutoTrabalho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#itensPriorizados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#itensPriorizados">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#coisasFazerProdutoTrabalho"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome">
@@ -215,17 +300,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nomePratica -->
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produtoTrabalho -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nomePratica">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#dadosPratica"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produtoTrabalho">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produtoTrabalho -->
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#referenciaRE -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produtoTrabalho">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#referenciaRE">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -250,9 +335,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Alpha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Alpha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
     </owl:Class>
     
@@ -274,9 +375,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspacoAtividade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspacoAtividade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Glossario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Glossario">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
     </owl:Class>
     
@@ -291,6 +416,22 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Referencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Referencia">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OntoReD"/>
     </owl:Class>
     
@@ -311,6 +452,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemLimiar">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Monitoramento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirLimitesMetricasQualidades"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EmitirNotificacoesLimitesNaoAlcancados"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Abordagem baseada em limiar</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -319,6 +465,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemPortfolio">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Priorizacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsiderarItensDividasFuncionalidadesBugsAtivos"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A abordagem de portfólio considera itens da dívida juntamente com outras novas funcionalidades e bugs como riscos e oportunidades de investimento (ou seja, ativos).</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Abordagem de portfólio</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -327,6 +478,19 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarConsequenciaManterDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarJuroDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarTamanhoDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#StatusCrescimentoDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;Consiste em quantificar DT e interesse t&amp;eacute;cnico, mas para isso seria necess&amp;aacute;rio responder quest&amp;otilde;es sobre investimentos, como&lt;/p&gt;
+&lt;p&gt;(1) Qual o tamanho do meu DT?&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;(2) Quanto de juros estou pagando pelo DT?&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;(3) A d&amp;iacute;vida est&amp;aacute; crescendo? e qu&amp;atilde;o r&amp;aacute;pido?&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;(4) Qual ser&amp;aacute; a consequ&amp;ecirc;ncia de manter este DT para manuten&amp;ccedil;&amp;atilde;o futura?&lt;/p&gt;
+&lt;p&gt;A D&amp;iacute;vida T&amp;eacute;cnica pode ser quantificada considerando a rela&amp;ccedil;&amp;atilde;o entre as necessidades do usu&amp;aacute;rio j&amp;aacute; eliciadas e todas as poss&amp;iacute;veis necessidades do usu&amp;aacute;rio, inclusive as negligenciadas.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Abordagem de quantificação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -335,6 +499,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemVizinhoProximo">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AproveitarExpDivResolvidas"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;Abordagem do vizinho mais pr&amp;oacute;ximo aproveita a experi&amp;ecirc;ncia adquirida em d&amp;iacute;vidas t&amp;eacute;cnicas previamente resolvidas e conta com o esfor&amp;ccedil;o necess&amp;aacute;rio para corrigir essas d&amp;iacute;vidas j&amp;aacute; identificadas.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Acredita-se que o tempo m&amp;eacute;dio para converter uma d&amp;iacute;vida t&amp;eacute;cnica &amp;eacute; semelhante &amp;agrave; corre&amp;ccedil;&amp;atilde;o de d&amp;iacute;vidas anteriores no projeto.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Abordagem do vizinho mais próximo</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -343,6 +513,20 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AcoesPreventivas">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CompromissoCliente"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComunicacaoPartesInteressadasStakeholders"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ControlarNegociarREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DeclaracaoEscopoDefinido"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastreabilidadeREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;Estudos prim&amp;aacute;rios relatam que prevenir a ocorr&amp;ecirc;ncia de uma d&amp;iacute;vida t&amp;eacute;cnica pode ser mais barato do que o seu pagamento.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A&amp;ccedil;&amp;otilde;es preventivas apoiam profissionais e equipes de software na aplica&amp;ccedil;&amp;atilde;o de pr&amp;aacute;ticas aceit&amp;aacute;veis que minimizam sua ocorr&amp;ecirc;ncia.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;As a&amp;ccedil;&amp;otilde;es preventivas relacionadas &amp;agrave;s d&amp;iacute;vidas de requisitos s&amp;atilde;o: controlar e negociar os requisitos de software; requisitos bem definidos; boa comunica&amp;ccedil;&amp;atilde;o entre as partes interessadas; declara&amp;ccedil;&amp;atilde;o de escopo bem definida; rastreamento de mudan&amp;ccedil;as de requisitos e compromisso com o cliente.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Ações preventivas</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -351,6 +535,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarDependenciaSoftware">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseDependencia"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Analisar as dependências entre os elementos do software</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -359,6 +546,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarFH">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Prevencao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterPraticasMinimizeReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Analisar os fatores humanos, mantendo uma cultura que minimize a dívida</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -375,6 +566,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseCustoBeneficio">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaItensReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Caracteriza-se por uma lista contendo os itens de DT, onde cada um representa uma tarefa que ficou por fazer, mas que corre o risco de causar problemas futuros.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Análise de Custo X Benefício</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -383,6 +579,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseDependencia">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarDependenciaSoftware"/>
     </owl:NamedIndividual>
     
 
@@ -392,6 +590,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InconsistenciaRequisitos"/>
+        <untitled-ontology-3:faseER rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-3:faseER>
         <untitled-ontology-3:nome>Análise de Requisitos</untitled-ontology-3:nome>
         <untitled-ontology-3:sigla>AR</untitled-ontology-3:sigla>
     </owl:NamedIndividual>
@@ -402,6 +602,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ApoioDecisaoArquitetura">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Prevencao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarPotencialDividaMenorPotencial"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Apoio à decisão de arquitetura, avaliando o potencial da dívida</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -410,6 +614,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AproveitarExpDivResolvidas">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemVizinhoProximo"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Aproveitar experiências das dívidas resolvidas</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -418,6 +625,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspecificacaoREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRInadequada"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InsatisfacaoStakeholders"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
+        <untitled-ontology-3:descricao>Ausência do documento de especificação dos requisitos carcateriza que a organizações não possui registro da especificação dos seus requisitos funcionais e não funcionais.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Ausência do documento de especificação dos requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -426,6 +639,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Automacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AutomatizarAtividadesManuais"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A automação relaciona-se visa automatizar o trabalho repetido manualmente, como, por exemplo, testes manuais, construções manuais e implantação manual.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Automação</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AutomatizarAtividadesManuais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AutomatizarAtividadesManuais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Automacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Automatizar atividades manuais como testes e implantação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -434,6 +663,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliacaoCliente">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoRequisitos"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;O sucesso do trabalho com requisitos de qualidade consiste em envolver as partes interessadas progressivamente, desenvolver listas de requisitos sustent&amp;aacute;veis e registrar as pend&amp;ecirc;ncias existentes.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Portanto, revisar os requisitos com o cliente, incluindo a equipe de desenvolvimento, deve ser considerado essencial para toda a gest&amp;atilde;o.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;As empresas podem ajustar o produto e os requisitos especificados com base no feedback do cliente para identificar DTs com mais efici&amp;ecirc;ncia.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Avaliação do cliente</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -442,11 +680,25 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarMelhorarElicitacaoREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesconhecimentoNegocio"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
-        <untitled-ontology-3:nomePratica>Avaliar e Melhorar a Elicitação de Requisitos</untitled-ontology-3:nomePratica>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Avaliar e melhorar a eficiência de suas técnicas de elicitação de requisitos</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Avaliar e melhorar as técnicas de elicitação de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarPotencialDividaMenorPotencial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarPotencialDividaMenorPotencial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ApoioDecisaoArquitetura"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Avaliar o potencial da dívida e escolher a dívida de menor potencial</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -455,6 +707,20 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaFormula">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaTecnica"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Calcular a dívida por meio de fórmula matemática ou modelos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaMetricasCodigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaMetricasCodigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaTecnica"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Calcular a dívida por meio de métricas do código fonte</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -463,14 +729,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaTecnica">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividametricasCodigo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividametricasCodigo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaFormula"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaMetricasCodigo"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Calcular a dívida por meio de fórmulas matemáticas ou modelos ou métricas de código.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Calcular a dívida de requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -483,10 +747,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalculoSolucaoRealSolucaoOtima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalculoSolucaoRealSolucaoOtima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CompararSolucoes"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Cálculo entre a solução real e a solução ótima</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CategorizacaoCusto -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CategorizacaoCusto">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarTiposCustoManuseioDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Categorização decuso permite estimar vários tipos de custo de manuseio da dívida  incorrida.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Categorização de custo</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -495,6 +783,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CompararSolucoes">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalculoSolucaoRealSolucaoOtima"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Comparação de soluções pode ser realizada por meio de cálculo da distância entre a solução real e a solução ótima.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Comparação de soluções</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -503,6 +796,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CompromissoCliente">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AcoesPreventivas"/>
+        <untitled-ontology-3:nome>Compromisso com o cliente</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -511,6 +806,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Comunicacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:descricao>Responsável por manter a dívida identificada, visível às partes interessadas, para que possa ser discutida e gerenciada posteriormente.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Comunicação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -519,6 +816,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComunicacaoFaceFace">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComunicacaoPartesInteressadasStakeholders"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarCerimonias"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;A comunica&amp;ccedil;&amp;atilde;o face a face consiste na comunica&amp;ccedil;&amp;atilde;o sobre os requisitos de maneira hier&amp;aacute;rquica e baseada em e-mails e documentos.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&amp;Eacute; recomend&amp;aacute;vel que os profissionais de software se comuniquem diretamente com seus pares e partes interessadas.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A comunica&amp;ccedil;&amp;atilde;o face a face &amp;eacute; eficiente na troca de informa&amp;ccedil;&amp;otilde;es entre diferentes stakeholders, auxiliando na identifica&amp;ccedil;&amp;atilde;o das d&amp;iacute;vidas t&amp;eacute;cnicas, sendo considerada essencial.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Comunicação face a face</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -527,6 +834,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComunicacaoPartesInteressadasStakeholders">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Comunicação transparente com as partes interessadas (stakeholders) em todas as fases da Engenharia de Requisitos por meio de e-mail, documentos</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Comunicação com as partes interessadas (stakeholders)</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConexaoItemReDOutrosItens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConexaoItemReDOutrosItens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrelacaoItensDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Mostrar conexão de um item da dívida de requisitos com outros itens da dívida</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -535,6 +858,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConferirPlanejado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Monitoramento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MedirRegularmenteDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearMudancaReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Conferir o planejado</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -543,6 +871,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConfrontarNormaProjetosEspecificados">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NormaIsoIecIeee291482018"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Confrontar com a norma os projetos especificados e os requisitos documentados</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -551,6 +882,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsiderarItensDividasFuncionalidadesBugsAtivos">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemPortfolio"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Considerar os itens das dívidas como funcionalidades com bugs ativos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConstrucaoFluxoProcesso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConstrucaoFluxoProcesso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Construção fluxo do processo para melhorar a compreensão da demanda/necessidade do cliente</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Construção fluxo do processo</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -559,6 +906,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ContextoDivida">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirContextoDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Contexto da dívida</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -567,6 +918,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ControlarNegociarREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AcoesPreventivas"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Controlar e negociar requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -575,6 +929,110 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrelacaoItensDivida">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConexaoItemReDOutrosItens"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Correlações com outros itens da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirBugs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirBugs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirErro"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Corrigir bugs</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirErro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirErro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirBugs"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Corrigir erro objetiva resolver bugs conhecidos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Corrigir erro</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CustoReembolsarItemDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CustoReembolsarItemDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarEstimativaCutoItemReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Custo estimado para reembolsar o item dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DTMaiorCustoBeneficio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DTMaiorCustoBeneficio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Priorizacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividasMaiorCustoBeneficioPrioridadeReembolso"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A análise de custoXbenefício voltado a prioridade de pagamento consiste em verificar se a resolução de um item da dívida gerar um benefício maior do que o custo, esse item deve ser reembolsado, ou seja,itens da dívida de requisitos com maior relação custo/benefício de reembolso devem ser pagos primeiro.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Análise da prioridade custoXbenefício</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DataHorarioIdentificacaoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DataHorarioIdentificacaoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarDataHoraItemReD"/>
+        <untitled-ontology-3:nome>Data e hora da identificação da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DeclaracaoEscopoDefinido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DeclaracaoEscopoDefinido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AcoesPreventivas"/>
+        <untitled-ontology-3:nome>Declaração do escopo bem definido</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinicaoConcluido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinicaoConcluido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirContextoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirContextoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ContextoDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Definir o contexto da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirLimitesMetricasQualidades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinirLimitesMetricasQualidades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemLimiar"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Definir limites para métricas de qualidade</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -587,15 +1045,92 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescricaoItemDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescricaoItemDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarInformItemReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Descrição do item da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPlanosEconomicosMinimizarReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPlanosEconomicosMinimizarReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlanejamentoCustoCicloVida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Desenvolver planos econômicos para minimizar a dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPrototipoDocumentoEREQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPrototipoDocumentoEREQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Desenvolver protótipo como parte do documento de especificação de requisitos</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Protótipo como parte do documento de especificação de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesvioPadraoJuros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesvioPadraoJuros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiferencaValorEstimadoValorRealJuros"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Desvio padrão de juros</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiagramaCausaEfeito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiagramaCausaEfeito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificarCausasDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Diagrama de causa e efeito consiste em organizar as causas que levaram à incidência de uma dívida técnica, ajudando a identificá-lo rapidamente, levando em consideração que os dados estão previamente descritos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Diagrama de causa e efeito</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiferencaValorEstimadoValorRealJuros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiferencaValorEstimadoValorRealJuros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesvioPadraoJuros"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar a diferença entre o valor estimado de juros e o valor real dos juros</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElicitacaoREQ"/>
+        <untitled-ontology-3:mitigadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarMelhorarElicitacaoREQ"/>
+        <untitled-ontology-3:mitigadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TreinamentoPadroesER"/>
         <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao"/>
         <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InconsistenciaRequisitos"/>
         <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
         <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Retrabalho"/>
-        <untitled-ontology-3:nome>Dificuldade</untitled-ontology-3:nome>
+        <untitled-ontology-3:descricao>Dificuldade na compreensão da demanda pode ocorrer porque o cliente não consegue transmitir exatamente sua necessidade.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Dificuldade na Compreensão da Demanda</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -604,6 +1139,21 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeManterUX">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRInadequada"/>
+        <untitled-ontology-3:descricao>Dificuldade em manter uma User eXperience (UX) simples considerando o crescimento das funcionalidades.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Dificuldade em manter uma User eXperience (UX)</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividasMaiorCustoBeneficioPrioridadeReembolso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividasMaiorCustoBeneficioPrioridadeReembolso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DTMaiorCustoBeneficio"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Dívidas com maior relação custo-benefício de reembolso possuem prioridade</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -612,6 +1162,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ContextoDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrelacaoItensDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CustoReembolsarItemDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DataHorarioIdentificacaoDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescricaoItemDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesvioPadraoJuros"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IntencionalidadeDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#LocalizacaoItemDivida"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MontanteJuros"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJuros"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegrasPropagacao"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TipoDT"/>
+        <untitled-ontology-3:descricao>Fornece uma maneira de representar e documentar a dívida de maneira uniforme, abordando as preocupações de partes interessadas específicas.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Documentação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -620,6 +1186,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRInadequada">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspecificacaoREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeManterUX"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:descricao>Documento de especificação de requisitos inadequada pode ser entendida como uma especificação que não segue uma padronização de registro eximindo os profissionas da organização de atender toda a especificação necessária.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Documento de especificação de requisitos inadequado</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -628,6 +1200,24 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspecificacaoREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRInadequada"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
+        <untitled-ontology-3:descricao>Documento de especificação de requisitos mal elaborado consiste na falha da especificação de requisitos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Documento de especificação de requisitos mal elaborado</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElaborarArtefatosUML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElaborarArtefatosUML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Elaborar artefatos da Linguagem de Modelagem Unificada (UML)</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Elaborar artefatos da UML</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -638,8 +1228,20 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesconhecimentoNegocio"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:faseER rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-3:faseER>
         <untitled-ontology-3:nome>Elicitação de Requisitos</untitled-ontology-3:nome>
         <untitled-ontology-3:sigla>ER</untitled-ontology-3:sigla>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EmitirNotificacoesLimitesNaoAlcancados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EmitirNotificacoesLimitesNaoAlcancados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemLimiar"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Emitir notificações de limites não alcançados</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -649,9 +1251,58 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspecificacaoREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRInadequada"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequirementsSmells"/>
+        <untitled-ontology-3:faseER rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-3:faseER>
         <untitled-ontology-3:nome>Especificação de Requisitos</untitled-ontology-3:nome>
         <untitled-ontology-3:sigla>ESR</untitled-ontology-3:sigla>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstabelecerRegrasPropagacaoReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstabelecerRegrasPropagacaoReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegrasPropagacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Estabelecer regras de propagação da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarDTExperiencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarDTExperiencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarEstimativaCustoItemReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Estimar dívida de requisitos de acordo com a experiência e especialização.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Estimar dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarTiposCustoManuseioDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarTiposCustoManuseioDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CategorizacaoCusto"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Estimar os tipos de custo de manuseio da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EvoluirSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EvoluirSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Reengenharia"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Evoluir o software</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -660,6 +1311,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InconsistenciaRequisitos"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequirementsSmells"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Retrabalho"/>
+        <untitled-ontology-3:descricao>Falha na identificação dos requisitos funcionais e de qualidade pode ocorrer devido sua volatilidade considerando, requisitos mal formulados, incompletos, com pouca clareza ou ambíguo.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Falha na identificação dos requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -676,7 +1335,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#GerenciaREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:faseER rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-3:faseER>
         <untitled-ontology-3:nome>Gerência de Requisitos</untitled-ontology-3:nome>
         <untitled-ontology-3:sigla>GR</untitled-ontology-3:sigla>
     </owl:NamedIndividual>
@@ -687,6 +1349,54 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemVizinhoProximo"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseCodigo"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseCustoBeneficio"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseDependencia"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliacaoCliente"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComunicacaoFaceFace"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaControle"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaPagamento"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloDocumentacao"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NormaIsoIecIeee291482018"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoPares"/>
+        <untitled-ontology-3:descricao>Visualização da dívida, identificando suas causas e outros aspectos presentes no desenvolvimento de software que levaram à sua existência.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Identificação</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Identificador exclusivo para um item de dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificadorExclusivoItemDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Apontar identificador exclusivo cada item da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificarCausasDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdentificarCausasDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DiagramaCausaEfeito"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Identificar as causas que levaram à incidência de uma dívida técnica</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -695,6 +1405,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#GerenciaREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:descricao>Implementação incompatível com a especificação ocorre quando os requisitos funcionais e não funcionais implementados não atendem o que foi especificado, o que pode ser motivado pela falha na especificação dos requisitos.
+
+Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos stakeholders enquadrado durante a especificação dos requisitos e a implementação real do sistema.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Implementação incompatível com a especificação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -703,6 +1422,77 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InconsistenciaRequisitos">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:descricao>Inconsistência nos requisitos é carcaterizada ocorre quando hà falhas na comunicação entre o relato das necessidades reveladas pelos stakeholders e a sua compreensão por parte dos profissionais da organização.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Inconsistência dos requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricasQualidadeOpProduto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricasQualidadeOpProduto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricasQualidadeOpProduto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricas"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Indicar a dívida técnica usando métricas de qualidade da operação de produto</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarConsequenciaManterDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarConsequenciaManterDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar consequência de manter a dívida para manutenção futuro</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarDataHoraItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarDataHoraItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DataHorarioIdentificacaoDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar data e hora da identificação da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarIntencionalidadeReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarIntencionalidadeReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IntencionalidadeDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar a intencionalidade da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarResponsavelPagamentoReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarResponsavelPagamentoReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar o responsável pelo pagamento da dívida de requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -711,6 +1501,185 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InsatisfacaoStakeholders">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:descricao>É comum que os stakeholders possuam diferentes perspectivas, objetivos e necessidades. A gestão de conflitos é importante para resolver divergências e alcançar consenso entre as partes interessadas. Isso pode envolver a facilitação de discussões, a mediação de interesses conflitantes ou a busca de soluções de compromisso, porém, quando isso não acontece, é possível que gere a insatisfação dos stakeholders....</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Insatisfação dos stakeholders</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InserirEstrategiasExcecaoTempo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InserirEstrategiasExcecaoTempo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ToleranciaErro"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Inserir estratégias de exceção de tempo e execução local da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IntencionalidadeDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IntencionalidadeDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarIntencionalidadeReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar se a dívida foi intencional ou não</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#JurosExtrasReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#JurosExtrasReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MontanteJuros"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Montante de juros extra da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaControle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaControle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VerificarListaCenariosDividaOcorre"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A lista de controle permite a verificação de uma lista de cenários predefinidos em que ocorre.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Lista de Controle</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaItensReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaItensReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnaliseCustoBeneficio"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Criar lista de itens da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#LocalizacaoItemDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#LocalizacaoItemDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarLocalizacaoItemReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Localização do item da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterDescreverClarezaDREQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterDescreverClarezaDREQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeManterUX"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Manter e descrever com clareza o documento de especificação de requisitos</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Clareza o documento de especificação de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterMapaPagamentoDecisoesEliminacaoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterMapaPagamentoDecisoesEliminacaoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaPagamento"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Manter mapa de pagamento para orientar decisões sobre a eliminação da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterPraticasMinimizeReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterPraticasMinimizeReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarFH"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Manter a cultura de práticas que minimize a dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaGuiaConjuntoPraticasPagamentoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaGuiaConjuntoPraticasPagamentoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaPagamento"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Mapa como um guia para manter um conjunto de práticas conforme a necessidade de pagamento da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaPagamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaPagamento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterMapaPagamentoDecisoesEliminacaoDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MapaGuiaConjuntoPraticasPagamentoDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;O mapa de pagamento consiste em um guia, &amp;nbsp;e pode informar um conjunto de pr&amp;aacute;ticas em resposta &amp;agrave; necessidade de pagamento da d&amp;iacute;vida t&amp;eacute;cnica.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;O mapa pode ser usado como um dispositivo de comunica&amp;ccedil;&amp;atilde;o para apoiar as equipes a comunicar efetivamente as d&amp;iacute;vidas existentes aos gerentes e decidir melhor sobre o pagamento da d&amp;iacute;vida de requisitos.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Os profissionais de software podem consultar este mapa para orientar suas decis&amp;otilde;es sobre a elimina&amp;ccedil;&amp;atilde;o de d&amp;iacute;vida de requisitos em seus projetos.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Mapa de pagamento</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MedirRegularmenteDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MedirRegularmenteDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConferirPlanejado"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Medir regularmente a dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Prevencao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliarMelhorarElicitacaoREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConstrucaoFluxoProcesso"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPrototipoDocumentoEREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElaborarArtefatosUML"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ManterDescreverClarezaDREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrototipoValidacaoREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastreabilidadeREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefinamentoRequisitos"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoRequisitos"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TecnicaBDD"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TreinamentoPadroesER"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Melhorar os processos de desenvolvimento atuais para prevenir a ocorrência de certos tipos de dívidas técnicas</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -719,6 +1688,28 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Mensuracao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CalcularDividaTecnica"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CategorizacaoCusto"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CompararSolucoes"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarDTExperiencia"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IndicarDTMetricas"/>
+        <untitled-ontology-3:descricao>Responsável por analisar e quantificar os custos e esforços necessários para auxiliar na tomada de decisão referente ao ressarcimento da dívida.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Mensuração</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloDocumentacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloDocumentacao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloDocumentacao"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;O modelo de documenta&amp;ccedil;&amp;atilde;o cont&amp;eacute;m diversos dados, principalmente referentes &amp;agrave; medi&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;O modelo de documenta&amp;ccedil;&amp;atilde;o da d&amp;iacute;vida t&amp;eacute;cnica &amp;eacute; proposto por Seaman e Guo (2011).&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Modelo de Documentação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -727,6 +1718,54 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Monitoramento">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemLimiar"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConferirPlanejado"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearPropagacaoReD"/>
+        <untitled-ontology-3:descricao>Consiste em validar se a dívida técnica está sendo reduzida, atrasada ou se permanece gerando custos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Monitoramento</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarInfluenciaReDPartesNaoContemDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarInfluenciaReDPartesNaoContemDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearPropagacaoReD"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Monitorar a influência da dívida de requisitos nas partes do sistema que não contém a dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarProgressoREQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarProgressoREQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarPropagacaoReDAtributosQualidade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarPropagacaoReDAtributosQualidade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearPropagacaoReD"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Monitorar a propagação da dívida de requisitos por meio de atributos de qualidade</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MontanteJuros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MontanteJuros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#JurosExtrasReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Montante de juros</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -735,6 +1774,47 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#GerenciaREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:descricao>A falta de gerência nos requisitos, rastreabilidade, bem como a falta do gerenciamento de mudanças promove uma dificuldade em atender as expectativas e as necessidades dos stakeholders.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Não atendem as necessidades/requisitos do cliente</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NormaIsoIecIeee291482018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NormaIsoIecIeee291482018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConfrontarNormaProjetosEspecificados"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;A norma ISO/IEC/IEEE 29148:2018 descreve a qualidade dos requisitos desde a especifica&amp;ccedil;&amp;atilde;o at&amp;eacute; outras atividades de engenharia de requisitos no ciclo de vida do desenvolvimento de software.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Essa norma fornece detalhes para descrever requisitos textuais consistentes, incluindo caracter&amp;iacute;sticas, atributos e crit&amp;eacute;rios dos requisitos.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A partir do momento que esses padr&amp;otilde;es de qualidade s&amp;atilde;o violados, podem surgir requirements semells e d&amp;iacute;vidas t&amp;eacute;cnicas.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Analisar o documento de acordo com os projetos especificados e os requisitos documentados ajuda a identificar inconsist&amp;ecirc;ncias, baixos n&amp;iacute;veis de qualidade e viola&amp;ccedil;&amp;otilde;es e, consequentemente, identificar d&amp;iacute;vidas de requisitos.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Identificação através da ISO/IEC/IEEE 29148:2018</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OtimizarCodigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OtimizarCodigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OtimizarCodigo"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Otimizar código requer agrupar módulos coesos com dependências gerenciáveis para simplificar o código.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Otimizar código</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -743,6 +1823,50 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Automacao"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CorrigirErro"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#OtimizarCodigo"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Reengenharia"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReestruturacaoCodigoProjeto"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatoracaoCodigo"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ToleranciaErro"/>
+        <untitled-ontology-3:descricao>Consiste no pagamento parcial ou total da dívida técnica, evitando o seu adiamento caso afete negativamente o projeto.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Pagamento</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlanejamentoCustoCicloVida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlanejamentoCustoCicloVida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Prevencao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DesenvolverPlanosEconomicosMinimizarReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Planejamento de custos do ciclo de vida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Monitoramento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReDObservarTendencias"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Plotar várias medidas agregadas da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReDObservarTendencias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReDObservarTendencias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlotarMedidasReD"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Plotar medidas de dívidas de requisitos para observar a curva para identificar tendências</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -751,6 +1875,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Prevencao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarFH"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ApoioDecisaoArquitetura"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PlanejamentoCustoCicloVida"/>
+        <untitled-ontology-3:descricao>Objetiva verificar os artefatos existentes do projeto com o objetivo de evitar que possíveis dívidas de requisitos sejam incorridas.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Prevenção</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -759,6 +1889,56 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Priorizacao">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AreaGestaoReD"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemPortfolio"/>
+        <untitled-ontology-3:eConstituidaDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DTMaiorCustoBeneficio"/>
+        <untitled-ontology-3:descricao>Visa organizar o pagamento das dívidas técnicas por ordem de importância, analisando fatores como questões técnicas e implicações financeiras.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Priorização</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJuros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJuros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJurosItemReDReembolsados"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Probabilidade de juros</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJurosItemReDReembolsados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJurosItemReDReembolsados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProbabilidadeJuros"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Informar a probabilidade que os juros do item da dívida de requisitos devem ser reembolsados</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProductBacklog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProductBacklog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:descreve rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos"/>
+        <untitled-ontology-3:custoBeneficioQuantificado>Custo-benefício Quantificado: O custo-benefício de cada item de valor a ser incorporado ao produto foi quantificado, pelo menos relativamente, o suficiente para apoiar decisões de priorização, incluindo o que é certo investir no próximo desenvolvimento.
+- O valor de cada item foi quantificado pelo menos em relação aos outros itens.
+- O tamanho/custo de implementação de cada item foi quantificado pelo menos em relação aos outros itens.
+- A ordem de prioridade reflete a relação custo-benefício que se prevê resultar da implementação de cada item.</untitled-ontology-3:custoBeneficioQuantificado>
+        <untitled-ontology-3:itensColetados>Itens coletados: há uma lista visível de itens de valor a serem incorporados ao produto.
+- Há uma lista de coisas de valor a serem incorporadas ao produto 
+- A lista fica visível para a equipe e as partes interessadas 
+- A lista é compreensível pela equipe e pelas partes interessadas</untitled-ontology-3:itensColetados>
+        <untitled-ontology-3:itensPriorizados>Itens priorizados: A lista de itens de valor a serem incorporados ao produto é listada em ordem de prioridade – da mais alta para a mais baixa.
+- A lista de itens é classificada em ordem de prioridade, da mais alta para a mais baixa. - A ordem de prioridade é comunicada às partes interessadas e à equipe.
+- As partes interessadas e a equipe aceitam as prioridades como razoáveis.
+
+Produzido por: Refinamento de requisitos</untitled-ontology-3:itensPriorizados>
+        <untitled-ontology-3:nome>Uma lista ordenada de itens a serem incorporados ao produto para aumentar seu valor.</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -767,6 +1947,243 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrototipoValidacaoREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AusenciaDocumentoESR"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeManterUX"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Validação dos requisitos por meio de protótipo</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Construção de protótipo para validação dos requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarJuroDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarJuroDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Quantificar o juro da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarTamanhoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#QuantificarTamanhoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Quantificar o tamanho da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastreabilidadeREQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastreabilidadeREQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AcoesPreventivas"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Manter a rastreabilidade dos requisitos.....</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Manter a rastreabilidade dos requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearMudancaReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearMudancaReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConferirPlanejado"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Rastrear mudança na dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearPropagacaoReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RastrearPropagacaoReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Monitoramento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarInfluenciaReDPartesNaoContemDivida"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarProgressoREQ"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MonitorarPropagacaoReDAtributosQualidade"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Rastrear a propagação da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarCerimonias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarCerimonias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Realizar cerimônias está condicionada as seguintes: iniciais, sprint planning, pós refinamento, reuniões diárias, conforme a necessidade da organização ou o método ágil adotado</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Realizar cerimônias</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarEstimativaCustoItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarEstimativaCustoItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstimarDTExperiencia"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Realizar estimativa de custo item da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarMelhoriasCodigoDesignArquitetura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarMelhoriasCodigoDesignArquitetura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReestruturacaoCodigoProjeto"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Realizar melhorias no código, design ou arquitetura</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Reengenharia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Reengenharia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EvoluirSoftware"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A reengenharia é recomendada visando a evoluação o software existente para exibir novos comportamentos, recursos e qualidade operacional.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Reengenharia</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReestruturacaoCodigoProjeto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReestruturacaoCodigoProjeto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarMelhoriasCodigoDesignArquitetura"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>A reestruturação de código e projeto caracteriza-se por realizar alterações no código, design ou arquitetura de um sistema de software sem alterar os comportamentos externos do sistema de software, a fim de melhorar a qualidade interna.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Reestruturação de código e projeto</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatoracaoCodigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatoracaoCodigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatorarCodigoContemDT"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Refatoração de código visa reescrever o código que contém dívida técnica.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Refatoração de código</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatorarCodigoContemDT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatorarCodigoContemDT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefatoracaoCodigo"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Refatorar o código que contém a dívida técnica</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefinamentoRequisitos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RefinamentoRequisitos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Refinamento requisitos por meio da definição iterativa de requisitos (trabalham com sprints/releases e técnicas de UX)</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Refinamento dos requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarDialogosComCliente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarDialogosComCliente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoPares"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Registrar os diálogos com clientes</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarEstimativaCutoItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarEstimativaCutoItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CustoReembolsarItemDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Registrar estimativa de custo do item da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarInformItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarInformItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescricaoItemDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Registrar informações gerais sobre o item da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarLocalizacaoItemReD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarLocalizacaoItemReD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#LocalizacaoItemDivida"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Registrar a localização do item da dívida de requisitos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarTipoDT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarTipoDT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TipoDT"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Registrar para cada item da dívida o tipo de dívida técnica</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegrasPropagacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegrasPropagacao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstabelecerRegrasPropagacaoReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Regras de propagação</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -775,6 +2192,39 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequirementsSmells">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EspecificacaoREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:descricao>Requirements smells surgem quando as construções linguísticas podem indicar uma violação da norma ISO/IEC/IEEE 29148:2018, que se refere à qualidade dos requisitos. Esses smells também existem para outras abordagens de documentação de requisitos, por exemplo, UML. 
+Caso os smells não forem removidos, o requisito pode ser implementado incorretamente, dificultando sua reutilização e avaliação.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Requirements smells</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DefinicaoConcluido"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProductBacklog"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Requisitos bem definidos registrados no backlog por meio da existência de regra de negócio como parte da história de usuário baseada nos requisitos do cliente, e com clareza na declaração do escopo.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Product Backlog: Requisitos bem definidos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InformarResponsavelPagamentoReD"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Responsável</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -783,6 +2233,46 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Retrabalho">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoREQ"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:descricao>Retrabalho de artefatos e na construção dos protótipos carcateriza-se pela recorrência de problemas que prejudicam o desenvolvimento de artefatos que precisam ser refeitos devido a falha em atividades que envolvem requisitos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Retrabalho de artefatos e na construção dos protótipos</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoPares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoPares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Identificacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarDialogosComCliente"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>&lt;p&gt;Alguns benef&amp;iacute;cios da revis&amp;atilde;o de requisitos s&amp;atilde;o destacados na literatura, especialmente na identifica&amp;ccedil;&amp;atilde;o de defeitos e DTs.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Dentre as formas de revis&amp;atilde;o, destaca-se a revis&amp;atilde;o por pares, que consiste no analista conduzir a entrevista com o cliente e gravar o &amp;aacute;udio do di&amp;aacute;logo, conforme sua permiss&amp;atilde;o.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;O &amp;aacute;udio &amp;eacute; revisado por outro analista (revisor), que anota as ambiguidades e lista as perguntas que faria, caso fosse o analista.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;As perguntas s&amp;atilde;o utilizadas para esclarecimentos em futuras intera&amp;ccedil;&amp;otilde;es com o cliente.&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Revisão por Pares</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoRequisitos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RevisaoRequisitos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AvaliacaoCliente"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Revisar os requisitos com o cliente, juntamente com a equipe de desenvolvimento, deve ser considerado essencial para toda a gestão, pois será possível ajustar os requisitos especificados considerando o feedback do cliente para identificar dívidas de requisitos com mais eficiência.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Revisão de Requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -791,6 +2281,62 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#GerenciaREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InconsistenciaRequisitos"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InsatisfacaoStakeholders"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Retrabalho"/>
+        <untitled-ontology-3:descricao>Sistema de gerenciamento de requisitos ausente ou ineficaz consite na falta ou falha de rastreabilidade dos requisitos, prejudicando a gerência dos requisitos.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Sistema de gerenciamento de requisitos ausente ou ineficaz</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#StatusCrescimentoDivida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#StatusCrescimentoDivida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AbordagemQuantificacao"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Status do crescimento da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TecnicaBDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TecnicaBDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
+        <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:descricao>Técnica de BDD para descrever Use Case inicial - Escopo história – User Story</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Técnica de BDD</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TipoDT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TipoDT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Documentacao"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarTipoDT"/>
+        <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Tipo da dívida técnica</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ToleranciaErro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ToleranciaErro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:eParteDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Pagamento"/>
+        <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InserirEstrategiasExcecaoTempo"/>
+        <untitled-ontology-3:nome>Tolerância ao erro</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -799,11 +2345,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TreinamentoPadroesER">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeCompreensaoDemanda"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FalhaIdentificacaoRequisitos"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
+        <untitled-ontology-3:classificacaoPratica>Específica</untitled-ontology-3:classificacaoPratica>
         <untitled-ontology-3:descricao>Treinamento de padrões de elicitação de requisitos é indicado para sinalizar e padronizar a forma como os requisitos devem ser elicitados e especificados</untitled-ontology-3:descricao>
-        <untitled-ontology-3:nomePratica>Treinamento de padrões de elicitação de requisitos</untitled-ontology-3:nomePratica>
+        <untitled-ontology-3:nome>Treinamento de padrões para elicitação de requisitos</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
 
@@ -813,7 +2361,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoREQ">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DificuldadeManterUX"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InsatisfacaoStakeholders"/>
+        <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Retrabalho"/>
         <untitled-ontology-3:eEvidenciadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente"/>
+        <untitled-ontology-3:faseER rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-3:faseER>
         <untitled-ontology-3:nome>Validação de Requisitos</untitled-ontology-3:nome>
         <untitled-ontology-3:sigla>VR</untitled-ontology-3:sigla>
     </owl:NamedIndividual>
@@ -824,6 +2375,23 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoRequisitosInexistente">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
+        <untitled-ontology-3:estaAssociadaA rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValidacaoREQ"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ImplementacaoIncompativelComEspecificacao"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InsatisfacaoStakeholders"/>
+        <untitled-ontology-3:ocasiona rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NaoAtendemRequisitosCliente"/>
+        <untitled-ontology-3:descricao>Validação de requisitos inexistente ocorre quando os stakeholders não participam do processo de verificação das necessidades para conferência, especificadas pela organização.</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>Validação dos requisitos inexistente</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VerificarListaCenariosDividaOcorre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VerificarListaCenariosDividaOcorre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
+        <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ListaControle"/>
+        <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
+        <untitled-ontology-3:nome>Verificar a lista de cenários em que a dívida ocorre</untitled-ontology-3:nome>
     </owl:NamedIndividual>
 </rdf:RDF>
 
