@@ -17,4 +17,4 @@ jobs:
 
       - name: Send RDF file to Endpoint
         run: |
-          curl -X POST -F "file=@OntoReD.rdf" http://35.247.197.219:8080/api/load
+          curl -X POST -F "file=@OntoReD.rdf" http://35.247.197.219:8080/api/ontology/load
