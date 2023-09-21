@@ -26,6 +26,7 @@ import { showToast } from "@/store/ToastSlice";
 import { setConsequencias } from "@/store/ConsequenciasSlice";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
+import DescriptionRender from "@/components/DescriptionRender";
 
 const CenarioAtual = () => {
 
@@ -189,9 +190,7 @@ const CenarioAtual = () => {
                         </div>
 
                       </div>
-                      <p className={styles.consequenciaDescricao}>
-                        {consequencia.descricao}
-                      </p>
+                      <DescriptionRender description={consequencia.descricao ?? ''}/>
                     </CardContent>
                   </Card>
                 )

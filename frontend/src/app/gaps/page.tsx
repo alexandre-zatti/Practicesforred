@@ -13,6 +13,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Causa } from "@/types/Causa";
 import { addCausa, removeCausa } from "@/store/CausasSlice";
 import { Consequencia } from "@/types/Consequencia";
+import DescriptionRender from "@/components/DescriptionRender";
 
 const Gaps = () => {
   const causasSelecionadas = useSelector((state: RootState) => state.causas.causas)
@@ -127,9 +128,7 @@ const Gaps = () => {
                         <Typography variant={'h6'} className={styles.nome}>{causa.nome}</Typography>
 
                       </div>
-                      <p className={styles.descricao}>
-                        {causa.descricao}
-                      </p>
+                      <DescriptionRender description={causa.descricao ?? ''}/>
                     </CardContent>
                   </Card>
                 )

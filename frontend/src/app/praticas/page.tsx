@@ -15,6 +15,7 @@ import { PraticaGeral } from "@/types/PraticaGeral";
 import { Pratica } from "@/types/Pratica";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
+import DescriptionRender from "@/components/DescriptionRender";
 
 const Praticas = () => {
   const areasGestaoPraticas = useSelector((state: any) => state.areasGestaoPraticas.areasGestaoPraticas)
@@ -125,9 +126,7 @@ const Praticas = () => {
                                 </div>
 
                               </div>
-                              <p className={styles.consequenciaDescricao}>
-                                {praticaEspecifica.descricao}
-                              </p>
+                              <DescriptionRender description={praticaEspecifica.descricao}/>
                             </CardContent>
                           </Card>
                         )

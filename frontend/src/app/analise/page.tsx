@@ -26,6 +26,7 @@ import { Impacto } from "@/enums/Impacto";
 import { addConsequencia, changeFrequencia, changeImpacto, removeConsequencia } from "@/store/ConsequenciasSlice";
 import { Consequencia } from "@/types/Consequencia";
 import Steps from "@/components/steps/Steps";
+import DescriptionRender from "@/components/DescriptionRender";
 
 const Analise = () => {
   const faseEngenhariaConsequencias = useSelector((state: RootState) => state.fasesEngenharia.fasesEngenharia)
@@ -144,9 +145,7 @@ const Analise = () => {
                           </Select>
                         </FormControl>
                       </div>
-                      <p className={styles.consequenciaDescricao}>
-                        {consequencia.descricao}
-                      </p>
+                      <DescriptionRender description={consequencia.descricao ?? ''}/>
                     </CardContent>
                   </Card>
                 )
