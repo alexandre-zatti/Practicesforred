@@ -1,0 +1,23 @@
+.container {
+    min-width: 100rem;
+}
+
+.accordionContainer {
+    min-width: 100%;
+    padding: 1rem;
+}
+
+.accordionIcon {
+    color: white;
+}
+
+.accordionSummary {
+    color: white;
+    background-color: var(--mui-primary);
+}
+
+.accordionSummaryContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
