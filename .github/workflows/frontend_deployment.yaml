@@ -8,8 +8,8 @@ on:
       - 'frontend/**'
 
 env:
-  GCP_PROJECT_ID: light-zenith-392618
-  GKE_CLUSTER_NAME: tcc-cluster
+  GCP_PROJECT_ID: firm-modem-400410
+  GKE_CLUSTER_NAME: tcc-ii
   GKE_CLUSTER_ZONE: southamerica-east1
   IMAGE: zatti/tcc-frontend
 
