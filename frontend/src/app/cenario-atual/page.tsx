@@ -18,7 +18,6 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Frequencia } from "@/enums/Frequencia";
 import { Impacto } from "@/enums/Impacto";
-import styles from "./page.module.css";
 import React, { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
@@ -27,6 +26,7 @@ import { setConsequencias } from "@/store/ConsequenciasSlice";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import DescriptionRender from "@/components/DescriptionRender";
+import styles from './page.module.css'
 
 const CenarioAtual = () => {
 
@@ -121,33 +121,39 @@ const CenarioAtual = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <Steps/>
 
-      <Typography className={styles.pageTitle} variant={'h4'}>
+      <Typography className={'pageTitle'} variant={'h4'}>
         Cenário atual da(s) consequência(s) associada(s) as dívidas de requisitos e seus respectivos graus de
         relevância
       </Typography>
+
       {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {
         return (
-          <Accordion key={faseEngenharia.faseEngenhariaUri} className={styles.accordionContainer}>
+          <Accordion key={faseEngenharia.faseEngenhariaUri} className={'accordionContainer'}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
+              expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className={styles.accordionAreaGestao}
+              className={'accordionSummary'}
             >
-              <Typography variant={'h6'} style={{fontWeight: 600}}>{faseEngenharia.faseEngenhariaNome}</Typography>
+              <Typography
+                variant={'h6'}
+                className={'accordionSummaryTitle'}
+              >
+                {faseEngenharia.faseEngenhariaNome}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
 
                 return (
-                  <Card key={consequencia.uri} className={styles.cardConsequencia}>
+                  <Card key={consequencia.uri} className={'cardContainer'}>
                     <CardContent>
-                      <div className={styles.cardConsequenciaActions}>
+                      <div className={styles.cardContent}>
 
-                        <Typography variant={'h6'} className={styles.consequenciaNome}>{consequencia.nome}</Typography>
+                        <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
 
                         <FormControl>
                           <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>
@@ -184,7 +190,7 @@ const CenarioAtual = () => {
                         <Typography variant={'h6'}>=</Typography>
 
                         <div
-                          className={`${styles.grauRelevanciaContainer}`}>
+                          className={'grauRelevanciaContainer'}>
                           <Typography>Grau de Relevância</Typography>
                           <GrauRelevancia grauRelevancia={consequencia.grauRelevancia!}/>
                         </div>

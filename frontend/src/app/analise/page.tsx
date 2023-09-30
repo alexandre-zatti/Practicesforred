@@ -1,6 +1,5 @@
 'use client'
 
-import styles from './page.module.css';
 import { useEffect } from "react";
 import {
   Accordion,
@@ -27,6 +26,7 @@ import { addConsequencia, changeFrequencia, changeImpacto, removeConsequencia } 
 import { Consequencia } from "@/types/Consequencia";
 import Steps from "@/components/steps/Steps";
 import DescriptionRender from "@/components/DescriptionRender";
+import styles from './page.module.css';
 
 const Analise = () => {
   const faseEngenhariaConsequencias = useSelector((state: RootState) => state.fasesEngenharia.fasesEngenharia)
@@ -77,37 +77,42 @@ const Analise = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <Steps/>
 
-      <Typography className={styles.pageTitle} variant={'h4'}>
+      <Typography className={'pageTitle'} variant={'h4'}>
         Informe o(s) problema(s) que ocorre(m) no cenário atual voltado ao processo de requisitos
       </Typography>
+
       {faseEngenhariaConsequencias.map((faseEngenharia) => {
         return (
-          <Accordion key={faseEngenharia.faseEngenhariaUri} className={styles.accordionContainer}>
+          <Accordion key={faseEngenharia.faseEngenhariaUri} className={'accordionContainer'}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
+              expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className={styles.accordionAreaGestao}
+              className={'accordionSummary'}
             >
-              <Typography variant={'h6'} style={{fontWeight: 600}}>{faseEngenharia.faseEngenhariaNome}</Typography>
+              <Typography
+                variant={'h6'}
+                className={'accordionSummaryTitle'}
+              >
+                {faseEngenharia.faseEngenhariaNome}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
                 const consequenciaSelected = isConsequenciaSelected(consequencia.uri)
 
                 return (
-                  <Card key={consequencia.uri} className={styles.cardConsequencia}>
+                  <Card key={consequencia.uri} className={'cardContainer'}>
                     <CardContent>
-                      <div className={styles.cardConsequenciaActions}>
-
+                      <div className={styles.cardContent}>
                         <Checkbox onChange={(event) => {
                           handleConsequenciaCheckboxChange(event.target.checked, consequencia)
                         }} checked={!!consequenciaSelected}/>
 
-                        <Typography variant={'h6'} className={styles.consequenciaNome}>{consequencia.nome}</Typography>
+                        <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
 
                         <FormControl>
                           <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>

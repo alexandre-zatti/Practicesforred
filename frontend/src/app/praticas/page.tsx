@@ -80,44 +80,45 @@ const Praticas = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={'pageContainer'}>
         <Steps/>
-        <Typography className={styles.pageTitle} variant={'h4'}>
+        <Typography className={'pageTitle'} variant={'h4'}>
           Práticas gerais e específicas para mitigar os Gaps (causas) que ocasionam as dívidas de requisitos informadas
         </Typography>
 
         {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {
           return (
-            <Accordion key={areaGestaoPraticas.areaGestao.uri} className={styles.accordionContainer}>
+            <Accordion key={areaGestaoPraticas.areaGestao.uri} className={'accordionContainer'}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
-                className={styles.accordionAreaGestao}
+                expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                className={'accordionSummary'}
               >
                 <Typography variant={'h6'}>
-                  Área da gestão da dívida - <span style={{fontWeight: 600}}>{areaGestaoPraticas.areaGestao.nome}</span>
+                  Área da gestão da dívida - <span
+                  className={'accordionSummaryTitle'}>{areaGestaoPraticas.areaGestao.nome}</span>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 {areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
                   return (
-                    <Accordion key={praticaGeral.praticaGeral.uri} className={styles.accordionContainer}>
+                    <Accordion key={praticaGeral.praticaGeral.uri} className={'accordionContainer'}>
                       <AccordionSummary
-                        className={styles.accordionAreaGestao}
-                        expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
+                        className={'accordionSummary'}
+                        expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
                       >
                         <Typography variant={'h6'}>
-                          Prática - <span style={{fontWeight: 600}}>{praticaGeral.praticaGeral.nome}</span>
+                          Prática - <span className={'accordionSummaryTitle'}>{praticaGeral.praticaGeral.nome}</span>
                         </Typography>
                       </AccordionSummary>
 
                       <AccordionDetails>
                         {praticaGeral.praticas.map((praticaEspecifica: Pratica) => {
                           return (
-                            <Card key={praticaEspecifica.uri} className={styles.cardConsequencia}>
+                            <Card key={praticaEspecifica.uri} className={'cardContainer'}>
                               <CardContent>
-                                <div className={styles.cardConsequenciaActions}>
+                                <div className={styles.cardContent}>
 
-                                  <Typography variant={'h6'} className={styles.consequenciaNome}>
+                                  <Typography variant={'h6'} className={styles.praticaNome}>
                                     <span onClick={() => {
                                       setIsPraticaModalOpen(true)
                                       setPraticaSelecionada(praticaEspecifica)

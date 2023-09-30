@@ -92,24 +92,24 @@ const Gaps = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={'pageContainer'}>
       <Steps/>
 
-      <Typography className={styles.pageTitle} variant={'h4'}>
+      <Typography className={'pageTitle'} variant={'h4'}>
         Informe a(s) possível(eis) causa(s) atrelada(s) a(s) consequência(s) informada(s)
       </Typography>
 
       {consequenciasSelecionadas.map((consequencia) => {
         return (
-          <Accordion key={consequencia.nome} className={styles.accordionContainer}>
+          <Accordion key={consequencia.nome} className={'accordionContainer'}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
+              expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className={`${styles.accordionContent}`}
+              className={'accordionSummary'}
             >
               <Typography variant={'h6'}>
-                Causas que ocasionam - <span style={{fontWeight: 600}}>{consequencia.nome}</span>
+                Causas que ocasionam - <span className={'accordionSummaryTitle'}>{consequencia.nome}</span>
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -117,15 +117,15 @@ const Gaps = () => {
                 const causaSelected = isCausaSelected(causa.uri, consequencia.uri)
 
                 return (
-                  <Card key={causa.uri + consequencia.uri} className={styles.card}>
+                  <Card key={causa.uri + consequencia.uri} className={'cardContainer'}>
                     <CardContent>
-                      <div className={styles.cardActions}>
+                      <div className={styles.cardContent}>
 
                         <Checkbox onChange={(event) => {
                           handleCausaCheckboxChange(event.target.checked, causa, consequencia)
                         }} checked={!!causaSelected}/>
 
-                        <Typography variant={'h6'} className={styles.nome}>{causa.nome}</Typography>
+                        <Typography variant={'h6'} className={'cardTitle'}>{causa.nome}</Typography>
 
                       </div>
                       <DescriptionRender description={causa.descricao ?? ''}/>

@@ -1,37 +1,4 @@
-.container {
-    padding: 5rem;
-    display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.pageTitle {
-    font-weight: lighter;
-    font-style: italic;
-    margin-bottom: 2rem;
-}
-
-.accordionContainer {
-    min-width: 100%;
-    margin-bottom: 1rem;
-}
-
-.accordionIcon {
-    color: white;
-}
-
-.accordionAreaGestao {
-    color: white;
-    background-color: var(--mui-primary);
-}
-
-.cardConsequencia {
-    margin-bottom: 1rem;
-}
-
-.cardConsequenciaActions {
+.cardContent {
     width: 100%;
     margin-bottom: 1.5rem;
     display: grid;
@@ -53,7 +20,7 @@
     width: 60%;
 }
 
-.consequenciaNome {
+.praticaNome {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -61,17 +28,6 @@
     cursor: pointer;
 }
 
-.consequenciaDescricao {
+.praticaDescricao {
     font-style: oblique;
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .cardConsequenciaActions {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
 }
