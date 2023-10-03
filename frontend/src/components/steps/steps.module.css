@@ -9,8 +9,13 @@
     min-width: 75%;
 }
 
+.stepperLabel {
+    font-size: 2rem;
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+}
+
 .buttonNext {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .buttonBack {

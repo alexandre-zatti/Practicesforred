@@ -5,7 +5,7 @@ import styles from './page.module.css';
 import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, Checkbox, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { showToast } from "@/store/ToastSlice";
 import { setConsequencias } from "@/store/ConsequenciasSlice";
@@ -16,12 +16,14 @@ import { Consequencia } from "@/types/Consequencia";
 import DescriptionRender from "@/components/DescriptionRender";
 
 const Gaps = () => {
+  const [entered, setEntered] = useState(false);
   const causasSelecionadas = useSelector((state: RootState) => state.causas.causas)
   const consequenciasSelecionadas = useSelector((state: RootState) => state.consequencias.consequencias)
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(showLoading())
+
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/consequencia/causas`, {
       method: 'POST',
       headers: {
@@ -36,6 +38,7 @@ const Gaps = () => {
     })
       .then((response) => {
         if (response.ok) {
+          const timer = setTimeout(() => setEntered(true), 100);
           response.json().then((data) => {
             const causaConsequencias = data.map((causa: any) => {
               const consequencia = consequenciasSelecionadas.find((consequencia) => {
@@ -67,6 +70,7 @@ const Gaps = () => {
       }).finally(() => {
       dispatch(hideLoading())
     })
+
   }, [dispatch])
 
   const isCausaSelected = (causaUri: string, consequenciaUri: string): Causa | undefined => {
@@ -95,48 +99,51 @@ const Gaps = () => {
     <div className={'pageContainer'}>
       <Steps/>
 
-      <Typography className={'pageTitle'} variant={'h4'}>
-        Informe a(s) possível(eis) causa(s) atrelada(s) a(s) consequência(s) informada(s)
-      </Typography>
+      <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
-      {consequenciasSelecionadas.map((consequencia) => {
-        return (
-          <Accordion key={consequencia.nome} className={'accordionContainer'}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-              className={'accordionSummary'}
-            >
-              <Typography variant={'h6'}>
-                Causas que ocasionam - <span className={'accordionSummaryTitle'}>{consequencia.nome}</span>
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              {consequencia.causas && consequencia.causas!.map((causa, index) => {
-                const causaSelected = isCausaSelected(causa.uri, consequencia.uri)
+        <Typography className={'pageTitle'} variant={'h4'}>
+          Informe a(s) possível(eis) causa(s) atrelada(s) a(s) consequência(s) informada(s)
+        </Typography>
 
-                return (
-                  <Card key={causa.uri + consequencia.uri} className={'cardContainer'}>
-                    <CardContent>
-                      <div className={styles.cardContent}>
+        {consequenciasSelecionadas.map((consequencia) => {
+          return (
+            <Accordion key={consequencia.nome} className={'accordionContainer'}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className={'accordionSummary'}
+              >
+                <Typography variant={'h6'}>
+                  Causas que ocasionam - <span className={'accordionSummaryTitle'}>{consequencia.nome}</span>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                {consequencia.causas && consequencia.causas!.map((causa, index) => {
+                  const causaSelected = isCausaSelected(causa.uri, consequencia.uri)
 
-                        <Checkbox onChange={(event) => {
-                          handleCausaCheckboxChange(event.target.checked, causa, consequencia)
-                        }} checked={!!causaSelected}/>
+                  return (
+                    <Card key={causa.uri + consequencia.uri} className={'cardContainer'}>
+                      <CardContent>
+                        <div className={styles.cardContent}>
 
-                        <Typography variant={'h6'} className={'cardTitle'}>{causa.nome}</Typography>
+                          <Checkbox onChange={(event) => {
+                            handleCausaCheckboxChange(event.target.checked, causa, consequencia)
+                          }} checked={!!causaSelected}/>
 
-                      </div>
-                      <DescriptionRender description={causa.descricao ?? ''}/>
-                    </CardContent>
-                  </Card>
-                )
-              })}
-            </AccordionDetails>
-          </Accordion>
-        )
-      })}
+                          <Typography variant={'h6'} className={'cardTitle'}>{causa.nome}</Typography>
+
+                        </div>
+                        <DescriptionRender description={causa.descricao ?? ''}/>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </AccordionDetails>
+            </Accordion>
+          )
+        })}
+      </div>
 
     </div>
   );

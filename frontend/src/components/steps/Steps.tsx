@@ -47,11 +47,11 @@ const Steps = () => {
   return (
     <div className={styles.container}>
       <Button
-        className={styles.buttonBack}
+        className={`${styles.button} ${styles.buttonBack}`}
         disabled={activeStep === 0}
         onClick={handleBack}
         size={'large'}
-        variant={'outlined'}
+        variant={'text'}
       >
         <ArrowBack/>
         Voltar
@@ -62,11 +62,11 @@ const Steps = () => {
           <Step key={step.label} onClick={() => handleStepClick(index)}>
             <StepButton sx={{
               '& .MuiStepIcon-root': {
-                fontSize: '2.5rem'
+                fontSize: '2.5rem',
               }
             }}>
               <StepLabel>
-                <Typography variant={'h4'}>{step.label}</Typography>
+                <Typography variant={'h4'} className={styles.stepperLabel}>{step.label}</Typography>
               </StepLabel>
             </StepButton>
           </Step>
@@ -74,15 +74,16 @@ const Steps = () => {
       </Stepper>
 
       <Button
-        className={styles.buttonNext}
+        className={`${styles.buttonNext}`}
         disabled={activeStep === steps.length - 1}
         onClick={handleNext}
         size={'large'}
-        variant={'outlined'}
+        variant={'text'}
       >
-        Avançar
+        <span>Avançar</span>
         <ArrowForwardIcon/>
       </Button>
+
     </div>
   );
 };

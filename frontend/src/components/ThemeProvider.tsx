@@ -6,8 +6,11 @@ import { responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#4A4A4A',
+      main: '#000001',
     },
+  },
+  typography: {
+    fontFamily: 'Poppins, sans-serif', // Replace 'Your Font Name' with the name of the font you chose.
   },
   components: {
     MuiAccordionSummary: {

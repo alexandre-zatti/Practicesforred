@@ -14,6 +14,10 @@
     gap: 1rem;
 }
 
+.title {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+}
+
 .titleSecondary {
     color: var(--mui-primary);
     font-weight: 600;
