@@ -19,15 +19,15 @@ export default function RootLayout({children}: {
   return (
     <Provider store={store}>
       <StyledEngineProvider injectFirst>
+        <html lang="en" className={`${playfairDisplay.className} ${poppins.className}`}>
         <ThemeProvider>
-          <html lang="en" className={`${playfairDisplay.className} ${poppins.className}`}>
           <body>
           <Loading/>
           <Toast/>
           {children}
           </body>
-          </html>
         </ThemeProvider>
+        </html>
       </StyledEngineProvider>
     </Provider>
   )

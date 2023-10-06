@@ -15,9 +15,8 @@ import { PraticaGeral } from "@/types/PraticaGeral";
 import { Pratica } from "@/types/Pratica";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
-import DescriptionRender from "@/components/DescriptionRender";
 import PraticaDialog from '@/components/pratica-dialog/praticaDialog';
-import ImportContactsIcon from '@mui/icons-material/ImportContacts';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 const Praticas = () => {
   const [entered, setEntered] = useState(false);
@@ -99,12 +98,12 @@ const Praticas = () => {
                   expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
                   className={'accordionSummary'}
                 >
-                  <Typography variant={'h6'}>
-                    Área da gestão da dívida - <span
-                    className={'accordionSummaryTitle'}>{areaGestaoPraticas.areaGestao.nome}</span>
+                  <Typography variant={'h5'}>
+                    <span className={'accordionSummaryPreTitle'}>Área da gestão da dívida - </span>
+                    <span className={'accordionSummaryTitle'}>{areaGestaoPraticas.areaGestao.nome}</span>
                   </Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails className={'accordionDetails'}>
                   {areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
                     return (
                       <Accordion key={praticaGeral.praticaGeral.uri} className={'accordionContainer'}>
@@ -112,24 +111,27 @@ const Praticas = () => {
                           className={'accordionSummary'}
                           expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
                         >
-                          <Typography variant={'h6'}>
-                            Prática - <span className={'accordionSummaryTitle'}>{praticaGeral.praticaGeral.nome}</span>
+                          <Typography variant={'h5'}>
+                            <span className={'accordionSummaryPreTitle'}>Prática - </span>
+                            <span className={'accordionSummaryTitle'}>{praticaGeral.praticaGeral.nome}</span>
                           </Typography>
                         </AccordionSummary>
 
-                        <AccordionDetails>
+                        <AccordionDetails className={'accordionDetails'}>
                           {praticaGeral.praticas.map((praticaEspecifica: Pratica) => {
                             return (
                               <Card key={praticaEspecifica.uri} className={'cardContainer'}>
                                 <CardContent>
                                   <div className={styles.cardContent}>
 
-                                    <Typography variant={'h6'} className={styles.praticaNome}>
-                                    <span onClick={() => {
+                                    <Typography variant={'h6'} className={styles.praticaNome} onClick={() => {
                                       setIsPraticaModalOpen(true)
                                       setPraticaSelecionada(praticaEspecifica)
-                                    }}>{praticaEspecifica.nome}</span>
-                                      <ImportContactsIcon/>
+                                    }}>
+                                      <span>
+                                        {praticaEspecifica.nome}
+                                      </span>
+                                      <AutoStoriesIcon/>
                                     </Typography>
 
                                     <div
@@ -144,7 +146,7 @@ const Praticas = () => {
                                     </div>
 
                                   </div>
-                                  <DescriptionRender description={praticaEspecifica.descricao}/>
+                                  {/*<DescriptionRender description={praticaEspecifica.descricao}/>*/}
                                 </CardContent>
                               </Card>
                             )

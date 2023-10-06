@@ -142,13 +142,13 @@ const CenarioAtual = () => {
                 className={'accordionSummary'}
               >
                 <Typography
-                  variant={'h6'}
+                  variant={'h5'}
                   className={'accordionSummaryTitle'}
                 >
                   {faseEngenharia.faseEngenhariaNome}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails className={'accordionDetails'}>
                 {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
 
                   return (
@@ -173,7 +173,7 @@ const CenarioAtual = () => {
                             </Select>
                           </FormControl>
 
-                          <Typography variant={'h6'}>X</Typography>
+                          <Typography variant={'h6'} className={styles.xMark}>X</Typography>
 
                           <FormControl>
                             <InputLabel id={`${consequencia.uri}_impacto_label`}>Impacto</InputLabel>

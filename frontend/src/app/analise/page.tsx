@@ -82,6 +82,7 @@ const Analise = () => {
     <div className={`pageContainer`}>
       <Steps/>
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
+
         <Typography className={'pageTitle'} variant={'h4'}>
           Informe o(s) problema(s) que ocorre(m) no cenário atual voltado ao processo de requisitos
         </Typography>
@@ -96,13 +97,13 @@ const Analise = () => {
                 className={'accordionSummary'}
               >
                 <Typography
-                  variant={'h6'}
+                  variant={'h5'}
                   className={'accordionSummaryTitle'}
                 >
                   {faseEngenharia.faseEngenhariaNome}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails className={'accordionDetails'}>
                 {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
                   const consequenciaSelected = isConsequenciaSelected(consequencia.uri)
 

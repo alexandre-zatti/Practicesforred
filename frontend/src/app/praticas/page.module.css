@@ -1,6 +1,5 @@
 .cardContent {
     width: 100%;
-    margin-bottom: 1.5rem;
     display: grid;
     align-items: center;
     grid-template-columns: 3fr 1fr;
@@ -26,6 +25,7 @@
     gap: 0.5rem;
     text-decoration: underline;
     cursor: pointer;
+    font-family: 'Playfare Display', 'Poppins', serif;
 }
 
 .praticaDescricao {

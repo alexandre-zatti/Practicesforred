@@ -1,23 +1,16 @@
-.container {
-    min-width: 100rem;
-}
-
-.accordionContainer {
-    min-width: 100%;
-    padding: 1rem;
-}
-
-.accordionExpandIcon {
-    color: white;
-}
-
-.accordionSummary {
-    color: white;
-    background-color: var(--mui-primary);
-}
-
-.accordionSummaryContent {
+.dialogTitle {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Playfare Display', 'Poppins', 'serif';
 }
+
+.dialogBody {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+

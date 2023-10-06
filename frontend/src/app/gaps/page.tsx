@@ -114,11 +114,12 @@ const Gaps = () => {
                 id="panel1a-header"
                 className={'accordionSummary'}
               >
-                <Typography variant={'h6'}>
-                  Causas que ocasionam - <span className={'accordionSummaryTitle'}>{consequencia.nome}</span>
+                <Typography variant={'h5'}>
+                  <span className={'accordionSummaryPreTitle'}>Causas que ocasionam - </span>
+                  <span className={'accordionSummaryTitle'}>{consequencia.nome}</span>
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails className={'accordionDetails'}>
                 {consequencia.causas && consequencia.causas!.map((causa, index) => {
                   const causaSelected = isCausaSelected(causa.uri, consequencia.uri)
 

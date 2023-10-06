@@ -1,5 +1,8 @@
 .grauRelevanciaChip {
     min-width: 70%;
+    border: 0;
+    border-top: 1px solid var(--mui-primary);
+    border-radius: 0;
 }
 
 .grauRelevanciaNomeAlto {

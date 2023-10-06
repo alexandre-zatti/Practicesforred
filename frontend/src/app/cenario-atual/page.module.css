@@ -6,3 +6,7 @@
     grid-template-columns: 3fr 1fr 0.05fr 1fr 0.05fr 1fr;
     grid-gap: 1rem;
 }
+
+.xMark {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+}
