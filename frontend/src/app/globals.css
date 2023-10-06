@@ -1,77 +1,104 @@
 :root {
-    --mui-primary: #4A4A4A;
-
-    --max-width: 1100px;
-    --border-radius: 12px;
-    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-
-    --primary-glow: conic-gradient(
-            from 180deg at 50% 50%,
-            #16abff33 0deg,
-            #0885ff33 55deg,
-            #54d6ff33 120deg,
-            #0071ff33 160deg,
-            transparent 360deg
-    );
-    --secondary-glow: radial-gradient(
-            rgba(255, 255, 255, 1),
-            rgba(255, 255, 255, 0)
-    );
-
-    --tile-start-rgb: 239, 245, 249;
-    --tile-end-rgb: 228, 232, 233;
-    --tile-border: conic-gradient(
-            #00000080,
-            #00000040,
-            #00000030,
-            #00000020,
-            #00000010,
-            #00000010,
-            #00000080
-    );
-
-    --callout-rgb: 238, 240, 241;
-    --callout-border-rgb: 172, 175, 176;
-    --card-rgb: 180, 185, 188;
-    --card-border-rgb: 131, 134, 135;
+    --mui-primary: #000001;
+    --mui-secondary: #feffff;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='1' stroke='hsla(0, 0%, 0%, 0.06)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
+.pageContainer {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
 
-        --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-        --secondary-glow: linear-gradient(
-                to bottom right,
-                rgba(1, 65, 255, 0),
-                rgba(1, 65, 255, 0),
-                rgba(1, 65, 255, 0.3)
-        );
+.contentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
-        --tile-start-rgb: 2, 13, 46;
-        --tile-end-rgb: 2, 5, 19;
-        --tile-border: conic-gradient(
-                #ffffff80,
-                #ffffff40,
-                #ffffff30,
-                #ffffff20,
-                #ffffff10,
-                #ffffff10,
-                #ffffff80
-        );
+.contentContainer.entered {
+    opacity: 1;
+}
 
-        --callout-rgb: 20, 20, 20;
-        --callout-border-rgb: 108, 108, 108;
-        --card-rgb: 100, 100, 100;
-        --card-border-rgb: 200, 200, 200;
+.pageTitle {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+    margin-bottom: 2rem;
+}
+
+.accordionContainer {
+    min-width: 100%;
+    background-color: var(--mui-secondary);
+    box-shadow: none;
+    border: 0;
+}
+
+.accordionContainer::before {
+    display: none;
+}
+
+.accordionExpandIcon {
+    color: var(--mui-primary);
+}
+
+.accordionSummary {
+    color: var(--mui-primary);
+    background-color: transparent;
+    border: 1px solid var(--mui-primary);
+}
+
+.accordionDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid var(--mui-primary);
+    border-top: 0;
+}
+
+.accordionSummaryTitle {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+}
+
+.accordionSummaryContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.accordionSummaryPreTitle {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+    font-style: italic;
+    /*font-weight: 600;*/
+}
+
+.cardContainer {
+}
+
+.cardTitle {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+    /*font-style: italic;*/
+    text-decoration: underline;
+}
+
+.grauRelevanciaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .pageContainer {
+        padding: 1rem;
+    }
+
+    .cardContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 

@@ -15,12 +15,11 @@ import { PraticaGeral } from "@/types/PraticaGeral";
 import { Pratica } from "@/types/Pratica";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
-import DescriptionRender from "@/components/DescriptionRender";
 import PraticaDialog from '@/components/pratica-dialog/praticaDialog';
-import ImportContactsIcon from '@mui/icons-material/ImportContacts';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 const Praticas = () => {
-
+  const [entered, setEntered] = useState(false);
   const [isPraticaModalOpen, setIsPraticaModalOpen] = useState(false)
   const [praticaSelecionada, setPraticaSelecionada] = useState<Pratica | null>(null)
 
@@ -30,6 +29,7 @@ const Praticas = () => {
 
   useEffect(() => {
     dispatch(showLoading())
+
 
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/causa/praticas`, {
       method: 'POST',
@@ -46,6 +46,7 @@ const Praticas = () => {
     })
       .then((response) => {
         if (response.ok) {
+          const timer = setTimeout(() => setEntered(true), 100);
           response.json().then((data: AreaGestaoPratica[]) => {
             dispatch(setAreasGestaoPraticas(data.map((areaGestaoPraticas: AreaGestaoPratica) => {
               return {
@@ -80,76 +81,85 @@ const Praticas = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={'pageContainer'}>
         <Steps/>
-        <Typography className={styles.pageTitle} variant={'h4'}>
-          Práticas gerais e específicas para mitigar os Gaps (causas) que ocasionam as dívidas de requisitos informadas
-        </Typography>
 
-        {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {
-          return (
-            <Accordion key={areaGestaoPraticas.areaGestao.uri} className={styles.accordionContainer}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
-                className={styles.accordionAreaGestao}
-              >
-                <Typography variant={'h6'}>
-                  Área da gestão da dívida - <span style={{fontWeight: 600}}>{areaGestaoPraticas.areaGestao.nome}</span>
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                {areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
-                  return (
-                    <Accordion key={praticaGeral.praticaGeral.uri} className={styles.accordionContainer}>
-                      <AccordionSummary
-                        className={styles.accordionAreaGestao}
-                        expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
-                      >
-                        <Typography variant={'h6'}>
-                          Prática - <span style={{fontWeight: 600}}>{praticaGeral.praticaGeral.nome}</span>
-                        </Typography>
-                      </AccordionSummary>
+        <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
-                      <AccordionDetails>
-                        {praticaGeral.praticas.map((praticaEspecifica: Pratica) => {
-                          return (
-                            <Card key={praticaEspecifica.uri} className={styles.cardConsequencia}>
-                              <CardContent>
-                                <div className={styles.cardConsequenciaActions}>
+          <Typography className={'pageTitle'} variant={'h4'}>
+            Práticas gerais e específicas para mitigar os Gaps (causas) que ocasionam as dívidas de requisitos
+            informadas
+          </Typography>
 
-                                  <Typography variant={'h6'} className={styles.consequenciaNome}>
-                                    <span onClick={() => {
+          {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {
+            return (
+              <Accordion key={areaGestaoPraticas.areaGestao.uri} className={'accordionContainer'}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                  className={'accordionSummary'}
+                >
+                  <Typography variant={'h5'}>
+                    <span className={'accordionSummaryPreTitle'}>Área da gestão da dívida - </span>
+                    <span className={'accordionSummaryTitle'}>{areaGestaoPraticas.areaGestao.nome}</span>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails className={'accordionDetails'}>
+                  {areaGestaoPraticas.praticasGerais.map((praticaGeral: PraticaGeral) => {
+                    return (
+                      <Accordion key={praticaGeral.praticaGeral.uri} className={'accordionContainer'}>
+                        <AccordionSummary
+                          className={'accordionSummary'}
+                          expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                        >
+                          <Typography variant={'h5'}>
+                            <span className={'accordionSummaryPreTitle'}>Prática - </span>
+                            <span className={'accordionSummaryTitle'}>{praticaGeral.praticaGeral.nome}</span>
+                          </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails className={'accordionDetails'}>
+                          {praticaGeral.praticas.map((praticaEspecifica: Pratica) => {
+                            return (
+                              <Card key={praticaEspecifica.uri} className={'cardContainer'}>
+                                <CardContent>
+                                  <div className={styles.cardContent}>
+
+                                    <Typography variant={'h6'} className={styles.praticaNome} onClick={() => {
                                       setIsPraticaModalOpen(true)
                                       setPraticaSelecionada(praticaEspecifica)
-                                    }}>{praticaEspecifica.nome}</span>
-                                    <ImportContactsIcon/>
-                                  </Typography>
+                                    }}>
+                                      <span>
+                                        {praticaEspecifica.nome}
+                                      </span>
+                                      <AutoStoriesIcon/>
+                                    </Typography>
 
-                                  <div
-                                    className={styles.grauRelevanciaContainer}>
-                                    <Typography>Grau de Relevância</Typography>
-                                    <div className={styles.grauRelevanciaChipContainer}>
-                                      <GrauRelevancia
-                                        grauRelevancia={praticaEspecifica.grauRelevancia!}
-                                      />
+                                    <div
+                                      className={styles.grauRelevanciaContainer}>
+                                      <Typography>Grau de Relevância</Typography>
+                                      <div className={styles.grauRelevanciaChipContainer}>
+                                        <GrauRelevancia
+                                          grauRelevancia={praticaEspecifica.grauRelevancia!}
+                                        />
+                                      </div>
+
                                     </div>
 
                                   </div>
-
-                                </div>
-                                <DescriptionRender description={praticaEspecifica.descricao}/>
-                              </CardContent>
-                            </Card>
-                          )
-                        })}
-                      </AccordionDetails>
-                    </Accordion>
-                  )
-                })}
-              </AccordionDetails>
-            </Accordion>
-          )
-        })}
+                                  {/*<DescriptionRender description={praticaEspecifica.descricao}/>*/}
+                                </CardContent>
+                              </Card>
+                            )
+                          })}
+                        </AccordionDetails>
+                      </Accordion>
+                    )
+                  })}
+                </AccordionDetails>
+              </Accordion>
+            )
+          })}
+        </div>
       </div>
       <PraticaDialog
         praticaSelecionada={praticaSelecionada}

@@ -18,7 +18,6 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Frequencia } from "@/enums/Frequencia";
 import { Impacto } from "@/enums/Impacto";
-import styles from "./page.module.css";
 import React, { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
@@ -27,9 +26,10 @@ import { setConsequencias } from "@/store/ConsequenciasSlice";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import DescriptionRender from "@/components/DescriptionRender";
+import styles from './page.module.css'
 
 const CenarioAtual = () => {
-
+  const [entered, setEntered] = useState(false);
   const faseEngenhariaConsequencias = useSelector((state: RootState) => state.fasesEngenharia.fasesEngenharia)
   const consequenciasSelecionadas = useSelector((state: RootState) => state.consequencias.consequencias)
   const dispatch = useDispatch()
@@ -56,6 +56,7 @@ const CenarioAtual = () => {
     })
       .then((response) => {
         if (response.ok) {
+          const timer = setTimeout(() => setEntered(true), 100);
           response.json().then((data) => {
             const consequenciasWithGrauRelevancia = data.map((consequencia: any) => {
               return {
@@ -121,84 +122,94 @@ const CenarioAtual = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`pageContainer`}>
       <Steps/>
 
-      <Typography className={styles.pageTitle} variant={'h4'}>
-        Cenário atual da(s) consequência(s) associada(s) as dívidas de requisitos e seus respectivos graus de
-        relevância
-      </Typography>
-      {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {
-        return (
-          <Accordion key={faseEngenharia.faseEngenhariaUri} className={styles.accordionContainer}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={styles.accordionIcon}/>}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-              className={styles.accordionAreaGestao}
-            >
-              <Typography variant={'h6'} style={{fontWeight: 600}}>{faseEngenharia.faseEngenhariaNome}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
+      <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
-                return (
-                  <Card key={consequencia.uri} className={styles.cardConsequencia}>
-                    <CardContent>
-                      <div className={styles.cardConsequenciaActions}>
+        <Typography className={'pageTitle'} variant={'h4'}>
+          Cenário atual da(s) consequência(s) associada(s) as dívidas de requisitos e seus respectivos graus de
+          relevância
+        </Typography>
 
-                        <Typography variant={'h6'} className={styles.consequenciaNome}>{consequencia.nome}</Typography>
+        {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {
+          return (
+            <Accordion key={faseEngenharia.faseEngenhariaUri} className={'accordionContainer'}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className={'accordionSummary'}
+              >
+                <Typography
+                  variant={'h5'}
+                  className={'accordionSummaryTitle'}
+                >
+                  {faseEngenharia.faseEngenhariaNome}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className={'accordionDetails'}>
+                {faseEngenharia.faseEngenhariaConsequencias.map((consequencia, index) => {
 
-                        <FormControl>
-                          <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>
-                          <Select
-                            labelId={`${consequencia.uri}_frequencia_label`}
-                            id={`${consequencia.uri}_frequencia`}
-                            value={consequencia.frequencia}
-                            label={'Frequencia'}
-                            disabled={true}
-                          >
-                            <MenuItem value={Frequencia.EVENTUALMENTE}>Eventual</MenuItem>
-                            <MenuItem value={Frequencia.PARCIALMENTE}>Parcial</MenuItem>
-                            <MenuItem value={Frequencia.FREQUENTEMENTE}>Frequente</MenuItem>
-                          </Select>
-                        </FormControl>
+                  return (
+                    <Card key={consequencia.uri} className={'cardContainer'}>
+                      <CardContent>
+                        <div className={styles.cardContent}>
 
-                        <Typography variant={'h6'}>X</Typography>
+                          <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
 
-                        <FormControl>
-                          <InputLabel id={`${consequencia.uri}_impacto_label`}>Impacto</InputLabel>
-                          <Select
-                            labelId={`${consequencia.uri}_impacto_label`}
-                            id={`${consequencia.uri}_impacto`}
-                            value={consequencia.impacto}
-                            label={'Impacto'}
-                            disabled={true}
-                          >
-                            <MenuItem value={Impacto.LEVE}>Leve</MenuItem>
-                            <MenuItem value={Impacto.MODERADO}>Moderado</MenuItem>
-                            <MenuItem value={Impacto.CRITICO}>Crítico</MenuItem>
-                          </Select>
-                        </FormControl>
+                          <FormControl>
+                            <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>
+                            <Select
+                              labelId={`${consequencia.uri}_frequencia_label`}
+                              id={`${consequencia.uri}_frequencia`}
+                              value={consequencia.frequencia}
+                              label={'Frequencia'}
+                              disabled={true}
+                            >
+                              <MenuItem value={Frequencia.EVENTUALMENTE}>Eventual</MenuItem>
+                              <MenuItem value={Frequencia.PARCIALMENTE}>Parcial</MenuItem>
+                              <MenuItem value={Frequencia.FREQUENTEMENTE}>Frequente</MenuItem>
+                            </Select>
+                          </FormControl>
 
-                        <Typography variant={'h6'}>=</Typography>
+                          <Typography variant={'h6'} className={styles.xMark}>X</Typography>
 
-                        <div
-                          className={`${styles.grauRelevanciaContainer}`}>
-                          <Typography>Grau de Relevância</Typography>
-                          <GrauRelevancia grauRelevancia={consequencia.grauRelevancia!}/>
+                          <FormControl>
+                            <InputLabel id={`${consequencia.uri}_impacto_label`}>Impacto</InputLabel>
+                            <Select
+                              labelId={`${consequencia.uri}_impacto_label`}
+                              id={`${consequencia.uri}_impacto`}
+                              value={consequencia.impacto}
+                              label={'Impacto'}
+                              disabled={true}
+                            >
+                              <MenuItem value={Impacto.LEVE}>Leve</MenuItem>
+                              <MenuItem value={Impacto.MODERADO}>Moderado</MenuItem>
+                              <MenuItem value={Impacto.CRITICO}>Crítico</MenuItem>
+                            </Select>
+                          </FormControl>
+
+                          <Typography variant={'h6'}>=</Typography>
+
+                          <div
+                            className={'grauRelevanciaContainer'}>
+                            <Typography>Grau de Relevância</Typography>
+                            <GrauRelevancia grauRelevancia={consequencia.grauRelevancia!}/>
+                          </div>
+
                         </div>
+                        <DescriptionRender description={consequencia.descricao ?? ''}/>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </AccordionDetails>
+            </Accordion>
+          )
+        })}
+      </div>
 
-                      </div>
-                      <DescriptionRender description={consequencia.descricao ?? ''}/>
-                    </CardContent>
-                  </Card>
-                )
-              })}
-            </AccordionDetails>
-          </Accordion>
-        )
-      })}
     </div>
   )
 }
