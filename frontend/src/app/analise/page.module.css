@@ -3,6 +3,21 @@
     margin-bottom: 1.5rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 0.1fr 3fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     grid-gap: 1rem;
+}
+
+.cardContentSelectTitle {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1140px) {
+    .cardContent {
+        grid-template-columns: 1fr;
+    }
+
+    .cardContentSelectTitle {
+        justify-content: center;
+    }
 }

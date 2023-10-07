@@ -1,6 +1,16 @@
 'use client'
 
-import { Button, Step, StepButton, StepLabel, Stepper, Typography } from '@mui/material';
+import {
+  Button,
+  MobileStepper,
+  Step,
+  StepButton,
+  StepLabel,
+  Stepper,
+  Typography,
+  useMediaQuery,
+  useTheme
+} from '@mui/material';
 import { useRouter } from "next/navigation";
 import styles from './steps.module.css';
 import { useDispatch, useSelector } from "react-redux";
@@ -18,8 +28,12 @@ const steps = [
 ];
 
 const Steps = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
+
   const router = useRouter()
   const dispatch = useDispatch()
+
 
   const activeStep = useSelector((state: RootState) => state.etapas.etapa)
 
@@ -45,45 +59,78 @@ const Steps = () => {
   };
 
   return (
+
     <div className={styles.container}>
-      <Button
-        className={`${styles.button} ${styles.buttonBack}`}
-        disabled={activeStep === 0}
-        onClick={handleBack}
-        size={'large'}
-        variant={'text'}
-      >
-        <ArrowBack/>
-        Voltar
-      </Button>
+      {isSmallScreen ? (
+        <MobileStepper
+          variant="dots"
+          steps={steps.length}
+          position="static"
+          activeStep={activeStep}
+          className={styles.mobileStepper}
+          nextButton={
+            <Button
+              size="large"
+              onClick={handleNext}
+              disabled={activeStep === steps.length - 1}
+            >
+              Avançar
+              <ArrowForwardIcon/>
+            </Button>
+          }
+          backButton={
+            <Button
+              size="large"
+              onClick={handleBack}
+              disabled={activeStep === 0}
+            >
+              <ArrowBack/>
+              Voltar
+            </Button>
+          }
+        />
+      ) : (
+        <>
+          {/* ... your regular Stepper and related components for larger screens ... */}
+          <Button
+            className={`${styles.button} ${styles.buttonBack}`}
+            disabled={activeStep === 0}
+            onClick={handleBack}
+            size={'large'}
+            variant={'text'}
+          >
+            <ArrowBack/>
+            Voltar
+          </Button>
 
-      <Stepper activeStep={activeStep} className={styles.stepper}>
-        {steps.map((step, index) => (
-          <Step key={step.label} onClick={() => handleStepClick(index)}>
-            <StepButton sx={{
-              '& .MuiStepIcon-root': {
-                fontSize: '2.5rem',
-              }
-            }}>
-              <StepLabel>
-                <Typography variant={'h4'} className={styles.stepperLabel}>{step.label}</Typography>
-              </StepLabel>
-            </StepButton>
-          </Step>
-        ))}
-      </Stepper>
+          <Stepper activeStep={activeStep} className={styles.stepper}>
+            {steps.map((step, index) => (
+              <Step key={step.label} onClick={() => handleStepClick(index)}>
+                <StepButton sx={{
+                  '& .MuiStepIcon-root': {
+                    fontSize: '2.5rem',
+                  }
+                }}>
+                  <StepLabel>
+                    <Typography variant={'h4'} className={styles.stepperLabel}>{step.label}</Typography>
+                  </StepLabel>
+                </StepButton>
+              </Step>
+            ))}
+          </Stepper>
 
-      <Button
-        className={`${styles.buttonNext}`}
-        disabled={activeStep === steps.length - 1}
-        onClick={handleNext}
-        size={'large'}
-        variant={'text'}
-      >
-        <span>Avançar</span>
-        <ArrowForwardIcon/>
-      </Button>
-
+          <Button
+            className={`${styles.buttonNext}`}
+            disabled={activeStep === steps.length - 1}
+            onClick={handleNext}
+            size={'large'}
+            variant={'text'}
+          >
+            <span>Avançar</span>
+            <ArrowForwardIcon/>
+          </Button>
+        </>
+      )}
     </div>
   );
 };

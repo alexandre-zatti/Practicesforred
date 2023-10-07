@@ -128,15 +128,15 @@ const Praticas = () => {
                                       setIsPraticaModalOpen(true)
                                       setPraticaSelecionada(praticaEspecifica)
                                     }}>
+                                      <AutoStoriesIcon/>
                                       <span>
                                         {praticaEspecifica.nome}
                                       </span>
-                                      <AutoStoriesIcon/>
                                     </Typography>
 
                                     <div
                                       className={styles.grauRelevanciaContainer}>
-                                      <Typography>Grau de Relevância</Typography>
+                                      <Typography className={styles.grauRelevanciaTitle}>Grau de Relevância</Typography>
                                       <div className={styles.grauRelevanciaChipContainer}>
                                         <GrauRelevancia
                                           grauRelevancia={praticaEspecifica.grauRelevancia!}
