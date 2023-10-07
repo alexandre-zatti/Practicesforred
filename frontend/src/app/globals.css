@@ -13,6 +13,7 @@
 }
 
 .contentContainer {
+    max-width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -72,7 +73,6 @@
 .accordionSummaryPreTitle {
     font-family: 'Playfare Display', 'Poppins', 'serif';
     font-style: italic;
-    /*font-weight: 600;*/
 }
 
 .cardContainer {
@@ -80,7 +80,6 @@
 
 .cardTitle {
     font-family: 'Playfare Display', 'Poppins', 'serif';
-    /*font-style: italic;*/
     text-decoration: underline;
 }
 
@@ -91,14 +90,13 @@
     gap: 0.2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1140px) {
     .pageContainer {
         padding: 1rem;
     }
 
-    .cardContent {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    .contentContainer {
+        max-width: 95%;
     }
 }
 
@@ -112,6 +110,7 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {

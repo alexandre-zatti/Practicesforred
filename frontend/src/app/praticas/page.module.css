@@ -31,3 +31,13 @@
 .praticaDescricao {
     font-style: oblique;
 }
+
+@media (max-width: 830px) {
+    .cardContent {
+        grid-template-columns: 1fr;
+    }
+
+    .praticaNome {
+        justify-content: center;
+    }
+}

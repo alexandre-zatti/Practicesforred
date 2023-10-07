@@ -111,11 +111,14 @@ const Analise = () => {
                     <Card key={consequencia.uri} className={'cardContainer'}>
                       <CardContent>
                         <div className={styles.cardContent}>
-                          <Checkbox onChange={(event) => {
-                            handleConsequenciaCheckboxChange(event.target.checked, consequencia)
-                          }} checked={!!consequenciaSelected}/>
+                          <div className={styles.cardContentSelectTitle}>
+                            <Checkbox onChange={(event) => {
+                              handleConsequenciaCheckboxChange(event.target.checked, consequencia)
+                            }} checked={!!consequenciaSelected}/>
 
-                          <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
+                            <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
+                          </div>
+
 
                           <FormControl>
                             <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>

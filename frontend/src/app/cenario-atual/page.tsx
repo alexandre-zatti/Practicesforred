@@ -156,7 +156,10 @@ const CenarioAtual = () => {
                       <CardContent>
                         <div className={styles.cardContent}>
 
-                          <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
+                          <div className={styles.titleContainer}>
+                            <Typography variant={'h6'} className={'cardTitle'}>{consequencia.nome}</Typography>
+                          </div>
+
 
                           <FormControl>
                             <InputLabel id={`${consequencia.uri}_frequencia_label`}>Frequência</InputLabel>
@@ -190,11 +193,11 @@ const CenarioAtual = () => {
                             </Select>
                           </FormControl>
 
-                          <Typography variant={'h6'}>=</Typography>
+                          <Typography variant={'h6'} className={styles.equalsMark}>=</Typography>
 
                           <div
                             className={'grauRelevanciaContainer'}>
-                            <Typography>Grau de Relevância</Typography>
+                            <Typography className={styles.grauRelevanciaTitle}>Grau de Relevância</Typography>
                             <GrauRelevancia grauRelevancia={consequencia.grauRelevancia!}/>
                           </div>
 

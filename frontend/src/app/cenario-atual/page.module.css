@@ -3,10 +3,38 @@
     margin-bottom: 1.5rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 3fr 1fr 0.05fr 1fr 0.05fr 1fr;
+    grid-template-columns: 3fr 1fr 0.05fr 1fr 0.05fr 1.5fr;
     grid-gap: 1rem;
 }
 
+.titleContainer {
+    display: flex;
+}
+
 .xMark {
+    display: flex;
     font-family: 'Playfare Display', 'Poppins', 'serif';
 }
+
+.equalsMark {
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .cardContent {
+        grid-template-columns: 1fr;
+    }
+
+    .titleContainer {
+        justify-content: center;
+    }
+
+    .xMark {
+        justify-content: center;
+    }
+
+    .equalsMark {
+        justify-content: center;
+    }
+}
+
