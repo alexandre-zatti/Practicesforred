@@ -1000,11 +1000,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste_UC -->
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste_UC">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
-        <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
     </owl:NamedIndividual>
     
 
@@ -1623,9 +1622,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElaborarArtefatosUML">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PraticaDivida"/>
-        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTeste_UC"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC"/>
         <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloCasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso"/>
         <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ParteCasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:descritoEmTermosDe rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso"/>
         <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MelhorarProcessoDesenvolvimento"/>
         <untitled-ontology-3:podeMitigar rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DocumentoESRMalElaborado"/>
         <untitled-ontology-3:apresentacao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
@@ -3083,6 +3090,15 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarCerimonias -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizarCerimonias">
@@ -3298,15 +3314,6 @@ Caso os smells não forem removidos, o requisito pode ser implementado incorreta
         <untitled-ontology-3:ocasionadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#SistemaGerenciamentoRequisitosAusenteIneficaz"/>
         <untitled-ontology-3:descricao>Retrabalho de artefatos e na construção dos protótipos carcateriza-se pela recorrência de problemas que prejudicam o desenvolvimento de artefatos que precisam ser refeitos devido a falha em atividades que envolvem requisitos.</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>Retrabalho de artefatos e na construção dos protótipos</untitled-ontology-3:nome>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReutilizacaoCasoUso -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ReutilizacaoCasoUso">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
-        <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
     </owl:NamedIndividual>
     
 
