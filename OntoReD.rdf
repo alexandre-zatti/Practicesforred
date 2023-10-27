@@ -69,15 +69,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descreve -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descreve">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe">
@@ -109,6 +100,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eEvidenciadaPor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#estaAssociadaA"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#FaseEngenhariaRequisitos"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CausaReD"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD"/>
@@ -165,6 +157,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eSequenciaDe">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#possui"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Alpha"/>
     </owl:ObjectProperty>
@@ -266,6 +259,7 @@
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#organiza -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#organiza">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Alpha"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
     </owl:ObjectProperty>
@@ -298,6 +292,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
     </owl:ObjectProperty>
@@ -785,6 +780,7 @@
     &lt;/div&gt;
 &lt;/div&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Analisar uma parte do caso de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;5&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
     
@@ -1004,6 +1000,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -1039,6 +1037,7 @@
 &lt;/ul&gt;
 &lt;h1 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 2.375em;&quot;&gt;&lt;br&gt;&lt;/h1&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Caso de Uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -1462,6 +1461,7 @@
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As fatias criadas devem ser encomendadas para entrega para garantir que a equipe ** desenvolvimento as resolva na ordem correta.&amp;nbsp;A melhor maneira ** classificar as fatias &amp;eacute; considerar uma combina&amp;ccedil;&amp;atilde;o de prioridade, valor, risco e necessidade.&amp;nbsp;Novamente, voc&amp;ecirc; deve fazer isso com as partes interessadas e outros membros da equipe para ******** que o pedido defina um sistema utiliz&amp;aacute;vel que agregue o ***** valor.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Repita esta atividade ****** que novas ****** forem necess&amp;aacute;rias.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Dividir os casos de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
     
@@ -1613,6 +1613,7 @@
         <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Use Case Modeling, de Kurt Bittner e Ian Spence, Addison-Wesley Professional, cap&amp;iacute;tulos 4-5.&lt;/p&gt;
 
 &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, cap&amp;iacute;tulos 16-44.&lt;/p&gt;</untitled-ontology-3:referenciaRE>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
     
@@ -2202,6 +2203,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Eacute; importante que voc&amp;ecirc; inspecione e adapte continuamente *** maneira de trabalhar, bem como os casos de uso e ** fatias de casos de uso com os quais est&amp;aacute; trabalhando.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Depois ** ajustar o modelo de ***** de uso e ********* tudo, voc&amp;ecirc; estar&amp;aacute; pronto para identificar seu pr&amp;oacute;ximo conjunto de fatias.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Inspecionar e ajustar os casos de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
     
@@ -2653,6 +2655,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
         <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Use Case Modeling, de Kurt Bittner e Ian Spence, Addison-Wesley Professional, cap&amp;iacute;tulos 4-5.&lt;/p&gt;
 
 &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, cap&amp;iacute;tulos 16-44.&lt;/p&gt;</untitled-ontology-3:referenciaRE>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -2785,6 +2788,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -2862,6 +2866,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Muitas vezes *********** que o caso de uso ********** muitas hist&amp;oacute;rias **** serem ********* ou desenvolvidas de uma s&amp;oacute; vez. Por exemplo, um caso de uso pode conter 15 ****** de eventos, alguns dos quais s&amp;atilde;o de maior prioridade *** os outros e podem precisar ser desenvolvidos primeiro. &lt;strong&gt;Seria bom se pud&amp;eacute;ssemos indicar ********** quais conjuntos de fluxos (e as hist&amp;oacute;**** que eles contam) ser&amp;atilde;o trabalhados em determinado momento.&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Cada parte de caso de uso captura uma ou mais hist&amp;oacute;rias do caso de *** subjacente, ********** facilmente que as diferentes partes do caso de uso progridam de forma independente: ** partes de casos de uso combinam requisitos de um caso de uso, juntamente com casos de teste, **** especificar claramente um aspecto do sistema que pode ser constru&amp;iacute;** e ******* de forma independente.&lt;/p&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Partes de caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -2949,6 +2954,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Execute esta atividade pelo ***** uma *** **** **** fatia. Repita esta atividade sempre que houver altera&amp;ccedil;&amp;otilde;es aplicadas &amp;agrave; fatia.&lt;/p&gt;
 &lt;/div&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Preparar uma parte do caso de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
     
@@ -3006,7 +3012,6 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProductBacklog -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProductBacklog">
-        <untitled-ontology-3:descreve rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RequisitosBemDefinidos"/>
         <untitled-ontology-3:nome>Uma lista ordenada de itens a serem incorporados ao produto para aumentar seu valor.</untitled-ontology-3:nome>
     </owl:NamedIndividual>
     
@@ -3095,6 +3100,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
