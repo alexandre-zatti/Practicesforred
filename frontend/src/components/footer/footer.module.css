@@ -1,0 +1,13 @@
+.container {
+    border-top: 1px solid var(--mui-primary);
+    background: var(--mui-secondary);
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.authors {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+}

@@ -8,6 +8,7 @@ import { Provider } from 'react-redux'
 import Loading from "@/components/Loading";
 import Toast from "@/components/Toast";
 import { StyledEngineProvider } from "@mui/material";
+import Footer from "@/components/footer/Footer";
 
 const poppins = Poppins({subsets: ['latin'], weight: ['400', '600']})
 const playfairDisplay = Playfair_Display({subsets: ['latin']})
@@ -25,6 +26,7 @@ export default function RootLayout({children}: {
           <Loading/>
           <Toast/>
           {children}
+          <Footer/>
           </body>
         </ThemeProvider>
         </html>

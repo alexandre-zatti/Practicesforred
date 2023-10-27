@@ -21,9 +21,9 @@ import { ArrowBack } from "@mui/icons-material";
 import { useEffect } from "react";
 
 const steps = [
-  {label: 'Análise', route: '/analise'},
+  {label: 'Problemas', route: '/analise'},
   {label: 'Cenário Atual', route: '/cenario-atual'},
-  {label: 'Gaps', route: '/gaps'},
+  {label: 'Causas', route: '/gaps'},
   {label: 'Práticas', route: '/praticas'},
 ];
 

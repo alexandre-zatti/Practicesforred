@@ -11,11 +11,11 @@
 }
 
 .grauRelevanciaNomeMedio {
-    color: yellowgreen;
+    color: dodgerblue;
     font-weight: bold;
 }
 
 .grauRelevanciaNomeBaixo {
-    color: dodgerblue;
+    color: limegreen;
     font-weight: bold;
 }

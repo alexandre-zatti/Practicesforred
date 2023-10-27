@@ -128,8 +128,7 @@ const CenarioAtual = () => {
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
         <Typography className={'pageTitle'} variant={'h4'}>
-          Cenário atual da(s) consequência(s) associada(s) as dívidas de requisitos e seus respectivos graus de
-          relevância
+          Consequência(s) voltadas as dívidas de requisitos do produto
         </Typography>
 
         {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {

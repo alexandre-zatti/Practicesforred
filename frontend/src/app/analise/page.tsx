@@ -84,7 +84,7 @@ const Analise = () => {
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
         <Typography className={'pageTitle'} variant={'h4'}>
-          Informe o(s) problema(s) que ocorre(m) no cenário atual voltado ao processo de requisitos
+          Informe o(s) problema(s) gaps que ocorre(m) no produto de software
         </Typography>
 
         {faseEngenhariaConsequencias.map((faseEngenharia) => {
@@ -166,7 +166,6 @@ const Analise = () => {
           )
         })}
       </div>
-
     </div>
   )
 }

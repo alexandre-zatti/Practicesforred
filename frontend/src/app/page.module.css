@@ -1,24 +1,27 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    min-height: 90vh;
 }
 
 .titleContainer {
+    width: 60%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2rem;
     gap: 1rem;
 }
 
-.title {
-    font-family: 'Playfare Display', 'Poppins', 'serif';
+.titleSecondary {
+    text-align: center;
 }
 
-.titleSecondary {
+.titlePrimary {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
     color: var(--mui-primary);
     font-weight: 600;
 }
@@ -29,7 +32,19 @@
     margin-top: 2rem;
 }
 
+.logoContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .button {
+    width: 15rem;
+    display: flex;
+    gap: 0.5rem;
     border-radius: 0;
+    font-size: 1.5rem;
+}
+
+.buttonArrow {
     font-size: 1.5rem;
 }

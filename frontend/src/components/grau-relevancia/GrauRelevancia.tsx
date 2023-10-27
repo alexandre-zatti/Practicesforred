@@ -13,9 +13,9 @@ const GrauRelevancia = ({grauRelevancia}: GrauRelevanciaProps) => {
 
     switch (grauRelevancia) {
       case GrauRelevanciaEnum.BAIXO:
-        return <InfoOutlined style={{color: "dodgerblue"}}/>
+        return <InfoOutlined style={{color: "limegreen"}}/>
       case GrauRelevanciaEnum.MEDIO:
-        return <WarningAmberOutlined style={{color: "yellowgreen"}}/>
+        return <WarningAmberOutlined style={{color: "dodgerblue"}}/>
       case GrauRelevanciaEnum.ALTO:
         return <CrisisAlertOutlined style={{color: "red"}}/>
       default:

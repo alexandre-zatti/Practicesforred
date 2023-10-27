@@ -87,8 +87,7 @@ const Praticas = () => {
         <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
           <Typography className={'pageTitle'} variant={'h4'}>
-            Práticas gerais e específicas para mitigar os Gaps (causas) que ocasionam as dívidas de requisitos
-            informadas
+            Práticas gerais e específicas para mitigar as causas das dívidas de requisitos e suas consequências
           </Typography>
 
           {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {

@@ -102,7 +102,7 @@ const Gaps = () => {
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
         <Typography className={'pageTitle'} variant={'h4'}>
-          Informe a(s) possível(eis) causa(s) atrelada(s) a(s) consequência(s) informada(s)
+          Causas das dívidas de requisitos
         </Typography>
 
         {consequenciasSelecionadas.map((consequencia) => {
