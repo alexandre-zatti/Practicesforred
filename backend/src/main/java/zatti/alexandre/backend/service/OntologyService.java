@@ -36,7 +36,7 @@ public class OntologyService {
             dataset.getDefaultModel().removeAll();
 
             model.read(new StringReader(rdfContent), null,
-                       "RDF/XML"); // Specify the correct RDF language
+                    "RDF/XML"); // Specify the correct RDF language
             dataset.getDefaultModel().add(model);
             return true;
         } catch (Exception e) {
@@ -86,17 +86,39 @@ public class OntologyService {
                 }
 
                 var faseEngenharia = new FaseEngenhariaConsequenciasResponseDTO(solution.get("nomeFase").toString(),
-                                                                                solution.get("uriFase").toString());
+                        solution.get("uriFase").toString());
                 faseEngenharia.addFaseEngenhariaConsequencia(
                         new Consequencia(solution.get("nomeConsequencia").toString(),
-                                         solution.get("uriConsequencia").toString(),
-                                         solution.get("descricaoConsequencia").toString()));
+                                solution.get("uriConsequencia").toString(),
+                                solution.get("descricaoConsequencia").toString()));
 
                 resultList.add(faseEngenharia);
             }
         }
 
         return resultList;
+    }
+
+    public List<TermosPraticaResponseDTO> getTermosPratica(String praticaUri) {
+        var queryString = getTermosByPraticaQuery(praticaUri);
+        var query = QueryFactory.create(queryString);
+        var listaTermosPratica = new ArrayList<TermosPraticaResponseDTO>();
+
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+            while (results.hasNext()) {
+                QuerySolution solution = results.next();
+                var termoPratica = new TermosPraticaResponseDTO();
+                termoPratica.setTermoPraticaNome(solution.get("nome").toString());
+                termoPratica.setTermoPraticaOrdem(Integer.parseInt(solution.get("ordemString").toString()));
+                termoPratica.setTermoPraticaTipo(solution.get("tipo").toString());
+                termoPratica.setTermoPraticaUri(solution.get("termo").toString());
+                listaTermosPratica.add(termoPratica);
+            }
+
+        }
+
+        return listaTermosPratica;
     }
 
     private int isFaseEngenhariaAlreadyPresent(
@@ -120,15 +142,15 @@ public class OntologyService {
             var queryString = getCausaByConsequenciaQuery(consequencia);
             var query = QueryFactory.create(queryString);
             var causaConsequencia = new ConsequenciaCausasResponseDTO(consequencia.getConsequenciaUri(),
-                                                                      consequencia.getConsequenciaNome());
+                    consequencia.getConsequenciaNome());
 
             try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
                 ResultSet results = qe.execSelect();
                 while (results.hasNext()) {
                     QuerySolution solution = results.next();
                     causaConsequencia.addCausa(new Causa(solution.get("nomeCausa").toString(),
-                                                         solution.get("uriCausa").toString(),
-                                                         solution.get("descricaoCausa").toString()));
+                            solution.get("uriCausa").toString(),
+                            solution.get("descricaoCausa").toString()));
                 }
 
             }
@@ -153,28 +175,28 @@ public class OntologyService {
                     QuerySolution solution = results.next();
                     var foundPreviousAreaGestaoIndex =
                             checkIfAreaGestaoAlreadyPresent(listaCausasPraticas,
-                                                            solution.get("uriAreaGestao").toString());
+                                    solution.get("uriAreaGestao").toString());
 
                     if (foundPreviousAreaGestaoIndex != -1) {
                         var causaPraticas = listaCausasPraticas.get(foundPreviousAreaGestaoIndex);
                         var foundPreviousPraticaGeralIndex =
                                 checkIfPraticaGeralAlreadyPresent(causaPraticas.getPraticasGerais(),
-                                                                  solution.get("uriPraticaGeral").toString());
+                                        solution.get("uriPraticaGeral").toString());
 
                         if (foundPreviousPraticaGeralIndex != -1) {
                             var praticaGeral = causaPraticas.getPraticasGerais().get(foundPreviousPraticaGeralIndex);
 
                             var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                                                     solution.get(
-                                                                                             "uriPratica").toString(),
-                                                                                     causa.getGrauRelevancia().ordinal());
+                                    solution.get(
+                                            "uriPratica").toString(),
+                                    causa.getGrauRelevancia().ordinal());
 
                             var newPratica = new Pratica(solution.get("nomePratica").toString(),
-                                                         solution.get("uriPratica").toString(),
-                                                         solution.get("descricaoPratica").toString(),
-                                                         ClassificacaoPratica.fromValue(solution.get(
-                                                                 "classificacaoPratica").toString()),
-                                                         causa.getGrauRelevancia());
+                                    solution.get("uriPratica").toString(),
+                                    solution.get("descricaoPratica").toString(),
+                                    ClassificacaoPratica.fromValue(solution.get(
+                                            "classificacaoPratica").toString()),
+                                    causa.getGrauRelevancia());
 
                             if (praticaAlreadyPresent.getKey()) {
                                 if (praticaAlreadyPresent.getValue() != -1) {
@@ -191,20 +213,20 @@ public class OntologyService {
                         } else {
                             var praticaGeral =
                                     new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
-                                                                    solution.get("uriPraticaGeral").toString(),
-                                                                    ClassificacaoPratica.GERAL));
+                                            solution.get("uriPraticaGeral").toString(),
+                                            ClassificacaoPratica.GERAL));
 
                             var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                                                     solution.get(
-                                                                                             "uriPratica").toString(),
-                                                                                     causa.getGrauRelevancia().ordinal());
+                                    solution.get(
+                                            "uriPratica").toString(),
+                                    causa.getGrauRelevancia().ordinal());
 
                             var newPratica = new Pratica(solution.get("nomePratica").toString(),
-                                                         solution.get("uriPratica").toString(),
-                                                         solution.get("descricaoPratica").toString(),
-                                                         ClassificacaoPratica.fromValue(solution.get(
-                                                                 "classificacaoPratica").toString()),
-                                                         causa.getGrauRelevancia());
+                                    solution.get("uriPratica").toString(),
+                                    solution.get("descricaoPratica").toString(),
+                                    ClassificacaoPratica.fromValue(solution.get(
+                                            "classificacaoPratica").toString()),
+                                    causa.getGrauRelevancia());
 
                             if (praticaAlreadyPresent.getKey()) {
                                 if (praticaAlreadyPresent.getValue() != -1) {
@@ -221,24 +243,24 @@ public class OntologyService {
                     } else {
                         var causaPraticas =
                                 new CausaPraticasResponseDTO(new AreaGestao(solution.get("uriAreaGestao").toString(),
-                                                                            solution.get("nomeAreaGestao").toString(),
-                                                                            solution.get(
-                                                                                    "descricaoAreaGestao").toString()));
+                                        solution.get("nomeAreaGestao").toString(),
+                                        solution.get(
+                                                "descricaoAreaGestao").toString()));
                         var praticaGeral =
                                 new PraticaGeralDTO(new Pratica(solution.get("nomePraticaGeral").toString(),
-                                                                solution.get("uriPraticaGeral").toString(),
-                                                                ClassificacaoPratica.GERAL));
+                                        solution.get("uriPraticaGeral").toString(),
+                                        ClassificacaoPratica.GERAL));
 
                         var praticaAlreadyPresent = checkIfPraticaAlreadyPresent(praticaGeral.getPraticas(),
-                                                                                 solution.get("uriPratica").toString(),
-                                                                                 causa.getGrauRelevancia().ordinal());
+                                solution.get("uriPratica").toString(),
+                                causa.getGrauRelevancia().ordinal());
 
                         var newPratica = new Pratica(solution.get("nomePratica").toString(),
-                                                     solution.get("uriPratica").toString(),
-                                                     solution.get("descricaoPratica").toString(),
-                                                     ClassificacaoPratica.fromValue(solution.get(
-                                                             "classificacaoPratica").toString()),
-                                                     causa.getGrauRelevancia());
+                                solution.get("uriPratica").toString(),
+                                solution.get("descricaoPratica").toString(),
+                                ClassificacaoPratica.fromValue(solution.get(
+                                        "classificacaoPratica").toString()),
+                                causa.getGrauRelevancia());
 
                         if (praticaAlreadyPresent.getKey()) {
                             if (praticaAlreadyPresent.getValue() != -1) {
@@ -296,34 +318,48 @@ public class OntologyService {
         return -1;
     }
 
+    private String getTermosByPraticaQuery(String praticaUri) {
+        return "PREFIX owl: <http://www.w3.org/2002/07/owl#> "
+                + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                + "SELECT ?termo ?nome (STR(?ordem) AS ?ordemString) ?tipo "
+                + "WHERE { "
+                + "    " + praticaUri + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe> ?termo . "
+                + "    ?termo <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?ordem . "
+                + "    ?termo <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nome . "
+                + "    ?termo rdf:type ?tipo . "
+                + "    FILTER (?tipo != owl:NamedIndividual) "
+                + "}";
+    }
+
+
     private String getPraticasByCausaQuery(CausaPraticasRequestDTO causa) {
 
         return "SELECT *" +
-               "WHERE {" +
-               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar> " + causa.getCausaPraticaUri() + " ." +
-               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePratica ." +
-               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPratica ." +
-               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPratica ." +
-               "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa> ?uriPraticaGeral ." +
-               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePraticaGeral ." +
+                "WHERE {" +
+                "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar> " + causa.getCausaPraticaUri() + " ." +
+                "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePratica ." +
+                "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPratica ." +
+                "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPratica ." +
+                "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa> ?uriPraticaGeral ." +
+                "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePraticaGeral ." +
 //               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPraticaGeral ." +
-               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPraticaGeral ." +
-               "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eParteDe> ?uriAreaGestao ." +
-               "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomeAreaGestao ." +
-               "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoAreaGestao ." +
-               " }";
+                "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPraticaGeral ." +
+                "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eParteDe> ?uriAreaGestao ." +
+                "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomeAreaGestao ." +
+                "    ?uriAreaGestao <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoAreaGestao ." +
+                " }";
 
     }
 
     private String getCausaByConsequenciaQuery(ConsequenciaCausasRequestDTO consequencia) {
 
         return "SELECT ?nomeConsequencia ?uriCausa ?nomeCausa ?descricaoCausa " +
-               "WHERE {" +
-               "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeConsequencia ." +
-               "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor> ?uriCausa ." +
-               "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeCausa ." +
-               "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoCausa ." +
-               "}";
+                "WHERE {" +
+                "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeConsequencia ." +
+                "    " + consequencia.getConsequenciaUri() + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor> ?uriCausa ." +
+                "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomeCausa ." +
+                "    ?uriCausa <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoCausa ." +
+                "}";
 
     }
 
@@ -339,11 +375,11 @@ public class OntologyService {
             var impacto = consequencia.getImpacto();
 
             var consequenciaRelevancia = new RelevanciaConsequenciaResponseDTO(consequencia.getConsequenciaUri(),
-                                                                               consequencia.getConsequenciaNome(),
-                                                                               consequencia.getConsequenciaDescricao(),
-                                                                               frequencia,
-                                                                               impacto,
-                                                                               MatrizImpacto.MATRIZ[frequencia.getValue()][impacto.getValue()]);
+                    consequencia.getConsequenciaNome(),
+                    consequencia.getConsequenciaDescricao(),
+                    frequencia,
+                    impacto,
+                    MatrizImpacto.MATRIZ[frequencia.getValue()][impacto.getValue()]);
 
             consequenciasRelevancia.add(consequenciaRelevancia);
         }

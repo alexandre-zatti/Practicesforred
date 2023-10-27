@@ -72,4 +72,15 @@ public class OntologyController {
             @RequestBody List<CausaPraticasRequestDTO> causas) {
         return new ResponseEntity<>(ontologyService.getPraticasByCausa(causas), HttpStatus.OK);
     }
+
+    @GetMapping("/pratica/termos")
+    public ResponseEntity<List<TermosPraticaResponseDTO>> getTermosByPratica(@RequestParam(value = "praticaUri") String praticaUri) {
+        List<TermosPraticaResponseDTO> resultList = ontologyService.getTermosPratica(praticaUri);
+
+        if (!resultList.isEmpty()) {
+            return new ResponseEntity<>(resultList, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(resultList, HttpStatus.NOT_FOUND);
+        }
+    }
 }
