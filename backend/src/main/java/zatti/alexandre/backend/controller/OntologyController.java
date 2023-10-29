@@ -77,10 +77,6 @@ public class OntologyController {
     public ResponseEntity<List<TermosPraticaResponseDTO>> getTermosByPratica(@RequestParam(value = "praticaUri") String praticaUri) {
         List<TermosPraticaResponseDTO> resultList = ontologyService.getTermosPratica(praticaUri);
 
-        if (!resultList.isEmpty()) {
-            return new ResponseEntity<>(resultList, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(resultList, HttpStatus.NOT_FOUND);
-        }
+        return new ResponseEntity<>(resultList, HttpStatus.OK);
     }
 }
