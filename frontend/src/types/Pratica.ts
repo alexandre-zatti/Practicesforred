@@ -5,6 +5,10 @@ export type Pratica = {
   uri: string;
   nome: string;
   descricao: string;
+  fluxoAtividades: string;
+  apresentacao: string;
+  introducao: string;
+  quandoAplicar: string;
   classificacao: Classificacao;
   grauRelevancia?: GrauRelevancia;
 }
