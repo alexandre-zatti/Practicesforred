@@ -20,10 +20,6 @@ export const VerticalStepper = ({steps}: VerticalStepperProps) => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
     <div>
       <Stepper nonLinear activeStep={activeStep} orientation="vertical">

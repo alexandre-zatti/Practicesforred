@@ -8,10 +8,12 @@ import NotesIcon from '@mui/icons-material/Notes';
 import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Image from 'next/image';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { useDispatch } from "react-redux";
 import { ApresentacaoPratica } from "@/components/apresentacao-pratica/apresentacaoPratica";
+import { PraticaTermo } from "@/types/PraticaTermo";
+import { TipoPraticaTermo } from "@/enums/TipoPraticaTermo";
 
 
 interface PraticaPageProps {
@@ -29,6 +31,7 @@ const PraticaDialog = ({
                        }: PraticaPageProps) => {
 
   const dispatch = useDispatch()
+  const [praticaTermos, setPraticaTermos] = useState<PraticaTermo[]>([])
 
   useEffect(() => {
     dispatch(showLoading())
@@ -42,9 +45,8 @@ const PraticaDialog = ({
     })
       .then((response) => {
         if (response.ok) {
-          response.json().then((data) => {
-            console.log(data)
-            console.log('praticaSelecionada', praticaSelecionada)
+          response.json().then((data: PraticaTermo[]) => {
+            setPraticaTermos(data.sort((a, b) => a.termoPraticaOrdem - b.termoPraticaOrdem))
           })
         }
       })
@@ -52,10 +54,19 @@ const PraticaDialog = ({
     dispatch(hideLoading())
   }, [])
 
+  const getIconTermoPratica = (praticaTermo: PraticaTermo) => {
+    switch (praticaTermo.termoPraticaTipo) {
+      case TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA:
+        return <Image src="/ProdutoTrabalhoPratica.png" alt="Icon Description" width={28} height={28}/>
+      case TipoPraticaTermo.ALPHA:
+        return <Image src="/Alpha.png" alt="Icon Description" width={28} height={28}/>
+      case TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO:
+        return <Image src="/AtividadeProdutoTrabalho.png" alt="Icon Description" width={28} height={28}/>
+    }
+  }
 
   return (
     <>
-
       {praticaSelecionada && (
         <Dialog
           open={isPraticaModalOpen}
@@ -93,6 +104,28 @@ const PraticaDialog = ({
               </AccordionDetails>
             </Accordion>
 
+            {praticaTermos.map((praticaTermo: PraticaTermo) => {
+              return (
+                <Accordion className={'accordionContainer'}>
+                  <AccordionSummary
+                    className={'accordionSummary'}
+                    expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                  >
+                    <div className={'accordionSummaryContent'}>
+                      {getIconTermoPratica(praticaTermo)}
+                      <Typography variant={'h5'}>
+                        <span className={'accordionSummaryTitle'}><DescriptionRender
+                          description={praticaTermo.termoPraticaNome}/></span>
+                      </Typography>
+                    </div>
+
+                  </AccordionSummary>
+                  <AccordionDetails className={'accordionDetails'}>
+                    <Typography variant={'h6'}>Em desenvolvimento!</Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )
+            })}
 
             <Accordion className={'accordionContainer'}>
               <AccordionSummary
@@ -100,7 +133,7 @@ const PraticaDialog = ({
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               >
                 <div className={'accordionSummaryContent'}>
-                  <Image src="/ReferenciasApoio.png" alt="Icon Description" width={32} height={32}/>
+                  <Image src="/ReferenciasApoio.png" alt="Icon Description" width={28} height={28}/>
                   <Typography variant={'h5'}>
                     <span className={'accordionSummaryTitle'}>Referências de apoio</span>
                   </Typography>
@@ -108,7 +141,7 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <DescriptionRender description={praticaSelecionada?.descricao ?? ''}/>
+                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
               </AccordionDetails>
             </Accordion>
 
@@ -126,7 +159,7 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <DescriptionRender description={praticaSelecionada?.descricao ?? ''}/>
+                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
               </AccordionDetails>
             </Accordion>
 
@@ -144,7 +177,7 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <DescriptionRender description={praticaSelecionada?.descricao ?? ''}/>
+                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
               </AccordionDetails>
             </Accordion>
 
