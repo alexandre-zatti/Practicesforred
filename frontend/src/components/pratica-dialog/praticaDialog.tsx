@@ -1,4 +1,13 @@
-import { Accordion, AccordionDetails, AccordionSummary, Dialog, DialogTitle, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Card,
+  CardContent,
+  Dialog,
+  DialogTitle,
+  Typography
+} from "@mui/material";
 import { DialogBody } from "next/dist/client/components/react-dev-overlay/internal/components/Dialog";
 import { Pratica } from "@/types/Pratica";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -14,6 +23,7 @@ import { useDispatch } from "react-redux";
 import { ApresentacaoPratica } from "@/components/apresentacao-pratica/apresentacaoPratica";
 import { PraticaTermo } from "@/types/PraticaTermo";
 import { TipoPraticaTermo } from "@/enums/TipoPraticaTermo";
+import { CausasConsequenciasPratica } from "@/types/CausasConsequenciasPratica";
 
 
 interface PraticaPageProps {
@@ -32,10 +42,35 @@ const PraticaDialog = ({
 
   const dispatch = useDispatch()
   const [praticaTermos, setPraticaTermos] = useState<PraticaTermo[]>([])
+  const [praticaCausasConsequencias, setPraticaCausasConsequencias] = useState<CausasConsequenciasPratica[]>([])
 
   useEffect(() => {
     dispatch(showLoading())
 
+    getTermosPratica()
+    getContextoReDPratica()
+
+    dispatch(hideLoading())
+  }, [])
+
+  const getContextoReDPratica = () => {
+    const queryParams = new URLSearchParams({praticaUri: `<${praticaSelecionada?.uri}>` ?? ''}).toString()
+
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/causas-consequencias?${queryParams}`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          response.json().then((data: CausasConsequenciasPratica[]) => {
+            setPraticaCausasConsequencias(data)
+          })
+        }
+      })
+  }
+
+  const getTermosPratica = () => {
     const queryParams = new URLSearchParams({praticaUri: `<${praticaSelecionada?.uri}>` ?? ''}).toString()
 
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/termos?${queryParams}`, {
@@ -46,13 +81,11 @@ const PraticaDialog = ({
       .then((response) => {
         if (response.ok) {
           response.json().then((data: PraticaTermo[]) => {
-            setPraticaTermos(data.sort((a, b) => a.termoPraticaOrdem - b.termoPraticaOrdem))
+            setPraticaTermos(data.toSorted((a, b) => a.termoPraticaOrdem - b.termoPraticaOrdem))
           })
         }
       })
-
-    dispatch(hideLoading())
-  }, [])
+  }
 
   const getIconTermoPratica = (praticaTermo: PraticaTermo) => {
     switch (praticaTermo.termoPraticaTipo) {
@@ -106,7 +139,7 @@ const PraticaDialog = ({
 
             {praticaTermos.map((praticaTermo: PraticaTermo) => {
               return (
-                <Accordion className={'accordionContainer'}>
+                <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}>
                   <AccordionSummary
                     className={'accordionSummary'}
                     expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
@@ -159,7 +192,44 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
+                <Typography variant={'h6'} style={{fontWeight: "bold", textAlign: "center"}}>Problemas e Causas
+                  associadas a
+                  prática</Typography>
+
+                {praticaCausasConsequencias.map((consequencia) => {
+                  return (
+                    <Accordion key={consequencia.consequenciaUri} className={'accordionContainer'}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                        className={'accordionSummary'}
+                      >
+                        <Typography variant={'h5'}>
+                          <span className={'accordionSummaryPreTitle'}>Problema - </span>
+                          <span className={'accordionSummaryTitle'}>{consequencia.consequenciaNome}</span>
+                        </Typography>
+                      </AccordionSummary>
+                      <AccordionDetails className={'accordionDetails'}>
+                        {consequencia.causas && consequencia.causas!.map((causa, index) => {
+                          return (
+                            <Card key={causa.uri + consequencia.consequenciaUri} className={'cardContainer'}>
+                              <CardContent>
+                                <div className={styles.cardContent}>
+                                  <Typography variant={'h6'} className={'cardTitle'}>
+                                    <span className={'accordionSummaryPreTitle'}>Causa - </span>
+                                    {causa.uri}
+                                  </Typography>
+                                </div>
+                                <DescriptionRender description={causa.descricao ?? ''}/>
+                              </CardContent>
+                            </Card>
+                          )
+                        })}
+                      </AccordionDetails>
+                    </Accordion>
+                  )
+                })}
               </AccordionDetails>
             </Accordion>
 
