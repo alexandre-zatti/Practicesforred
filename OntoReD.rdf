@@ -708,13 +708,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Analisado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
+        <untitled-ontology-3:avancadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Estado Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;strong&gt;A parte do caso de uso foi analisada de forma que seu impacto nos componentes do sistema seja compreendido e as partes afetadas estejam prontas para implementa&amp;ccedil;&amp;atilde;o e teste.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es suficientes para *********** com sucesso:&amp;nbsp;&lt;/strong&gt;As realiza&amp;ccedil;&amp;otilde;es de casos de uso da parte do caso ** uso cont&amp;ecirc;m informa&amp;ccedil;&amp;otilde;** suficientes para permitir que os fluxos relevantes, os requisitos especiais e as informa&amp;ccedil;&amp;otilde;es de suporte cobertas pela ***** de caso ** uso sejam implementados com &amp;ecirc;xito.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O impacto da implementa&amp;ccedil;&amp;atilde;o &amp;eacute; acordado:&amp;nbsp;&lt;/strong&gt;Deve ser acordado como a implementa&amp;ccedil;&amp;atilde;o da fatia impactar&amp;aacute; os elementos de implementa&amp;ccedil;&amp;atilde;o (novos ou existentes).&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O impacto &amp;eacute; aceit&amp;aacute;vel: &lt;/strong&gt;O impacto previsto &amp;eacute; aceit&amp;aacute;vel.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;strong&gt;s realiza&amp;ccedil;&amp;otilde;es de ***** ** uso s&amp;atilde;o &amp;apos;Elementos ** implementa&amp;ccedil;&amp;atilde;o identificados&amp;apos;:&lt;/strong&gt; As realiza&amp;ccedil;&amp;otilde;es ** casos ** uso para a fatia s&amp;atilde;o detalhadas em &lt;a href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_YtQeYj4GEeGsI6HKv3Dk0A/Use-Case%20Realization_gd.html#implementation_elements_identified&quot;&gt;Elementos de Implementa&amp;ccedil;&amp;atilde;o Identificados&lt;/a&gt; ou al&amp;eacute;m. &amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        <untitled-ontology-3:descricao>&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;A fatia do caso de uso foi analisada de forma que seu impacto nos componentes do sistema seja compreendido e as partes afetadas estejam prontas para implementa&amp;ccedil;&amp;atilde;o e teste.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es suficientes para implementar com sucesso:&amp;nbsp;&lt;/strong&gt;As realiza&amp;ccedil;&amp;otilde;es de casos de uso da parte do caso de uso cont&amp;ecirc;m informa&amp;ccedil;&amp;otilde;es suficientes para permitir que os fluxos relevantes, os requisitos especiais e as informa&amp;ccedil;&amp;otilde;es de suporte cobertas pela fatia de caso de uso sejam implementados com &amp;ecirc;xito.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;O impacto da implementa&amp;ccedil;&amp;atilde;o &amp;eacute; acordado:&amp;nbsp;&lt;/strong&gt;Deve ser acordado como a implementa&amp;ccedil;&amp;atilde;o da fatia impactar&amp;aacute; os elementos de implementa&amp;ccedil;&amp;atilde;o (novos ou existentes).&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;O impacto &amp;eacute; aceit&amp;aacute;vel:&amp;nbsp;&lt;/strong&gt;O impacto previsto &amp;eacute; aceit&amp;aacute;vel.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;A&lt;strong&gt;s realiza&amp;ccedil;&amp;otilde;es de casos de uso s&amp;atilde;o Elementos de implementa&amp;ccedil;&amp;atilde;o identificados:&lt;/strong&gt; As realiza&amp;ccedil;&amp;otilde;es dos casos de uso para a fatia s&amp;atilde;o detalhadas.&lt;/li&gt;
 &lt;/ul&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Analisado&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequencia>
@@ -749,36 +750,116 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
+        <untitled-ontology-3:produz rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        <untitled-ontology-3:abordagens>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Abordagens&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os objetivos da atividade podem ser alcan&amp;ccedil;ados de diversas maneiras, incluindo:&lt;/strong&gt;&lt;br&gt;1) discuss&amp;otilde;es em equipe e documenta&amp;ccedil;&amp;atilde;o centrada em c&amp;oacute;digo;&lt;br&gt;2) desenhos informais e documenta&amp;ccedil;&amp;atilde;o centrada em c&amp;oacute;digo e;&lt;br&gt;3) modelagem visual com rastreabilidade expl&amp;iacute;cita dentro da fatia do caso de uso; desde narrativas de casos de uso at&amp;eacute; realiza&amp;ccedil;&amp;otilde;es de casos de uso e at&amp;eacute; o pr&amp;oacute;prio c&amp;oacute;digo. A atividade tamb&amp;eacute;m pode ser conduzida para abordar quest&amp;otilde;es de an&amp;aacute;lise ou de projeto.&lt;/span&gt;&lt;br&gt;________________&lt;br&gt;
+    &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;CRC baseado em casos de uso&lt;/span&gt;&lt;/h2&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Use essa abordagem para a maioria das hist&amp;oacute;rias.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;CRC &amp;eacute; um acr&amp;ocirc;nimo para Classe, Responsabilidades e Colabora&amp;ccedil;&amp;atilde;o; esta &amp;eacute; uma t&amp;eacute;cnica para analisar e projetar software. A abordagem CRC sugere que seja criado um cart&amp;atilde;o para cada turma, onde sejam listadas as responsabilidades e as colabora&amp;ccedil;&amp;otilde;es dessa turma.&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Sugere-se que a abordagem CRC seja usada da seguinte maneira:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Deve haver um cart&amp;atilde;o para cada elemento principal de implementa&amp;ccedil;&amp;atilde;o.&amp;nbsp;Esses cart&amp;otilde;es podem ser eletr&amp;ocirc;nicos, coment&amp;aacute;rios de c&amp;oacute;digos impressos, Post-it&amp;reg;Notes ou cart&amp;otilde;es de pr&amp;aacute;tica.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Cada cart&amp;atilde;o deve listar todas as coisas que o elemento precisa fazer (isto &amp;eacute;, suas responsabilidades) nas hist&amp;oacute;rias em que est&amp;aacute; envolvido.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&amp;Agrave; medida que as hist&amp;oacute;rias s&amp;atilde;o analisadas para um caso de uso, &amp;eacute; necess&amp;aacute;rio fazer o seguinte:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Cole os cart&amp;otilde;es em um quadro branco.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Leia os fluxos relevantes na narrativa do caso de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Use uma caneta para desenhar um caminho para o fluxo atrav&amp;eacute;s dos cart&amp;otilde;es no quadro branco.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Sugira e anote quaisquer responsabilidades adicionadas ou alteradas para os cart&amp;otilde;es.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Discuta o impacto, as consequ&amp;ecirc;ncias e as solu&amp;ccedil;&amp;otilde;es alternativas.&amp;nbsp;Concorde com uma solu&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Tire uma foto do fluxo com uma c&amp;acirc;mera digital e adicione-a como documenta&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;Obviamente, esta abordagem pode ser usada com ferramentas mais sofisticadas, como aplicativos em nuvem ou tablets.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Essa abordagem &amp;eacute; muito flex&amp;iacute;vel e pode ser variada para atender &amp;agrave;s necessidades da equipe.&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;________________&lt;/span&gt;&lt;/p&gt;
     &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-        &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-            &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Analisar o impacto de uma ***** de Caso de Uso e molde sua implementa&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Antes de come&amp;ccedil;ar a codificar, deve-se ******** uma fatia ** **** de *** para:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-        &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-            &lt;li style=&quot;font-size: 12px;&quot;&gt;Entender seu impacto nos elementos do sistema.&lt;/li&gt;
-            &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir as responsabilidades dos elementos do sistema afetados.&lt;/li&gt;
-            &lt;li style=&quot;font-size: 12px;&quot;&gt;******* como os elementos do sistema ********* para executar o caso de uso.&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-        &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta atividade resulta na cria&amp;ccedil;&amp;atilde;o ou atualiza&amp;ccedil;&amp;atilde;o da realiza&amp;ccedil;&amp;atilde;o ** caso de uso que descreve **** o caso de uso &amp;eacute; implementado.&lt;/span&gt;&lt;/p&gt;
-        &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Quando uma equipe recebe uma nova ***** **** implementar, a primeira coisa a ***** &amp;eacute; descobrir como ela afetar&amp;aacute; o sistema.&amp;nbsp;Quantos bits do sistema precisar&amp;atilde;o ser alterados e de que maneira?&amp;nbsp;Quantas coisas novas s&amp;atilde;o necess&amp;aacute;**** e onde elas se encaixam?&lt;/span&gt;&lt;/p&gt;
-        &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A an&amp;aacute;lise das ****** alvo costuma ser um precursor ** planejamento das tarefas de desenvolvimento.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+        &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Sugerir conjunto inicial de elementos&lt;/span&gt;&lt;/h2&gt;
         &lt;ul&gt;
-            &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ele ******* que a equipe planeje a implementa&amp;ccedil;&amp;atilde;o ** fatia como ** ******** de pequenas altera&amp;ccedil;&amp;otilde;** de c&amp;oacute;digo, em vez de como uma pe&amp;ccedil;a grande e indivis&amp;iacute;vel de trabalho.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-            &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Alternativamente, a pr&amp;oacute;pria fatia pode ser usada como unidade de trabalho e a an&amp;aacute;lise da fatia &amp;eacute; apenas a &amp;uacute;ltima coisa a ser realizada pelo desenvolvedor antes do in&amp;iacute;cio da codifica&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Considerar esta abordagem no in&amp;iacute;cio do projeto para gerar um conjunto inicial de elementos de implementa&amp;ccedil;&amp;atilde;o.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Selecionar alguns casos de uso e hist&amp;oacute;rias importantes, mas bastante diferentes. Use a abordagem &amp;ldquo;CRC orientado a casos de uso&amp;rdquo; para gerar um conjunto de elementos de implementa&amp;ccedil;&amp;atilde;o com responsabilidades iniciais.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Use este conjunto inicial de elementos de implementa&amp;ccedil;&amp;atilde;o para preparar o restante do trabalho orientado a casos de uso.&lt;/span&gt;&lt;/li&gt;
         &lt;/ul&gt;
-        &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que a equipe desenvolve sua compreens&amp;atilde;o do sistema e de sua arquitetura, eles achar&amp;atilde;o cada vez mais f&amp;aacute;cil analisar ** fatias e muitas vezes ser&amp;atilde;o ******* ** fazer **** mentalmente.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-        &lt;ul&gt;
-            &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ainda vale a pena esbo&amp;ccedil;ar a an&amp;aacute;lise com alguns colegas antes de iniciar a codifica&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-            &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Isto validar&amp;aacute; muitas *** decis&amp;otilde;es de design, verificar&amp;aacute; se nada foi mal compreendido e fornecer&amp;aacute; rastreabilidade para uso posterior ao investigar o ******* das altera&amp;ccedil;&amp;otilde;es.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-            &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O resultado desse tipo ** an&amp;aacute;lise &amp;eacute; conhecido **** realiza&amp;ccedil;&amp;atilde;o de caso de uso porque mostra como o caso de uso &amp;eacute; realizado pelos ********* do sistema de implementa&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Execute esta atividade pelo menos uma vez para cada fatia. ****** esta atividade sempre que houver altera&amp;ccedil;&amp;otilde;es aplicadas &amp;agrave; fatia.&lt;/span&gt;&lt;/p&gt;
     &lt;/div&gt;
-&lt;/div&gt;</untitled-ontology-3:descricao>
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;________________&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Pense em responsabilidades&lt;/span&gt;&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Considerar esta abordagem para casos de uso e hist&amp;oacute;rias que n&amp;atilde;o sejam cr&amp;iacute;ticas.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta &amp;eacute; uma alternativa muito leve &amp;agrave; abordagem CRC baseada em hist&amp;oacute;rias que usa apenas as etapas 2, 4 e possivelmente 5 da abordagem &amp;ldquo;CRC orientada por casos de uso&amp;rdquo;. Os pr&amp;oacute;prios cart&amp;otilde;es CRC podem ser descartados com as responsabilidades sugeridas anotadas diretamente nos coment&amp;aacute;rios do c&amp;oacute;digo.&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;________________&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 style=&quot;font-size: 1.75em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;An&amp;aacute;lise e design de casos de uso cl&amp;aacute;ssicos&lt;/span&gt;&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Use esta abordagem quando for importante ter um alto grau de rastreabilidade desde os casos de uso at&amp;eacute; o c&amp;oacute;digo.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta abordagem &amp;eacute; em muitos aspectos semelhante &amp;agrave; abordagem &amp;ldquo;CRC orientado a casos de uso&amp;rdquo;, exceto que a comunica&amp;ccedil;&amp;atilde;o UML ou diagramas de sequ&amp;ecirc;ncia s&amp;atilde;o usados para descrever a realiza&amp;ccedil;&amp;atilde;o de cada fluxo. Conecte cada mensagem no(s) diagrama(s) &amp;agrave; responsabilidade ou opera&amp;ccedil;&amp;atilde;o do elemento correspondente.&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</untitled-ontology-3:abordagens>
+        <untitled-ontology-3:apresAtividade>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta atividade resulta na cria&amp;ccedil;&amp;atilde;o ou atualiza&amp;ccedil;&amp;atilde;o da realiza&amp;ccedil;&amp;atilde;o de caso de uso que descreve como o caso de uso &amp;eacute; implementado.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Quando uma equipe recebe uma nova fatia para implementar, a primeira coisa a fazer &amp;eacute; descobrir como ela afetar&amp;aacute; o sistema.&amp;nbsp;Quantos bits do sistema precisar&amp;atilde;o ser alterados e de que maneira?&amp;nbsp;Quantas coisas novas s&amp;atilde;o necess&amp;aacute;rias e onde elas se encaixam?&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A an&amp;aacute;lise das fatias alvo costuma ser um precursor do planejamento das tarefas de desenvolvimento.&amp;nbsp;Ele permite que a equipe planeje a implementa&amp;ccedil;&amp;atilde;o da fatia como um conjunto de pequenas altera&amp;ccedil;&amp;otilde;es de c&amp;oacute;digo, em vez de como uma pe&amp;ccedil;a grande e indivis&amp;iacute;vel de trabalho.&amp;nbsp;Alternativamente, a pr&amp;oacute;pria fatia pode ser usada como unidade de trabalho e a an&amp;aacute;lise da fatia &amp;eacute; apenas a &amp;uacute;ltima coisa a ser realizada pelo desenvolvedor antes do in&amp;iacute;cio da codifica&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que a equipe desenvolve sua compreens&amp;atilde;o do sistema e de sua arquitetura, eles achar&amp;atilde;o cada vez mais f&amp;aacute;cil analisar as fatias e muitas vezes ser&amp;atilde;o capazes de fazer isso mentalmente.&amp;nbsp;Ainda vale a pena esbo&amp;ccedil;ar a an&amp;aacute;lise com alguns colegas antes de iniciar a codifica&amp;ccedil;&amp;atilde;o.&amp;nbsp;Isto validar&amp;aacute; muitas das decis&amp;otilde;es de design, verificar&amp;aacute; se nada foi mal compreendido e fornecer&amp;aacute; rastreabilidade para uso posterior ao investigar o impacto das altera&amp;ccedil;&amp;otilde;es.&amp;nbsp;O resultado desse tipo de an&amp;aacute;lise &amp;eacute; conhecido como realiza&amp;ccedil;&amp;atilde;o de caso de uso porque mostra como o caso de uso &amp;eacute; realizado pelos elementos do sistema de implementa&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Executar esta atividade pelo menos uma vez para cada fatia. Repita esta atividade sempre que houver altera&amp;ccedil;&amp;otilde;es aplicadas &amp;agrave; fatia.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</untitled-ontology-3:apresAtividade>
+        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Analisar parte do caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Analise o impacto de uma fatia de Caso de Uso e molde sua implementa&amp;ccedil;&amp;atilde;o. (Pode ser ignorado se a implementa&amp;ccedil;&amp;atilde;o for trivial).&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Antes de come&amp;ccedil;ar a codificar, deve-se analisar uma fatia de caso de uso para:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Entender seu impacto nos elementos do sistema.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir as responsabilidades dos elementos do sistema afetados.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir como os elementos do sistema interagem para executar o caso de uso.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:infAdicionais>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Participantes&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Desenvolvimento&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O respons&amp;aacute;vel por esta atividade dever&amp;aacute;:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Entender o impacto do caso de uso nos elementos de implementa&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir as responsabilidades dos elementos de implementa&amp;ccedil;&amp;atilde;o &amp;agrave; medida que contribuem para a realiza&amp;ccedil;&amp;atilde;o do caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir como os elementos de implementa&amp;ccedil;&amp;atilde;o interagem para realizar a hist&amp;oacute;ria contada pelo caso de uso.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Eacute; aconselh&amp;aacute;vel coordenar o trabalho de design deste caso de uso com a implementa&amp;ccedil;&amp;atilde;o geral.&amp;nbsp;Isto dever&amp;aacute; envolver a coopera&amp;ccedil;&amp;atilde;o com algu&amp;eacute;m respons&amp;aacute;vel pela configura&amp;ccedil;&amp;atilde;o geral do sistema.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Dicas e sugest&amp;otilde;es&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Mantenha a an&amp;aacute;lise colaborativa e leve&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A maneira mais f&amp;aacute;cil de analisar a fatia do caso de uso &amp;eacute; reunir a equipe para discutir como isso afetaria os v&amp;aacute;rios elementos do sistema.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que a equipe percorre o projeto, eles o retratam em um quadro branco, normalmente na forma de uma sequ&amp;ecirc;ncia simples ou de um diagrama de colabora&amp;ccedil;&amp;atilde;o, que pode ent&amp;atilde;o ser capturado como uma fotografia ou na ferramenta de modelagem escolhida pela equipe.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Desenvolvimento de pares&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Utilize este formul&amp;aacute;rio de trabalho quando o conhecimento sobre o neg&amp;oacute;cio, dom&amp;iacute;nio ou solu&amp;ccedil;&amp;atilde;o for limitado a apenas alguns membros da equipe&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os desenvolvedores trabalham em pares com outros desenvolvedores ou testadores. Esta atividade &amp;eacute; ent&amp;atilde;o realizada pelos membros da equipe, revezando-se, com uma pessoa analisando a fatia do caso de uso enquanto a outra reflete, faz perguntas e sugere alternativas. Ent&amp;atilde;o eles trocam de pap&amp;eacute;is.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Erros comuns&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Detalhe irrelevante&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Eacute; muito f&amp;aacute;cil come&amp;ccedil;ar a elaborar a realiza&amp;ccedil;&amp;atilde;o da fatia de casos de uso com detalhes sobre par&amp;acirc;metros, associa&amp;ccedil;&amp;otilde;es e atributos.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Problema&lt;/strong&gt;&lt;/strong&gt; : Embora esta seja uma tend&amp;ecirc;ncia natural dos desenvolvedores, s&amp;atilde;o detalhes que n&amp;atilde;o s&amp;atilde;o necess&amp;aacute;rios at&amp;eacute; mais tarde e atrasam o in&amp;iacute;cio da implementa&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/strong&gt; : Estabele&amp;ccedil;a uma maneira de trabalhar em que apenas detalhes suficientes (e nada mais) sejam adicionados &amp;agrave;s realiza&amp;ccedil;&amp;otilde;es de casos de uso para compreender completamente o impacto nos elementos de implementa&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Paralisia de an&amp;aacute;lise&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave;s vezes, uma equipe pode ficar obcecada com o conjunto perfeito de realiza&amp;ccedil;&amp;otilde;es de casos de uso ou tentando analisar todos os casos de uso ao mesmo tempo.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Problema&lt;/strong&gt;&lt;/strong&gt; : As equipes perdem de vista seu objetivo mais importante, que &amp;eacute; produzir software funcional para suas partes interessadas. Em vez disso, distraem-se com os seus pr&amp;oacute;prios objetivos internos.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/strong&gt; : Analise apenas as fatias de casos de uso no escopo ou planeje a an&amp;aacute;lise como uma tarefa imediatamente antes da implementa&amp;ccedil;&amp;atilde;o de uma fatia.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;_______________&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Refer&amp;ecirc;ncias de apoio&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; The CRC Card Book, by David Bellin and Susan Suchman Simone, Addison-Wesley, chapter 3-4.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; The Unified Software Development Process, by Ivar Jacobson, Grady Booch and James Rumbaugh, Addison Wesley Longman, chapter 8-9.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;3&lt;/sup&gt;&lt;/sup&gt; &lt;/span&gt;&lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/crccards.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;www.extremeprogramming.org/rules/crccards.html&lt;/span&gt;&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;</untitled-ontology-3:infAdicionais>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Analisar uma parte do caso de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;5&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
@@ -1000,6 +1081,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
@@ -1021,19 +1103,19 @@
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#MetaEstabelecida"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TodasHUCumpridas"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/p&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;Um caso de uso &amp;eacute; independente e sempre deixa o sistema em um estado consistente.&lt;/li&gt;
-    &lt;li&gt;O conjunto de todos os casos de uso fornece todas as formas &amp;uacute;teis de usar o sistema.&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;Para entender um caso de uso, contamos hist&amp;oacute;rias.&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;As hist&amp;oacute;rias abordam como atingir a meta com sucesso e como lidar com quaisquer problemas que ocorram no caminho. Eles nos ajudam a entender o caso de uso e implement&amp;aacute;-lo parte por parte.&lt;/li&gt;
+    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Um caso de uso &amp;eacute; independente e sempre deixa o sistema em um estado consistente.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;O conjunto de todos os casos de uso fornece todas as formas &amp;uacute;teis de usar o sistema.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Para entender um caso de uso, contamos hist&amp;oacute;rias.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;As hist&amp;oacute;rias abordam como atingir a meta com sucesso e como lidar com quaisquer problemas que ocorram no caminho. Eles nos ajudam a entender o caso de uso e implement&amp;aacute;-lo parte por parte.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Um caso de uso &amp;eacute;:&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Um caso de uso &amp;eacute;:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;Uma sequ&amp;ecirc;ncia de a&amp;ccedil;&amp;otilde;es que um sistema executa que produz um resultado observ&amp;aacute;vel de valor para um usu&amp;aacute;rio espec&amp;iacute;fico.&lt;/li&gt;
-    &lt;li&gt;Aquele comportamento espec&amp;iacute;fico de um sistema que participa de uma colabora&amp;ccedil;&amp;atilde;o com um usu&amp;aacute;rio para entregar algo de valor para esse usu&amp;aacute;rio.&lt;/li&gt;
-    &lt;li&gt;A menor unidade de atividade que fornece um resultado significativo ao usu&amp;aacute;rio.&lt;/li&gt;
-    &lt;li&gt;O contexto para um conjunto de requisitos relacionados.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Uma sequ&amp;ecirc;ncia de a&amp;ccedil;&amp;otilde;es que um sistema executa que produz um resultado observ&amp;aacute;vel de valor para um usu&amp;aacute;rio espec&amp;iacute;fico.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Aquele comportamento espec&amp;iacute;fico de um sistema que participa de uma colabora&amp;ccedil;&amp;atilde;o com um usu&amp;aacute;rio para entregar algo de valor para esse usu&amp;aacute;rio.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;A menor unidade de atividade que fornece um resultado significativo ao usu&amp;aacute;rio.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;O contexto para um conjunto de requisitos relacionados.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 2.375em;&quot;&gt;&lt;br&gt;&lt;/h1&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Caso de Uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
@@ -1436,30 +1518,124 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
+        <untitled-ontology-3:produz rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;*********** partes ** ***** ** uso com base em casos de uso para ******** na implementa&amp;ccedil;&amp;atilde;o.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        <untitled-ontology-3:abordagens>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Abordagens&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Escolha fatias para equilibrar prioridade, valor, esfor&amp;ccedil;o, necessidade e risco.&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Esta &amp;eacute; a abordagem recomendada&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Dividir os casos de uso para:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Crie itens de tamanho ******** para a equipe trabalhar.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Ajuste o ******** ao tempo e or&amp;ccedil;amento dispon&amp;iacute;veis.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Fornece um meio ** atribuir trabalho e acompanhar seu progresso.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;********** compreens&amp;atilde;o das necessidades das partes interessadas.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Entregue o maior ***** aos usu&amp;aacute;rios e outras partes interessadas.&lt;/li&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A melhor maneira de dividir um caso de uso &amp;eacute; equilibrar as prioridades relativas das hist&amp;oacute;rias, seu valor, o esfor&amp;ccedil;o que ser&amp;aacute; feito para implement&amp;aacute;-las e test&amp;aacute;-las, sua necessidade para o sucesso do sistema a ser desenvolvido e o neg&amp;oacute;cio e riscos t&amp;eacute;cnicos associados a eles.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A prioridade e o valor refletir&amp;atilde;o a import&amp;acirc;ncia da fatia para o neg&amp;oacute;cio. A estimativa a ser conclu&amp;iacute;da e a necessidade de construir um sistema bem-sucedido refletir&amp;atilde;o a complexidade t&amp;eacute;cnica da fatia. Compreender o risco associado permitir&amp;aacute; que voc&amp;ecirc; decida se vale a pena implementar a fatia. Ao considerar essas cinco propriedades das fatias, elas podem ser ordenadas para desenvolvimento para garantir que as fatias mais importantes sejam abordadas primeiro.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;A atividade tem dois objetivos principais:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;______________&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Escolha fatias para demonstrar o cumprimento dos marcos do projeto&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Esta &amp;eacute; a abordagem recomendada quando os marcos foram definidos para o gerenciamento do projeto.&lt;/strong&gt;&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os projetos s&amp;atilde;o divididos em fases com marcos. Os esfor&amp;ccedil;os do projeto de curto prazo visam o pr&amp;oacute;ximo marco. Os marcos s&amp;atilde;o expressos em termos de objetivos vinculados ao prop&amp;oacute;sito do marco. Para cada objetivo, tamb&amp;eacute;m deve haver alguma evid&amp;ecirc;ncia de que o objetivo foi alcan&amp;ccedil;ado.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;As fatias s&amp;atilde;o selecionadas para fornecer metas de curto prazo para o projeto. Isto implica selecionar e priorizar fluxos de casos de uso a serem implementados, verificados e entregues. Se a equipe precisar desenvolver um subconjunto de fluxos de um caso de uso (aqueles que definem uma hist&amp;oacute;ria espec&amp;iacute;fica), ent&amp;atilde;o o caso de uso poder&amp;aacute; ser dividido em v&amp;aacute;rias fatias, cada uma das quais pode ser desenvolvida separadamente.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Ao escolher fatias para revelar e verificar, &amp;eacute; importante come&amp;ccedil;ar com a seguinte considera&amp;ccedil;&amp;atilde;o:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;********* ** casos de uso e fluxos de casos de uso para definir o escopo das libera&amp;ccedil;&amp;otilde;es pretendidas.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Identificar as hist&amp;oacute;rias (selecionando grupos de fluxos relacionados) a serem ********* no pr&amp;oacute;ximo marco do projeto.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Selecionar hist&amp;oacute;rias que, quando verificadas, forne&amp;ccedil;am provas emp&amp;iacute;ricas de que um marco foi alcan&amp;ccedil;ado.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta atividade resulta em atualiza&amp;ccedil;&amp;otilde;es nas fatias de casos de uso e, ** ****** casos, na divis&amp;atilde;o das fatias de casos ** *** em partes menores de ****** de casos de uso para permitir que hist&amp;oacute;rias e subconjuntos ** ****** de casos de *** progridam de forma independente dentro do tempo permitido.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Mesmo o caso de uso mais simples identificar&amp;aacute; m&amp;uacute;ltiplas hist&amp;oacute;rias.&amp;nbsp;Voc&amp;ecirc; precisa dividir os casos ** uso para ********** as hist&amp;oacute;rias a ***** implementadas.&amp;nbsp;Voc&amp;ecirc; deve ***** o fatiamento com suas partes interessadas **** garantir que todas as ****** ******* sejam de ponta a ponta, agreguem valor e ****** a pena ***** implementadas.&amp;nbsp;N&amp;atilde;o divida todos ** casos de uso de uma vez, identifique ****** fatias suficientes para ******* &amp;agrave;s necessidades imediatas da equipe.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Voc&amp;ecirc; n&amp;atilde;o precisa dividir completamente ** casos de uso, ********** uma sele&amp;ccedil;&amp;atilde;o de hist&amp;oacute;rias necess&amp;aacute;rias para entregar o maior valor &amp;agrave;s partes interessadas no pr&amp;oacute;ximo marco e deixar o restante das hist&amp;oacute;rias para serem divididas quando e se forem necess&amp;aacute;rias.&amp;nbsp;Voc&amp;ecirc; pode at&amp;eacute; adotar um modelo pull **** ** desenvolvedores solicitam *** novas fatias sejam identificadas ******** e quando tiverem capacidade para implement&amp;aacute;-las.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As fatias criadas devem ser encomendadas para entrega para garantir que a equipe ** desenvolvimento as resolva na ordem correta.&amp;nbsp;A melhor maneira ** classificar as fatias &amp;eacute; considerar uma combina&amp;ccedil;&amp;atilde;o de prioridade, valor, risco e necessidade.&amp;nbsp;Novamente, voc&amp;ecirc; deve fazer isso com as partes interessadas e outros membros da equipe para ******** que o pedido defina um sistema utiliz&amp;aacute;vel que agregue o ***** valor.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Repita esta atividade ****** que novas ****** forem necess&amp;aacute;rias.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Para cada objetivo marcante, procure hist&amp;oacute;rias adequadas.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Selecione as hist&amp;oacute;rias que fornecer&amp;atilde;o mais evid&amp;ecirc;ncias pelo menor custo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;______________&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;As partes interessadas priorizam as fatias&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Esta &amp;eacute; a abordagem recomendada quando o projeto enfrenta um baixo n&amp;iacute;vel de risco t&amp;eacute;cnico.&lt;/strong&gt;&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Deixe que as partes interessadas selecionem as fatias de casos de uso a serem implementadas. Isso garante que a equipe se concentre na entrega de valor &amp;agrave;s partes interessadas e n&amp;atilde;o se distraia com quest&amp;otilde;es t&amp;eacute;cnicas ou internas.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;______________&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;A equipe prioriza as fatias&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta &amp;eacute; a abordagem recomendada quando o projeto enfrenta um n&amp;iacute;vel significativo de risco t&amp;eacute;cnico.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Reunir a equipe para selecionar fatias de casos de uso. Essa abordagem oferece benef&amp;iacute;cios:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Ele cria uma compreens&amp;atilde;o compartilhada do trabalho a ser realizado.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Ele cria compreens&amp;atilde;o dos objetivos subjacentes.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Contribui para a apropria&amp;ccedil;&amp;atilde;o do plano pela equipe.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Garante que seja alcan&amp;ccedil;ado um equil&amp;iacute;brio adequado entre a entrega de valor &amp;agrave;s partes interessadas e a mitiga&amp;ccedil;&amp;atilde;o de riscos t&amp;eacute;cnicos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Quando a equipe &amp;eacute; muito inexperiente para contribuir, pode n&amp;atilde;o fazer sentido deixar que ela decida. Em vez disso, deixar que alguns especialistas fa&amp;ccedil;am as primeiras rodadas de sele&amp;ccedil;&amp;atilde;o e, &amp;agrave; medida que a equipe amadurece, avance gradualmente para a sele&amp;ccedil;&amp;atilde;o baseada em equipes.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;______________&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;As dez melhores fatias est&amp;atilde;o sempre prontas&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;strong&gt;&lt;b&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta &amp;eacute; uma abordagem recomendada no caso de emprego de t&amp;eacute;cnicas de desenvolvimento &amp;aacute;geis ou iterativas.&lt;/span&gt;&lt;/b&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;ldquo;Dividir os casos de uso&amp;rdquo; &amp;eacute; uma atividade que deve envolver todas as partes interessadas relevantes para garantir que cada fatia tenha valor e valha a pena ser implementada. Nunca divida todos os casos de uso de uma vez. Identifique fatias suficientes para atender &amp;agrave;s necessidades imediatas da equipe.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Em quase todas as situa&amp;ccedil;&amp;otilde;es, o fatiamento de um caso de uso pode ser feito em etapas.&amp;nbsp;Simplesmente identifique as fatias necess&amp;aacute;rias para manter o andamento do projeto e deixe o restante das hist&amp;oacute;rias no caso de uso para fatiar quando e se forem necess&amp;aacute;rias.&amp;nbsp;Voc&amp;ecirc; pode at&amp;eacute; adotar um modelo pull onde os desenvolvedores solicitam que novas fatias sejam identificadas conforme e quando tiverem capacidade para implement&amp;aacute;-las.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ao implementar um modelo pull, certifique-se de que pelo menos 10 fatias de casos de uso (ou tantas quantas possam ser trabalhadas ao mesmo tempo) estejam dispon&amp;iacute;veis para serem selecionadas pela equipe de desenvolvimento.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:abordagens>
+        <untitled-ontology-3:apresAtividade>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px; font-weight: bold;&quot;&gt;&lt;strong&gt;A atividade tem dois objetivos principais:&lt;/strong&gt;
+        &lt;ul style=&quot;text-align: start; color: rgb(0, 0, 0); font-size: 16px; font-weight: initial;&quot;&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Priorizar os casos de uso e fluxos de casos de uso para definir o escopo das libera&amp;ccedil;&amp;otilde;es pretendidas.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Identificar as hist&amp;oacute;rias (selecionando grupos de fluxos relacionados) a serem entregues no pr&amp;oacute;ximo marco do projeto.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Esta atividade resulta em atualiza&amp;ccedil;&amp;otilde;es nas fatias de casos de uso e, em alguns casos, na divis&amp;atilde;o das fatias de casos de uso em partes menores de fatias de casos de uso para permitir que hist&amp;oacute;rias e subconjuntos de fluxos de casos de uso progridam de forma independente dentro do tempo permitido.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Mesmo o caso de uso mais simples identificar&amp;aacute; m&amp;uacute;ltiplas hist&amp;oacute;rias. Voc&amp;ecirc; precisa dividir os casos de uso para selecionar as hist&amp;oacute;rias a serem implementadas. Voc&amp;ecirc; deve fazer o fatiamento com suas partes interessadas para garantir que todas as fatias criadas sejam de ponta a ponta, agreguem valor e valham a pena serem implementadas. N&amp;atilde;o divida todos os casos de uso de uma vez, identifique apenas fatias suficientes para atender &amp;agrave;s necessidades imediatas da equipe.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;N&amp;atilde;o &amp;eacute; necess&amp;aacute;rio dividir completamente os casos de uso - selecionar uma sele&amp;ccedil;&amp;atilde;o de hist&amp;oacute;rias necess&amp;aacute;rias para entregar o maior valor &amp;agrave;s partes interessadas no pr&amp;oacute;ximo marco e deixar o restante das hist&amp;oacute;rias para serem divididas quando e se forem necess&amp;aacute;rias. Voc&amp;ecirc; pode at&amp;eacute; adotar um modelo pull onde os desenvolvedores solicitam que novas fatias sejam identificadas conforme e quando tiverem capacidade para implement&amp;aacute;-las.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;As fatias criadas devem ser encomendadas para entrega para garantir que a equipe de desenvolvimento as resolva na ordem correta. A melhor maneira de classificar as fatias &amp;eacute; considerar uma combina&amp;ccedil;&amp;atilde;o de prioridade, valor, risco e necessidade. Novamente, voc&amp;ecirc; deve fazer isso com as partes interessadas e outros membros da equipe para garantir que o pedido defina um sistema utiliz&amp;aacute;vel que agregue o maior valor.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Repetir esta atividade sempre que novas fatias forem necess&amp;aacute;rias.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:apresAtividade>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Dividir os casos de uso para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Criar itens de tamanho adequado para a equipe trabalhar.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Ajustar o trabalho ao tempo e or&amp;ccedil;amento dispon&amp;iacute;veis.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Fornecer um meio de atribuir trabalho e acompanhar seu progresso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Demonstrar compreens&amp;atilde;o das necessidades das partes interessadas.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Entregar o maior valor aos usu&amp;aacute;rios e outras partes interessadas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:infAdicionais>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Participantes&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta atividade &amp;eacute; melhor realizada como uma atividade de equipe sob o controle de um l&amp;iacute;der.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Para realizar esta atividade com sucesso, todas as compet&amp;ecirc;ncias essenciais de engenharia de software precisam estar implementadas. Isto pode ser conseguido envolvendo toda a equipe ou apenas os l&amp;iacute;deres de cada &amp;aacute;rea de desenvolvimento.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Todas as hist&amp;oacute;rias, detalhadas por fluxos de casos de uso e informa&amp;ccedil;&amp;otilde;es de apoio, devem ser priorizadas do ponto de vista das partes interessadas.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Eacute; essencial que o projeto considere o valor atribu&amp;iacute;do pelas partes interessadas aos casos de uso e &amp;agrave;s suas hist&amp;oacute;rias selecionadas.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;An&amp;aacute;lise&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Para identificar itens de trabalho apropriados, as hist&amp;oacute;rias s&amp;atilde;o selecionadas nos casos de uso. Para identificar hist&amp;oacute;rias significativas, &amp;eacute; importante ter uma boa compreens&amp;atilde;o de todo o modelo de casos de uso e de como os casos de uso se encaixam.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Desenvolvimento&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Todos os itens selecionados precisam ser estimados. &amp;Eacute; imposs&amp;iacute;vel tomar decis&amp;otilde;es acertadas sobre prioridades e escopo sem conhecer o custo dos itens considerados.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As informa&amp;ccedil;&amp;otilde;es de apoio tamb&amp;eacute;m precisam ser consideradas e atribu&amp;iacute;das &amp;agrave;s fatias de casos de uso.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Teste&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Todos os itens selecionados precisam ser test&amp;aacute;veis e o esfor&amp;ccedil;o de teste precisa ser levado em considera&amp;ccedil;&amp;atilde;o nas estimativas.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;_______________&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Refer&amp;ecirc;ncias de apoio&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; Managing Iterative Software Development, by Kurt Bittner and Ian Spence, Addison-Wesley, chapter 4 and 8.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Agile Software Development with SCRUM, by Ken Schwaber and Mike Beedle, Prentice Hall.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;3&lt;/sup&gt;&lt;/sup&gt; &lt;u&gt;&lt;a href=&quot;http://www.methodsandtools.com/archive/archive.php?id=25&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;Use-case points&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;4&lt;/sup&gt;&lt;/sup&gt; &lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/spike.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;www.extremeprogramming.org/rules/spike.html&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;5&lt;/sup&gt;&lt;/sup&gt; &lt;/span&gt;&lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/iterationplanning.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;www.extremeprogramming.org/rules/iterationplanning.html&lt;/span&gt;&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;</untitled-ontology-3:infAdicionais>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Dividir os casos de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
@@ -1527,37 +1703,37 @@
         <untitled-ontology-3:Icone>&lt;p&gt;Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:abordagens>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Abordagens&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Workshop de modelagem de casos de uso&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Workshop de modelagem de casos de uso&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta &amp;eacute; a abordagem recomendada.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Realizar o workshop assim que poss&amp;iacute;vel e envolver os participantes apropriados se houver compreens&amp;atilde;o suficiente da oportunidade.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O workshop &amp;eacute; uma sess&amp;atilde;o facilitada onde os participantes fazem brainstorming para sugerir atores e casos de uso usando o material de entrada e seu pr&amp;oacute;prio conhecimento e experi&amp;ecirc;ncia.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os atores s&amp;atilde;o sugeridos principalmente com base nas categorias de usu&amp;aacute;rios que s&amp;atilde;o ent&amp;atilde;o transformadas em fun&amp;ccedil;&amp;otilde;es em rela&amp;ccedil;&amp;atilde;o ao sistema.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de uso s&amp;atilde;o sugeridos principalmente com base nos itens da oportunidade e nos objetivos dos atores quando est&amp;atilde;o usando o sistema.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O grupo consolida os resultados do brainstorming em um modelo de caso de uso bem formado. Eles tamb&amp;eacute;m observam quaisquer requisitos que n&amp;atilde;o sejam considerados relacionados ao caso de uso.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O workshop deve envolver pessoas das comunidades de clientes e usu&amp;aacute;rios, pois isso resultar&amp;aacute; em um modelo de caso de uso melhor. Tamb&amp;eacute;m produz mais consenso e propriedade partilhada do modelo de casos de utiliza&amp;ccedil;&amp;atilde;o, o que, por sua vez, simplificar&amp;aacute; a obten&amp;ccedil;&amp;atilde;o de acordo. Tamb&amp;eacute;m pode ser apropriado envolver pessoas das &amp;aacute;reas de gest&amp;atilde;o e engenharia de software do projeto para transferir conhecimento e construir propriedade conjunta.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Pode ser necess&amp;aacute;rio realizar um conjunto de workshops de modelagem de casos de uso para garantir que todos os aspectos da solu&amp;ccedil;&amp;atilde;o proposta sejam cobertos.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta &amp;eacute; a abordagem recomendada.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Realizar o workshop assim que poss&amp;iacute;vel e envolver os participantes apropriados se houver compreens&amp;atilde;o suficiente da oportunidade.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O workshop &amp;eacute; uma sess&amp;atilde;o facilitada onde os participantes fazem brainstorming para sugerir atores e casos de uso usando o material de entrada e seu pr&amp;oacute;prio conhecimento e experi&amp;ecirc;ncia.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os atores s&amp;atilde;o sugeridos principalmente com base nas categorias de usu&amp;aacute;rios que s&amp;atilde;o ent&amp;atilde;o transformadas em fun&amp;ccedil;&amp;otilde;es em rela&amp;ccedil;&amp;atilde;o ao sistema.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de uso s&amp;atilde;o sugeridos principalmente com base nos itens da oportunidade e nos objetivos dos atores quando est&amp;atilde;o usando o sistema.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O grupo consolida os resultados do brainstorming em um modelo de caso de uso bem formado. Eles tamb&amp;eacute;m observam quaisquer requisitos que n&amp;atilde;o sejam considerados relacionados ao caso de uso.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O workshop deve envolver pessoas das comunidades de clientes e usu&amp;aacute;rios, pois isso resultar&amp;aacute; em um modelo de caso de uso melhor. Tamb&amp;eacute;m produz mais consenso e propriedade partilhada do modelo de casos de utiliza&amp;ccedil;&amp;atilde;o, o que, por sua vez, simplificar&amp;aacute; a obten&amp;ccedil;&amp;atilde;o de acordo. Tamb&amp;eacute;m pode ser apropriado envolver pessoas das &amp;aacute;reas de gest&amp;atilde;o e engenharia de software do projeto para transferir conhecimento e construir propriedade conjunta.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Pode ser necess&amp;aacute;rio realizar um conjunto de workshops de modelagem de casos de uso para garantir que todos os aspectos da solu&amp;ccedil;&amp;atilde;o proposta sejam cobertos.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Estruturar o modelo de caso de uso&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;____________&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Estruturar o modelo de caso de uso&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Usar esta abordagem quando houver muita redund&amp;acirc;ncia entre os casos de uso, for dif&amp;iacute;cil expressar o comportamento da extens&amp;atilde;o ou refletir uma melhor compreens&amp;atilde;o dos casos de uso pela equipe de desenvolvimento.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Usar esta abordagem quando houver muita redund&amp;acirc;ncia entre os casos de uso, for dif&amp;iacute;cil expressar o comportamento da extens&amp;atilde;o ou refletir uma melhor compreens&amp;atilde;o dos casos de uso pela equipe de desenvolvimento.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Fatorar:&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Fatorar:&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias comuns de comportamento como casos de uso que ser&amp;atilde;o inclu&amp;iacute;dos em outros casos de uso.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias gen&amp;eacute;ricas como casos de uso abstratos que s&amp;atilde;o herdados usando o relacionamento de generaliza&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Comportamento de extens&amp;atilde;o como casos de uso que estendem outros casos de uso.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Tenha cuidado para n&amp;atilde;o tornar o modelo de casos de uso irreconhec&amp;iacute;vel para as pessoas que contribu&amp;iacute;ram para a sua cria&amp;ccedil;&amp;atilde;o inicial.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias comuns de comportamento como casos de uso que ser&amp;atilde;o inclu&amp;iacute;dos em outros casos de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias gen&amp;eacute;ricas como casos de uso abstratos que s&amp;atilde;o herdados usando o relacionamento de generaliza&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Comportamento de extens&amp;atilde;o como casos de uso que estendem outros casos de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Tenha cuidado para n&amp;atilde;o tornar o modelo de casos de uso irreconhec&amp;iacute;vel para as pessoas que contribu&amp;iacute;ram para a sua cria&amp;ccedil;&amp;atilde;o inicial.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Altera&amp;ccedil;&amp;otilde;es no modelo de casos de uso&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Para cada solicita&amp;ccedil;&amp;atilde;o de altera&amp;ccedil;&amp;atilde;o:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;____________&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Altera&amp;ccedil;&amp;otilde;es no modelo de casos de uso&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Para cada solicita&amp;ccedil;&amp;atilde;o de altera&amp;ccedil;&amp;atilde;o:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias comuns de comportamento como casos de uso que ser&amp;atilde;o inclu&amp;iacute;dos em outros casos de uso.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias gen&amp;eacute;ricas como casos de uso abstratos que s&amp;atilde;o herdados usando o relacionamento de generaliza&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Comportamento de extens&amp;atilde;o como casos de uso que estendem outros casos de uso.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Tenha cuidado para n&amp;atilde;o tornar o modelo de casos de uso irreconhec&amp;iacute;vel para as pessoas que contribu&amp;iacute;ram para a sua cria&amp;ccedil;&amp;atilde;o inicial.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias comuns de comportamento como casos de uso que ser&amp;atilde;o inclu&amp;iacute;dos em outros casos de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Sequ&amp;ecirc;ncias gen&amp;eacute;ricas como casos de uso abstratos que s&amp;atilde;o herdados usando o relacionamento de generaliza&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Comportamento de extens&amp;atilde;o como casos de uso que estendem outros casos de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Tenha cuidado para n&amp;atilde;o tornar o modelo de casos de uso irreconhec&amp;iacute;vel para as pessoas que contribu&amp;iacute;ram para a sua cria&amp;ccedil;&amp;atilde;o inicial.&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:abordagens>
@@ -1591,28 +1767,30 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
-        <untitled-ontology-3:infAdicionais>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Participantes:&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O respons&amp;aacute;vel por esta atividade deve:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar e compreender os problemas e oportunidades relacionados ao uso do sistema.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Capturar, compreender e comunicar as necessidades expressadas pelos outros participantes.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Produzir um modelo de caso de uso sensato.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Representa&amp;ccedil;&amp;atilde;o das partes interessadas:&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os representantes das partes interessadas desempenham o importante papel de garantir que o modelo de caso de uso emergente atenda &amp;agrave;s necessidades e expectativas mais importantes da comunidade de partes interessadas.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O analista deve garantir que haja conhecimento suficiente do cliente envolvido para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar os atores certos.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar casos de uso que fornecer&amp;atilde;o o valor que os usu&amp;aacute;rios precisam do sistema.&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Entender o impacto que o sistema ter&amp;aacute; nos usu&amp;aacute;rios e nos processos de neg&amp;oacute;cios.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O n&amp;iacute;vel de conhecimento necess&amp;aacute;rio variar&amp;aacute; de acordo com a complexidade do dom&amp;iacute;nio que est&amp;aacute; sendo modelado. Quanto mais complexo for o dom&amp;iacute;nio, maior ser&amp;aacute; o n&amp;iacute;vel de conhecimento que a equipe de desenvolvimento precisar&amp;aacute; utilizar.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:infAdicionais>
+        <untitled-ontology-3:infAdicionais>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Participantes:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O respons&amp;aacute;vel por esta atividade deve:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar e compreender os problemas e oportunidades relacionados ao uso do sistema.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Capturar, compreender e comunicar as necessidades expressadas pelos outros participantes.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Produzir um modelo de caso de uso sensato.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Representa&amp;ccedil;&amp;atilde;o das partes interessadas:&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os representantes das partes interessadas desempenham o importante papel de garantir que o modelo de caso de uso emergente atenda &amp;agrave;s necessidades e expectativas mais importantes da comunidade de partes interessadas.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O analista deve garantir que haja conhecimento suficiente do cliente envolvido para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar os atores certos.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Identificar casos de uso que fornecer&amp;atilde;o o valor que os usu&amp;aacute;rios precisam do sistema.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Entender o impacto que o sistema ter&amp;aacute; nos usu&amp;aacute;rios e nos processos de neg&amp;oacute;cios.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O n&amp;iacute;vel de conhecimento necess&amp;aacute;rio variar&amp;aacute; de acordo com a complexidade do dom&amp;iacute;nio que est&amp;aacute; sendo modelado. Quanto mais complexo for o dom&amp;iacute;nio, maior ser&amp;aacute; o n&amp;iacute;vel de conhecimento que a equipe de desenvolvimento precisar&amp;aacute; utilizar.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;_______________&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Refer&amp;ecirc;ncias de apoio&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Use Case Modeling, de Kurt Bittner e Ian Spence, Addison-Wesley Professional, cap&amp;iacute;tulos 4-5.&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, cap&amp;iacute;tulos 16-44.&lt;/p&gt;</untitled-ontology-3:infAdicionais>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Encontrar Atores e Casos de Uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
-        <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Use Case Modeling, de Kurt Bittner e Ian Spence, Addison-Wesley Professional, cap&amp;iacute;tulos 4-5.&lt;/p&gt;
-
-&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, cap&amp;iacute;tulos 16-44.&lt;/p&gt;</untitled-ontology-3:referenciaRE>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
     </owl:NamedIndividual>
@@ -1673,6 +1851,11 @@
     &lt;li style=&quot;font-size: 12px;&quot;&gt;Permitir e gerenciar mudan&amp;ccedil;as nos requisitos de software durante o projeto.&lt;/li&gt;
     &lt;li style=&quot;font-size: 12px;&quot;&gt;Capture os requisitos antecipadamente e rapidamente, de uma forma aceit&amp;aacute;vel e acess&amp;iacute;vel tanto para o cliente quanto para a equipe de desenvolvimento.&lt;/li&gt;
 &lt;/ul&gt;</untitled-ontology-3:quandoAplicar>
+        <untitled-ontology-3:referenciaRE>&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 1em;&quot;&gt;Use-Case 2.0 eBook: &lt;u&gt;&lt;a href=&quot;https://www.ivarjacobson.com/publications/white-papers/use-case-ebook&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;https://www.ivarjacobson.com/publications/white-papers/use-case-ebook&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 1em;&quot;&gt;Use-Case 2.0: The Hub of Software Development: &lt;u&gt;&lt;a href=&quot;https://www.ivarjacobson.com/publications/white-papers/use-case-hub-software-development&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;https://www.ivarjacobson.com/publications/white-papers/use-case-hub-software-development&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 1em;&quot;&gt;For details of the training, support and mentoring available for Use Case 2.0 Essentials visit &lt;u&gt;&lt;a href=&quot;http://www.ivarjacobson.com/&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;www.ivarjacobson.com&lt;/a&gt;&lt;/u&gt;.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:referenciaRE>
     </owl:NamedIndividual>
     
 
@@ -1743,15 +1926,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Escopo">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
+        <untitled-ontology-3:avancadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:avancadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Estado Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;A fatia do caso de uso foi definida e a extens&amp;atilde;o das hist&amp;oacute;rias cobertas foi esclarecida.&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 12px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;strong&gt;Hist&amp;oacute;**** foram identificadas: &lt;/strong&gt;&amp;nbsp;As hist&amp;oacute;rias (uma ou mais) *** formam a fatia foram identificadas.&amp;nbsp;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 12px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;strong&gt;Os requisitos cobertos s&amp;atilde;o claros:&lt;/strong&gt; Est&amp;aacute; claro quais fluxos de casos de uso, requisitos especiais e defini&amp;ccedil;&amp;otilde;es ** apoio s&amp;atilde;o cobertos pela fatia.&amp;nbsp;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 12px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;strong&gt;A prioridade relativa &amp;eacute; conhecida:&amp;nbsp;&lt;/strong&gt;A ********** da fatia em rela&amp;ccedil;&amp;atilde;o &amp;agrave;s outras fatias &amp;eacute; conhecida.&amp;nbsp;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 12px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O trabalho de implementa&amp;ccedil;&amp;atilde;o foi estimado:&lt;/strong&gt; O trabalho necess&amp;aacute;rio para concluir a implementa&amp;ccedil;&amp;atilde;o e teste ** fatia foi estimado.&lt;/span&gt;&amp;nbsp;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div style=&quot;color: red;&quot;&gt;Created with &lt;a href=&quot;https://wordtohtml.net/&quot;&gt;WordToHTML.net&lt;/a&gt; trial.&lt;/div&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:descricao>&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; font-weight: bold;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;A fatia do caso de uso foi definida e a extens&amp;atilde;o das hist&amp;oacute;rias cobertas foi esclarecida.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;Hist&amp;oacute;rias&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;&amp;nbsp;foram identificadas:&amp;nbsp;&lt;/strong&gt; &lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;As hist&amp;oacute;rias (uma ou mais) que formam a fatia foram identificadas. &lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os requisitos cobertos s&amp;atilde;o claros:&lt;/strong&gt; Est&amp;aacute; claro quais fluxos de casos de uso, requisitos especiais e defini&amp;ccedil;&amp;otilde;es de apoio s&amp;atilde;o cobertos pela fatia.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;A prioridade relativa &amp;eacute; conhecida:&amp;nbsp;&lt;/strong&gt;A prioridade da fatia em rela&amp;ccedil;&amp;atilde;o &amp;agrave;s outras fatias &amp;eacute; conhecida.&amp;nbsp;&lt;/li&gt;
+    &lt;li&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O trabalho de implementa&amp;ccedil;&amp;atilde;o foi estimado:&lt;/strong&gt; O trabalho necess&amp;aacute;rio para concluir a implementa&amp;ccedil;&amp;atilde;o e teste da fatia foi estimado.&lt;/span&gt;&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Escopo&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;color: red;&quot;&gt;Created with &lt;a href=&quot;https://wordtohtml.net/&quot;&gt;WordToHTML.net&lt;/a&gt; trial.&lt;/div&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequencia>
@@ -2021,10 +2205,10 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Implementado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Estado Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;strong&gt;O sistema de software *** aprimorado **** *********** a fatia e a fatia est&amp;aacute; ****** para teste.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O c&amp;oacute;digo cumpre a fatia:&lt;/strong&gt; O c&amp;oacute;**** dos elementos ** implementa&amp;ccedil;&amp;atilde;o cumpre as ***************** exigidas pela fatia.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os ********* ** implementa&amp;ccedil;&amp;atilde;o s&amp;atilde;o verificados: &lt;/strong&gt;Os elementos de implementa&amp;ccedil;&amp;atilde;o foram verificados individualmente e demonstraram cumprir seu ***** dentro da fatia.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        <untitled-ontology-3:descricao>&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;O sistema de software foi aprimorado para implementar a fatia e a fatia est&amp;aacute; pronta para teste.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O c&amp;oacute;digo cumpre a fatia:&lt;/strong&gt; O c&amp;oacute;digo dos elementos de implementa&amp;ccedil;&amp;atilde;o cumpre as responsabilidades exigidas pela fatia.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os elementos de implementa&amp;ccedil;&amp;atilde;o s&amp;atilde;o verificados:&amp;nbsp;&lt;/strong&gt;Os elementos de implementa&amp;ccedil;&amp;atilde;o foram verificados individualmente e demonstraram cumprir seu papel dentro da fatia.&amp;nbsp;&lt;/li&gt;
 &lt;/ul&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Implementado&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequencia>
@@ -2179,29 +2363,122 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
+        <untitled-ontology-3:produz rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Lide com as mudan&amp;ccedil;as e ********* o progresso ********* o modelo de casos de uso, os casos de uso e as fatias de ***** de uso.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        <untitled-ontology-3:abordagens>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Abordagens&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A abordagem a adotar depende do estado do projeto.&lt;/span&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;____________________&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Retrospectivo&lt;/span&gt;&lt;/h2&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Use esta abordagem para equilibrar o esfor&amp;ccedil;o necess&amp;aacute;rio entre o detalhamento de narrativas de casos de uso e casos de teste.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Discutir e investigar com a equipe:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;A necessidade da profundidade e amplitude atuais da narrativa de casos de uso.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;A fonte dos defeitos.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;A necessidade de atualizar as diretrizes para promover a consist&amp;ecirc;ncia.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&apos;margin: 10px 0px; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 1.75em;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;____________________&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Revis&amp;atilde;o do modelo de caso de uso&lt;/span&gt;&lt;/h2&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Use esta abordagem quando houver muitas semelhan&amp;ccedil;as na narrativa de casos de uso.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Procurar oportunidades para reduzir o esfor&amp;ccedil;o de autoria usando:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Inclui relacionamentos.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Generalize os relacionamentos.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Procurar oportunidades para reduzir a complexidade ou adicionar flexibilidade:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Ampliar relacionamentos.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&apos;margin: 10px 0px; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 1.75em;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;____________________&lt;/span&gt;&lt;/h2&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Mudar a gest&amp;atilde;o&lt;/span&gt;&lt;/h2&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Use esta abordagem quando um caso de uso ou de teste precisar ser atualizado para refletir altera&amp;ccedil;&amp;otilde;es nos requisitos do sistema.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&amp;Agrave; medida que os requisitos mudam, o impacto pode resultar em:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Adicionar, atualizar ou remover hist&amp;oacute;rias.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Adicionar, atualizar, dividir ou remover fatias de casos de uso.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Adicionar, atualizar ou remover informa&amp;ccedil;&amp;otilde;es de suporte.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Alterar as regras que regem como as fatias de casos de uso s&amp;atilde;o ordenadas.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Alterar a &amp;ldquo;defini&amp;ccedil;&amp;atilde;o de pronto&amp;rdquo;.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&amp;Agrave; medida que os requisitos mudam, um teste pode precisar ser reconstru&amp;iacute;do. Isso pode envolver:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Adicionar o casos de teste a casos de uso.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Remover casos de teste de casos de uso.&lt;/li&gt;
+            &lt;li style=&quot;font-size: 12px;&quot;&gt;Especificar uma nova vers&amp;atilde;o de um caso de teste.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</untitled-ontology-3:abordagens>
+        <untitled-ontology-3:apresAtividade>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que o projeto avan&amp;ccedil;a, &amp;eacute; essencial que voc&amp;ecirc; trabalhe continuamente com seu modelo de casos de uso, casos de uso e fatias de casos de uso. As prioridades mudam, as li&amp;ccedil;&amp;otilde;es s&amp;atilde;o aprendidas e as mudan&amp;ccedil;as s&amp;atilde;o solicitadas. Tudo isso pode ter um impacto nos casos de uso e nas fatias de casos de uso que j&amp;aacute; foram implementados, bem como naqueles que ainda aguardam progresso. Esta atividade muitas vezes levar&amp;aacute; &amp;agrave; descoberta de novos casos de uso e &amp;agrave; refatora&amp;ccedil;&amp;atilde;o dos casos de uso e fatias de casos de uso existentes.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As diversas demandas do projeto podem exigir que voc&amp;ecirc; ajuste o uso do Use-Case 2.0 Essentials e ajuste o tamanho das fatias (sua amplitude) ou o n&amp;iacute;vel de detalhe (sua profundidade) em suas narrativas de caso de uso, informa&amp;ccedil;&amp;otilde;es de apoio e teste casos.&amp;nbsp;&amp;Eacute; importante que voc&amp;ecirc; inspecione e adapte continuamente sua maneira de trabalhar, bem como os casos de uso e as fatias de casos de uso com os quais est&amp;aacute; trabalhando.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Depois de ajustar o modelo de casos de uso e atualizar tudo, voc&amp;ecirc; estar&amp;aacute; pronto para identificar seu pr&amp;oacute;ximo conjunto de fatias.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</untitled-ontology-3:apresAtividade>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Inspecionar e adaptar os casos de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Lidar com as mudan&amp;ccedil;as e acompanhar o progresso ajustando o modelo de casos de uso, os casos de uso e as fatias de casos de uso.&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;****** e avalie continuamente os casos de *** e as ****** de casos ** uso para:&lt;/span&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Ajustar e avaliar continuamente os casos de uso e as fatias de casos de uso para:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
     &lt;li style=&quot;font-size: 12px;&quot;&gt;Lidar com mudan&amp;ccedil;as.&lt;/li&gt;
     &lt;li style=&quot;font-size: 12px;&quot;&gt;Acompanhar o progresso.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px;&quot;&gt;Ajuste seu trabalho dentro do ***** e or&amp;ccedil;amento dispon&amp;iacute;veis.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px;&quot;&gt;Mantenha o modelo de casos de uso atualizado.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 12px;&quot;&gt;Ajuste o tamanho das fatias para aumentar o rendimento.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que o ******* avan&amp;ccedil;a, &amp;eacute; ********* que ** trabalhe continuamente com seu modelo de casos de uso, casos ** uso e ****** de ***** de uso.&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As *********** mudam, as li&amp;ccedil;&amp;otilde;** s&amp;atilde;o aprendidas e as mudan&amp;ccedil;as s&amp;atilde;o solicitadas.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Tudo isso pode ter um impacto *** casos de uso e nas fatias de casos de uso que j&amp;aacute; foram implementados, bem como naqueles que ***** ******** progresso.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;**** atividade muitas ***** levar&amp;aacute; &amp;agrave; descoberta de novos casos de uso e &amp;agrave; refatora&amp;ccedil;&amp;atilde;o dos casos de *** e fatias de casos de uso existentes.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As diversas ******** do projeto podem exigir que seja ajustado o uso do Use-Case 2.0 e ajuste o tamanho das fatias (sua amplitude) ou o n&amp;iacute;vel de ******* (sua profundidade) ** suas ********** de caso de uso, informa&amp;ccedil;&amp;otilde;es de apoio e teste casos.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Eacute; importante que voc&amp;ecirc; inspecione e adapte continuamente *** maneira de trabalhar, bem como os casos de uso e ** fatias de casos de uso com os quais est&amp;aacute; trabalhando.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Depois ** ajustar o modelo de ***** de uso e ********* tudo, voc&amp;ecirc; estar&amp;aacute; pronto para identificar seu pr&amp;oacute;ximo conjunto de fatias.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Ajustar seu trabalho dentro do tempo e or&amp;ccedil;amento dispon&amp;iacute;veis.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Manter o modelo de casos de uso atualizado.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Ajustar o tamanho das fatias para aumentar o rendimento.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:infAdicionais>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Participantes&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Embora partes desta atividade possam ser realizadas por indiv&amp;iacute;duos, esta atividade &amp;eacute; melhor realizada como uma atividade de equipa liderada pelo l&amp;iacute;der da equipa.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Para poder realizar esta atividade com sucesso, todas as compet&amp;ecirc;ncias essenciais de engenharia de software precisam estar implementadas. Isto pode ser conseguido envolvendo toda a equipe ou apenas os l&amp;iacute;deres de cada &amp;aacute;rea de desenvolvimento.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta compet&amp;ecirc;ncia &amp;eacute; necess&amp;aacute;ria para determinar o progresso, tratar e priorizar adequadamente os defeitos e adicionar novos requisitos ao escopo, tudo sob a perspectiva das partes interessadas.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;An&amp;aacute;lise&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Pessoas precisam estar envolvidas para o tratamento adequado de defeitos e mudan&amp;ccedil;as de escopo, bem como ajudar os demais participantes na tomada de decis&amp;otilde;es.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As mudan&amp;ccedil;as no escopo podem resultar em um modelo de casos de uso atualizado ou reestruturado, em atualiza&amp;ccedil;&amp;otilde;es de fatias de casos de uso existentes ou em informa&amp;ccedil;&amp;otilde;es de suporte ou, at&amp;eacute; mesmo, em novos requisitos.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Desenvolvimento&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Pessoas precisam estar envolvidas para o tratamento adequado de defeitos (por exemplo, complexidade e dimensionamento).&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Teste&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Pessoas precisam estar envolvidas para determinar o progresso e o tratamento adequado dos defeitos (por exemplo, gravidade).&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Dicas e sugest&amp;otilde;es&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Monitore e ajuste continuamente seu conjunto de fatias de casos de uso no escopo&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ao ordenar suas fatias de casos de uso e rastrear seus estados, voc&amp;ecirc; cria uma lista dos requisitos que ainda precisam ser implementados. Esta lista deve ser continuamente monitorada e ajustada para refletir o progresso da equipe e os desejos das partes interessadas.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave; medida que o projeto avan&amp;ccedil;a, voc&amp;ecirc; deve monitorar e ajustar o tamanho da fatia, o tamanho do lote e os limites do trabalho em andamento para eliminar desperd&amp;iacute;cios e melhorar a efic&amp;aacute;cia da equipe.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Adicione casos de teste para defeitos&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Quando forem encontrados defeitos que n&amp;atilde;o foram capturados pelos casos de teste identificados, adicione casos de teste &amp;agrave;s fatias de casos de uso que cobrem hist&amp;oacute;rias que incluem esses defeitos para avaliar sua resolu&amp;ccedil;&amp;atilde;o e evitar seu reaparecimento.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Erros comuns&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Defini&amp;ccedil;&amp;atilde;o de feito n&amp;atilde;o est&amp;aacute; clara em rela&amp;ccedil;&amp;atilde;o a defeitos&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O estado de uma fatia de caso de uso depende do progresso realizado e, em um mundo ideal, n&amp;atilde;o deveria ter defeitos relacionados. Contudo, no mundo real, o software raramente est&amp;aacute; isento de defeitos; al&amp;eacute;m disso, nem todos os defeitos precisam ser tratados igualmente.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Problema&lt;/strong&gt;&lt;/strong&gt; : Visar a perfei&amp;ccedil;&amp;atilde;o resolvendo todos os defeitos atrasa, ou at&amp;eacute; impede, a entrega.&lt;strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Resolu&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/strong&gt; : Desenvolva um esquema de prioriza&amp;ccedil;&amp;atilde;o de defeitos com base na gravidade, prioridade e tipo de defeito onde:&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;A gravidade determina o impacto de um defeito em rela&amp;ccedil;&amp;atilde;o ao sistema (por exemplo, falha com perda de dados, falha direta, impacto na usabilidade, problema cosm&amp;eacute;tico, novo recurso).&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;A prioridade reflete a vis&amp;atilde;o do projeto sobre o defeito, a fim de program&amp;aacute;-lo para uma solu&amp;ccedil;&amp;atilde;o (por exemplo, disponibilidade de uma solu&amp;ccedil;&amp;atilde;o alternativa, complexidade ou dificuldade de corre&amp;ccedil;&amp;atilde;o).&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;O tipo determina o que &amp;eacute; afetado (por exemplo, requisitos, design, c&amp;oacute;digo, manuais, casos de teste, documenta&amp;ccedil;&amp;atilde;o, hardware, sistema operacional, uso indesejado do sistema).&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Trabalhar com as partes interessadas para determinar quais n&amp;iacute;veis de defeitos ou tipos de defeitos s&amp;atilde;o aceit&amp;aacute;veis para passar na &amp;ldquo;defini&amp;ccedil;&amp;atilde;o de conclu&amp;iacute;do&amp;rdquo;.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;_______________&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Refer&amp;ecirc;ncias de apoio&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;&lt;sup style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;text-align: start; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&amp;nbsp;Use Case Modeling, by Kurt Bittner and Ian Spence, Addison-Wesley Professional, chapter 10.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:infAdicionais>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Inspecionar e ajustar os casos de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
@@ -2787,6 +3064,10 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
@@ -2846,25 +3127,33 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ParteCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Alpha"/>
+        <untitled-ontology-3:eProgredidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
+        <untitled-ontology-3:eProgredidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:eProgredidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Analisado"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Escopo"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Implementado"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Preparado"/>
         <untitled-ontology-3:possui rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Verificado"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;strong&gt;Uma ou mais hist&amp;oacute;rias selecionadas de um caso ** uso para formar um item de ******** que ***** valor claro para o cliente.&lt;/strong&gt;&lt;/p&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Uma fatia de casos de uso compreende tudo o que h&amp;aacute; para saber sobre as hist&amp;oacute;rias que ela cont&amp;eacute;m. Faz refer&amp;ecirc;ncia a hist&amp;oacute;rias na narrativa de casos de uso e a um conjunto de casos de teste relacionados; atua como um espa&amp;ccedil;o reservado para todo o trabalho necess&amp;aacute;rio para concluir a implementa&amp;ccedil;&amp;atilde;o das hist&amp;oacute;rias e evolui para incluir as fatias equivalentes atrav&amp;eacute;s do design, implementa&amp;ccedil;&amp;atilde;o e teste.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de uso cobrem muitas hist&amp;oacute;rias relacionadas de import&amp;acirc;ncia e prioridade variadas.&amp;nbsp;Freq&amp;uuml;entemente, h&amp;aacute; muitas hist&amp;oacute;rias para serem entregues em um &amp;uacute;nico lan&amp;ccedil;amento e, geralmente, muitas para serem trabalhadas em um &amp;uacute;nico incremento.&amp;nbsp;Por causa disso, precisamos de uma maneira de dividir os casos de uso em partes menores que a) nos permita selecionar quais partes do caso de uso ser&amp;atilde;o entregues e quando, b) forne&amp;ccedil;a uma unidade adequada para implementa&amp;ccedil;&amp;atilde;o e teste pela equipe de desenvolvimento e c) nos permitem ter trabalhos pequenos e de tamanho semelhante que fluem rapidamente durante o desenvolvimento.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Muitas vezes descobrimos que o caso de uso compreende muitas hist&amp;oacute;rias para serem abordadas ou desenvolvidas de uma s&amp;oacute; vez.&amp;nbsp;Por exemplo, um caso de uso pode conter 15 fluxos de eventos, alguns dos quais s&amp;atilde;o de maior prioridade que os outros e podem precisar ser desenvolvidos primeiro.&amp;nbsp;Seria bom se pud&amp;eacute;ssemos indicar claramente quais conjuntos de fluxos (e as hist&amp;oacute;rias que eles contam) ser&amp;atilde;o trabalhados em determinado momento.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Cada fatia de caso de uso captura uma ou mais hist&amp;oacute;rias do caso de uso subjacente, permitindo facilmente que as diferentes fatias do caso de uso progridam de forma independente. As fatias de casos de uso combinam requisitos de um caso de uso, juntamente com casos de teste, para especificar claramente um aspecto do sistema que pode ser constru&amp;iacute;do e testado de forma independente.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Uma ou mais hist&amp;oacute;rias selecionadas de um caso de uso para formar um item de trabalho que tenha valor claro para o cliente.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: center; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Fatias de casos de uso:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Permitir que ** casos de uso sejam divididos em unidades de trabalho menores e com entrega independente.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;******** que os ********** contidos em ** conjunto de casos de uso sejam ordenados, priorizados e abordados em paralelo.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Vincular ** diferentes ******* de sistema (requisitos, an&amp;aacute;lise, design, implementa&amp;ccedil;&amp;atilde;o e teste) usados no desenvolvimento orientado a casos ** uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Permita que os casos de uso sejam divididos em unidades de trabalho menores e com entrega independente.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Permita que os requisitos contidos em um conjunto de casos de uso sejam ordenados, priorizados e abordados em paralelo.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Vincule os diferentes modelos de sistema (requisitos, an&amp;aacute;lise, design, implementa&amp;ccedil;&amp;atilde;o e teste) usados no desenvolvimento orientado a casos de uso.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Uma parte de caso de uso compreende as informa&amp;ccedil;&amp;otilde;es sobre as hist&amp;oacute;rias que ela cont&amp;eacute;m: *** refer&amp;ecirc;**** a hist&amp;oacute;rias na narrativa de casos de uso e a um conjunto de casos de teste relacionados; e atua como um espa&amp;ccedil;o reservado para todo o trabalho necess&amp;aacute;rio para concluir a implementa&amp;ccedil;&amp;atilde;o das hist&amp;oacute;rias e evolui para incluir as fatias equivalentes atrav&amp;eacute;s do design, implementa&amp;ccedil;&amp;atilde;o e teste.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Os casos de uso cobrem muitas hist&amp;oacute;rias relacionadas de import&amp;acirc;ncia e prioridade variadas: Frequentemente, h&amp;aacute; muitas hist&amp;oacute;rias para serem entregues em ** &amp;uacute;nico lan&amp;ccedil;amento e, geralmente, muitas para ***** trabalhadas em ** &amp;uacute;nico incremento. Por causa disso, dividimos os casos de *** em partes menores que: &lt;strong&gt;a)&lt;/strong&gt; nos permita selecionar quais partes do caso de uso ser&amp;atilde;o entregues e quando; &lt;strong&gt;b)&lt;/strong&gt; forne&amp;ccedil;a uma ******* adequada para implementa&amp;ccedil;&amp;atilde;o e teste pela ****** de desenvolvimento e; &lt;strong&gt;c)&lt;/strong&gt; nos permitem ter trabalhos pequenos e de tamanho semelhante que fluem rapidamente ******* o desenvolvimento.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Muitas vezes *********** que o caso de uso ********** muitas hist&amp;oacute;rias **** serem ********* ou desenvolvidas de uma s&amp;oacute; vez. Por exemplo, um caso de uso pode conter 15 ****** de eventos, alguns dos quais s&amp;atilde;o de maior prioridade *** os outros e podem precisar ser desenvolvidos primeiro. &lt;strong&gt;Seria bom se pud&amp;eacute;ssemos indicar ********** quais conjuntos de fluxos (e as hist&amp;oacute;**** que eles contam) ser&amp;atilde;o trabalhados em determinado momento.&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Cada parte de caso de uso captura uma ou mais hist&amp;oacute;rias do caso de *** subjacente, ********** facilmente que as diferentes partes do caso de uso progridam de forma independente: ** partes de casos de uso combinam requisitos de um caso de uso, juntamente com casos de teste, **** especificar claramente um aspecto do sistema que pode ser constru&amp;iacute;** e ******* de forma independente.&lt;/p&gt;</untitled-ontology-3:descricao>
+&lt;h1 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 2.375em;&quot;&gt;&lt;br&gt;&lt;/h1&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Partes de caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
@@ -2910,12 +3199,13 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Preparado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
+        <untitled-ontology-3:avancadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Estado Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;strong&gt;A parte do caso de *** foi preparada aprimorando a ********* e os casos de teste para definir claramente o que significa implementar a ***** com sucesso.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os requisitos dentro do escopo s&amp;atilde;o acordados: &lt;/strong&gt;Os fluxos de casos de uso no escopo, os requisitos ********* e as informa&amp;ccedil;&amp;otilde;es de apoio foram detalhados o suficiente para serem acordados pelas partes interessadas relevantes e pela equipe do projeto.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os casos de teste s&amp;atilde;o suficientes para verifica&amp;ccedil;&amp;atilde;o: &lt;/strong&gt;O(s) caso(s) de teste fornecem informa&amp;ccedil;&amp;otilde;es suficientes para que n&amp;atilde;o haja d&amp;uacute;vidas sobre ** testes a serem executados para verificar o sucesso da implementa&amp;ccedil;&amp;atilde;o da fatia.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os testes s&amp;atilde;o bem definidos:&lt;/strong&gt; Os testes foram definidos com ********* e profundidade suficientes, com crit&amp;eacute;rios de aceita&amp;ccedil;&amp;atilde;o claros, **** verificar se o sistema funciona conforme especificado pela fatia.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        <untitled-ontology-3:descricao>&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;A fatia do caso de uso foi preparada aprimorando a &lt;span style=&apos;color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&apos;&gt;narrativa&amp;nbsp;&lt;/span&gt; e os casos de teste para definir claramente o que significa implementar a fatia com sucesso.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Os requisitos dentro do escopo s&amp;atilde;o acordados:&amp;nbsp;&lt;/strong&gt;Os fluxos de casos de uso no escopo, os requisitos especiais e as informa&amp;ccedil;&amp;otilde;es de apoio foram detalhados o suficiente para serem acordados pelas partes interessadas relevantes e pela equipe do projeto.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Os casos de teste s&amp;atilde;o suficientes para verifica&amp;ccedil;&amp;atilde;o:&amp;nbsp;&lt;/strong&gt;O(s) caso(s) de teste fornecem informa&amp;ccedil;&amp;otilde;es suficientes para que n&amp;atilde;o haja d&amp;uacute;vidas sobre os testes a serem executados para verificar o sucesso da implementa&amp;ccedil;&amp;atilde;o da fatia.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Os testes s&amp;atilde;o bem definidos:&lt;/strong&gt; Os testes foram definidos com amplitude e profundidade suficientes, com crit&amp;eacute;rios de aceita&amp;ccedil;&amp;atilde;o claros, para verificar se o sistema funciona conforme especificado pela fatia. &lt;/li&gt;
 &lt;/ul&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Preparado&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequencia>
@@ -2927,32 +3217,151 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AtividadeProdutoTrabalho"/>
+        <untitled-ontology-3:produz rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC"/>
+        <untitled-ontology-3:produz rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Atividade Produto Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;strong&gt;Uma fatia de caso de *** &amp;eacute; preparada para desenvolvimento elaborando sua narrativa e casos de teste.&lt;/strong&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;Depois que uma fatia &amp;eacute; selecionada para desenvolvimento, &amp;eacute; necess&amp;aacute;*** mais trabalho para:&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-        &lt;li style=&quot;font-size: 1em;&quot;&gt;Prepar&amp;aacute;-lo para o desenvolvimento.&lt;/li&gt;
-        &lt;li style=&quot;font-size: 1em;&quot;&gt;Definir claramente o que ********* implementar a fatia com sucesso.&lt;/li&gt;
-        &lt;li style=&quot;font-size: 1em;&quot;&gt;Definir ** caracter&amp;iacute;****** exigidas (ou seja, requisitos n&amp;atilde;o funcionais).&lt;/li&gt;
-        &lt;li style=&quot;font-size: 1em;&quot;&gt;Concentrar o desenvolvimento de software nos casos de ***** *** ele deve atender.&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-    &lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/p&gt;
-    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Esta atividade atualiza a fatia do **** ** *** para que todos os requisitos no escopo e seus casos ** teste sejam descritos.&lt;/p&gt;
-    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;******** uma fatia de caso ** *** &amp;eacute; uma atividade colaborativa;&amp;nbsp;voc&amp;ecirc; precisa da contribui&amp;ccedil;&amp;atilde;o das partes interessadas, *************** e testadores para esclarecer a narrativa do caso de uso e definir ** casos de ***** apropriados.&lt;/p&gt;
-    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Ao preparar *** fatia de caso de uso, voc&amp;ecirc; deve se ********** nas necessidades dos desenvolvedores e testadores que ir&amp;atilde;o implementar e verificar a fatia.&amp;nbsp;&lt;/p&gt;
+        <untitled-ontology-3:abordagens>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Abordagens&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O objetivo de preparar uma fatia de caso de uso &amp;eacute; comunicar as necessidades das partes interessadas aos desenvolvedores e testadores.&amp;nbsp;O formato da narrativa do caso de uso pode variar desde as formas textuais mais comuns, passando por fluxogramas e diagramas at&amp;eacute; sequ&amp;ecirc;ncias animadas.&amp;nbsp;Contudo a comunica&amp;ccedil;&amp;atilde;o n&amp;atilde;o acontece simplesmente porque algu&amp;eacute;m descreve algo e outros consomem a descri&amp;ccedil;&amp;atilde;o.&amp;nbsp;Em vez disso, a comunica&amp;ccedil;&amp;atilde;o mais eficaz consiste em pessoas trabalhando juntas enquanto criam algo.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;text-align: start;color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);font-size: 12px;&quot;&gt;______________________&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Autoria em pares&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
     &lt;ul&gt;
-        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Pense ** como eles acessar&amp;atilde;o as informa&amp;ccedil;&amp;otilde;es de que precisam.&amp;nbsp;&lt;/li&gt;
-        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Eles conseguir&amp;atilde;o conversar com especialistas ** assunto para dar corpo &amp;agrave;s hist&amp;oacute;rias ou precisar&amp;atilde;o que tudo seja documentado para eles?&amp;nbsp;&lt;/li&gt;
-        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Voc&amp;ecirc; tamb&amp;eacute;m precisa ********** o trabalho entre o detalhamento da ********* dos ***** de uso e o detalhamento dos casos de teste.&amp;nbsp;&lt;/li&gt;
-        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Quanto **** detalhes voc&amp;ecirc; colocar na narrativa do caso de uso, mais f&amp;aacute;cil ser&amp;aacute; criar os casos ** teste; por outro lado, quanto mais leve for a narrativa do caso de uso, menos duplica&amp;ccedil;&amp;atilde;o e repeti&amp;ccedil;&amp;atilde;o haver&amp;aacute; ***** ela e ** casos de teste.&amp;nbsp;&lt;/li&gt;
-        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Voc&amp;ecirc; deve criar a narrativa do caso de uso e os casos ** teste ao mesmo tempo para que os autores possam equilibrar **** pr&amp;oacute;prias ************ e as de seus stakeholders.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Esta &amp;eacute; a abordagem recomendada.&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Para melhorar a comunica&amp;ccedil;&amp;atilde;o, comprove que cada narrativa de caso de uso seja detalhada por um par com as compet&amp;ecirc;ncias An&amp;aacute;lise, Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas e Teste.&amp;nbsp;A situa&amp;ccedil;&amp;atilde;o ideal &amp;eacute; quando um indiv&amp;iacute;duo tamb&amp;eacute;m tem compet&amp;ecirc;ncia de Desenvolvedor &amp;ndash; ent&amp;atilde;o essa pessoa pode levar a fatia do caso de uso at&amp;eacute; o c&amp;oacute;digo funcional.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Se a cria&amp;ccedil;&amp;atilde;o em pares n&amp;atilde;o for poss&amp;iacute;vel, use uma das pr&amp;oacute;ximas duas abordagens com base em sua prefer&amp;ecirc;ncia;&amp;nbsp;&amp;ldquo;Autoria do cliente&amp;rdquo; ou &amp;ldquo;Autoria da equipe&amp;rdquo;.&lt;/span&gt;&lt;/li&gt;
     &lt;/ul&gt;
-    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Execute esta atividade pelo ***** uma *** **** **** fatia. Repita esta atividade sempre que houver altera&amp;ccedil;&amp;otilde;es aplicadas &amp;agrave; fatia.&lt;/p&gt;
-&lt;/div&gt;</untitled-ontology-3:descricao>
+    &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;_____________________&lt;/span&gt;&lt;/p&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Autoria do cliente&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Nesta abordagem, deixe que o pr&amp;oacute;prio cliente seja o autor da narrativa do caso de uso, dos casos de teste e das informa&amp;ccedil;&amp;otilde;es de suporte.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Em seguida, pessoas com compet&amp;ecirc;ncia em An&amp;aacute;lise, Desenvolvedor e Teste fornecem feedback.&amp;nbsp;Esse feedback deve focar nos problemas comuns nas narrativas de casos de uso e nos casos de teste.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esse processo &amp;eacute; repetido at&amp;eacute; que a parte da narrativa do caso de uso alocada pela fatia do caso de uso seja adequada ao prop&amp;oacute;sito.&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&apos;color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&apos;&gt;_____________________&lt;/span&gt;&lt;/p&gt;
+        &lt;h2 style=&quot;font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Autoria de equipe&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Deixar que algu&amp;eacute;m com a compet&amp;ecirc;ncia de Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas comece explicando informalmente os objetivos e as hist&amp;oacute;rias do caso de uso desejado aos membros da equipe de desenvolvimento com as compet&amp;ecirc;ncias de An&amp;aacute;lise, Teste e Desenvolvedor, que ser&amp;atilde;o respons&amp;aacute;veis pela prepara&amp;ccedil;&amp;atilde;o, implementa&amp;ccedil;&amp;atilde;o e teste da fatia do caso de uso.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A equipe de desenvolvimento rebate documentando as necessidades percebidas, utilizando o formato escolhido para detalhar casos de uso e casos de teste.&amp;nbsp;Neste processo a equipe de desenvolvimento tamb&amp;eacute;m deve fazer perguntas e fornecer sugest&amp;otilde;es para resolver problemas comuns em narrativas de casos de uso e casos de teste.&lt;/span&gt;&lt;/li&gt;
+            &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Em seguida, uma pessoa com compet&amp;ecirc;ncia em Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas decide o que fazer com as sugest&amp;otilde;es e tenta responder &amp;agrave;s perguntas, enviando as respostas de volta &amp;agrave; equipe de desenvolvimento antes que o ciclo se repita.&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/div&gt;</untitled-ontology-3:abordagens>
+        <untitled-ontology-3:apresAtividade>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Esta atividade atualiza a fatia do caso de uso para que todos os requisitos no escopo e seus casos de teste sejam descritos.&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Preparar uma fatia de caso de uso &amp;eacute; uma atividade colaborativa;&amp;nbsp;voc&amp;ecirc; precisa da contribui&amp;ccedil;&amp;atilde;o das partes interessadas, desenvolvedores e testadores para esclarecer a narrativa do caso de uso e definir os casos de teste apropriados.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ao preparar uma fatia de caso de uso, deve se concentrar nas necessidades dos desenvolvedores e testadores que ir&amp;atilde;o implementar e verificar a fatia. Pense em como eles acessar&amp;atilde;o as informa&amp;ccedil;&amp;otilde;es de que precisam. Eles conseguir&amp;atilde;o conversar com especialistas no assunto para dar corpo &amp;agrave;s hist&amp;oacute;rias ou precisar&amp;atilde;o que tudo seja documentado para eles? Voc&amp;ecirc; tamb&amp;eacute;m precisa equilibrar o trabalho entre o detalhamento da narrativa dos casos de uso e o detalhamento dos casos de teste. Quanto mais detalhes voc&amp;ecirc; colocar na narrativa do caso de uso, mais f&amp;aacute;cil ser&amp;aacute; criar os casos de teste; por outro lado, quanto mais leve for a narrativa do caso de uso, menos duplica&amp;ccedil;&amp;atilde;o e repeti&amp;ccedil;&amp;atilde;o haver&amp;aacute; entre ela e os casos de teste. Voc&amp;ecirc; deve criar a narrativa do caso de uso e os casos de teste ao mesmo tempo para que os autores possam equilibrar suas pr&amp;oacute;prias necessidades e as de seus stakeholders. Ainda pode haver trabalho a fazer se os casos de teste forem automatizados, mas n&amp;atilde;o haver&amp;aacute; d&amp;uacute;vidas sobre o que precisa ser alcan&amp;ccedil;ado para uma implementa&amp;ccedil;&amp;atilde;o bem-sucedida.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Executar esta atividade pelo menos uma vez para cada fatia. Repita esta atividade sempre que houver altera&amp;ccedil;&amp;otilde;es aplicadas &amp;agrave; fatia.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</untitled-ontology-3:apresAtividade>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Preparar uma parte do caso de uso para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;p style=&quot;font-size: 1em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Uma fatia de caso de uso &amp;eacute; preparada para desenvolvimento elaborando sua narrativa e casos de teste.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Depois que uma fatia &amp;eacute; selecionada para desenvolvimento, &amp;eacute; necess&amp;aacute;rio mais trabalho para:&lt;/span&gt;&lt;/div&gt;
+&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Prepar&amp;aacute;-lo para o desenvolvimento.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir claramente o que significa implementar a fatia com sucesso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Definir as caracter&amp;iacute;sticas exigidas (ou seja, requisitos n&amp;atilde;o funcionais).&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px;&quot;&gt;Concentrar o desenvolvimento de software nos casos de teste que ele deve atender.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:infAdicionais>&lt;div style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;
+    &lt;h2 style=&quot;text-align: center; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/span&gt;&lt;/h2&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Participantes&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;S&amp;atilde;o diversas compet&amp;ecirc;ncias para preparar com sucesso uma fatia de caso de uso.&amp;nbsp;Normalmente esta &amp;eacute; uma atividade de grupo formada por membros da equipe com compet&amp;ecirc;ncias de An&amp;aacute;lise, Teste e Representa&amp;ccedil;&amp;atilde;o de Stakeholders.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;A compet&amp;ecirc;ncia Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas desempenha o importante papel de garantir que uma fatia do caso de uso atenda &amp;agrave;s necessidades e expectativas mais importantes da comunidade das partes interessadas.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Um conhecimento profundo do dom&amp;iacute;nio do problema e da situa&amp;ccedil;&amp;atilde;o em que o sistema ser&amp;aacute; utilizado &amp;eacute; fundamental para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Capture os objetivos essenciais do caso de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Sugira formas eficazes para os atores interagirem com o sistema, a fim de atingir o objetivo do caso de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Compreender e comunicar as alternativas prov&amp;aacute;veis ao fluxo b&amp;aacute;sico.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Confirme se o conjunto de casos de teste fornece uma verifica&amp;ccedil;&amp;atilde;o v&amp;aacute;lida dos fluxos de casos de uso, requisitos especiais ou mesmas informa&amp;ccedil;&amp;otilde;es de suporte envolvidos nos cen&amp;aacute;rios de teste.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O n&amp;iacute;vel espec&amp;iacute;fico de conhecimento do assunto necess&amp;aacute;rio depende da complexidade e do risco associado ao caso de uso que est&amp;aacute; sendo especificado.&lt;/span&gt;&lt;/p&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;An&amp;aacute;lise&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O respons&amp;aacute;vel por esta atividade deve:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Compreender, capturar e comunicar os requisitos expressos pelo caso de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Utilize a oportunidade como ponto de partida ao descrever o caso de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;se de que as pessoas envolvidas entendam e possam concordar com a narrativa do caso de uso.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Teste&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Para concluir esta atividade, os casos de teste da parcela de casos de uso devem ser definidos. O c&amp;oacute;digo &amp;eacute; fornecido por um recurso de teste especializado ou por indiv&amp;iacute;duo autor da narrativa do caso de uso.&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;A compet&amp;ecirc;ncia Teste &amp;eacute; necess&amp;aacute;ria para:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Identifique casos de teste adequados.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Identifique vari&amp;aacute;veis dentro de casos de teste.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Escolha a amplitude e profundidade adequadas das restri&amp;ccedil;&amp;otilde;es de entrada, sa&amp;iacute;da e condi&amp;ccedil;&amp;atilde;o para os casos de teste.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Garante que requisitos n&amp;atilde;o funcionais e especiais sejam cobertos conforme prote&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Se um indiv&amp;iacute;duo diferente escreveu a narrativa do caso de uso (ou seja, outro que n&amp;atilde;o &amp;eacute; o autor do caso de teste), ent&amp;atilde;o esse indiv&amp;iacute;duo dever&amp;aacute; ler os casos de teste e fornecer feedback sobre eles.&lt;/span&gt;&lt;/p&gt;
+    &lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Dicas e sugest&amp;otilde;es&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Conclua hist&amp;oacute;rias e fatias com base nos objetivos do projeto.&lt;/span&gt;&lt;/h3&gt;
+        &lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;As hist&amp;oacute;rias de um caso de uso n&amp;atilde;o s&amp;atilde;o igualmente cr&amp;iacute;ticas e, em particular, n&amp;atilde;o precisam ser inventadas e verificadas ao mesmo tempo.&amp;nbsp;Isso significa que, em geral, a hist&amp;oacute;ria contada pelo fluxo b&amp;aacute;sico &amp;eacute; mais importante que as outras hist&amp;oacute;rias.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Portanto, deixe que a necessidade de conclus&amp;atilde;o oportuna da hist&amp;oacute;ria e seus riscos orientem quando detalhar cada hist&amp;oacute;ria em cada caso de uso.&amp;nbsp;Isso pode significar que alguns casos de uso t&amp;ecirc;m apenas seu fluxo b&amp;aacute;sico descrito inicialmente, j&amp;aacute; que isso &amp;eacute; tudo o que &amp;eacute; necess&amp;aacute;rio para implementar e verificar as hist&amp;oacute;rias mais urgentes.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Se a fatia n&amp;atilde;o tiver casos de teste, ela n&amp;atilde;o foi adequada.&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Ao preparar uma fatia de casos de uso, lembre-se de definir os casos de teste que ser&amp;atilde;o usados para verifica&amp;ccedil;&amp;atilde;o.&amp;nbsp;&amp;Eacute; observar os casos de teste que sabemos o que realmente significa &amp;ldquo;pronto&amp;rdquo; para a fatia.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de teste fornecem aos desenvolvedores uma &amp;ldquo;defini&amp;ccedil;&amp;atilde;o de pronto&amp;rdquo; emp&amp;iacute;rica.&amp;nbsp;Eles saber&amp;atilde;o que o desenvolvimento da fatia n&amp;atilde;o ser&amp;aacute; completo at&amp;eacute; que o sistema passe os casos de teste a um n&amp;iacute;vel aceit&amp;aacute;vel para as partes interessadas.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Testar a compet&amp;ecirc;ncia, validade, integridade e clareza&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Algu&amp;eacute;m com compet&amp;ecirc;ncia em Teste precisa escrever casos de teste com base nos casos de uso. Eles n&amp;atilde;o poder&amp;atilde;o fazer isso se um caso de uso for amb&amp;iacute;guo ou incompleto; como resultado, &amp;eacute; prov&amp;aacute;vel que identifiquem esses problemas.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Portanto &amp;nbsp; , quando (a) algu&amp;eacute;m com a compet&amp;ecirc;ncia de Teste diz que o caso de uso est&amp;aacute; completamente definido e (b) algu&amp;eacute;m com a compet&amp;ecirc;ncia de Representa&amp;ccedil;&amp;atilde;o das Partes Interessadas acha que est&amp;aacute; correto, ent&amp;atilde;o o caso de uso provavelmente &amp;eacute; claro e completo .&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Revis&amp;atilde;o por pares&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Transfira conhecimento para colegas, como desenvolvedores e testadores, permitindo que forne&amp;ccedil;am feedback sobre as narrativas de casos de uso e os casos de teste.&amp;nbsp;Isto melhorar&amp;aacute; a narrativa e for&amp;ccedil;ar&amp;aacute; os pares a compreender a fatia do caso de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Gera&amp;ccedil;&amp;atilde;o de casos de teste baseados em hist&amp;oacute;rias&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;No desenvolvimento orientado a casos de uso, os casos de teste s&amp;atilde;o derivados das hist&amp;oacute;rias de um caso de uso.&amp;nbsp;Aqui assumimos que as hist&amp;oacute;rias certas foram selecionadas (em atividades anteriores) para desenvolvimento e verifica&amp;ccedil;&amp;atilde;o.&lt;/span&gt;&lt;/li&gt;
+        &lt;li style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Agora, identifique as vari&amp;aacute;veis do cen&amp;aacute;rio considerando a entrada, a sa&amp;iacute;da e os estados internos do caso de uso especificado. Os casos de teste podem ent&amp;atilde;o ser gerados a partir de cada hist&amp;oacute;ria selecionada, selecionando dados de teste adequados.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Dados de teste de dimensionamento inteligente&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Seja inteligente ao decidir sobre dados de teste para entrada, sa&amp;iacute;da e condi&amp;ccedil;&amp;otilde;es.&amp;nbsp;O objetivo &amp;eacute; encontrar uma amplitude de dados de teste com valor ideal para cada caso de teste, dadas as restri&amp;ccedil;&amp;otilde;es de tempo e custo.&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Ainda assim, &amp;eacute; sempre necess&amp;aacute;rio que os casos de teste:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Descubra os fluxos de casos de uso percorridos pela hist&amp;oacute;ria.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px;&quot;&gt;Envolve dados v&amp;aacute;lidos e inv&amp;aacute;lidos para cada entrada, sa&amp;iacute;da e estado interno da hist&amp;oacute;ria.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Erros comuns&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Um erro comum &amp;eacute; que uma pessoa seja autora da narrativa do caso de uso.&lt;/span&gt;&lt;/h3&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Problema&lt;/strong&gt;&lt;/strong&gt;&amp;nbsp; : Isso pode resultar em uma vis&amp;atilde;o polarizada das hist&amp;oacute;rias de casos de uso, levando &amp;agrave; falta de fluxos ou requisitos especiais. O consenso e a compreens&amp;atilde;o plena s&amp;atilde;o quase imposs&amp;iacute;veis de alcan&amp;ccedil;ar sozinhos.&lt;/span&gt;&lt;/p&gt;
+    &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/strong&gt;&amp;nbsp; : Se isso j&amp;aacute; ocorreu, considere&lt;strong&gt;&amp;nbsp;aplicar as abordagens de autoria do cliente, autoria da equipe ou de revis&amp;atilde;o por pares.&lt;/strong&gt;&lt;u&gt;&lt;a href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_m71tUSyJEeGkkOC4K2RI6A/Prepare%20a%20Use-Case%20Slice_gd.html#approach2&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Problemas comuns em narrativas de casos de uso&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Ambiguidades em termos de sequ&amp;ecirc;ncia, fazem com que o sistema deve fazer e das entradas e sa&amp;iacute;das dos operadores.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Faltam fluxos alternativos para lidar com falhas do sistema, entradas erradas e regras de neg&amp;oacute;cios que imp&amp;otilde;em fluxos alternativos.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Expressar o design da interface do usu&amp;aacute;rio, como refer&amp;ecirc;ncia a bot&amp;otilde;es, listas e janelas.&amp;nbsp;A raz&amp;atilde;o para evitar isto &amp;eacute; que o assunto deve ser tratado posteriormente por especialistas espec&amp;iacute;ficos e n&amp;atilde;o implicitamente neste momento.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h3 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.3125em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Problemas comuns nas especifica&amp;ccedil;&amp;otilde;es de casos de teste&lt;/u&gt;&lt;/span&gt;&lt;/h3&gt;
+    &lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os casos de teste n&amp;atilde;o s&amp;atilde;o baseados em hist&amp;oacute;rias definidas pelos fluxos de casos de uso.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os dados de entrada n&amp;atilde;o s&amp;atilde;o escolhidos para garantir que limites, cantos e outros casos sejam especiais avaliados.&lt;/li&gt;
+        &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os casos de teste n&amp;atilde;o s&amp;atilde;o escritos de forma que todos os fluxos e requisitos especiais definidos em um caso de uso sejam cobertos.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;_______________&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Refer&amp;ecirc;ncias de apoio&lt;/u&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; Use Case Modeling, by Kurt Bittner and Ian Spence, Addison-Wesley Professional, Part 2: Writing and Reviewing Use-Case Descriptions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; &lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/functionaltests.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;www.extremeprogramming.org/rules/functionaltests.html&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;3&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, by Gunnar &amp;Ouml;vergaard and Karin Palmkvist, Addison Wesley, et. al, chapter 13.&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:infAdicionais>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Preparar uma parte do caso de uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-3:sequencia>
         <untitled-ontology-3:sequenciaAtividadeUC>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequenciaAtividadeUC>
@@ -3099,6 +3508,7 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
@@ -3547,12 +3957,12 @@ Caso os smells não forem removidos, o requisito pode ser implementado incorreta
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Verificado">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EstadoAlpha"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Estado Alpha&lt;/p&gt;</untitled-ontology-3:Icone>
-        <untitled-ontology-3:descricao>&lt;p&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;strong&gt;A parte do caso ** uso foi verificada **** conclu&amp;iacute;da e est&amp;aacute; pronta para inclus&amp;atilde;o em uma vers&amp;atilde;o.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Os testes ***** executados com sucesso:&amp;nbsp;&lt;/strong&gt;** testes foram executados com ******* com um resultado aceit&amp;aacute;vel.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O sistema de software passa em ***** de teste suficientes: &lt;/strong&gt;O sistema de software passa por ** n&amp;uacute;mero ********** de casos de teste para ser *********** de qualidade aceit&amp;aacute;vel pelas partes interessadas e pela equipe do projeto.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-    &lt;li style=&apos;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-align: justify; text-indent: 0cm; line-height: 150%; font-size: 16px; font-family: &quot;Times New Roman&quot;, serif;&apos;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Casos de teste adicionados ** conjunto de regress&amp;atilde;o:&lt;/strong&gt; Os casos de teste s&amp;atilde;o adicionados ao(s) conjunto(s) ** ****** de regress&amp;atilde;o apropriado(s).&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:descricao>&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0);&quot;&gt;&lt;strong&gt;A fatia do caso de uso foi verificada como conclu&amp;iacute;da e est&amp;aacute; pronta para inclus&amp;atilde;o em uma vers&amp;atilde;o.&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;Os testes foram executados com sucesso: Os&lt;/strong&gt; testes foram executados com sucesso e um resultado aceit&amp;aacute;vel.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;O sistema de software passa em casos de teste suficientes:&amp;nbsp;&lt;/strong&gt;O sistema de software passa por um n&amp;uacute;mero suficiente de casos de teste para ser considerado de qualidade aceit&amp;aacute;vel pelas partes interessadas e pela equipe do projeto.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;strong&gt;Casos de teste adicionados ao conjunto de regress&amp;atilde;o:&lt;/strong&gt; Os casos de teste s&amp;atilde;o adicionados ao(s) conjunto(s) de testes de regress&amp;atilde;o apropriado(s). &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Verificado&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;5&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
