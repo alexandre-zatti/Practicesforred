@@ -11,6 +11,14 @@ public class Pratica implements OntologyModel {
 
     private String descricao;
 
+    private String fluxoAtividades;
+
+    private String apresentacao;
+
+    private String introducao;
+
+    private String quandoAplicar;
+
     private ClassificacaoPratica classificacaoPratica;
 
     private GrauRelevancia grauRelevancia = null;
@@ -34,6 +42,18 @@ public class Pratica implements OntologyModel {
         this.nome = nome;
         this.uri = uri;
         this.descricao = descricao;
+        this.classificacaoPratica = classificacaoPratica;
+        this.grauRelevancia = grauRelevancia;
+    }
+
+    public Pratica(String nome, String uri, String descricao, String fluxoAtividades, String apresentacao, String introducao, String quandoAplicar, ClassificacaoPratica classificacaoPratica, GrauRelevancia grauRelevancia) {
+        this.nome = nome;
+        this.uri = uri;
+        this.descricao = descricao;
+        this.fluxoAtividades = fluxoAtividades;
+        this.apresentacao = apresentacao;
+        this.introducao = introducao;
+        this.quandoAplicar = quandoAplicar;
         this.classificacaoPratica = classificacaoPratica;
         this.grauRelevancia = grauRelevancia;
     }
@@ -76,5 +96,37 @@ public class Pratica implements OntologyModel {
 
     public void setClassificacaoPratica(ClassificacaoPratica classificacaoPratica) {
         this.classificacaoPratica = classificacaoPratica;
+    }
+
+    public String getFluxoAtividades() {
+        return fluxoAtividades;
+    }
+
+    public void setFluxoAtividades(String fluxoAtividades) {
+        this.fluxoAtividades = fluxoAtividades;
+    }
+
+    public String getApresentacao() {
+        return apresentacao;
+    }
+
+    public void setApresentacao(String apresentacao) {
+        this.apresentacao = apresentacao;
+    }
+
+    public String getIntroducao() {
+        return introducao;
+    }
+
+    public void setIntroducao(String introducao) {
+        this.introducao = introducao;
+    }
+
+    public String getQuandoAplicar() {
+        return quandoAplicar;
+    }
+
+    public void setQuandoAplicar(String quandoAplicar) {
+        this.quandoAplicar = quandoAplicar;
     }
 }

@@ -13,10 +13,7 @@ import zatti.alexandre.backend.model.Pratica;
 import zatti.alexandre.backend.utils.MatrizImpacto;
 
 import java.io.StringReader;
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class OntologyService {
@@ -137,8 +134,7 @@ public class OntologyService {
 
         var listaCausasConsequencias = new ArrayList<ConsequenciaCausasResponseDTO>();
 
-        for (int i = 0; i < consequencias.size(); i++) {
-            var consequencia = consequencias.get(i);
+        for (ConsequenciaCausasRequestDTO consequencia : consequencias) {
             var queryString = getCausaByConsequenciaQuery(consequencia);
             var query = QueryFactory.create(queryString);
             var causaConsequencia = new ConsequenciaCausasResponseDTO(consequencia.getConsequenciaUri(),
@@ -194,6 +190,10 @@ public class OntologyService {
                             var newPratica = new Pratica(solution.get("nomePratica").toString(),
                                     solution.get("uriPratica").toString(),
                                     solution.get("descricaoPratica").toString(),
+                                    Optional.ofNullable(solution.get("fluxoAtividadesPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("apresentacaoPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("introducaoPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString).orElse(""),
                                     ClassificacaoPratica.fromValue(solution.get(
                                             "classificacaoPratica").toString()),
                                     causa.getGrauRelevancia());
@@ -224,6 +224,10 @@ public class OntologyService {
                             var newPratica = new Pratica(solution.get("nomePratica").toString(),
                                     solution.get("uriPratica").toString(),
                                     solution.get("descricaoPratica").toString(),
+                                    Optional.ofNullable(solution.get("fluxoAtividadesPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("apresentacaoPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("introducaoPratica")).map(Object::toString).orElse(""),
+                                    Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString).orElse(""),
                                     ClassificacaoPratica.fromValue(solution.get(
                                             "classificacaoPratica").toString()),
                                     causa.getGrauRelevancia());
@@ -258,6 +262,10 @@ public class OntologyService {
                         var newPratica = new Pratica(solution.get("nomePratica").toString(),
                                 solution.get("uriPratica").toString(),
                                 solution.get("descricaoPratica").toString(),
+                                Optional.ofNullable(solution.get("fluxoAtividadesPratica")).map(Object::toString).orElse(""),
+                                Optional.ofNullable(solution.get("apresentacaoPratica")).map(Object::toString).orElse(""),
+                                Optional.ofNullable(solution.get("introducaoPratica")).map(Object::toString).orElse(""),
+                                Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString).orElse(""),
                                 ClassificacaoPratica.fromValue(solution.get(
                                         "classificacaoPratica").toString()),
                                 causa.getGrauRelevancia());
@@ -279,6 +287,47 @@ public class OntologyService {
         }
 
         return listaCausasPraticas;
+    }
+
+    public List<ConsequenciaCausasResponseDTO> getCausasConsequenciasByPratica(String praticaUri) {
+        var queryString = getCausasConsequenciasByPraticaQuery(praticaUri);
+        var query = QueryFactory.create(queryString);
+        var causasConsequenciasPratica = new ArrayList<ConsequenciaCausasResponseDTO>();
+
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+            while (results.hasNext()) {
+                QuerySolution solution = results.next();
+
+                var consequenciaAlreadyInList = causasConsequenciasPratica
+                        .stream()
+                        .anyMatch(consequencia -> consequencia.getConsequenciaUri().equals(solution.get("consequenciaUri").toString()));
+
+                if (!consequenciaAlreadyInList) {
+                    causasConsequenciasPratica.add(
+                            new ConsequenciaCausasResponseDTO(
+                                    solution.get("consequenciaUri").toString(),
+                                    solution.get("consequenciaNome").toString()));
+                }
+
+                var causaAlreadyInList = causasConsequenciasPratica
+                        .stream()
+                        .anyMatch(consequencia -> consequencia.getCausas().stream().anyMatch(causa -> causa.getUri().equals(solution.get("causaUri").toString())));
+
+                if (!causaAlreadyInList) {
+                    causasConsequenciasPratica
+                            .stream()
+                            .filter(consequencia -> consequencia.getConsequenciaUri().equals(solution.get("consequenciaUri").toString()))
+                            .findFirst()
+                            .ifPresent(consequencia -> consequencia.addCausa(new Causa(
+                                    solution.get("causaUri").toString(),
+                                    solution.get("causaNome").toString(),
+                                    solution.get("causaDescricao").toString())));
+                }
+            }
+        }
+
+        return causasConsequenciasPratica;
     }
 
     private Map.Entry<Boolean, Integer> checkIfPraticaAlreadyPresent(List<Pratica> listaPraticas,
@@ -318,6 +367,26 @@ public class OntologyService {
         return -1;
     }
 
+    private String getCausasConsequenciasByPraticaQuery(String praticaUri) {
+        var queryTemplate = """
+                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                SELECT *
+                WHERE {
+                    ?consequenciaUri rdf:type <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConsequenciaReD>  .
+                    ?consequenciaUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?consequenciaNome .
+                    ?consequenciaUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?consequenciaDescricao .
+                                
+                    ?consequenciaUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ocasionadaPor> ?causaUri .
+                    ?causaUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?causaNome .
+                    ?causaUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?causaDescricao .
+                                
+                    ?pratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar> ?causaUri .
+                    FILTER (?pratica = %s)
+                 }""";
+
+        return String.format(queryTemplate, praticaUri);
+    }
+
     private String getTermosByPraticaQuery(String praticaUri) {
         return "PREFIX owl: <http://www.w3.org/2002/07/owl#> "
                 + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
@@ -339,6 +408,10 @@ public class OntologyService {
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#podeMitigar> " + causa.getCausaPraticaUri() + " ." +
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePratica ." +
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao>  ?descricaoPratica ." +
+                "    OPTIONAL { ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#fluxoAtividades>  ?fluxoAtividadesPratica . }" +
+                "    OPTIONAL { ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apresentacao>  ?apresentacaoPratica . }" +
+                "    OPTIONAL { ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#quandoAplicar>  ?quandoAplicarPratica . }" +
+                "    OPTIONAL { ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#introducao>  ?introducaoPratica . }" +
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPratica ." +
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa> ?uriPraticaGeral ." +
                 "    ?uriPraticaGeral <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome>  ?nomePraticaGeral ." +

@@ -79,4 +79,11 @@ public class OntologyController {
 
         return new ResponseEntity<>(resultList, HttpStatus.OK);
     }
+
+    @GetMapping("/pratica/causas-consequencias")
+    public ResponseEntity<List<ConsequenciaCausasResponseDTO>> getCausasConsequenciasByPratica(@RequestParam(value = "praticaUri") String praticaUri) {
+        List<ConsequenciaCausasResponseDTO> resultList = ontologyService.getCausasConsequenciasByPratica(praticaUri);
+
+        return new ResponseEntity<>(resultList, HttpStatus.OK);
+    }
 }
