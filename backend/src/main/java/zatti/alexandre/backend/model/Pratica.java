@@ -19,6 +19,8 @@ public class Pratica implements OntologyModel {
 
     private String quandoAplicar;
 
+    private String referencias;
+
     private ClassificacaoPratica classificacaoPratica;
 
     private GrauRelevancia grauRelevancia = null;
@@ -46,7 +48,9 @@ public class Pratica implements OntologyModel {
         this.grauRelevancia = grauRelevancia;
     }
 
-    public Pratica(String nome, String uri, String descricao, String fluxoAtividades, String apresentacao, String introducao, String quandoAplicar, ClassificacaoPratica classificacaoPratica, GrauRelevancia grauRelevancia) {
+    public Pratica(String nome, String uri, String descricao, String fluxoAtividades, String apresentacao,
+                   String introducao, String quandoAplicar, String referencias,
+                   ClassificacaoPratica classificacaoPratica, GrauRelevancia grauRelevancia) {
         this.nome = nome;
         this.uri = uri;
         this.descricao = descricao;
@@ -55,6 +59,7 @@ public class Pratica implements OntologyModel {
         this.introducao = introducao;
         this.quandoAplicar = quandoAplicar;
         this.classificacaoPratica = classificacaoPratica;
+        this.referencias = referencias;
         this.grauRelevancia = grauRelevancia;
     }
 
@@ -128,5 +133,13 @@ public class Pratica implements OntologyModel {
 
     public void setQuandoAplicar(String quandoAplicar) {
         this.quandoAplicar = quandoAplicar;
+    }
+
+    public String getReferencias() {
+        return referencias;
+    }
+
+    public void setReferencias(String referencias) {
+        this.referencias = referencias;
     }
 }
