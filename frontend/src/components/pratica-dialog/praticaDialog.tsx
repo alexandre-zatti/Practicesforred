@@ -45,6 +45,8 @@ const PraticaDialog = ({
   const [praticaCausasConsequencias, setPraticaCausasConsequencias] = useState<CausasConsequenciasPratica[]>([])
 
   useEffect(() => {
+    console.log(praticaSelecionada)
+
     dispatch(showLoading())
 
     getTermosPratica()
@@ -147,8 +149,9 @@ const PraticaDialog = ({
                     <div className={'accordionSummaryContent'}>
                       {getIconTermoPratica(praticaTermo)}
                       <Typography variant={'h5'}>
-                        <span className={'accordionSummaryTitle'}><DescriptionRender
-                          description={praticaTermo.termoPraticaNome}/></span>
+                        <span className={'accordionSummaryTitle'}>
+                          <DescriptionRender description={praticaTermo.termoPraticaNome}/>
+                        </span>
                       </Typography>
                     </div>
 
@@ -174,7 +177,9 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
+                <div style={{padding: "1rem"}}>
+                  <DescriptionRender description={praticaSelecionada?.referencias ?? ''}/>
+                </div>
               </AccordionDetails>
             </Accordion>
 

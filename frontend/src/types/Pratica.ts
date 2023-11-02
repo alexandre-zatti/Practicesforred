@@ -9,6 +9,7 @@ export type Pratica = {
   apresentacao: string;
   introducao: string;
   quandoAplicar: string;
+  referencias: string;
   classificacao: Classificacao;
   grauRelevancia?: GrauRelevancia;
 }

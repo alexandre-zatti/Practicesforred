@@ -63,6 +63,7 @@ const Praticas = () => {
                         fluxoAtividades: pratica.fluxoAtividades,
                         apresentacao: pratica.apresentacao,
                         quandoAplicar: pratica.quandoAplicar,
+                        referencias: pratica.referencias,
                         grauRelevancia: GrauRelevanciaEnum[pratica.grauRelevancia!]
                       }
                     })
@@ -166,11 +167,11 @@ const Praticas = () => {
       </div>
       {isPraticaModalOpen && (
         <PraticaDialog
-        praticaSelecionada={praticaSelecionada}
-        setPraticaSelecionada={setPraticaSelecionada}
-        setIsPraticaModalOpen={setIsPraticaModalOpen}
-        isPraticaModalOpen={isPraticaModalOpen}
-      />
+          praticaSelecionada={praticaSelecionada}
+          setPraticaSelecionada={setPraticaSelecionada}
+          setIsPraticaModalOpen={setIsPraticaModalOpen}
+          isPraticaModalOpen={isPraticaModalOpen}
+        />
       )}
     </>
 
