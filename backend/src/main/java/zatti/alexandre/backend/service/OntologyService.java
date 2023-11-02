@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import zatti.alexandre.backend.dto.*;
 import zatti.alexandre.backend.enums.ClassificacaoPratica;
+import zatti.alexandre.backend.enums.TermoPraticaTipo;
 import zatti.alexandre.backend.model.AreaGestao;
 import zatti.alexandre.backend.model.Causa;
 import zatti.alexandre.backend.model.Consequencia;
@@ -103,17 +104,57 @@ public class OntologyService {
             ResultSet results = qe.execSelect();
             while (results.hasNext()) {
                 QuerySolution solution = results.next();
-                var termoPratica = new TermosPraticaResponseDTO();
-                termoPratica.setTermoPraticaNome(solution.get("nome").toString());
-                termoPratica.setTermoPraticaOrdem(Integer.parseInt(solution.get("ordemString").toString()));
-                termoPratica.setTermoPraticaTipo(solution.get("tipo").toString());
-                termoPratica.setTermoPraticaUri(solution.get("termo").toString());
-                listaTermosPratica.add(termoPratica);
-            }
 
+                if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.ATIVIDADE.getUri())) {
+                    var solutionAtividade = getTermoAtividadePratica(solution.get("termoUri").toString());
+
+                    var termoPratica = new TermoPraticaAtividadeDTO(
+                            solution.get("termoUri").toString(),
+                            solution.get("termoNome").toString(),
+                            Integer.parseInt(solution.get("termoOrdemString").toString()),
+                            solution.get("termoTipo").toString(),
+                            solutionAtividade.get("termoAtividadeDescricao").toString(),
+                            solutionAtividade.get("termoAtividadeApresentacao").toString(),
+                            solutionAtividade.get("termoAtividadeInformacoes").toString(),
+                            solutionAtividade.get("termoAtividadeAbordagens").toString(),
+                            solutionAtividade.get("allTermoAtividadeProduz").toString()
+                    );
+                    listaTermosPratica.add(termoPratica);
+                } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.PRODUTO.getUri())) {
+                    var termoPratica = new TermoPraticaProdutoDTO(
+                            solution.get("termoUri").toString(),
+                            solution.get("termoNome").toString(),
+                            Integer.parseInt(solution.get("termoOrdemString").toString()),
+                            solution.get("termoTipo").toString()
+                    );
+                    listaTermosPratica.add(termoPratica);
+                } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.ALPHA.getUri())) {
+                    var termoPratica = new TermoPraticaAlphaDTO(
+                            solution.get("termoUri").toString(),
+                            solution.get("termoNome").toString(),
+                            Integer.parseInt(solution.get("termoOrdemString").toString()),
+                            solution.get("termoTipo").toString()
+                    );
+                    listaTermosPratica.add(termoPratica);
+                }
+            }
         }
 
         return listaTermosPratica;
+    }
+
+    private QuerySolution getTermoAtividadePratica(String termoUri) {
+        var queryString = getTermoAtividadeByTermoQuery(termoUri);
+        var query = QueryFactory.create(queryString);
+
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+            if (results.hasNext()) {
+                return results.next();
+            }
+        }
+
+        return null;
     }
 
     private int isFaseEngenhariaAlreadyPresent(List<FaseEngenhariaConsequenciasResponseDTO> list, String name) {
@@ -380,18 +421,37 @@ public class OntologyService {
     }
 
     private String getTermosByPraticaQuery(String praticaUri) {
-        return "PREFIX owl: <http://www.w3.org/2002/07/owl#> "
-                + "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
-                + "SELECT ?termo ?nome (STR(?ordem) AS ?ordemString) ?tipo "
-                + "WHERE { "
-                + "    " + praticaUri + " <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3" +
-                "#descritoEmTermosDe> ?termo . "
-                + "    ?termo <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> " +
-                "?ordem . "
-                + "    ?termo <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nome . "
-                + "    ?termo rdf:type ?tipo . "
-                + "    FILTER (?tipo != owl:NamedIndividual) "
-                + "}";
+        var queryTemplate = """ 
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            SELECT ?termoUri ?termoNome (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo
+                            WHERE {
+                                %s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe> ?termoUri .
+                                ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?termoOrdem .
+                                ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
+                                ?termoUri rdf:type ?termoTipo .
+                                FILTER (?termoTipo != owl:NamedIndividual)
+                            }""";
+
+        return String.format(queryTemplate, praticaUri);
+    }
+
+    private String getTermoAtividadeByTermoQuery(String termoUri) {
+        var queryTemplate = """ 
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+                            SELECT ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens (GROUP_CONCAT(?termoAtividadeProduz; SEPARATOR="|") AS ?allTermoAtividadeProduz)
+                            WHERE {
+                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoAtividadeDescricao .
+                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apresAtividade> ?termoAtividadeApresentacao .
+                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#infAdicionais> ?termoAtividadeInformacoes .
+                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#abordagens> ?termoAtividadeAbordagens.
+                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz> ?termoAtividadeProduz .
+                            }
+                            GROUP BY ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens""";
+
+        return String.format(queryTemplate, termoUri);
     }
 
 

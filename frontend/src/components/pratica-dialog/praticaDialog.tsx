@@ -20,11 +20,11 @@ import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { useDispatch } from "react-redux";
-import { ApresentacaoPratica } from "@/components/apresentacao-pratica/apresentacaoPratica";
+import { ApresentacaoPratica } from "@/components/apresentacao-pratica/ApresentacaoPratica";
 import { PraticaTermo } from "@/types/PraticaTermo";
 import { TipoPraticaTermo } from "@/enums/TipoPraticaTermo";
 import { CausasConsequenciasPratica } from "@/types/CausasConsequenciasPratica";
-
+import { TermoAtividadePratica } from "@/components/termo-atividade-pratica/TermoAtividadePratica";
 
 interface PraticaPageProps {
   isPraticaModalOpen: boolean;
@@ -41,12 +41,11 @@ const PraticaDialog = ({
                        }: PraticaPageProps) => {
 
   const dispatch = useDispatch()
+  const [openAccordion, setOpenAccordion] = useState<string>('')
   const [praticaTermos, setPraticaTermos] = useState<PraticaTermo[]>([])
   const [praticaCausasConsequencias, setPraticaCausasConsequencias] = useState<CausasConsequenciasPratica[]>([])
 
   useEffect(() => {
-    console.log(praticaSelecionada)
-
     dispatch(showLoading())
 
     getTermosPratica()
@@ -89,15 +88,21 @@ const PraticaDialog = ({
       })
   }
 
-  const getIconTermoPratica = (praticaTermo: PraticaTermo) => {
+  const getIconTermoPratica = (praticaTermo: PraticaTermo, size?: number) => {
     switch (praticaTermo.termoPraticaTipo) {
       case TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA:
-        return <Image src="/ProdutoTrabalhoPratica.png" alt="Icon Description" width={28} height={28}/>
+        return <Image src="/ProdutoTrabalhoPratica.png" alt="Icon Description" width={size ?? 28} height={size ?? 28}/>
       case TipoPraticaTermo.ALPHA:
-        return <Image src="/Alpha.png" alt="Icon Description" width={28} height={28}/>
+        return <Image src="/Alpha.png" alt="Icon Description" width={size ?? 28} height={size ?? 28}/>
       case TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO:
-        return <Image src="/AtividadeProdutoTrabalho.png" alt="Icon Description" width={28} height={28}/>
+        return <Image src="/AtividadeProdutoTrabalho.png" alt="Icon Description" width={size ?? 28}
+                      height={size ?? 28}/>
     }
+  }
+
+  const handleAccordionChange = (panel: string) => {
+    const isExpanded = openAccordion === panel;
+    setOpenAccordion(isExpanded ? '' : panel);
   }
 
   return (
@@ -121,7 +126,9 @@ const PraticaDialog = ({
           </DialogTitle>
 
           <DialogBody className={styles.dialogBody}>
-            <Accordion className={'accordionContainer'}>
+            <Accordion className={'accordionContainer'}
+                       expanded={openAccordion === 'apresentacao'}
+                       onChange={() => handleAccordionChange('apresentacao')}>
               <AccordionSummary
                 className={'accordionSummary'}
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
@@ -141,7 +148,9 @@ const PraticaDialog = ({
 
             {praticaTermos.map((praticaTermo: PraticaTermo) => {
               return (
-                <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}>
+                <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}
+                           expanded={openAccordion === praticaTermo.termoPraticaUri}
+                           onChange={() => handleAccordionChange(praticaTermo.termoPraticaUri)}>
                   <AccordionSummary
                     className={'accordionSummary'}
                     expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
@@ -157,13 +166,20 @@ const PraticaDialog = ({
 
                   </AccordionSummary>
                   <AccordionDetails className={'accordionDetails'}>
-                    <Typography variant={'h6'}>Em desenvolvimento!</Typography>
+                    {praticaTermo.termoPraticaTipo === TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO && (
+                      <TermoAtividadePratica praticaTermo={praticaTermo}
+                                             praticaTermos={praticaTermos}
+                                             getIconTermoPratica={getIconTermoPratica}
+                                             setOpenAccordion={setOpenAccordion}/>
+                    )}
                   </AccordionDetails>
                 </Accordion>
               )
             })}
 
-            <Accordion className={'accordionContainer'}>
+            <Accordion className={'accordionContainer'}
+                       expanded={openAccordion === 'referencias'}
+                       onChange={() => handleAccordionChange('referencias')}>
               <AccordionSummary
                 className={'accordionSummary'}
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
@@ -183,7 +199,9 @@ const PraticaDialog = ({
               </AccordionDetails>
             </Accordion>
 
-            <Accordion className={'accordionContainer'}>
+            <Accordion className={'accordionContainer'}
+                       expanded={openAccordion === 'contexto'}
+                       onChange={() => handleAccordionChange('contexto')}>
               <AccordionSummary
                 className={'accordionSummary'}
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
@@ -238,7 +256,9 @@ const PraticaDialog = ({
               </AccordionDetails>
             </Accordion>
 
-            <Accordion className={'accordionContainer'}>
+            <Accordion className={'accordionContainer'}
+                       expanded={openAccordion === 'glosario'}
+                       onChange={() => handleAccordionChange('glosario')}>
               <AccordionSummary
                 className={'accordionSummary'}
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
