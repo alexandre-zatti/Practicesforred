@@ -1,4 +1,5 @@
 import { EstadoAlpha } from "@/types/EstadoAlpha";
+import { PassoElemento } from "@/types/PassoElemento";
 
 export type PraticaTermo = {
   termoPraticaNome: string;
@@ -11,5 +12,8 @@ export type PraticaTermo = {
   termoPraticaInformacoesAdicionais?: string;
   termoPraticaAbordagens?: string;
   estadosAlpha?: EstadoAlpha[];
+  passosElementos?: PassoElemento[];
   termosPratica?: PraticaTermo[];
+  produzidoPor?: PraticaTermo[];
+  organizadoPor?: PraticaTermo[];
 }

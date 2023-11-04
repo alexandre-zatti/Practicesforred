@@ -26,6 +26,7 @@ import { TipoPraticaTermo } from "@/enums/TipoPraticaTermo";
 import { CausasConsequenciasPratica } from "@/types/CausasConsequenciasPratica";
 import { TermoAtividadePratica } from "@/components/termo-atividade-pratica/TermoAtividadePratica";
 import { TermoAlphaPratica } from "@/components/termo-alpha-pratica/TermoAlphaPratica";
+import { TermoProdutoPratica } from "@/components/termo-produto-pratica/TermoAlphaPratica";
 
 interface PraticaPageProps {
   isPraticaModalOpen: boolean;
@@ -173,6 +174,12 @@ const PraticaDialog = ({
                       <TermoAlphaPratica praticaTermo={praticaTermo}
                                          getIconTermoPratica={getIconTermoPratica}
                                          setOpenAccordion={setOpenAccordion}/>
+                    )}
+
+                    {praticaTermo.termoPraticaTipo === TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA && (
+                      <TermoProdutoPratica praticaTermo={praticaTermo}
+                                           getIconTermoPratica={getIconTermoPratica}
+                                           setOpenAccordion={setOpenAccordion}/>
                     )}
                   </AccordionDetails>
                 </Accordion>

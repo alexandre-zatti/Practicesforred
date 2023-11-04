@@ -119,10 +119,14 @@ public class OntologyService {
                     listaTermosPratica.add(termoPratica);
                 } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.PRODUTO.getUri())) {
                     var termoPratica = new TermoPraticaProdutoDTO(
+                            solution.get("termoDescricao").toString(),
                             solution.get("termoUri").toString(),
                             solution.get("termoNome").toString(),
                             Integer.parseInt(solution.get("termoOrdemString").toString()),
-                            solution.get("termoTipo").toString()
+                            solution.get("termoTipo").toString(),
+                            getPassosElementos(solution.get("termoUri").toString()),
+                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "eProduzidoPor"),
+                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "eOrganizadoPor")
                     );
                     listaTermosPratica.add(termoPratica);
                 } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.ALPHA.getUri())) {
@@ -133,7 +137,7 @@ public class OntologyService {
                             Integer.parseInt(solution.get("termoOrdemString").toString()),
                             solution.get("termoTipo").toString(),
                             getEstadosAlpha(solution.get("termoUri").toString()),
-                            getTermosPraticaAlpha(solution.get("termoUri").toString())
+                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "eProgredidoPor")
                     );
                     listaTermosPratica.add(termoPratica);
                 }
@@ -141,6 +145,30 @@ public class OntologyService {
         }
 
         return listaTermosPratica;
+    }
+
+    private List<PassosElementos> getPassosElementos(String termoUri) {
+        var queryString = getPassosElementosByTermoQuery(termoUri);
+        var query = QueryFactory.create(queryString);
+        var listaPassosElementos = new ArrayList<PassosElementos>();
+
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+            while (results.hasNext()) {
+                QuerySolution solution = results.next();
+
+                var passoElemento = new PassosElementos(
+                        solution.get("passoElementoUri").toString(),
+                        solution.get("passoElementoNome").toString(),
+                        solution.get("passoElementoDescricao").toString(),
+                        solution.get("passoElementoOrdemString").toString(),
+                        getTermosPraticaGeneric(solution.get("passoElementoUri").toString(), "atendidoPor"));
+
+                listaPassosElementos.add(passoElemento);
+            }
+        }
+
+        return listaPassosElementos;
     }
 
     private List<EstadoAlpha> getEstadosAlpha(String termoUri) {
@@ -157,7 +185,7 @@ public class OntologyService {
                         solution.get("estadoAlphaNome").toString(),
                         solution.get("estadoAlphaDescricao").toString(),
                         solution.get("estadoAlphaOrdemString").toString(),
-                        getTermosPraticaEstadoAlpha(solution.get("estadoAlphaUri").toString()));
+                        getTermosPraticaGeneric(solution.get("estadoAlphaUri").toString(), "avancadoPor"));
 
                 listaEstadosAlpha.add(estadoAlpha);
             }
@@ -166,8 +194,8 @@ public class OntologyService {
         return listaEstadosAlpha;
     }
 
-    private List<TermosPraticaResponseDTO> getTermosPraticaEstadoAlpha(String estadoAlphaUri) {
-        var queryString = getTermoPraticaByEstadoAlphaQuery(estadoAlphaUri);
+    private List<TermosPraticaResponseDTO> getTermosPraticaGeneric(String uri, String conexao) {
+        var queryString = getTermoPraticaGenericQuery(uri, conexao);
         var query = QueryFactory.create(queryString);
         var listaTermosPratica = new ArrayList<TermosPraticaResponseDTO>();
 
@@ -187,25 +215,18 @@ public class OntologyService {
         return listaTermosPratica;
     }
 
-    private List<TermosPraticaResponseDTO> getTermosPraticaAlpha(String estadoAlphaUri) {
-        var queryString = getTermoPraticaByAlphaQuery(estadoAlphaUri);
-        var query = QueryFactory.create(queryString);
-        var listaTermosPratica = new ArrayList<TermosPraticaResponseDTO>();
+    private String getPassosElementosByTermoQuery(String termoUri) {
+        var queryTemplate = """
+                            SELECT ?passoElementoUri ?passoElementoNome ?passoElementoDescricao (STR(?passoElementoOrdem) AS ?passoElementoOrdemString)
+                            WHERE {
+                                  <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#contem> ?passoElementoUri .
+                                  ?passoElementoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?passoElementoNome .
+                                  ?passoElementoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?passoElementoDescricao .
+                                  ?passoElementoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?passoElementoOrdem .
+                             }
+                            """;
 
-        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
-            ResultSet results = qe.execSelect();
-            while (results.hasNext()) {
-                QuerySolution solution = results.next();
-                var termoPratica = new TermoPraticaDTO(
-                        solution.get("termoUri").toString(),
-                        solution.get("termoNome").toString(),
-                        0,
-                        solution.get("termoTipo").toString()
-                );
-                listaTermosPratica.add(termoPratica);
-            }
-        }
-        return listaTermosPratica;
+        return String.format(queryTemplate, termoUri);
     }
 
     private String getEstadosAlphaByTermoQuery(String termoUri) {
@@ -222,36 +243,20 @@ public class OntologyService {
         return String.format(queryTemplate, termoUri);
     }
 
-    private String getTermoPraticaByEstadoAlphaQuery(String estadoAlphaUri) {
+    private String getTermoPraticaGenericQuery(String uri, String conexao) {
         var queryTemplate = """
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                             PREFIX owl: <http://www.w3.org/2002/07/owl#>
                             SELECT *
                             WHERE {
-                                 <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#avancadoPor> ?termoUri .
+                                 <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#%s> ?termoUri .
                                  ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
                                  ?termoUri rdf:type ?termoTipo .
                                  FILTER (?termoTipo != owl:NamedIndividual)
                             }
                             """;
 
-        return String.format(queryTemplate, estadoAlphaUri);
-    }
-
-    private String getTermoPraticaByAlphaQuery(String alphaUri) {
-        var queryTemplate = """
-                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                            SELECT *
-                            WHERE {
-                                 <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#eProgredidoPor> ?termoUri .
-                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
-                                 ?termoUri rdf:type ?termoTipo .
-                                 FILTER (?termoTipo != owl:NamedIndividual)
-                            }
-                            """;
-
-        return String.format(queryTemplate, alphaUri);
+        return String.format(queryTemplate, uri, conexao);
     }
 
     private QuerySolution getTermoAtividadePratica(String termoUri) {

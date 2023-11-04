@@ -1,0 +1,19 @@
+.produzTitleContainer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.produzTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.produzTermos {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}

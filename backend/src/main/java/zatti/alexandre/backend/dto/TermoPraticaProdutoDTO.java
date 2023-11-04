@@ -1,17 +1,64 @@
 package zatti.alexandre.backend.dto;
 
+import zatti.alexandre.backend.model.PassosElementos;
+
+import java.util.List;
+
 public final class TermoPraticaProdutoDTO implements TermosPraticaResponseDTO {
+    private String termoPraticaDescricao;
     private String termoPraticaUri;
     private String termoPraticaNome;
     private Integer termoPraticaOrdem;
     private String termoPraticaTipo;
+    private List<PassosElementos> passosElementos;
+    private List<TermosPraticaResponseDTO> produzidoPor;
+    private List<TermosPraticaResponseDTO> organizadoPor;
 
-    public TermoPraticaProdutoDTO(String termoPraticaUri, String termoPraticaNome, Integer termoPraticaOrdem,
-                                  String termoPraticaTipo) {
+    public TermoPraticaProdutoDTO(String termoPraticaDescricao, String termoPraticaUri, String termoPraticaNome,
+                                  Integer termoPraticaOrdem, String termoPraticaTipo,
+                                  List<PassosElementos> passosElementos,
+                                  List<TermosPraticaResponseDTO> produzidoPor,
+                                  List<TermosPraticaResponseDTO> organizadoPor) {
+        this.termoPraticaDescricao = termoPraticaDescricao;
         this.termoPraticaUri = termoPraticaUri;
         this.termoPraticaNome = termoPraticaNome;
         this.termoPraticaOrdem = termoPraticaOrdem;
         this.termoPraticaTipo = termoPraticaTipo;
+        this.passosElementos = passosElementos;
+        this.produzidoPor = produzidoPor;
+        this.organizadoPor = organizadoPor;
+    }
+
+    public List<PassosElementos> getPassosElementos() {
+        return passosElementos;
+    }
+
+    public void setPassosElementos(List<PassosElementos> passosElementos) {
+        this.passosElementos = passosElementos;
+    }
+
+    public List<TermosPraticaResponseDTO> getProduzidoPor() {
+        return produzidoPor;
+    }
+
+    public void setProduzidoPor(List<TermosPraticaResponseDTO> produzidoPor) {
+        this.produzidoPor = produzidoPor;
+    }
+
+    public List<TermosPraticaResponseDTO> getOrganizadoPor() {
+        return organizadoPor;
+    }
+
+    public void setOrganizadoPor(List<TermosPraticaResponseDTO> organizadoPor) {
+        this.organizadoPor = organizadoPor;
+    }
+
+    public String getTermoPraticaDescricao() {
+        return termoPraticaDescricao;
+    }
+
+    public void setTermoPraticaDescricao(String termoPraticaDescricao) {
+        this.termoPraticaDescricao = termoPraticaDescricao;
     }
 
     public String getTermoPraticaUri() {
