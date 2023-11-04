@@ -11,7 +11,12 @@ type TermoAtividadePraticaProps = {
   setOpenAccordion: (openAccordion: string) => void
 }
 
-export const TermoAtividadePratica = ({praticaTermo, praticaTermos, getIconTermoPratica, setOpenAccordion}: TermoAtividadePraticaProps) => {
+export const TermoAtividadePratica = ({
+                                        praticaTermo,
+                                        praticaTermos,
+                                        getIconTermoPratica,
+                                        setOpenAccordion
+                                      }: TermoAtividadePraticaProps) => {
 
   const steps = [
     {
@@ -42,15 +47,18 @@ export const TermoAtividadePratica = ({praticaTermo, praticaTermos, getIconTermo
   )
 }
 
-const DescricaoTermoAtividadePratica = ({praticaTermo, praticaTermos, getIconTermoPratica, setOpenAccordion}: TermoAtividadePraticaProps) => {
+const DescricaoTermoAtividadePratica = ({
+                                          praticaTermo,
+                                          praticaTermos,
+                                          getIconTermoPratica,
+                                          setOpenAccordion
+                                        }: TermoAtividadePraticaProps) => {
 
   const splitTermoAtividadePraticaProduz = (termoPraticaProduz: string) => {
-    console.log(termoPraticaProduz.split("|"))
     return termoPraticaProduz.split("|");
   }
 
   const findTermoAtividadePraticaProduzInTermos = (termosProduz: string[]): PraticaTermo[] => {
-    console.log(praticaTermos.filter(praticaTermo => termosProduz.includes(praticaTermo.termoPraticaUri)))
     return praticaTermos.filter(praticaTermo => termosProduz.includes(praticaTermo.termoPraticaUri));
   }
 

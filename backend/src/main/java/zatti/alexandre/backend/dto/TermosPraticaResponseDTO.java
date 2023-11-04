@@ -1,5 +1,6 @@
 package zatti.alexandre.backend.dto;
 
-public sealed interface TermosPraticaResponseDTO permits TermoPraticaAtividadeDTO, TermoPraticaProdutoDTO,
+public sealed interface TermosPraticaResponseDTO permits TermoPraticaDTO, TermoPraticaAtividadeDTO,
+        TermoPraticaProdutoDTO,
         TermoPraticaAlphaDTO {
 }

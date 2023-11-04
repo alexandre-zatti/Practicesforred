@@ -1,3 +1,5 @@
+import { EstadoAlpha } from "@/types/EstadoAlpha";
+
 export type PraticaTermo = {
   termoPraticaNome: string;
   termoPraticaOrdem: number;
@@ -8,4 +10,6 @@ export type PraticaTermo = {
   termoPraticaApresentacao?: string;
   termoPraticaInformacoesAdicionais?: string;
   termoPraticaAbordagens?: string;
+  estadosAlpha?: EstadoAlpha[];
+  termosPratica?: PraticaTermo[];
 }
