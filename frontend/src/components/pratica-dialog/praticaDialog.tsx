@@ -47,46 +47,41 @@ const PraticaDialog = ({
   const [praticaCausasConsequencias, setPraticaCausasConsequencias] = useState<CausasConsequenciasPratica[]>([])
 
   useEffect(() => {
-    dispatch(showLoading())
+    dispatch(showLoading());
+    Promise.all([
+      getTermosPratica(),
+      getContextoReDPratica()
+    ]).then(() => dispatch(hideLoading()))
 
-    getTermosPratica()
-    getContextoReDPratica()
-
-    dispatch(hideLoading())
   }, [])
 
-  const getContextoReDPratica = () => {
+  const getContextoReDPratica = async () => {
+
     const queryParams = new URLSearchParams({praticaUri: `<${praticaSelecionada?.uri}>` ?? ''}).toString()
 
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/causas-consequencias?${queryParams}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/causas-consequencias?${queryParams}`, {
       headers: {
         'Content-Type': 'application/json'
       },
-    })
-      .then((response) => {
-        if (response.ok) {
-          response.json().then((data: CausasConsequenciasPratica[]) => {
-            setPraticaCausasConsequencias(data)
-          })
-        }
-      })
+    });
+    if (response.ok) {
+      const data = await response.json()
+      setPraticaCausasConsequencias(data);
+    }
   }
 
-  const getTermosPratica = () => {
+  const getTermosPratica = async () => {
     const queryParams = new URLSearchParams({praticaUri: `<${praticaSelecionada?.uri}>` ?? ''}).toString()
 
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/termos?${queryParams}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica/termos?${queryParams}`, {
       headers: {
         'Content-Type': 'application/json'
       },
-    })
-      .then((response) => {
-        if (response.ok) {
-          response.json().then((data: PraticaTermo[]) => {
-            setPraticaTermos(data.toSorted((a, b) => a.termoPraticaOrdem - b.termoPraticaOrdem))
-          })
-        }
-      })
+    });
+    if (response.ok) {
+      const data = await response.json()
+      setPraticaTermos(data.toSorted((a: { termoPraticaOrdem: number; }, b: { termoPraticaOrdem: number; }) => a.termoPraticaOrdem - b.termoPraticaOrdem));
+    }
   }
 
   const getIconTermoPratica = (praticaTermo: PraticaTermo, size?: number) => {
