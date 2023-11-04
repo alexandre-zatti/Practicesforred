@@ -1081,8 +1081,52 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoTesteUC">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CenarioEscolhido"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComScriptAutomatizado"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConjuntoVariaveis"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdeiasTesteFormuladas"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VariaveisIdentificadas"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Caso de teste do caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Definir entradas de teste e resultados esperados para ajudar a avaliar se um sistema funciona corretamente.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Pode haver um ou mais Casos de Teste para verificar cada Fatia de Caso de Uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Fornecer os blocos de constru&amp;ccedil;&amp;atilde;o para projetar e implementar testes.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Fornecer um mecanismo para completar e verificar os requisitos.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Permitir que os testes sejam especificados antes do in&amp;iacute;cio da implementa&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Fornecer uma maneira de avaliar a qualidade do sistema&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os melhores casos de teste descrevem cen&amp;aacute;rios de teste, onde um cen&amp;aacute;rio &amp;eacute; um thread completo de execu&amp;ccedil;&amp;atilde;o no sistema.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;strong&gt;&lt;u&gt;Casos de teste para testes de casos de uso&lt;/u&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de teste s&amp;atilde;o um complemento importante, mas muitas vezes negligenciado, de um caso de uso. Os casos de teste fornecem a verdadeira defini&amp;ccedil;&amp;atilde;o do que o sistema deve fazer para dar suporte a um caso de uso. Os casos de teste s&amp;atilde;o particularmente importantes quando come&amp;ccedil;amos a dividir os casos de uso, pois fornecem aos desenvolvedores uma defini&amp;ccedil;&amp;atilde;o clara do que significa implementar com sucesso uma fatia de casos de uso.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de teste podem ser usados com muitas formas de pr&amp;aacute;tica de requisitos, incluindo casos de uso, hist&amp;oacute;rias de usu&amp;aacute;rios e requisitos declarativos. Em todos os casos, o testador deve receber uma fatia dos requisitos a serem testados, com in&amp;iacute;cio e fim claros, a partir dos quais eles possam derivar um cen&amp;aacute;rio de teste execut&amp;aacute;vel.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Conte&amp;uacute;do Essencial&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Pr&amp;eacute;-condi&amp;ccedil;&amp;otilde;es: Pr&amp;eacute;-condi&amp;ccedil;&amp;otilde;es que especificam o estado do sistema antes do teste.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Entrada: As mensagens e dados a serem recebidos nas entradas espec&amp;iacute;ficas do cen&amp;aacute;rio.&amp;nbsp;Para os n&amp;iacute;veis iniciais de detalhe, estes podem ser apenas os dados iniciais necess&amp;aacute;rios para iniciar o cen&amp;aacute;rio.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1 Cen&amp;aacute;rio de Teste: O cen&amp;aacute;rio que o caso de teste ir&amp;aacute; exercer.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Observa&amp;ccedil;&amp;otilde;es (com resultados esperados): As observa&amp;ccedil;&amp;otilde;es a serem feitas &amp;agrave; medida que o caso de teste &amp;eacute; executado incluindo o resultado esperado. Isto inclui a descri&amp;ccedil;&amp;atilde;o de quaisquer p&amp;oacute;s-condi&amp;ccedil;&amp;otilde;es desejadas do sistema e como os resultados esperados ser&amp;atilde;o verificados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Conte&amp;uacute;do adicional&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: start; color: rgb(0, 0, 0);&quot;&gt;N / D&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Caso de teste do caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Refer&amp;ecirc;ncias&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; What is a Good Test Case?, by Cem Kaner, Star East, 2003.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; The Unified Software Development Process, by Ivar Jacobson, Grady Booch and James Rumbaugh, Addison Wesley Longman, chapter 11.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;3&lt;/sup&gt;&lt;/sup&gt; The Art of Software Testing, by Glenford J. Myers, John Wiley and Sons, Inc., New York, 1979.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;4&lt;/sup&gt;&lt;/sup&gt; &lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/functionaltests.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;www.extremeprogramming.org/rules/functionaltests.html&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;5&lt;/sup&gt;&lt;/sup&gt; &lt;/span&gt;&lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/testfirst.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;www.extremeprogramming.org/rules/testfirst.html&lt;/span&gt;&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;</untitled-ontology-3:referenciaRE>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
@@ -1133,6 +1177,28 @@
         <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
         <untitled-ontology-3:descricao>Categorização decuso permite estimar vários tipos de custo de manuseio da dívida  incorrida.</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>Categorização de custo</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CenarioEscolhido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CenarioEscolhido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Cen&amp;aacute;rio escolhido&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComScriptAutomatizado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ComScriptAutomatizado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Com script ou automatizado&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;5&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -1232,6 +1298,17 @@
         <untitled-ontology-3:implementa rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NormaIsoIecIeee291482018"/>
         <untitled-ontology-3:classificacaoPratica>Comum</untitled-ontology-3:classificacaoPratica>
         <untitled-ontology-3:nome>Confrontar com a norma os projetos especificados e os requisitos documentados</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConjuntoVariaveis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ConjuntoVariaveis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Conjunto de vari&amp;aacute;veis&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -1409,6 +1486,30 @@
         <untitled-ontology-3:implementadaPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RegistrarInformItemReD"/>
         <untitled-ontology-3:classificacaoPratica>Geral</untitled-ontology-3:classificacaoPratica>
         <untitled-ontology-3:nome>Descrição do item da dívida</untitled-ontology-3:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescritoResumidamente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescritoResumidamente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Descrito resumidamente&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O n&amp;iacute;vel de detalhe mais leve que captura apenas o objetivo do caso de uso e qual ator o inicia.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; adequado para casos de uso que n&amp;atilde;o foram selecionados imediatamente para implementa&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Ser&amp;atilde;o necess&amp;aacute;rios mais detalhes se o caso de uso for dividido para implementa&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O caso de us seja nomeado.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Possua uma breve descri&amp;ccedil;&amp;atilde;o curta e informatica.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Descrito resumidamente&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -1860,6 +1961,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElementosImplementacaoIdentificados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElementosImplementacaoIdentificados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Elementos de implementa&amp;ccedil;&amp;atilde;o identificados&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O n&amp;iacute;vel de detalhe mais leve que captura apenas os elementos do sistema, novos e existentes, que participar&amp;atilde;o do caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; adequado para pequenas equipes que trabalham em estreita colabora&amp;ccedil;&amp;atilde;o e desenvolvem sistemas simples com uma arquitetura conhecida. Pode ser necess&amp;aacute;rio adicionar mais detalhes se o seu sistema for complexo ou se a sua equipe for grande ou distribu&amp;iacute;da.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;Os elementos participantes foram definidos.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Novos elementos necess&amp;aacute;rios foram sugeridos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Elementos de implementa&amp;ccedil;&amp;atilde;o identificados&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElicitacaoREQ -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElicitacaoREQ">
@@ -1918,6 +2041,63 @@
         &lt;li style=&quot;font-size: 12px;&quot;&gt;A Ess&amp;ecirc;ncia da Engenharia de Software: Aplicando o Kernel SEMAT, por Ivar Jacobson, Pan-Wei Ng, Paul E. McMahon, Ian Spence e Svante Lidman, Addison-Wesley 2013.&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;</untitled-ontology-3:referenciaRE>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoEssencial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoEssencial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;strong&gt;Esbo&amp;ccedil;o essencial&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave;s vezes &amp;eacute; necess&amp;aacute;rio esclarecer as responsabilidades do sistema e dos seus intervenientes durante a realiza&amp;ccedil;&amp;atilde;o do caso de uso. Um esbo&amp;ccedil;o com marcadores captura essas responsabilidades, mas n&amp;atilde;o define claramente quais partes do caso de uso s&amp;atilde;o assumidas pelo sistema e quais s&amp;atilde;o assumidas pelo(s) ator(es).&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 17.6px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Neste n&amp;iacute;vel de detalhe a narrativa torna-se uma descri&amp;ccedil;&amp;atilde;o do di&amp;aacute;logo entre o sistema e os seus actores. &amp;Eacute; particularmente &amp;uacute;til ao estabelecer a arquitetura de um novo sistema ou ao tentar estabelecer uma nova experi&amp;ecirc;ncia de usu&amp;aacute;rio.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;O caso de uso foi expresso como um di&amp;aacute;logo entre os atores e o sistema.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Existem etapas individuais para cada ator e responsabilidade do sistema.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Esbo&amp;ccedil;o essencial&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoMarcadores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoMarcadores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;strong&gt;Esbo&amp;ccedil;o com marcadores&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O caso de uso deve ser delineado para entender seu tamanho e complexidade. Este n&amp;iacute;vel de detalhe tamb&amp;eacute;m permite uma gest&amp;atilde;o eficaz do &amp;acirc;mbito, uma vez que o esbo&amp;ccedil;o permite que as diferentes partes do caso de utiliza&amp;ccedil;&amp;atilde;o sejam priorizadas umas contra as outras e, se necess&amp;aacute;rio, programadas para diferentes lan&amp;ccedil;amentos.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Este &amp;eacute; o n&amp;iacute;vel de detalhe mais leve que permite que o caso de uso seja dividido e o desenvolvimento avance. &amp;Eacute; adequado para aquelas equipes que est&amp;atilde;o em estreita colabora&amp;ccedil;&amp;atilde;o com seus usu&amp;aacute;rios e s&amp;atilde;o capazes de preencher quaisquer detalhes faltantes por meio de conversas e da conclus&amp;atilde;o de casos de teste que os acompanham.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;O fluxo b&amp;aacute;sico do caso de uso foi descrito usando frases simples organizadas em etapas sequenciais.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Os fluxos alternativos s&amp;atilde;o identificados e nomeados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;strong&gt;Esbo&amp;ccedil;o com marcadores&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;Agrave;s vezes &amp;eacute; necess&amp;aacute;rio esclarecer as responsabilidades do sistema e dos seus intervenientes durante a realiza&amp;ccedil;&amp;atilde;o do caso de uso. Um esbo&amp;ccedil;o com marcadores captura essas responsabilidades, mas n&amp;atilde;o define claramente quais partes do caso de uso s&amp;atilde;o assumidas pelo sistema e quais s&amp;atilde;o assumidas pelo(s) ator(es).&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 17.6px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Neste n&amp;iacute;vel de detalhe a narrativa torna-se uma descri&amp;ccedil;&amp;atilde;o do di&amp;aacute;logo entre o sistema e os seus actores. &amp;Eacute; particularmente &amp;uacute;til ao estabelecer a arquitetura de um novo sistema ou ao tentar estabelecer uma nova experi&amp;ecirc;ncia de usu&amp;aacute;rio.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;O caso de uso foi expresso como um di&amp;aacute;logo entre os atores e o sistema.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Existem etapas individuais para cada ator e responsabilidade do sistema.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Esbo&amp;ccedil;o com marcadores&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -2020,18 +2200,18 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
         <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
         <untitled-ontology-3:estaContidoEm rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloCasoUso"/>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Estruturada&lt;/strong&gt;&lt;/p&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Estruturada&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;O modelo de casos de uso geralmente cont&amp;eacute;m informa&amp;ccedil;&amp;otilde;es redundantes, como sequ&amp;ecirc;ncias comuns ou padr&amp;otilde;es de intera&amp;ccedil;&amp;atilde;o. Estruturar o modelo de casos de uso &amp;eacute; a maneira de lidar com essas redund&amp;acirc;ncias.&lt;/li&gt;
-    &lt;li&gt;Para sistemas grandes e complexos, especialmente aqueles que s&amp;atilde;o usados para fornecer funcionalidades semelhantes em muitos contextos diferentes, a estrutura&amp;ccedil;&amp;atilde;o do modelo de casos de uso pode ajudar na compreens&amp;atilde;o, eliminar desperd&amp;iacute;cios e ajudar a encontrar elementos reutiliz&amp;aacute;veis.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O modelo de casos de uso geralmente cont&amp;eacute;m informa&amp;ccedil;&amp;otilde;es redundantes, como sequ&amp;ecirc;ncias comuns ou padr&amp;otilde;es de intera&amp;ccedil;&amp;atilde;o. Estruturar o modelo de casos de uso &amp;eacute; a maneira de lidar com essas redund&amp;acirc;ncias.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Para sistemas grandes e complexos, especialmente aqueles que s&amp;atilde;o usados para fornecer funcionalidades semelhantes em muitos contextos diferentes, a estrutura&amp;ccedil;&amp;atilde;o do modelo de casos de uso pode ajudar na compreens&amp;atilde;o, eliminar desperd&amp;iacute;cios e ajudar a encontrar elementos reutiliz&amp;aacute;veis.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Espera-se que:&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;Os relacionamentos de &amp;apos;include&amp;apos; e &amp;apos;generaliza&amp;ccedil;&amp;atilde;o&amp;apos; s&amp;atilde;o usados para melhorar a clareza do modelo de casos de uso. A pergunta a ser feita ao estruturar o modelo &amp;eacute;: &amp;apos;Como podemos tornar o modelo de casos de uso mais compreens&amp;iacute;vel para as partes interessadas, eliminando os pontos em comum?&amp;apos;&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;Os relacionamentos &amp;apos;extend&amp;apos; s&amp;atilde;o usados para expressar o comportamento de extens&amp;atilde;o, ou seja, fluxos de eventos adicionados a casos de uso completos e existentes.&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;O modelo de casos de uso ainda &amp;eacute; compreens&amp;iacute;vel para uma parte interessada novata. Isto pode ser alcan&amp;ccedil;ado atrav&amp;eacute;s de uma refatora&amp;ccedil;&amp;atilde;o cautelosa e da explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso em um ou mais diagramas.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os relacionamentos de &amp;apos;include&amp;apos; e &amp;apos;generaliza&amp;ccedil;&amp;atilde;o&amp;apos; s&amp;atilde;o usados para melhorar a clareza do modelo de casos de uso. A pergunta a ser feita ao estruturar o modelo &amp;eacute;: &amp;apos;Como podemos tornar o modelo de casos de uso mais compreens&amp;iacute;vel para as partes interessadas, eliminando os pontos em comum?&amp;apos;&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os relacionamentos &amp;apos;extend&amp;apos; s&amp;atilde;o usados para expressar o comportamento de extens&amp;atilde;o, ou seja, fluxos de eventos adicionados a casos de uso completos e existentes.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;O modelo de casos de uso ainda &amp;eacute; compreens&amp;iacute;vel para uma parte interessada novata. Isto pode ser alcan&amp;ccedil;ado atrav&amp;eacute;s de uma refatora&amp;ccedil;&amp;atilde;o cautelosa e da explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso em um ou mais diagramas. &lt;/li&gt;
 &lt;/ul&gt;</untitled-ontology-3:descricao>
-        <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Estruturada&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Estruturada&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
@@ -2123,6 +2303,17 @@
 &lt;/ul&gt;</untitled-ontology-3:descricao>
         <untitled-ontology-3:nome>&lt;p&gt;&lt;b&gt;&lt;span style=&quot;text-align: left; color: rgb(234, 117, 2); font-size: 14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;text-align: left; color: rgb(0, 0, 0); font-size: 14px;&quot;&gt;&lt;strong&gt;Hist&amp;oacute;rias suficientes cumpridas&lt;/strong&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdeiasTesteFormuladas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#IdeiasTesteFormuladas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Ideia de teste formuladas&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
@@ -2498,6 +2689,28 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InteracaoDefinida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InteracaoDefinida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Elementos de implementa&amp;ccedil;&amp;atilde;o identificados&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Para fornecer uma defini&amp;ccedil;&amp;atilde;o completa e inequ&amp;iacute;voca das mudan&amp;ccedil;as necess&amp;aacute;rias para cada elemento do sistema envolvido no caso de uso, a realiza&amp;ccedil;&amp;atilde;o do caso de uso deve incluir detalhes de todas as interfaces e intera&amp;ccedil;&amp;otilde;es envolvidas na execu&amp;ccedil;&amp;atilde;o do caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Esse n&amp;iacute;vel de detalhe &amp;eacute; particularmente &amp;uacute;til para casos de uso em que o design do sistema &amp;eacute; complexo ou desafiador. Tamb&amp;eacute;m pode ser &amp;uacute;til quando os elementos do sistema devem ser desenvolvidos por equipes com pouco ou nenhum conhecimento do design do sistema, sem acesso a designers experientes e sem compet&amp;ecirc;ncia para refatorar ou alterar o design. Tamb&amp;eacute;m &amp;eacute; &amp;uacute;til ao lidar com desenvolvedores inexperientes que ainda est&amp;atilde;o aprendendo seu of&amp;iacute;cio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;Interfaces foram definidas para os elementos da implementa&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;As mensagens enviadas entre os elementos foram definidas em termos de nome, par&amp;acirc;metros e qualquer status ou resposta resultante.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;As mensagens definidas correspondem &amp;agrave;s interfaces dos elementos da implementa&amp;ccedil;&amp;atilde;o.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Intera&amp;ccedil;&amp;atilde;o definida&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#JurosExtrasReD -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#JurosExtrasReD">
@@ -2515,21 +2728,21 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
         <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
         <untitled-ontology-3:estaContidoEm rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloCasoUso"/>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Limite do valor estabelecido&lt;/strong&gt;&lt;/p&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Limite do valor estabelecido&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;Os principais atores e casos de uso capturam a ess&amp;ecirc;ncia do motivo pelo qual o sistema foi constru&amp;iacute;do. Eles mostram como os usu&amp;aacute;rios obter&amp;atilde;o valor do sistema. Eles podem n&amp;atilde;o fornecer valor suficiente para configur&amp;aacute;-lo e mant&amp;ecirc;-lo funcionando; nestes casos, s&amp;atilde;o necess&amp;aacute;rios intervenientes secund&amp;aacute;rios e casos de utiliza&amp;ccedil;&amp;atilde;o para permitir e apoiar o funcionamento eficaz do sistema.&lt;/li&gt;
-    &lt;li&gt;Muitos dos casos de uso secund&amp;aacute;rios podem ser encontrados como funcionalidades necess&amp;aacute;rias aos atores secund&amp;aacute;rios e que o sistema precisa fornecer para tornar os casos de uso prim&amp;aacute;rios eficazes. Exemplos comuns s&amp;atilde;o casos de uso para supervis&amp;atilde;o, monitoramento, cria&amp;ccedil;&amp;atilde;o de perfil, configura&amp;ccedil;&amp;atilde;o e inicializa&amp;ccedil;&amp;atilde;o do sistema.&lt;/li&gt;
-    &lt;li&gt;Cuidado para n&amp;atilde;o exagerar no conjunto de casos de uso secund&amp;aacute;rios. Ao definir o escopo do sistema, certifique-se de incluir apenas os casos de uso que s&amp;atilde;o realmente necess&amp;aacute;rios.&lt;/li&gt;
-    &lt;li&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; &amp;uacute;til ao modelar sistemas totalmente novos ou novas gera&amp;ccedil;&amp;otilde;es de sistemas existentes. Neste n&amp;iacute;vel de detalhe, todos os atores do sistema e casos de uso s&amp;atilde;o identificados e modelados.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os principais atores e casos de uso capturam a ess&amp;ecirc;ncia do motivo pelo qual o sistema foi constru&amp;iacute;do. Eles mostram como os usu&amp;aacute;rios obter&amp;atilde;o valor do sistema. Eles podem n&amp;atilde;o fornecer valor suficiente para configur&amp;aacute;-lo e mant&amp;ecirc;-lo funcionando; nestes casos, s&amp;atilde;o necess&amp;aacute;rios intervenientes secund&amp;aacute;rios e casos de utiliza&amp;ccedil;&amp;atilde;o para permitir e apoiar o funcionamento eficaz do sistema.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Muitos dos casos de uso secund&amp;aacute;rios podem ser encontrados como funcionalidades necess&amp;aacute;rias aos atores secund&amp;aacute;rios e que o sistema precisa fornecer para tornar os casos de uso prim&amp;aacute;rios eficazes. Exemplos comuns s&amp;atilde;o casos de uso para supervis&amp;atilde;o, monitoramento, cria&amp;ccedil;&amp;atilde;o de perfil, configura&amp;ccedil;&amp;atilde;o e inicializa&amp;ccedil;&amp;atilde;o do sistema.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Cuidado para n&amp;atilde;o exagerar no conjunto de casos de uso secund&amp;aacute;rios. Ao definir o escopo do sistema, certifique-se de incluir apenas os casos de uso que s&amp;atilde;o realmente necess&amp;aacute;rios.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; &amp;uacute;til ao modelar sistemas totalmente novos ou novas gera&amp;ccedil;&amp;otilde;es de sistemas existentes. Neste n&amp;iacute;vel de detalhe, todos os atores do sistema e casos de uso s&amp;atilde;o identificados e modelados.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Espera-se que:&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;Os atores secund&amp;aacute;rios e os casos de uso foram identificados para viabilizar os casos de uso prim&amp;aacute;rios.&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;Cada ator e caso de uso aparece em pelo menos uma ilustra&amp;ccedil;&amp;atilde;o/diagrama.&amp;nbsp;&lt;/li&gt;
-    &lt;li&gt;Todos os itens de oportunidade relevantes podem ser rastreados at&amp;eacute; casos de uso, atores ou outros requisitos. &lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Os atores secund&amp;aacute;rios e os casos de uso foram identificados para viabilizar os casos de uso prim&amp;aacute;rios.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Cada ator e caso de uso aparece em pelo menos uma ilustra&amp;ccedil;&amp;atilde;o/diagrama.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Todos os itens de oportunidade relevantes podem ser rastreados at&amp;eacute; casos de uso, atores ou outros requisitos.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
-        <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Limite do valor estabelecido&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Limite do valor estabelecido&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
@@ -2715,220 +2928,45 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Estruturada"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#LimiteValorEstabelecido"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ValorEstabelecido"/>
         <untitled-ontology-3:eOrganizadoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#CasoUso"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
         <untitled-ontology-3:apresentacao>&lt;p&gt;Pr&amp;aacute;tica &amp;aacute;gil que utiliza casos de uso para capturar um conjunto de requisitos e impulsionar o desenvolvimento incremental de um sistema para atend&amp;ecirc;-los.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:apresentacao>
-        <untitled-ontology-3:descricao>&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/images/cards/workproduct/Use-Case%20Model.png&quot; usemap=&quot;#usecase_model_map&quot;&gt;&lt;map name=&quot;usecase_model_map&quot;&gt;&lt;area shape=&quot;poly&quot; coords=&quot;50,15,250,15,245,65,55,65&quot; href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_-qQEAjX4EeG4rrZ-ZoAVmA/Use-Case%20Model_gd.html#&quot; title=&quot;The first step towards a complete use-case model is to identify the most important actors and use cases, i.e. the primary ones. The primary use cases are the ones that provide the most important value. A mere list of actors and use cases is not sufficient for communicating the use-case model. The model has to be illustrated and explained. The format for this is often diagrams with actors and use cases, accompanied by explanatory text (here called “explanation of the model as a whole”). This is the lightest level of detail. It is suitable for most projects, particularly those adding new functionality to existing systems where there is little or no value in modeling all the things the system already does.&quot;&gt;&lt;area shape=&quot;poly&quot; coords=&quot;50,90,250,90,245,140,55,140&quot; href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_-qQEAjX4EeG4rrZ-ZoAVmA/Use-Case%20Model_gd.html#&quot; title=&quot;The primary actors and use cases capture the essence of why the system is built. They show how the users will get value from the system. They may not provide enough value to set it up and keep it running; in these cases secondary actors and use cases are necessary to enable and support the effective operation of the system. Many of the secondary actors can be found by looking for roles to perform administration, maintenance and supporting operations. Many of the secondary use cases can be found as functionality needed by the secondary actors, and that the system needs to provide to make the primary use cases effective. Common examples are use cases for supervising, monitoring, profiling, configuring and starting the system. Be careful to not overdo the set of secondary use cases. When scoping the system, make sure to only include use cases that are really needed. This level of detail is useful when modeling brand new systems or new generations of existing systems. At this level of detail all of the systems actors and use cases are identified and modeled.&quot;&gt;&lt;area shape=&quot;poly&quot; coords=&quot;50,165,250,165,245,215,55,215&quot; href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_-qQEAjX4EeG4rrZ-ZoAVmA/Use-Case%20Model_gd.html#&quot; title=&quot;The use-case model often contains redundant information, such as common sequences or patterns of interaction. Structuring the use-case model is the way to deal with these redundancies. For large and complex systems, especially those that are used to provide similar functionality within many different contexts, structuring the use-case model can aid understanding, eliminate waste and help you find reusable elements.&quot;&gt;&lt;/map&gt;
-                &lt;p style=&quot;color: rgb(153, 153, 153);font-size: 11px;&quot;&gt;&lt;span title=&quot;Nível de detalhe: Uma especificação da quantidade de detalhes ou variedade de conteúdo em um produto de trabalho.  O nível de detalhe de um produto de trabalho é determinado pela avaliação dos itens da lista de verificação.&quot;&gt;N&amp;iacute;veis de detalhe&lt;/span&gt; (clique para navegar)&lt;/p&gt;
-            &lt;/td&gt;
-            &lt;td&gt;
-                &lt;p&gt;&lt;img src=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/icons/usecase_model_48.png&quot;&gt;&lt;/p&gt;
-                &lt;p style=&quot;font-size: 1em;&quot;&gt;Um modelo que captura e visualiza todas as formas &amp;uacute;teis de usar um sistema.&lt;/p&gt;
-                &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-                &lt;p style=&quot;font-size: 1em;&quot;&gt;O modelo de caso de uso:&lt;/p&gt;
-                &lt;ul&gt;
-                    &lt;li style=&quot;font-size: 1em;&quot;&gt;Permite que as equipes cheguem a um acordo sobre as funcionalidades e caracter&amp;iacute;sticas necess&amp;aacute;rias de um sistema.&lt;/li&gt;
-                    &lt;li style=&quot;font-size: 1em;&quot;&gt;Estabelece claramente os limites e o escopo do sistema, fornecendo uma imagem completa de seus atores (estando fora do sistema) e casos de uso (estando dentro do sistema).&lt;/li&gt;
-                    &lt;li style=&quot;font-size: 1em;&quot;&gt;Fornece o contexto para a elabora&amp;ccedil;&amp;atilde;o dos casos de uso individuais.&lt;/li&gt;
-                    &lt;li style=&quot;font-size: 1em;&quot;&gt;Permite o gerenciamento &amp;aacute;gil de requisitos.&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 2.375em;&quot;&gt;&lt;strong&gt;Explica&amp;ccedil;&amp;atilde;o&lt;/strong&gt;&lt;/h1&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O objetivo de um modelo de casos de uso &amp;eacute; capturar todas as maneiras &amp;uacute;teis de usar um sistema em um formato acess&amp;iacute;vel que capture os requisitos de um sistema e possa ser usado para orientar seu desenvolvimento e testes.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Um modelo de casos de uso &amp;eacute; composto principalmente por um conjunto de atores e casos de uso juntamente com seus relacionamentos e diagramas que ilustram esses elementos.&amp;nbsp;Os modelos de casos de uso podem ser capturados de muitas maneiras diferentes, como um Wiki, um quadro branco ou flipchart, um conjunto de slides do Microsoft PowerPoint, um documento do Microsoft Word ou uma ferramenta de modelagem.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Contanto que seu modelo de caso de uso mostre claramente o valor que as partes interessadas receber&amp;atilde;o de seu sistema novo ou atualizado, ele estar&amp;aacute; fazendo seu trabalho. Deve-se ter cuidado ao adicionar detalhes ao modelo. Somente avance para &lt;u&gt;&lt;a href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_-qQEAjX4EeG4rrZ-ZoAVmA/Use-Case%20Model_gd.html#system_boundary_established&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;o limite do sistema estabelecido&lt;/a&gt;&lt;/u&gt; ou &lt;u&gt;&lt;a href=&quot;https://practicelibrary.ivarjacobson.com/sites/default/files/embedded-practices/Use_Case_2.0_Essentials_HTML_guidelines6/html/_-qQEAjX4EeG4rrZ-ZoAVmA/Use-Case%20Model_gd.html#structured&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;estruturado&lt;/a&gt;&lt;/u&gt; se esses n&amp;iacute;veis de detalhe claramente agregarem valor e ajudarem voc&amp;ecirc; a entregar o novo sistema com mais efici&amp;ecirc;ncia.&lt;/p&gt;
-
-&lt;h1 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 2.375em;&quot;&gt;N&amp;iacute;veis de detalhe&lt;/h1&gt;
-&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td colspan=&quot;3&quot; style=&quot;text-align: left;color: rgb(234, 117, 2);font-size: 1.1em;&quot;&gt;&lt;strong&gt;Valor estabelecido:&lt;/strong&gt;
-                &lt;div style=&quot;color: rgb(0, 0, 0);&quot;&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;O primeiro passo para um modelo de casos de uso completo &amp;eacute; identificar os atores e casos de uso mais importantes, ou seja, os principais. Os principais casos de uso s&amp;atilde;o aqueles que fornecem o valor mais importante.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Uma mera lista de atores e casos de uso n&amp;atilde;o &amp;eacute; suficiente para comunicar o modelo de casos de uso.&amp;nbsp;O modelo deve ser ilustrado e explicado.&amp;nbsp;O formato para isso costuma ser diagramas com atores e casos de uso, acompanhados de texto explicativo (aqui denominado &amp;ldquo;explica&amp;ccedil;&amp;atilde;o do modelo como um todo&amp;rdquo;).&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Este &amp;eacute; o n&amp;iacute;vel de detalhe mais leve. &amp;Eacute; adequado para a maioria dos projetos, especialmente aqueles que adicionam novas funcionalidades a sistemas existentes, onde h&amp;aacute; pouco ou nenhum valor em modelar tudo o que o sistema j&amp;aacute; faz.&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;Os atores prim&amp;aacute;rios foram nomeados e brevemente descritos.&amp;nbsp;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;Os casos de uso prim&amp;aacute;rios foram nomeados e descritos resumidamente, ou seja, no estado Descrito Resumidamente ou al&amp;eacute;m.&amp;nbsp;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;H&amp;aacute; uma explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso como um todo.&amp;nbsp;&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td colspan=&quot;3&quot; style=&quot;text-align: left;color: rgb(234, 117, 2);font-size: 1.1em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;Limite do sistema estabelecido:&lt;/strong&gt;&lt;/div&gt;
-                &lt;div style=&quot;color: rgb(0, 0, 0);&quot;&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Os principais atores e casos de uso capturam a ess&amp;ecirc;ncia do motivo pelo qual o sistema foi constru&amp;iacute;do.&amp;nbsp;Eles mostram como os usu&amp;aacute;rios obter&amp;atilde;o valor do sistema.&amp;nbsp;Eles podem n&amp;atilde;o fornecer valor suficiente para configur&amp;aacute;-lo e mant&amp;ecirc;-lo funcionando;&amp;nbsp;nestes casos, s&amp;atilde;o necess&amp;aacute;rios intervenientes secund&amp;aacute;rios e casos de utiliza&amp;ccedil;&amp;atilde;o para permitir e apoiar o funcionamento eficaz do sistema.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Muitos dos intervenientes secund&amp;aacute;rios podem ser encontrados procurando fun&amp;ccedil;&amp;otilde;es para executar opera&amp;ccedil;&amp;otilde;es de administra&amp;ccedil;&amp;atilde;o, manuten&amp;ccedil;&amp;atilde;o e apoio.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Muitos dos casos de uso secund&amp;aacute;rios podem ser encontrados como funcionalidades necess&amp;aacute;rias aos atores secund&amp;aacute;rios e que o sistema precisa fornecer para tornar os casos de uso prim&amp;aacute;rios eficazes.&amp;nbsp;Exemplos comuns s&amp;atilde;o casos de uso para supervis&amp;atilde;o, monitoramento, cria&amp;ccedil;&amp;atilde;o de perfil, configura&amp;ccedil;&amp;atilde;o e inicializa&amp;ccedil;&amp;atilde;o do sistema.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Tenha cuidado para n&amp;atilde;o exagerar no conjunto de casos de uso secund&amp;aacute;rios.&amp;nbsp;Ao definir o escopo do sistema, certifique-se de incluir apenas os casos de uso que s&amp;atilde;o realmente necess&amp;aacute;rios.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; &amp;uacute;til ao modelar sistemas totalmente novos ou novas gera&amp;ccedil;&amp;otilde;es de sistemas existentes.&amp;nbsp;Neste n&amp;iacute;vel de detalhe, todos os atores do sistema e casos de uso s&amp;atilde;o identificados e modelados.&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;❑&lt;/div&gt;
-            &lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;Os atores secund&amp;aacute;rios e os casos de uso foram identificados para viabilizar os casos de uso prim&amp;aacute;rios.&amp;nbsp;&lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;❑&lt;/div&gt;
-            &lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;Cada ator e caso de uso aparece em pelo menos uma ilustra&amp;ccedil;&amp;atilde;o/diagrama.&amp;nbsp;&lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;❑&lt;/div&gt;
-            &lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;Todos os itens de oportunidade relevantes podem ser rastreados at&amp;eacute; casos de uso, atores ou outros requisitos. &lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td colspan=&quot;3&quot; style=&quot;text-align: left;color: rgb(234, 117, 2);font-size: 1.1em;&quot;&gt;&lt;strong&gt;Estruturada:&lt;/strong&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;O modelo de casos de uso geralmente cont&amp;eacute;m informa&amp;ccedil;&amp;otilde;es redundantes, como sequ&amp;ecirc;ncias comuns ou padr&amp;otilde;es de intera&amp;ccedil;&amp;atilde;o.&amp;nbsp;Estruturar o modelo de casos de uso &amp;eacute; a maneira de lidar com essas redund&amp;acirc;ncias.&lt;/p&gt;
-                    &lt;p style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Para sistemas grandes e complexos, especialmente aqueles que s&amp;atilde;o usados para fornecer funcionalidades semelhantes em muitos contextos diferentes, a estrutura&amp;ccedil;&amp;atilde;o do modelo de casos de uso pode ajudar na compreens&amp;atilde;o, eliminar desperd&amp;iacute;cios e ajudar a encontrar elementos reutiliz&amp;aacute;veis.&lt;/p&gt;
-                &lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;Os relacionamentos de &amp;apos;inclus&amp;atilde;o&amp;apos; e &amp;apos;generaliza&amp;ccedil;&amp;atilde;o&amp;apos; s&amp;atilde;o usados para melhorar a clareza do modelo de casos de uso. A pergunta a ser feita ao estruturar o modelo &amp;eacute; esta: &amp;apos;Como podemos tornar o modelo de casos de uso mais compreens&amp;iacute;vel para as partes interessadas, eliminando os pontos em comum?&amp;apos;&amp;nbsp;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;Os relacionamentos &amp;apos;estende&amp;apos; s&amp;atilde;o usados para expressar o comportamento de extens&amp;atilde;o, ou seja, fluxos de eventos adicionados a casos de uso completos e existentes.&amp;nbsp;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td style=&quot;text-align: center;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;❑&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot; style=&quot;text-align: left;color: rgb(238, 238, 238);font-size: 0.9em;&quot;&gt;
-                &lt;div style=&quot;text-align: justify;&quot;&gt;O modelo de casos de uso ainda &amp;eacute; compreens&amp;iacute;vel para uma parte interessada novata. Isto pode ser conseguido atrav&amp;eacute;s de uma refatora&amp;ccedil;&amp;atilde;o cautelosa e da explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso em um ou mais diagramas.&amp;nbsp;&lt;/div&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 2.375em;&quot;&gt;Diretrizes Adicionais&lt;/h1&gt;
-&lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;Conte&amp;uacute;do Essencial&lt;/h2&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Defini&amp;ccedil;&amp;otilde;es de ator: Um ator &amp;eacute; algu&amp;eacute;m ou algo fora do sistema que interage com o sistema em uma fun&amp;ccedil;&amp;atilde;o espec&amp;iacute;fica.&amp;nbsp;Os atores s&amp;atilde;o usados para: a) Estabelecer os limites do sistema e b) Permitir a identifica&amp;ccedil;&amp;atilde;o dos casos de uso que fornecem valor (para os atores)&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Defini&amp;ccedil;&amp;otilde;es de casos de uso: Um caso de uso s&amp;atilde;o todas as maneiras de usar um sistema para atingir um objetivo espec&amp;iacute;fico para um usu&amp;aacute;rio espec&amp;iacute;fico.&amp;nbsp;Consulte tamb&amp;eacute;m a diretriz narrativa de casos de uso.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Associa&amp;ccedil;&amp;otilde;es: Associa&amp;ccedil;&amp;otilde;es e relacionamentos entre atores e casos de uso que denotam intera&amp;ccedil;&amp;atilde;o (frequentemente chamadas de associa&amp;ccedil;&amp;otilde;es de comunica&amp;ccedil;&amp;atilde;o).&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1 Explica&amp;ccedil;&amp;atilde;o do Modelo: Texto e ilustra&amp;ccedil;&amp;otilde;es explicando o modelo.&lt;/li&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Modelo de caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Um modelo que captura e visualiza todas as formas &amp;uacute;teis de usar um sistema.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Permitir que as equipes cheguem a um acordo sobre as funcionalidades e caracter&amp;iacute;sticas necess&amp;aacute;rias de um sistema.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Estabelece claramente os limites e o escopo do sistema, fornecendo uma imagem completa de seus atores (estando fora do sistema) e casos de uso (estando dentro do sistema).&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Fornecer o contexto para a elabora&amp;ccedil;&amp;atilde;o dos casos de uso individuais.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Permitir o gerenciamento &amp;aacute;gil de requisitos.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;Conte&amp;uacute;do adicional&lt;/h2&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Diagramas de Casos de Uso: Ilustra&amp;ccedil;&amp;otilde;es de atores, casos de uso e seus relacionamentos.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Pacotes de Casos de Uso: Pacotes de casos de uso e atores usados para organizar o modelo.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Relacionamentos de Casos de Uso: Um relacionamento de &amp;apos;inclus&amp;atilde;o&amp;apos; entre casos de uso expressa a reutiliza&amp;ccedil;&amp;atilde;o de descri&amp;ccedil;&amp;otilde;es de comportamento comuns.&amp;nbsp;Um relacionamento &amp;apos;estende&amp;apos; expressa como um caso de uso adiciona comportamento a outro.&amp;nbsp;A generaliza&amp;ccedil;&amp;atilde;o entre casos de uso expressa que a sequ&amp;ecirc;ncia de um caso de uso &amp;eacute; reutilizada por outro&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;1..N Relacionamentos entre atores: A generaliza&amp;ccedil;&amp;atilde;o entre atores expressa que um ator pode desempenhar o papel do outro ator.&lt;/li&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-weight: bold;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;O objetivo de um modelo de casos de uso &amp;eacute; capturar todas as maneiras &amp;uacute;teis de usar um sistema em um formato acess&amp;iacute;vel que capture os requisitos de um sistema e possa ser usado para orientar seu desenvolvimento e testes.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Um modelo de casos de uso &amp;eacute; composto principalmente por um conjunto de atores e casos de uso juntamente com seus relacionamentos e diagramas que ilustram esses elementos. Os modelos de casos de uso podem ser capturados de muitas maneiras diferentes, como um Wiki, um quadro branco ou flipchart, um conjunto de slides do Microsoft PowerPoint, um documento do Microsoft Word ou uma ferramenta de modelagem.&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Considerando que seu modelo de caso de uso mostre claramente o valor que as partes interessadas receber&amp;atilde;o de seu sistema novo ou atualizado, ele estar&amp;aacute; fazendo seu trabalho. Deve-se ter cuidado ao adicionar detalhes ao modelo. Somente avance para o limite do sistema estabelecido ou estruturado se esses n&amp;iacute;veis de detalhe claramente agregarem valor e ajudarem voc&amp;ecirc; a entregar o novo sistema com mais efici&amp;ecirc;ncia.&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;Diretrizes de revis&amp;atilde;o&lt;/h2&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Qualidades Essenciais&lt;/h3&gt;
-&lt;ol style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;O modelo comunica claramente o valor fornecido pelo sistema e para que ser&amp;aacute; utilizado o sistema.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;O modelo &amp;eacute; acess&amp;iacute;vel e compreens&amp;iacute;vel por todas as partes interessadas.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&amp;Eacute; claro como os casos de uso e os atores juntos fornecem suporte &amp;agrave;s necessidades dos usu&amp;aacute;rios.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Os diagramas capturam vis&amp;otilde;es relevantes do conjunto de atores e casos de uso.&amp;nbsp;Cada ator e caso de uso deve aparecer em pelo menos um diagrama.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Os casos de uso s&amp;atilde;o relevantes para os atores.&amp;nbsp;Cada caso de uso est&amp;aacute; conectado a pelo menos um ator.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;M&amp;eacute;todos de Avalia&amp;ccedil;&amp;atilde;o&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O modelo de casos de uso &amp;eacute; avaliado para garantir que descreve uma solu&amp;ccedil;&amp;atilde;o adequada e clara para as necessidades das partes interessadas.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;Passo a passo e revis&amp;atilde;o&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O objetivo do passo a passo e da revis&amp;atilde;o &amp;eacute; garantir que as partes interessadas entendam o modelo de caso de uso e que concordem com seu conte&amp;uacute;do e estrutura geral.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Primeiro, prepare um documento de pesquisa de modelo de caso de uso.&amp;nbsp;Este documento deve listar todos os atores, casos de uso e ilustra&amp;ccedil;&amp;otilde;es do modelo de casos de uso, juntamente com suas explica&amp;ccedil;&amp;otilde;es.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Em seguida, convide as partes interessadas para uma reuni&amp;atilde;o passo a passo onde o modelo de caso de uso e a pesquisa do modelo de caso de uso ser&amp;atilde;o explicados.&amp;nbsp;Certifique-se de que os participantes realmente entendam o prop&amp;oacute;sito e a estrutura do modelo de caso de uso.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Finalmente, deixe as partes interessadas revisarem o documento.&lt;/p&gt;
-&lt;h5 style=&quot;text-align: justify; color: rgb(0, 0, 0);&quot;&gt;O modelo de caso de uso &amp;eacute; compreendido e acordado quando:&lt;/h5&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;&amp;Eacute; compreendido pelas partes interessadas relevantes, como clientes, usu&amp;aacute;rios, l&amp;iacute;deres de equipe, desenvolvedores e testadores.&lt;/li&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Conte&amp;uacute;do Essencial&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Defini&amp;ccedil;&amp;otilde;es de ator: Um ator &amp;eacute; algu&amp;eacute;m ou algo fora do sistema que interage com o sistema em uma fun&amp;ccedil;&amp;atilde;o espec&amp;iacute;fica. Os atores s&amp;atilde;o usados para: a) Estabelecer os limites do sistema e b) Permitir a identifica&amp;ccedil;&amp;atilde;o dos casos de uso que fornecem valor (para os atores)&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Defini&amp;ccedil;&amp;otilde;es de casos de uso: Um caso de uso s&amp;atilde;o todas as maneiras de usar um sistema para atingir um objetivo espec&amp;iacute;fico para um usu&amp;aacute;rio espec&amp;iacute;fico.&amp;nbsp;Consulte tamb&amp;eacute;m a diretriz narrativa de casos de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Associa&amp;ccedil;&amp;otilde;es: Associa&amp;ccedil;&amp;otilde;es e relacionamentos entre atores e casos de uso que denotam intera&amp;ccedil;&amp;atilde;o (frequentemente chamadas de associa&amp;ccedil;&amp;otilde;es de comunica&amp;ccedil;&amp;atilde;o).&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1 Explica&amp;ccedil;&amp;atilde;o do Modelo: Texto e ilustra&amp;ccedil;&amp;otilde;es explicando o modelo.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;Rastreabilidade&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Crie rastreabilidade entre a oportunidade e o modelo de caso de uso.&amp;nbsp;Verificar:&lt;/p&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Que todos os itens que est&amp;atilde;o no escopo sejam rastreados para os atores e casos de uso no modelo de casos de uso ou para outros tipos de requisitos.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Se houver algum comportamento de caso de uso ou requisito especial que n&amp;atilde;o rastreie um item de oportunidade.&amp;nbsp;Nesse caso, reconsidere o conte&amp;uacute;do do caso de uso porque ele pode conter funcionalidades desnecess&amp;aacute;rias.&lt;/li&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Conte&amp;uacute;do adicional&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Diagramas de Casos de Uso: Ilustra&amp;ccedil;&amp;otilde;es de atores, casos de uso e seus relacionamentos.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Pacotes de Casos de Uso: Pacotes de casos de uso e atores usados para organizar o modelo.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Relacionamentos de Casos de Uso: Um relacionamento de &amp;apos;inclus&amp;atilde;o&amp;apos; entre casos de uso expressa a reutiliza&amp;ccedil;&amp;atilde;o de descri&amp;ccedil;&amp;otilde;es de comportamento comuns.&amp;nbsp;Um relacionamento &amp;apos;estende&amp;apos; expressa como um caso de uso adiciona comportamento a outro.&amp;nbsp;A generaliza&amp;ccedil;&amp;atilde;o entre casos de uso expressa que a sequ&amp;ecirc;ncia de um caso de uso &amp;eacute; reutilizada por outro&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Relacionamentos entre atores: A generaliza&amp;ccedil;&amp;atilde;o entre atores expressa que um ator pode desempenhar o papel do outro ator.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;Priorize os fluxos de casos de uso para chegar a um acordo sobre o escopo&lt;/strong&gt;&lt;/h4&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O escopo do modelo de casos de uso deve ser acordado para definir o escopo do projeto.&amp;nbsp;Caso contr&amp;aacute;rio, n&amp;atilde;o haver&amp;aacute; acordo sobre qual ser&amp;aacute; uma solu&amp;ccedil;&amp;atilde;o aceit&amp;aacute;vel.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O escopo do modelo de casos de uso deve ser orientado pelo valor que o sistema oferece &amp;agrave;s partes interessadas.&amp;nbsp;Uma maneira pr&amp;aacute;tica de fazer isso &amp;eacute; fazer uma lista ordenada de todos os fluxos de casos de uso e outros requisitos, com base na sua rela&amp;ccedil;&amp;atilde;o valor/custo;&amp;nbsp;quanto maior for a rela&amp;ccedil;&amp;atilde;o valor/custo para um fluxo de caso de uso, mais alto ele aparecer&amp;aacute; na lista.&amp;nbsp;Esta lista pode ser preparada com base em duas sess&amp;otilde;es de trabalho:&lt;/p&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Os representantes das partes interessadas s&amp;atilde;o respons&amp;aacute;veis por atribuir o valor relativo aos fluxos de casos de uso.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;A equipe do projeto &amp;eacute; respons&amp;aacute;vel por estimar o custo relativo dos fluxos de casos de uso.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O truque aqui &amp;eacute; procurar apenas os valores ou custos relativos dos fluxos individuais e outros requisitos.&lt;/p&gt;
-&lt;h5 style=&quot;text-align: justify; color: rgb(0, 0, 0);&quot;&gt;O escopo do modelo de caso de uso &amp;eacute; acordado quando:&lt;/h5&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;H&amp;aacute; uma lista priorizada acordada de fluxos de casos de uso e outros requisitos, de modo que ficar&amp;aacute; bem claro quais fluxos ou outros requisitos devem a) passar para o escopo se houver mais tempo dispon&amp;iacute;vel, e b) retirar o escopo quando o projeto for curto de tempo.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Um representante nomeado pelo Cliente, pelo grupo de Desenvolvedores e pela Administra&amp;ccedil;&amp;atilde;o concorda com a lista de prioridades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;Dicas e sugest&amp;otilde;es&lt;/h2&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Use diagramas para se comunicar&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Uma lista simples de atores e casos de uso raramente &amp;eacute; suficiente para comunicar eficazmente o conte&amp;uacute;do do modelo de casos de uso.&amp;nbsp;Considere usar os diagramas a seguir para explicar o modelo de casos de uso:&lt;/p&gt;
-&lt;ul style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Um diagrama com os 5 a 10 atores e casos de uso mais importantes.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Um diagrama para cada processo de neg&amp;oacute;cios suportado, com os atores e casos de uso envolvidos no suporte.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Um diagrama para cada categoria (ou pacote, se forem usados pacotes de casos de uso) de casos de uso.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Um diagrama para cada ator, mostrando os casos de uso com os quais o ator est&amp;aacute; envolvido.&lt;/li&gt;
-    &lt;li style=&quot;font-size: 1em; text-align: justify;&quot;&gt;Explique cada diagrama usando texto simples.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Relacione-se com processos de neg&amp;oacute;cios&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Muitos sistemas de software s&amp;atilde;o criados para dar suporte aos processos de neg&amp;oacute;cios.&amp;nbsp;Quando for esse o caso, a melhor maneira de garantir a utilidade do sistema &amp;eacute; rastrear os atores e os casos de uso at&amp;eacute; as fun&amp;ccedil;&amp;otilde;es e atividades dos processos de neg&amp;oacute;cios.&amp;nbsp;Isto n&amp;atilde;o apenas garante um processo sistem&amp;aacute;tico de coleta de requisitos, mas tamb&amp;eacute;m fornece um ponto de entrada nos requisitos para os indiv&amp;iacute;duos envolvidos nos processos de neg&amp;oacute;cios.&lt;/p&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Modelo para sintetizar um entendimento compartilhado de requisitos&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;O modelo de casos de uso deve ser usado como mapa da funcionalidade do sistema.&amp;nbsp;Ao relacionar consistentemente cada funcionalidade e caracter&amp;iacute;stica desejada do sistema com a estrutura do modelo, &amp;eacute; poss&amp;iacute;vel criar uma compreens&amp;atilde;o unificada da equipe sobre o que &amp;eacute; o sistema.&amp;nbsp;Uma maneira pr&amp;aacute;tica de fazer isso &amp;eacute; manter rela&amp;ccedil;&amp;otilde;es de rastreabilidade.&lt;/p&gt;
-&lt;h2 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.75em;&quot;&gt;Erros comuns&lt;/h2&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Mais de vinte e cinco (25) casos de uso&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Um erro comum &amp;eacute; representar cada fun&amp;ccedil;&amp;atilde;o ou opera&amp;ccedil;&amp;atilde;o do sistema como um caso de uso separado, o que geralmente resulta em muitos casos de uso.&amp;nbsp;N&amp;atilde;o considere vinte e cinco (25) casos de uso como uma regra absoluta, mas sim como um indicador de que algo pode estar errado.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Problema&lt;/b&gt;&lt;/strong&gt; : Isso geralmente significa que cada caso de uso por si s&amp;oacute; n&amp;atilde;o agrega valor ao ator.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/b&gt;&lt;/strong&gt; : mesclar casos de uso fragmentados em sequ&amp;ecirc;ncias completas de tais fragmentos que, juntos, forne&amp;ccedil;am valor aos atores.&lt;/p&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Cargos como atores&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Um erro comum &amp;eacute; criar atores que espelhem os cargos da organiza&amp;ccedil;&amp;atilde;o.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Problema&lt;/b&gt;&lt;/strong&gt; : Ao criar atores que espelhem os cargos, os casos de uso ser&amp;atilde;o moldados para apoiar os cargos, e n&amp;atilde;o o trabalho que os indiv&amp;iacute;duos deveriam realizar.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/b&gt;&lt;/strong&gt; : Quando os atores espelham os cargos, refatore-os para alinh&amp;aacute;-los com as atividades que deveriam realizar em seu trabalho.&lt;/p&gt;
-&lt;h3 style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 1.3125em;&quot;&gt;Dispositivos como atores&lt;/h3&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;Os atores a serem procurados s&amp;atilde;o pessoas e outros sistemas que interagem com o sistema.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Problema&lt;/b&gt;&lt;/strong&gt; : Dispositivos simples, como scanners e impressoras, n&amp;atilde;o ajudam muito na identifica&amp;ccedil;&amp;atilde;o dos casos de uso que agregam valor.&lt;/p&gt;
-&lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;strong&gt;&lt;b&gt;Solu&amp;ccedil;&amp;atilde;o&lt;/b&gt;&lt;/strong&gt; : Se foram definidos atores para dispositivos, procure a pessoa ou sistema &amp;ldquo;por tr&amp;aacute;s&amp;rdquo; do dispositivo e sugira atores para isso. Quando por exemplo houver um ator sugerido para um impressor, procure o papel da pessoa que utilizar&amp;aacute; o material impresso.&lt;/p&gt;</untitled-ontology-3:descricao>
-        <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Modelo de Caso de Uso&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Modelo de caso de uso&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Use Case Modeling, de Kurt Bittner e Ian Spence, Addison-Wesley Professional, cap&amp;iacute;tulos 4-5.&lt;/p&gt;
 
 &lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, cap&amp;iacute;tulos 16-44.&lt;/p&gt;</untitled-ontology-3:referenciaRE>
@@ -3064,11 +3102,56 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#NarrativaCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DescritoResumidamente"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoEssencial"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EsbocoMarcadores"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TotalmenteDescrito"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Narrativa de caso de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Descreva as hist&amp;oacute;rias usadas para explorar os requisitos e identificar as fatias dos casos de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Descreva uma sequ&amp;ecirc;ncia de a&amp;ccedil;&amp;otilde;es, incluindo variantes, que um Sistema de Software e seus atores podem realizar para atingir um objetivo.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;S&amp;atilde;o apresentados como um conjunto de fluxos.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Capture as informa&amp;ccedil;&amp;otilde;es de requisitos necess&amp;aacute;rias para conduzir as atividades de desenvolvimento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;As narrativas de casos de uso podem ser capturadas de muitas maneiras diferentes; como parte de um Wiki, em fichas, como documentos do Microsoft Word ou usando uma das muitas ferramentas de gerenciamento de trabalho, gerenciamento de requisitos ou modelagem visual dispon&amp;iacute;veis comercialmente.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;A narrativa de casos de uso &amp;eacute; um produto de trabalho muito flex&amp;iacute;vel que pode ser expandido para capturar a quantidade de detalhes necess&amp;aacute;ria para ter sucesso, independentemente das circunst&amp;acirc;ncias.&amp;nbsp;Se voc&amp;ecirc; faz parte de uma pequena equipe que trabalha em colabora&amp;ccedil;&amp;atilde;o com o cliente em um projeto explorat&amp;oacute;rio, os esbo&amp;ccedil;os com marcadores fornecem uma abordagem muito leve para descobrir os requisitos.&amp;nbsp;Se voc&amp;ecirc; estiver trabalhando em um ambiente mais r&amp;iacute;gido, onde h&amp;aacute; pouco acesso aos verdadeiros especialistas, ent&amp;atilde;o esbo&amp;ccedil;os essenciais ou narrativas totalmente descritas podem ser usados para preencher as lacunas no conhecimento da equipe.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Nem toda narrativa de casos de uso precisa ser levada ao mesmo n&amp;iacute;vel de detalhe; n&amp;atilde;o &amp;eacute; incomum que os casos de uso mais importantes e arriscados sejam mais detalhados que os outros. O mesmo vale para as se&amp;ccedil;&amp;otilde;es da narrativa do caso de uso; as partes mais importantes, complexas ou arriscadas de um caso de uso s&amp;atilde;o frequentemente descritas com mais detalhes do que as outras.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Conte&amp;uacute;do Essencial&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1 Nome: O nome do caso de uso. Utilize um nome, composto por um verbo e um substantivo, que descreva o resultado alcan&amp;ccedil;ado pelo caso de uso e o valor oferecido ao ator. Quando o nome do caso de uso &amp;eacute; anexado ao ator iniciador, uma frase significativa deve ser formada, por exemplo, Cliente retira dinheiro. Neste exemplo, &amp;apos;Cliente&amp;apos; &amp;eacute; o ator e &amp;apos;Retirar Dinheiro&amp;apos; &amp;eacute; o caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1 Breve Descri&amp;ccedil;&amp;atilde;o: Uma breve descri&amp;ccedil;&amp;atilde;o do prop&amp;oacute;sito do caso de uso e do valor oferecido aos seus atores.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Fluxo B&amp;aacute;sico: Este &amp;eacute; o fluxo de eventos iniciado pelo ator e &amp;eacute; o caminho normal e esperado atrav&amp;eacute;s do caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;0..N Fluxos Alternativos: S&amp;atilde;o fluxos adicionais de eventos que estendem o fluxo b&amp;aacute;sico para fornecer (i) formas alternativas de atingir o objetivo do caso de uso, (ii) comportamento opcional e (iii) tratamento de erros e exce&amp;ccedil;&amp;otilde;es.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Conte&amp;uacute;do adicional&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Pr&amp;eacute;-condi&amp;ccedil;&amp;otilde;es: Descri&amp;ccedil;&amp;otilde;es do estado em que o sistema deve estar antes que o caso de uso possa ser iniciado.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N P&amp;oacute;s-condi&amp;ccedil;&amp;otilde;es: Descri&amp;ccedil;&amp;otilde;es do estado em que o sistema deve estar quando o caso de uso for conclu&amp;iacute;do.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Requisitos Especiais: Declara&amp;ccedil;&amp;otilde;es de requisitos n&amp;atilde;o funcionais que se aplicam ao caso de uso.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Narrativa dos casos de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:referenciaRE>&lt;table style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td style=&quot;border: none;&quot;&gt;
+                &lt;p style=&quot;font-size: 1em; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Refer&amp;ecirc;ncias&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+                &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;1&lt;/sup&gt;&lt;/sup&gt; Modelagem de casos de uso, por Kurt Bittner e Ian Spence, Addison-Wesley Professional, Parte 2: Escrevendo e revisando descri&amp;ccedil;&amp;otilde;es de casos de uso.&lt;/span&gt;&lt;/p&gt;
+                &lt;p style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; Use Case Patterns and Blueprints, por Gunnar &amp;Ouml;vergaard e Karin Palmkvist, Addison Wesley, Cap&amp;iacute;tulo 13 Descrevendo Casos de Uso.&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</untitled-ontology-3:referenciaRE>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
@@ -3508,8 +3591,41 @@ Carcateriza-se quando identifica-se uma incompatibilidade entre o objetivo dos s
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#RealizacaoCasoUso">
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ProdutoTrabalhoPratica"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ElementosImplementacaoIdentificados"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InteracaoDefinida"/>
+        <untitled-ontology-3:contem rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ResponsabilidadesAlocadas"/>
         <untitled-ontology-3:eProduzidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
         <untitled-ontology-3:Icone>&lt;p&gt;Icone Produto de Trabalho&lt;/p&gt;</untitled-ontology-3:Icone>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Realiza&amp;ccedil;&amp;atilde;o de casos de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Identifique os elementos do sistema envolvidos no caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Capture as responsabilidades dos elementos do sistema ao executar o caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Descreva como os elementos do sistema interagem para executar o caso de uso.&lt;/li&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Traduza a linguagem de neg&amp;oacute;cios usada nas narrativas de casos de uso para a linguagem do desenvolvedor usada para descrever a implementa&amp;ccedil;&amp;atilde;o do sistema.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Apresenta&amp;ccedil;&amp;atilde;o&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;As realiza&amp;ccedil;&amp;otilde;es de casos de uso s&amp;atilde;o extremamente &amp;uacute;teis e podem ser usadas para impulsionar a cria&amp;ccedil;&amp;atilde;o e valida&amp;ccedil;&amp;atilde;o de muitas das diferentes visualiza&amp;ccedil;&amp;otilde;es que as equipes usam para projetar e construir seus sistemas. Por exemplo, os designers de interface do usu&amp;aacute;rio usam realiza&amp;ccedil;&amp;otilde;es de casos de uso (na forma de storyboards) para explorar o impacto dos casos de uso na interface do usu&amp;aacute;rio. Os arquitetos usam realiza&amp;ccedil;&amp;otilde;es de casos de uso para analisar os casos de uso arquitetonicamente significativos e avaliar se a arquitetura &amp;eacute; ou n&amp;atilde;o adequada ao prop&amp;oacute;sito. As realiza&amp;ccedil;&amp;otilde;es de casos de uso podem ser apresentadas em muitos formatos diferentes &amp;ndash; o formato da realiza&amp;ccedil;&amp;atilde;o depende completamente das pr&amp;aacute;ticas de desenvolvimento da equipe. Formas comuns de expressar realiza&amp;ccedil;&amp;otilde;es de casos de uso incluem tabelas simples, storyboards, diagramas de sequ&amp;ecirc;ncia, diagramas de colabora&amp;ccedil;&amp;atilde;o e diagramas de fluxo de dados. O importante &amp;eacute; que a equipe crie uma realiza&amp;ccedil;&amp;atilde;o para identificar quais elementos do sistema est&amp;atilde;o envolvidos na implementa&amp;ccedil;&amp;atilde;o do caso de uso e como eles ser&amp;atilde;o alterados.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Criar uma realiza&amp;ccedil;&amp;atilde;o de caso de uso para cada caso de uso para identificar os elementos do sistema envolvidos na sua execu&amp;ccedil;&amp;atilde;o e, o mais importante, avaliar o quanto eles ter&amp;atilde;o que ser alterados. Voc&amp;ecirc; pode pensar nas realiza&amp;ccedil;&amp;otilde;es de casos de uso como fornecendo o &amp;ldquo;como&amp;rdquo; para complementar o &amp;ldquo;o qu&amp;ecirc;&amp;rdquo; da narrativa de casos de uso.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;A realiza&amp;ccedil;&amp;atilde;o de casos de uso &amp;eacute; um produto de trabalho muito flex&amp;iacute;vel; as equipes podem expandir sua realiza&amp;ccedil;&amp;atilde;o para adicionar mais detalhes quando e como precisarem. Se uma equipe pequena estiver fazendo todas as an&amp;aacute;lises e projetos de forma colaborativa, realiza&amp;ccedil;&amp;otilde;es simples e leves de casos de uso ser&amp;atilde;o suficientes. Se uma equipe grande, que n&amp;atilde;o consegue ter muitas sess&amp;otilde;es colaborativas, estiver desenvolvendo um sistema complexo, ent&amp;atilde;o realiza&amp;ccedil;&amp;otilde;es mais detalhadas ajudar&amp;atilde;o na comunica&amp;ccedil;&amp;atilde;o e garantir&amp;atilde;o que todos os desenvolvedores tenham todas as informa&amp;ccedil;&amp;otilde;es necess&amp;aacute;rias para entregar com sucesso os elementos do sistema e implementar seus fatias de casos de uso.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Informa&amp;ccedil;&amp;otilde;es adicionais&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;Conte&amp;uacute;do Essencial&lt;/u&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;1..N Diagramas ou Tabelas: Diagramas ou tabelas que descrevem a intera&amp;ccedil;&amp;atilde;o e colabora&amp;ccedil;&amp;atilde;o dos elementos de implementa&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 1.75em;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;&lt;u&gt;Conte&amp;uacute;do adicional&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;&lt;span style=&quot;text-align: start; color: rgb(0, 0, 0);&quot;&gt;N / D&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Realiza&amp;ccedil;&amp;atilde;o dos casos de uso&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:referenciaRE>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Refer&amp;ecirc;ncias&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1&lt;/span&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; The CRC Card Book, by David Bellin and Susan Suchman Simone, Addison-Wesley, chapter 3-4.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;2&lt;/sup&gt;&lt;/sup&gt; The Unified Software Development Process, by Ivar Jacobson, Grady Booch and James Rumbaugh, Addison Wesley Longman, chapter 8-9.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;3&lt;/sup&gt;&lt;/sup&gt; &lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/movepeople.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;www.extremeprogramming.org/rules/movepeople.html&lt;/a&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: start;color: rgb(0, 0, 0);font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;sup&gt;&lt;sup style=&quot;font-size: smaller;&quot;&gt;4&lt;/sup&gt;&lt;/sup&gt; &lt;/span&gt;&lt;u&gt;&lt;a href=&quot;http://www.extremeprogramming.org/rules/crccards.html&quot; target=&quot;_blank&quot; style=&quot;color: rgb(75, 110, 198);&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;www.extremeprogramming.org/rules/crccards.html&lt;/span&gt;&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;</untitled-ontology-3:referenciaRE>
         <untitled-ontology-3:sequencia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
@@ -3708,6 +3824,27 @@ Caso os smells não forem removidos, o requisito pode ser implementado incorreta
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ResponsabilidadesAlocadas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ResponsabilidadesAlocadas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#AnalisarParteCasoUso"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Elementos de implementa&amp;ccedil;&amp;atilde;o identificados&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;font-size: 12px; text-align: justify;&quot;&gt;Para permitir que a equipe atualize os elementos do sistema afetados em paralelo ou em suporte a diversas fatias de casos de uso, os desenvolvedores precisam compreender as responsabilidades dos elementos individuais. As responsabilidades fornecem uma defini&amp;ccedil;&amp;atilde;o de alto n&amp;iacute;vel do que cada elemento precisa fazer, armazenar e rastrear.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Esse n&amp;iacute;vel de detalhe &amp;eacute; adequado para situa&amp;ccedil;&amp;otilde;es em que cada fatia do caso de uso aborda v&amp;aacute;rios elementos do sistema ou onde as fatias ser&amp;atilde;o desenvolvidas por v&amp;aacute;rios desenvolvedores trabalhando em paralelo. Deve tamb&amp;eacute;m ser adoptado quando a arquitetura do sistema &amp;eacute; imatura e as responsabilidades globais dos elementos do sistema ainda n&amp;atilde;o foram compreendidas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;As responsabilidades (dos fluxos relevantes) foram atribu&amp;iacute;das aos elementos da implementa&amp;ccedil;&amp;atilde;o.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;As responsabilidades dos elementos podem, juntas, realizar os fluxos de casos de uso em quest&amp;atilde;o.&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Responsabilidades alocadas&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;2&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#Responsavel">
@@ -3886,6 +4023,32 @@ Caso os smells não forem removidos, o requisito pode ser implementado incorreta
     
 
 
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TotalmenteDescrito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TotalmenteDescrito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#DividirCasosUso"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#InspecionarCasoUso"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Totalmente descrito&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;As narrativas de casos de uso podem ser usadas para fornecer especifica&amp;ccedil;&amp;otilde;es de requisitos altamente detalhadas, evoluindo-as para seu n&amp;iacute;vel de detalhe mais abrangente, ou seja, Totalmente Descrito. Os detalhes adicionais podem ser necess&amp;aacute;rios para explicar a aus&amp;ecirc;ncia de conhecimentos especializados dentro da equipa, a falta de acesso &amp;agrave;s partes interessadas ou para comunicar eficazmente requisitos complexos.&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Este n&amp;iacute;vel de detalhe &amp;eacute; particularmente &amp;uacute;til para aqueles casos de utiliza&amp;ccedil;&amp;atilde;o em que um mal-entendido do conte&amp;uacute;do pode ter graves consequ&amp;ecirc;ncias de seguran&amp;ccedil;a, financeiras ou jur&amp;iacute;dicas. Tamb&amp;eacute;m pode ser &amp;uacute;til ao terceirizar ou terceirizar o desenvolvimento de software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify; font-size: 12px;&quot;&gt;Cada etapa de cada fluxo de eventos foi descrita em detalhes&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Os fluxos de eventos capturam todas as entradas e sa&amp;iacute;das do Sistema de Software.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;Todos os pontos de decis&amp;atilde;o e c&amp;aacute;lculos est&amp;atilde;o completos e claramente definidos.&amp;nbsp;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify; color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&amp;Eacute; test&amp;aacute;vel de forma independente, compreens&amp;iacute;vel, inequ&amp;iacute;voco, correto, completo e ating&amp;iacute;vel.&lt;/li&gt;
+&lt;/ul&gt;</untitled-ontology-3:descricao>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Totalmente descrito&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;4&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TreinamentoPadroesER -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#TreinamentoPadroesER">
@@ -3936,18 +4099,33 @@ Caso os smells não forem removidos, o requisito pode ser implementado incorreta
         <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
         <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#EcontrarAtoreseUC"/>
         <untitled-ontology-3:estaContidoEm rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#ModeloCasoUso"/>
-        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Valor Estabelecido&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;O primeiro passo para um modelo de casos de uso completo &amp;eacute; identificar os atores e casos de uso mais importantes, ou seja, os principais. Os principais casos de uso s&amp;atilde;o aqueles que fornecem o valor mais importante.&lt;/p&gt;
-&lt;p&gt;Uma mera lista de atores e casos de uso n&amp;atilde;o &amp;eacute; suficiente para comunicar o modelo de casos de uso. O modelo deve ser ilustrado e explicado. O formato para isso costuma ser diagramas com atores e casos de uso, acompanhados de texto explicativo (aqui denominado &amp;ldquo;explica&amp;ccedil;&amp;atilde;o do modelo como um todo&amp;rdquo;).&lt;/p&gt;
-&lt;p&gt;Este &amp;eacute; o n&amp;iacute;vel de detalhe mais leve. &amp;Eacute; adequado para a maioria dos projetos, especialmente aqueles que adicionam novas funcionalidades a sistemas existentes, onde h&amp;aacute; pouco ou nenhum valor em modelar tudo o que o sistema j&amp;aacute; faz.&lt;/p&gt;
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Espera-se que&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Os atores prim&amp;aacute;rios foram nomeados e brevemente descritos.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;Os casos de uso prim&amp;aacute;rios foram nomeados e descritos resumidamente, ou seja, no estado descrito resumidamente ou al&amp;eacute;m.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;Exista uma explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso como um todo.&amp;nbsp;&lt;/p&gt;
+        <untitled-ontology-3:descricao>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Valor estabelecido&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;O primeiro passo para um modelo de casos de uso completo &amp;eacute; identificar os atores e casos de uso mais importantes, ou seja, os principais. Os principais casos de uso s&amp;atilde;o aqueles que fornecem o valor mais importante.&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Uma mera lista de atores e casos de uso n&amp;atilde;o &amp;eacute; suficiente para comunicar o modelo de casos de uso. O modelo deve ser ilustrado e explicado. O formato para isso costuma ser diagramas com atores e casos de uso, acompanhados de texto explicativo (aqui denominado &amp;ldquo;explica&amp;ccedil;&amp;atilde;o do modelo como um todo&amp;rdquo;).&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Este &amp;eacute; o n&amp;iacute;vel de detalhe mais leve. &amp;Eacute; adequado para a maioria dos projetos, especialmente aqueles que adicionam novas funcionalidades a sistemas existentes, onde h&amp;aacute; pouco ou nenhum valor em modelar tudo o que o sistema j&amp;aacute; faz.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;strong&gt;Espera-se que&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os atores prim&amp;aacute;rios foram nomeados e brevemente descritos.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Os casos de uso prim&amp;aacute;rios foram nomeados e descritos resumidamente, ou seja, no estado descrito resumidamente ou al&amp;eacute;m.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+    &lt;li style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Exista uma explica&amp;ccedil;&amp;atilde;o do modelo de casos de uso como um todo.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;</untitled-ontology-3:descricao>
-        <untitled-ontology-3:nome>&lt;p&gt;&lt;strong&gt;Valor estabalecido&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Valor estabelecido&lt;/strong&gt;&lt;/p&gt;</untitled-ontology-3:nome>
         <untitled-ontology-3:sequencia>&lt;p&gt;1&lt;/p&gt;</untitled-ontology-3:sequencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VariaveisIdentificadas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#VariaveisIdentificadas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PassosElementosPrática"/>
+        <untitled-ontology-3:atendidoPor rdf:resource="http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#PrepararParteCasoUso"/>
+        <untitled-ontology-3:nome>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Vari&amp;aacute;veis identificadas&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</untitled-ontology-3:nome>
+        <untitled-ontology-3:sequencia>&lt;p&gt;3&lt;/p&gt;</untitled-ontology-3:sequencia>
     </owl:NamedIndividual>
     
 
