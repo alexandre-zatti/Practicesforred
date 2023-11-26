@@ -34,7 +34,7 @@ jobs:
         push: true
         tags: ${{ env.IMAGE }}:${{ github.sha }}
         build-args: |
-          NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}
+          NEXT_PUBLIC_API_URL=${{ secrets.BACKEND_API_URL }}
 
     - name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v0.4.0
