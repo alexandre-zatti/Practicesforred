@@ -12,5 +12,5 @@ spec:
     app: backend-gke-deployment
   ports:
     - name: backend
-      port: 8080
+      port: 80
       targetPort: 8080
