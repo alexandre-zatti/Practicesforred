@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: zatti/tcc-backend:lastest
+          image: zatti/tcc-backend:latest
           ports:
             - containerPort: 8080
           resources:
