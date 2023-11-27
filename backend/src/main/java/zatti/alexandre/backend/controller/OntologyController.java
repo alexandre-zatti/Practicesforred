@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/ontology")
+@RequestMapping("/backend/api/ontology")
 public class OntologyController {
 
     private final OntologyService ontologyService;
