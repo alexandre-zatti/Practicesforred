@@ -4,9 +4,34 @@ services:
   virtuoso:
     image: openlink/virtuoso-opensource-7
     ports:
-      - "1111:1111" # Expose Virtuoso's HTTP port
-      - "8890:8890" # Expose Virtuoso's SPARQL endpoint port
+      - "1111:1111"
+      - "8890:8890"
     environment:
-      - DBA_PASSWORD=123 # Set a password for the DBA user
+      - DBA_PASSWORD=123
     volumes:
-      - ./data:/database # Mount a data directory for persistence
+      - ./data:/database
+
+  backend:
+    image: zatti/tcc-backend:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - virtuoso
+    environment:
+      - VIRTUOSO_JDBC_URL=jdbc:virtuoso://virtuoso-service:1111/
+      - VIRTUOSO_JDBC_USER=dba
+      - VIRTUOSO_JDBC_PASSWORD_FILE=/run/secrets/virtuoso-password
+      - VIRTUOSO_GRAPH=http://zatti.alexandre/OntoReD
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    image: zatti/tcc-frontend:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8080
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
