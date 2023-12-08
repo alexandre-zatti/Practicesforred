@@ -1,0 +1,1202 @@
+
+		Thu Dec 07 2023
+09:50:03 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:50:03   plain version 1.2.3238 from OpenLink Software
+09:50:03   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:50:03   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:50:03 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:50:03   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:50:03   Support functions for GraphQL/SPARQL Bridge
+09:50:03   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:50:03 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:50:03   plain version 1.1.3238 from OpenLink Software
+09:50:03   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:50:03   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:50:03 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:50:03   ShapefileIO version 0.1virt71 from OpenLink Software
+09:50:03   Shapefile support based on Frank Warmerdam's Shapelib
+09:50:03   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:50:03 OpenLink Virtuoso Universal Server
+09:50:03 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:50:03 uses OpenSSL 1.1.1  11 Sep 2018
+09:50:03 uses parts of PCRE, Html Tidy
+09:50:03 SQL Optimizer enabled (max 1000 layouts)
+09:50:03 Compiler unit is timed at 0.000212 msec
+09:50:05 Checkpoint started
+09:50:05 Checkpoint finished.
+09:50:05 Roll forward started
+09:50:05 Roll forward complete
+09:50:07 PL LOG: Installing Virtuoso Conductor version 1.00.8852 (DAV)
+09:50:07 PL LOG: Installing with dependencies Virtuoso Conductor version 1.00.8852/2023-09-26 16:56 (DAV)
+09:50:07 Checkpoint started
+09:50:07 Checkpoint finished, log reused
+09:50:08 Checkpoint started
+09:50:08 Checkpoint finished, log reused
+09:50:08 PL LOG: Installation with dependencies complete
+09:50:09 PL LOG: Initializing DB.DBA.SYS_PROJ4_SRIDS
+09:50:09 PL LOG: ... checking for data files in "/usr/share/proj"
+09:50:09 PL LOG: ... using built-in data
+09:50:09 PL LOG: Initializing DB.DBA.SYS_PROJ4_SRIDS using built-in data
+09:50:09 PL LOG: DB.DBA.SYS_PROJ4_SRIDS initialized with 8650 spatial reference systems
+09:50:09 Checkpoint started
+09:50:09 Checkpoint finished, log reused
+09:50:09 Server exiting
+
+		Thu Dec 07 2023
+09:50:09 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:50:09   plain version 1.2.3238 from OpenLink Software
+09:50:09   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:50:09   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:50:09 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:50:09   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:50:09   Support functions for GraphQL/SPARQL Bridge
+09:50:09   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:50:09 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:50:09   plain version 1.1.3238 from OpenLink Software
+09:50:09   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:50:09   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:50:09 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:50:09   ShapefileIO version 0.1virt71 from OpenLink Software
+09:50:09   Shapefile support based on Frank Warmerdam's Shapelib
+09:50:09   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:50:09 OpenLink Virtuoso Universal Server
+09:50:09 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:50:09 uses OpenSSL 1.1.1  11 Sep 2018
+09:50:09 uses parts of PCRE, Html Tidy
+09:50:09 Starting for DBA password change.
+09:50:09 Database version 3126
+09:50:09 SQL Optimizer enabled (max 1000 layouts)
+09:50:10 Compiler unit is timed at 0.000079 msec
+09:50:10 Roll forward started
+09:50:10     3 transactions, 185 bytes replayed (100 %)
+09:50:10 Roll forward complete
+09:50:10 The DBA password is changed.
+09:50:10 The DAV password is changed.
+09:50:10 Checkpoint started
+09:50:10 Checkpoint finished, log reused
+09:50:10 Server exiting
+
+		Thu Dec 07 2023
+09:50:10 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:50:10   plain version 1.2.3238 from OpenLink Software
+09:50:10   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:50:10   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:50:10 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:50:10   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:50:10   Support functions for GraphQL/SPARQL Bridge
+09:50:10   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:50:10 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:50:10   plain version 1.1.3238 from OpenLink Software
+09:50:10   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:50:10   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:50:10 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:50:10   ShapefileIO version 0.1virt71 from OpenLink Software
+09:50:10   Shapefile support based on Frank Warmerdam's Shapelib
+09:50:10   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:50:10 OpenLink Virtuoso Universal Server
+09:50:10 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:50:10 uses OpenSSL 1.1.1  11 Sep 2018
+09:50:10 uses parts of PCRE, Html Tidy
+09:50:10 Database version 3126
+09:50:10 SQL Optimizer enabled (max 1000 layouts)
+09:50:11 Compiler unit is timed at 0.000104 msec
+09:50:12 Roll forward started
+09:50:12 Roll forward complete
+09:50:12 Checkpoint started
+09:50:12 Checkpoint finished, log reused
+09:50:12 HTTP/WebDAV server online at 8890
+09:50:12 Server online at 1111 (pid 1)
+09:56:36 Server received signal 2
+09:56:36 Initiating normal shutdown
+09:56:36 Checkpoint started
+09:56:36 Checkpoint finished, log reused
+09:56:36 Server shutdown complete
+
+		Thu Dec 07 2023
+09:56:45 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:56:45   plain version 1.2.3238 from OpenLink Software
+09:56:45   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:56:45   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:56:45 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:56:45   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:56:45   Support functions for GraphQL/SPARQL Bridge
+09:56:45   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:56:45 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:56:45   plain version 1.1.3238 from OpenLink Software
+09:56:45   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:56:45   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:56:45 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:56:45   ShapefileIO version 0.1virt71 from OpenLink Software
+09:56:45   Shapefile support based on Frank Warmerdam's Shapelib
+09:56:45   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:56:45 OpenLink Virtuoso Universal Server
+09:56:45 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:56:45 uses OpenSSL 1.1.1  11 Sep 2018
+09:56:45 uses parts of PCRE, Html Tidy
+09:56:45 Database version 3126
+09:56:45 SQL Optimizer enabled (max 1000 layouts)
+09:56:46 Compiler unit is timed at 0.000077 msec
+09:56:46 Roll forward started
+09:56:46 Roll forward complete
+09:56:47 Checkpoint started
+09:56:47 Checkpoint finished, log reused
+09:56:49 HTTP/WebDAV server online at 8890
+09:56:49 Server online at 1111 (pid 1)
+09:57:26 Server received signal 2
+09:57:26 Initiating normal shutdown
+09:57:26 Checkpoint started
+09:57:26 Checkpoint finished, log reused
+09:57:26 Server shutdown complete
+
+		Thu Dec 07 2023
+09:57:45 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:57:45   plain version 1.2.3238 from OpenLink Software
+09:57:45   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:57:45   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:57:45 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:57:45   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:57:45   Support functions for GraphQL/SPARQL Bridge
+09:57:45   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:57:45 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:57:45   plain version 1.1.3238 from OpenLink Software
+09:57:45   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:57:45   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:57:45 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:57:45   ShapefileIO version 0.1virt71 from OpenLink Software
+09:57:45   Shapefile support based on Frank Warmerdam's Shapelib
+09:57:45   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:57:45 OpenLink Virtuoso Universal Server
+09:57:45 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:57:45 uses OpenSSL 1.1.1  11 Sep 2018
+09:57:45 uses parts of PCRE, Html Tidy
+09:57:45 Database version 3126
+09:57:45 SQL Optimizer enabled (max 1000 layouts)
+09:57:46 Compiler unit is timed at 0.000076 msec
+09:57:46 Roll forward started
+09:57:46 Roll forward complete
+09:57:47 Checkpoint started
+09:57:47 Checkpoint finished, log reused
+09:57:49 HTTP/WebDAV server online at 8890
+09:57:49 Server online at 1111 (pid 1)
+09:58:12 Server received signal 2
+09:58:12 Initiating normal shutdown
+09:58:12 Checkpoint started
+09:58:12 Checkpoint finished, log reused
+09:58:12 Server shutdown complete
+
+		Thu Dec 07 2023
+09:58:54 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+09:58:54   plain version 1.2.3238 from OpenLink Software
+09:58:54   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+09:58:54   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+09:58:54 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+09:58:54   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+09:58:54   Support functions for GraphQL/SPARQL Bridge
+09:58:54   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+09:58:54 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+09:58:54   plain version 1.1.3238 from OpenLink Software
+09:58:54   Cartographic Projections support based on Frank Warmerdam's proj4 library
+09:58:54   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+09:58:54 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+09:58:54   ShapefileIO version 0.1virt71 from OpenLink Software
+09:58:54   Shapefile support based on Frank Warmerdam's Shapelib
+09:58:54   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+09:58:54 OpenLink Virtuoso Universal Server
+09:58:54 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+09:58:54 uses OpenSSL 1.1.1  11 Sep 2018
+09:58:54 uses parts of PCRE, Html Tidy
+09:58:54 Database version 3126
+09:58:54 SQL Optimizer enabled (max 1000 layouts)
+09:58:55 Compiler unit is timed at 0.000077 msec
+09:58:56 Roll forward started
+09:58:56 Roll forward complete
+09:58:56 Checkpoint started
+09:58:56 Checkpoint finished, log reused
+09:58:56 HTTP/WebDAV server online at 8890
+09:58:56 Server online at 1111 (pid 1)
+10:01:57 Server received signal 2
+10:01:57 Initiating normal shutdown
+10:01:57 Checkpoint started
+10:01:57 Checkpoint finished, log reused
+10:01:57 Server shutdown complete
+
+		Thu Dec 07 2023
+10:02:03 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:02:03   plain version 1.2.3238 from OpenLink Software
+10:02:03   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:02:03   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:02:03 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:02:03   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:02:03   Support functions for GraphQL/SPARQL Bridge
+10:02:03   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:02:03 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:02:03   plain version 1.1.3238 from OpenLink Software
+10:02:03   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:02:03   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:02:03 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:02:03   ShapefileIO version 0.1virt71 from OpenLink Software
+10:02:03   Shapefile support based on Frank Warmerdam's Shapelib
+10:02:03   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:02:03 OpenLink Virtuoso Universal Server
+10:02:03 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:02:03 uses OpenSSL 1.1.1  11 Sep 2018
+10:02:03 uses parts of PCRE, Html Tidy
+10:02:03 Database version 3126
+10:02:03 SQL Optimizer enabled (max 1000 layouts)
+10:02:04 Compiler unit is timed at 0.000078 msec
+10:02:04 Roll forward started
+10:02:04 Roll forward complete
+10:02:05 Checkpoint started
+10:02:05 Checkpoint finished, log reused
+10:02:07 HTTP/WebDAV server online at 8890
+10:02:07 Server online at 1111 (pid 1)
+10:09:47 Server received signal 2
+10:09:47 Initiating normal shutdown
+10:09:47 Checkpoint started
+10:09:47 Checkpoint finished, log reused
+10:09:47 Server shutdown complete
+
+		Thu Dec 07 2023
+10:11:33 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:11:33   plain version 1.2.3238 from OpenLink Software
+10:11:33   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:11:33   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:11:33 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:11:33   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:11:33   Support functions for GraphQL/SPARQL Bridge
+10:11:33   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:11:33 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:11:33   plain version 1.1.3238 from OpenLink Software
+10:11:33   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:11:33   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:11:33 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:11:33   ShapefileIO version 0.1virt71 from OpenLink Software
+10:11:33   Shapefile support based on Frank Warmerdam's Shapelib
+10:11:33   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:11:33 OpenLink Virtuoso Universal Server
+10:11:33 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:11:33 uses OpenSSL 1.1.1  11 Sep 2018
+10:11:33 uses parts of PCRE, Html Tidy
+10:11:33 Database version 3126
+10:11:33 SQL Optimizer enabled (max 1000 layouts)
+10:11:34 Compiler unit is timed at 0.000078 msec
+10:11:35 Roll forward started
+10:11:35 Roll forward complete
+10:11:35 Checkpoint started
+10:11:35 Checkpoint finished, log reused
+10:11:35 HTTP/WebDAV server online at 8890
+10:11:35 Server online at 1111 (pid 1)
+10:12:13 Server received signal 2
+10:12:13 Initiating normal shutdown
+10:12:13 Checkpoint started
+10:12:13 Checkpoint finished, log reused
+10:12:13 Server shutdown complete
+
+		Thu Dec 07 2023
+10:16:02 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:16:02   plain version 1.2.3238 from OpenLink Software
+10:16:02   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:16:02   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:16:02 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:16:02   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:16:02   Support functions for GraphQL/SPARQL Bridge
+10:16:02   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:16:02 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:16:02   plain version 1.1.3238 from OpenLink Software
+10:16:02   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:16:02   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:16:02 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:16:02   ShapefileIO version 0.1virt71 from OpenLink Software
+10:16:02   Shapefile support based on Frank Warmerdam's Shapelib
+10:16:02   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:16:02 OpenLink Virtuoso Universal Server
+10:16:02 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:16:02 uses OpenSSL 1.1.1  11 Sep 2018
+10:16:02 uses parts of PCRE, Html Tidy
+10:16:02 Database version 3126
+10:16:02 SQL Optimizer enabled (max 1000 layouts)
+10:16:03 Compiler unit is timed at 0.000077 msec
+10:16:04 Roll forward started
+10:16:04 Roll forward complete
+10:16:04 Checkpoint started
+10:16:04 Checkpoint finished, log reused
+10:16:04 HTTP/WebDAV server online at 8890
+10:16:04 Server online at 1111 (pid 1)
+10:22:19 Server received signal 2
+10:22:19 Initiating normal shutdown
+10:22:19 Checkpoint started
+10:22:19 Checkpoint finished, log reused
+10:22:19 Server shutdown complete
+
+		Thu Dec 07 2023
+10:27:33 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:27:33   plain version 1.2.3238 from OpenLink Software
+10:27:33   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:27:33   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:27:33 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:27:33   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:27:33   Support functions for GraphQL/SPARQL Bridge
+10:27:33   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:27:33 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:27:33   plain version 1.1.3238 from OpenLink Software
+10:27:33   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:27:33   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:27:33 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:27:33   ShapefileIO version 0.1virt71 from OpenLink Software
+10:27:33   Shapefile support based on Frank Warmerdam's Shapelib
+10:27:33   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:27:33 OpenLink Virtuoso Universal Server
+10:27:33 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:27:33 uses OpenSSL 1.1.1  11 Sep 2018
+10:27:33 uses parts of PCRE, Html Tidy
+10:27:33 Database version 3126
+10:27:33 SQL Optimizer enabled (max 1000 layouts)
+10:27:34 Compiler unit is timed at 0.000081 msec
+10:27:35 Roll forward started
+10:27:35 Roll forward complete
+10:27:35 Checkpoint started
+10:27:35 Checkpoint finished, log reused
+10:27:35 HTTP/WebDAV server online at 8890
+10:27:35 Server online at 1111 (pid 1)
+10:31:10 Server received signal 2
+10:31:10 Initiating normal shutdown
+10:31:10 Checkpoint started
+10:31:10 Checkpoint finished, log reused
+10:31:10 Server shutdown complete
+
+		Thu Dec 07 2023
+10:31:19 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:31:19   plain version 1.2.3238 from OpenLink Software
+10:31:19   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:31:19   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:31:19 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:31:19   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:31:19   Support functions for GraphQL/SPARQL Bridge
+10:31:19   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:31:19 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:31:19   plain version 1.1.3238 from OpenLink Software
+10:31:19   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:31:19   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:31:19 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:31:19   ShapefileIO version 0.1virt71 from OpenLink Software
+10:31:19   Shapefile support based on Frank Warmerdam's Shapelib
+10:31:19   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:31:19 OpenLink Virtuoso Universal Server
+10:31:19 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:31:19 uses OpenSSL 1.1.1  11 Sep 2018
+10:31:19 uses parts of PCRE, Html Tidy
+10:31:19 Database version 3126
+10:31:19 SQL Optimizer enabled (max 1000 layouts)
+10:31:20 Compiler unit is timed at 0.000077 msec
+10:31:20 Roll forward started
+10:31:20 Roll forward complete
+10:31:20 Checkpoint started
+10:31:20 Checkpoint finished, log reused
+10:31:21 HTTP/WebDAV server online at 8890
+10:31:21 Server online at 1111 (pid 1)
+10:32:18 Server received signal 2
+10:32:18 Initiating normal shutdown
+10:32:18 Checkpoint started
+10:32:18 Checkpoint finished, log reused
+10:32:18 Server shutdown complete
+
+		Thu Dec 07 2023
+10:32:23 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:32:23   plain version 1.2.3238 from OpenLink Software
+10:32:23   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:32:23   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:32:23 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:32:23   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:32:23   Support functions for GraphQL/SPARQL Bridge
+10:32:23   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:32:23 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:32:23   plain version 1.1.3238 from OpenLink Software
+10:32:23   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:32:23   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:32:23 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:32:23   ShapefileIO version 0.1virt71 from OpenLink Software
+10:32:23   Shapefile support based on Frank Warmerdam's Shapelib
+10:32:23   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:32:23 OpenLink Virtuoso Universal Server
+10:32:23 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:32:23 uses OpenSSL 1.1.1  11 Sep 2018
+10:32:23 uses parts of PCRE, Html Tidy
+10:32:23 Database version 3126
+10:32:23 SQL Optimizer enabled (max 1000 layouts)
+10:32:24 Compiler unit is timed at 0.000078 msec
+10:32:25 Roll forward started
+10:32:25 Roll forward complete
+10:32:25 Checkpoint started
+10:32:25 Checkpoint finished, log reused
+10:32:25 HTTP/WebDAV server online at 8890
+10:32:25 Server online at 1111 (pid 1)
+10:39:47 Server received signal 2
+10:39:47 Initiating normal shutdown
+10:39:47 Checkpoint started
+10:39:47 Checkpoint finished, log reused
+10:39:47 Server shutdown complete
+
+		Thu Dec 07 2023
+10:48:44 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:48:44   plain version 1.2.3238 from OpenLink Software
+10:48:44   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:48:44   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:48:44 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:48:44   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:48:44   Support functions for GraphQL/SPARQL Bridge
+10:48:44   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:48:44 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:48:44   plain version 1.1.3238 from OpenLink Software
+10:48:44   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:48:44   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:48:44 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:48:44   ShapefileIO version 0.1virt71 from OpenLink Software
+10:48:44   Shapefile support based on Frank Warmerdam's Shapelib
+10:48:44   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:48:44 OpenLink Virtuoso Universal Server
+10:48:44 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:48:44 uses OpenSSL 1.1.1  11 Sep 2018
+10:48:44 uses parts of PCRE, Html Tidy
+10:48:44 Database version 3126
+10:48:44 SQL Optimizer enabled (max 1000 layouts)
+10:48:46 Compiler unit is timed at 0.000078 msec
+10:48:46 Roll forward started
+10:48:46 Roll forward complete
+10:48:46 Checkpoint started
+10:48:46 Checkpoint finished, log reused
+10:48:46 HTTP/WebDAV server online at 8890
+10:48:46 Server online at 1111 (pid 1)
+17:52:36 Checkpoint started
+17:52:36 Checkpoint finished, log reused
+19:24:07 Server received signal 2
+19:24:07 Initiating normal shutdown
+19:24:07 Checkpoint started
+19:24:07 Checkpoint finished, log reused
+19:24:07 Server shutdown complete
+
+		Thu Dec 07 2023
+19:30:32 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+19:30:32   plain version 1.2.3238 from OpenLink Software
+19:30:32   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+19:30:32   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+19:30:32 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+19:30:32   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+19:30:32   Support functions for GraphQL/SPARQL Bridge
+19:30:32   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+19:30:32 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+19:30:32   plain version 1.1.3238 from OpenLink Software
+19:30:32   Cartographic Projections support based on Frank Warmerdam's proj4 library
+19:30:32   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+19:30:32 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+19:30:32   ShapefileIO version 0.1virt71 from OpenLink Software
+19:30:32   Shapefile support based on Frank Warmerdam's Shapelib
+19:30:32   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+19:30:32 OpenLink Virtuoso Universal Server
+19:30:32 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+19:30:32 uses OpenSSL 1.1.1  11 Sep 2018
+19:30:32 uses parts of PCRE, Html Tidy
+19:30:32 Database version 3126
+19:30:32 SQL Optimizer enabled (max 1000 layouts)
+19:30:33 Compiler unit is timed at 0.000079 msec
+19:30:33 Roll forward started
+19:30:33 Roll forward complete
+19:30:33 Checkpoint started
+19:30:33 Checkpoint finished, log reused
+19:30:33 HTTP/WebDAV server online at 8890
+19:30:33 Server online at 1111 (pid 1)
+19:36:02 Server received signal 2
+19:36:02 Initiating normal shutdown
+19:36:02 Checkpoint started
+19:36:02 Checkpoint finished, log reused
+19:36:02 Server shutdown complete
+
+		Thu Dec 07 2023
+19:40:28 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+19:40:28   plain version 1.2.3238 from OpenLink Software
+19:40:28   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+19:40:28   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+19:40:28 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+19:40:28   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+19:40:28   Support functions for GraphQL/SPARQL Bridge
+19:40:28   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+19:40:28 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+19:40:28   plain version 1.1.3238 from OpenLink Software
+19:40:28   Cartographic Projections support based on Frank Warmerdam's proj4 library
+19:40:28   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+19:40:28 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+19:40:28   ShapefileIO version 0.1virt71 from OpenLink Software
+19:40:28   Shapefile support based on Frank Warmerdam's Shapelib
+19:40:28   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+19:40:28 OpenLink Virtuoso Universal Server
+19:40:28 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+19:40:28 uses OpenSSL 1.1.1  11 Sep 2018
+19:40:28 uses parts of PCRE, Html Tidy
+19:40:28 Database version 3126
+19:40:28 SQL Optimizer enabled (max 1000 layouts)
+19:40:29 Compiler unit is timed at 0.000077 msec
+19:40:29 Roll forward started
+19:40:29 Roll forward complete
+19:40:30 Checkpoint started
+19:40:30 Checkpoint finished, log reused
+19:40:30 HTTP/WebDAV server online at 8890
+19:40:30 Server online at 1111 (pid 1)
+19:51:41 Server received signal 2
+19:51:41 Initiating normal shutdown
+19:51:41 Checkpoint started
+19:51:41 Checkpoint finished, log reused
+19:51:41 Server shutdown complete
+
+		Thu Dec 07 2023
+19:51:54 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+19:51:54   plain version 1.2.3238 from OpenLink Software
+19:51:54   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+19:51:54   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+19:51:54 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+19:51:54   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+19:51:54   Support functions for GraphQL/SPARQL Bridge
+19:51:54   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+19:51:54 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+19:51:54   plain version 1.1.3238 from OpenLink Software
+19:51:54   Cartographic Projections support based on Frank Warmerdam's proj4 library
+19:51:54   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+19:51:54 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+19:51:54   ShapefileIO version 0.1virt71 from OpenLink Software
+19:51:54   Shapefile support based on Frank Warmerdam's Shapelib
+19:51:54   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+19:51:54 OpenLink Virtuoso Universal Server
+19:51:54 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+19:51:54 uses OpenSSL 1.1.1  11 Sep 2018
+19:51:54 uses parts of PCRE, Html Tidy
+19:51:54 Database version 3126
+19:51:54 SQL Optimizer enabled (max 1000 layouts)
+19:51:55 Compiler unit is timed at 0.000078 msec
+19:51:55 Roll forward started
+19:51:55 Roll forward complete
+19:51:56 Checkpoint started
+19:51:56 Checkpoint finished, log reused
+19:51:56 HTTP/WebDAV server online at 8890
+19:51:56 Server online at 1111 (pid 1)
+19:52:30 Server received signal 2
+19:52:30 Initiating normal shutdown
+19:52:30 Checkpoint started
+19:52:30 Checkpoint finished, log reused
+19:52:30 Server shutdown complete
+
+		Thu Dec 07 2023
+19:52:49 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+19:52:49   plain version 1.2.3238 from OpenLink Software
+19:52:49   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+19:52:49   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+19:52:49 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+19:52:49   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+19:52:49   Support functions for GraphQL/SPARQL Bridge
+19:52:49   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+19:52:49 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+19:52:49   plain version 1.1.3238 from OpenLink Software
+19:52:49   Cartographic Projections support based on Frank Warmerdam's proj4 library
+19:52:49   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+19:52:49 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+19:52:49   ShapefileIO version 0.1virt71 from OpenLink Software
+19:52:49   Shapefile support based on Frank Warmerdam's Shapelib
+19:52:49   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+19:52:49 OpenLink Virtuoso Universal Server
+19:52:49 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+19:52:49 uses OpenSSL 1.1.1  11 Sep 2018
+19:52:49 uses parts of PCRE, Html Tidy
+19:52:49 Database version 3126
+19:52:49 SQL Optimizer enabled (max 1000 layouts)
+19:52:50 Compiler unit is timed at 0.000081 msec
+19:52:50 Roll forward started
+19:52:50 Roll forward complete
+19:52:50 Checkpoint started
+19:52:50 Checkpoint finished, log reused
+19:52:52 HTTP/WebDAV server online at 8890
+19:52:52 Server online at 1111 (pid 1)
+20:15:32 Server received signal 2
+20:15:32 Initiating normal shutdown
+20:15:32 Checkpoint started
+20:15:32 Checkpoint finished, log reused
+20:15:32 Server shutdown complete
+
+		Thu Dec 07 2023
+20:20:18 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+20:20:18   plain version 1.2.3238 from OpenLink Software
+20:20:18   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+20:20:18   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+20:20:18 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+20:20:18   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+20:20:18   Support functions for GraphQL/SPARQL Bridge
+20:20:18   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+20:20:18 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+20:20:18   plain version 1.1.3238 from OpenLink Software
+20:20:18   Cartographic Projections support based on Frank Warmerdam's proj4 library
+20:20:18   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+20:20:18 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+20:20:18   ShapefileIO version 0.1virt71 from OpenLink Software
+20:20:18   Shapefile support based on Frank Warmerdam's Shapelib
+20:20:18   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+20:20:18 OpenLink Virtuoso Universal Server
+20:20:18 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+20:20:18 uses OpenSSL 1.1.1  11 Sep 2018
+20:20:18 uses parts of PCRE, Html Tidy
+20:20:18 Database version 3126
+20:20:18 SQL Optimizer enabled (max 1000 layouts)
+20:20:19 Compiler unit is timed at 0.000077 msec
+20:20:20 Roll forward started
+20:20:20 Roll forward complete
+20:20:20 Checkpoint started
+20:20:20 Checkpoint finished, log reused
+20:20:20 HTTP/WebDAV server online at 8890
+20:20:20 Server online at 1111 (pid 1)
+20:26:59 Server received signal 2
+20:26:59 Initiating normal shutdown
+20:26:59 Checkpoint started
+20:26:59 Checkpoint finished, log reused
+20:26:59 Server shutdown complete
+
+		Thu Dec 07 2023
+20:32:30 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+20:32:30   plain version 1.2.3238 from OpenLink Software
+20:32:30   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+20:32:30   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+20:32:30 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+20:32:30   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+20:32:30   Support functions for GraphQL/SPARQL Bridge
+20:32:30   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+20:32:30 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+20:32:30   plain version 1.1.3238 from OpenLink Software
+20:32:30   Cartographic Projections support based on Frank Warmerdam's proj4 library
+20:32:30   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+20:32:30 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+20:32:30   ShapefileIO version 0.1virt71 from OpenLink Software
+20:32:30   Shapefile support based on Frank Warmerdam's Shapelib
+20:32:30   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+20:32:30 OpenLink Virtuoso Universal Server
+20:32:30 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+20:32:30 uses OpenSSL 1.1.1  11 Sep 2018
+20:32:30 uses parts of PCRE, Html Tidy
+20:32:30 Database version 3126
+20:32:30 SQL Optimizer enabled (max 1000 layouts)
+20:32:31 Compiler unit is timed at 0.000079 msec
+20:32:31 Roll forward started
+20:32:31 Roll forward complete
+20:32:32 Checkpoint started
+20:32:32 Checkpoint finished, log reused
+20:32:32 HTTP/WebDAV server online at 8890
+20:32:32 Server online at 1111 (pid 1)
+20:38:51 Server received signal 2
+20:38:51 Initiating normal shutdown
+20:38:51 Checkpoint started
+20:38:51 Checkpoint finished, log reused
+20:38:51 Server shutdown complete
+
+		Thu Dec 07 2023
+20:40:25 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+20:40:25   plain version 1.2.3238 from OpenLink Software
+20:40:25   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+20:40:25   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+20:40:25 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+20:40:25   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+20:40:25   Support functions for GraphQL/SPARQL Bridge
+20:40:25   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+20:40:25 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+20:40:25   plain version 1.1.3238 from OpenLink Software
+20:40:25   Cartographic Projections support based on Frank Warmerdam's proj4 library
+20:40:25   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+20:40:25 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+20:40:25   ShapefileIO version 0.1virt71 from OpenLink Software
+20:40:25   Shapefile support based on Frank Warmerdam's Shapelib
+20:40:25   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+20:40:25 OpenLink Virtuoso Universal Server
+20:40:25 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+20:40:25 uses OpenSSL 1.1.1  11 Sep 2018
+20:40:25 uses parts of PCRE, Html Tidy
+20:40:25 Database version 3126
+20:40:25 SQL Optimizer enabled (max 1000 layouts)
+20:40:26 Compiler unit is timed at 0.000078 msec
+20:40:27 Roll forward started
+20:40:27 Roll forward complete
+20:40:27 Checkpoint started
+20:40:27 Checkpoint finished, log reused
+20:40:27 HTTP/WebDAV server online at 8890
+20:40:27 Server online at 1111 (pid 1)
+20:41:17 Server received signal 2
+20:41:17 Initiating normal shutdown
+20:41:17 Checkpoint started
+20:41:17 Checkpoint finished, log reused
+20:41:17 Server shutdown complete
+
+		Fri Dec 08 2023
+10:46:20 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:46:20   plain version 1.2.3238 from OpenLink Software
+10:46:20   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:46:20   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:46:20 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:46:20   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:46:20   Support functions for GraphQL/SPARQL Bridge
+10:46:20   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:46:20 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:46:20   plain version 1.1.3238 from OpenLink Software
+10:46:20   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:46:20   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:46:20 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:46:20   ShapefileIO version 0.1virt71 from OpenLink Software
+10:46:20   Shapefile support based on Frank Warmerdam's Shapelib
+10:46:20   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:46:20 OpenLink Virtuoso Universal Server
+10:46:20 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:46:20 uses OpenSSL 1.1.1  11 Sep 2018
+10:46:20 uses parts of PCRE, Html Tidy
+10:46:20 Database version 3126
+10:46:20 SQL Optimizer enabled (max 1000 layouts)
+10:46:21 Compiler unit is timed at 0.000080 msec
+10:46:21 Roll forward started
+10:46:21 Roll forward complete
+10:46:21 Checkpoint started
+10:46:21 Checkpoint finished, log reused
+10:46:23 HTTP/WebDAV server online at 8890
+10:46:23 Server online at 1111 (pid 1)
+10:48:05 Server received signal 2
+10:48:05 Initiating normal shutdown
+10:48:05 Checkpoint started
+10:48:05 Checkpoint finished, log reused
+10:48:05 Server shutdown complete
+
+		Fri Dec 08 2023
+10:57:38 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+10:57:38   plain version 1.2.3238 from OpenLink Software
+10:57:38   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+10:57:38   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+10:57:38 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+10:57:38   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+10:57:38   Support functions for GraphQL/SPARQL Bridge
+10:57:38   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+10:57:38 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+10:57:38   plain version 1.1.3238 from OpenLink Software
+10:57:38   Cartographic Projections support based on Frank Warmerdam's proj4 library
+10:57:38   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+10:57:38 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+10:57:38   ShapefileIO version 0.1virt71 from OpenLink Software
+10:57:38   Shapefile support based on Frank Warmerdam's Shapelib
+10:57:38   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+10:57:38 OpenLink Virtuoso Universal Server
+10:57:38 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+10:57:38 uses OpenSSL 1.1.1  11 Sep 2018
+10:57:38 uses parts of PCRE, Html Tidy
+10:57:38 Database version 3126
+10:57:38 SQL Optimizer enabled (max 1000 layouts)
+10:57:39 Compiler unit is timed at 0.000077 msec
+10:57:39 Roll forward started
+10:57:39 Roll forward complete
+10:57:40 Checkpoint started
+10:57:40 Checkpoint finished, log reused
+10:57:40 HTTP/WebDAV server online at 8890
+10:57:40 Server online at 1111 (pid 1)
+11:03:50 Server received signal 2
+11:03:50 Initiating normal shutdown
+11:03:50 Checkpoint started
+11:03:50 Checkpoint finished, log reused
+11:03:50 Server shutdown complete
+
+		Fri Dec 08 2023
+11:04:03 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+11:04:03   plain version 1.2.3238 from OpenLink Software
+11:04:03   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+11:04:03   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+11:04:03 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+11:04:03   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+11:04:03   Support functions for GraphQL/SPARQL Bridge
+11:04:03   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+11:04:03 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+11:04:03   plain version 1.1.3238 from OpenLink Software
+11:04:03   Cartographic Projections support based on Frank Warmerdam's proj4 library
+11:04:03   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+11:04:03 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+11:04:03   ShapefileIO version 0.1virt71 from OpenLink Software
+11:04:03   Shapefile support based on Frank Warmerdam's Shapelib
+11:04:03   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+11:04:03 OpenLink Virtuoso Universal Server
+11:04:03 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+11:04:03 uses OpenSSL 1.1.1  11 Sep 2018
+11:04:03 uses parts of PCRE, Html Tidy
+11:04:03 Database version 3126
+11:04:03 SQL Optimizer enabled (max 1000 layouts)
+11:04:04 Compiler unit is timed at 0.000076 msec
+11:04:05 Roll forward started
+11:04:05 Roll forward complete
+11:04:05 Checkpoint started
+11:04:05 Checkpoint finished, log reused
+11:04:07 HTTP/WebDAV server online at 8890
+11:04:07 Server online at 1111 (pid 1)
+13:19:30 Server received signal 2
+13:19:30 Initiating normal shutdown
+13:19:30 Checkpoint started
+13:19:30 Checkpoint finished, log reused
+13:19:30 Server shutdown complete
+
+		Fri Dec 08 2023
+13:19:37 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:19:37   plain version 1.2.3238 from OpenLink Software
+13:19:37   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:19:37   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:19:37 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:19:37   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:19:37   Support functions for GraphQL/SPARQL Bridge
+13:19:37   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:19:37 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:19:37   plain version 1.1.3238 from OpenLink Software
+13:19:37   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:19:37   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:19:37 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:19:37   ShapefileIO version 0.1virt71 from OpenLink Software
+13:19:37   Shapefile support based on Frank Warmerdam's Shapelib
+13:19:37   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:19:37 OpenLink Virtuoso Universal Server
+13:19:37 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:19:37 uses OpenSSL 1.1.1  11 Sep 2018
+13:19:37 uses parts of PCRE, Html Tidy
+13:19:37 Database version 3126
+13:19:37 SQL Optimizer enabled (max 1000 layouts)
+13:19:38 Compiler unit is timed at 0.000072 msec
+13:19:38 Roll forward started
+13:19:38 Roll forward complete
+13:19:38 Checkpoint started
+13:19:38 Checkpoint finished, log reused
+13:19:38 HTTP/WebDAV server online at 8890
+13:19:38 Server online at 1111 (pid 1)
+13:21:50 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:21:51 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:21:56 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:21:57 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:22:27 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:23:28 Malformed data received from IP [192.168.65.1] : Bad incoming tag 71. Disconnecting the client
+13:25:27 Incorrect login for dba from IP [192.168.65.1]
+13:26:46 Server received signal 2
+13:26:46 Initiating normal shutdown
+13:26:46 Checkpoint started
+13:26:46 Checkpoint finished, log reused
+13:26:46 Server shutdown complete
+
+		Fri Dec 08 2023
+13:26:53 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:26:53   plain version 1.2.3238 from OpenLink Software
+13:26:53   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:26:53   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:26:53 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:26:53   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:26:53   Support functions for GraphQL/SPARQL Bridge
+13:26:53   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:26:53 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:26:53   plain version 1.1.3238 from OpenLink Software
+13:26:53   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:26:53   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:26:53 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:26:53   ShapefileIO version 0.1virt71 from OpenLink Software
+13:26:53   Shapefile support based on Frank Warmerdam's Shapelib
+13:26:53   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:26:53 OpenLink Virtuoso Universal Server
+13:26:53 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:26:53 uses OpenSSL 1.1.1  11 Sep 2018
+13:26:53 uses parts of PCRE, Html Tidy
+13:26:53 Database version 3126
+13:26:53 SQL Optimizer enabled (max 1000 layouts)
+13:26:54 Compiler unit is timed at 0.000078 msec
+13:26:54 Roll forward started
+13:26:54 Roll forward complete
+13:26:54 Checkpoint started
+13:26:54 Checkpoint finished, log reused
+13:26:57 HTTP/WebDAV server online at 8890
+13:26:57 Server online at 1111 (pid 1)
+13:27:10 Server received signal 2
+13:27:10 Initiating normal shutdown
+13:27:10 Checkpoint started
+13:27:10 Checkpoint finished, log reused
+13:27:10 Server shutdown complete
+
+		Fri Dec 08 2023
+13:28:56 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:28:56   plain version 1.2.3238 from OpenLink Software
+13:28:56   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:28:56   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:28:56 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:28:56   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:28:56   Support functions for GraphQL/SPARQL Bridge
+13:28:56   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:28:56 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:28:56   plain version 1.1.3238 from OpenLink Software
+13:28:56   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:28:56   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:28:56 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:28:56   ShapefileIO version 0.1virt71 from OpenLink Software
+13:28:56   Shapefile support based on Frank Warmerdam's Shapelib
+13:28:56   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:28:56 OpenLink Virtuoso Universal Server
+13:28:56 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:28:56 uses OpenSSL 1.1.1  11 Sep 2018
+13:28:56 uses parts of PCRE, Html Tidy
+13:28:56 Database version 3126
+13:28:56 SQL Optimizer enabled (max 1000 layouts)
+13:28:57 Compiler unit is timed at 0.000076 msec
+13:28:57 Roll forward started
+13:28:57 Roll forward complete
+13:28:57 Checkpoint started
+13:28:57 Checkpoint finished, log reused
+13:28:57 HTTP/WebDAV server online at 8890
+13:28:57 Server online at 1111 (pid 1)
+13:29:09 Server received signal 2
+13:29:09 Initiating normal shutdown
+13:29:09 Checkpoint started
+13:29:09 Checkpoint finished, log reused
+13:29:09 Server shutdown complete
+
+		Fri Dec 08 2023
+13:29:29 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:29:29   plain version 1.2.3238 from OpenLink Software
+13:29:29   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:29:29   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:29:29 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:29:29   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:29:29   Support functions for GraphQL/SPARQL Bridge
+13:29:29   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:29:29 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:29:29   plain version 1.1.3238 from OpenLink Software
+13:29:29   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:29:29   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:29:29 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:29:29   ShapefileIO version 0.1virt71 from OpenLink Software
+13:29:29   Shapefile support based on Frank Warmerdam's Shapelib
+13:29:29   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:29:29 OpenLink Virtuoso Universal Server
+13:29:29 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:29:29 uses OpenSSL 1.1.1  11 Sep 2018
+13:29:29 uses parts of PCRE, Html Tidy
+13:29:29 Database version 3126
+13:29:29 SQL Optimizer enabled (max 1000 layouts)
+13:29:30 Compiler unit is timed at 0.000096 msec
+13:29:30 Roll forward started
+13:29:30 Roll forward complete
+13:29:30 Checkpoint started
+13:29:30 Checkpoint finished, log reused
+13:29:30 HTTP/WebDAV server online at 8890
+13:29:30 Server online at 1111 (pid 1)
+13:30:15 Server received signal 2
+13:30:15 Initiating normal shutdown
+13:30:15 Checkpoint started
+13:30:15 Checkpoint finished, log reused
+13:30:15 Server shutdown complete
+
+		Fri Dec 08 2023
+13:35:02 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:35:02   plain version 1.2.3238 from OpenLink Software
+13:35:02   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:35:02   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:35:02 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:35:02   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:35:02   Support functions for GraphQL/SPARQL Bridge
+13:35:02   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:35:02 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:35:02   plain version 1.1.3238 from OpenLink Software
+13:35:02   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:35:02   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:35:02 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:35:02   ShapefileIO version 0.1virt71 from OpenLink Software
+13:35:02   Shapefile support based on Frank Warmerdam's Shapelib
+13:35:02   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:35:02 OpenLink Virtuoso Universal Server
+13:35:02 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:35:02 uses OpenSSL 1.1.1  11 Sep 2018
+13:35:02 uses parts of PCRE, Html Tidy
+13:35:02 Database version 3126
+13:35:02 SQL Optimizer enabled (max 1000 layouts)
+13:35:03 Compiler unit is timed at 0.000094 msec
+13:35:03 Roll forward started
+13:35:03 Roll forward complete
+13:35:03 Checkpoint started
+13:35:03 Checkpoint finished, log reused
+13:35:03 HTTP/WebDAV server online at 8890
+13:35:03 Server online at 1111 (pid 1)
+13:35:38 Server received signal 2
+13:35:38 Initiating normal shutdown
+13:35:38 Checkpoint started
+13:35:38 Checkpoint finished, log reused
+13:35:38 Server shutdown complete
+
+		Fri Dec 08 2023
+13:38:39 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:38:39   plain version 1.2.3238 from OpenLink Software
+13:38:39   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:38:39   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:38:39 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:38:39   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:38:39   Support functions for GraphQL/SPARQL Bridge
+13:38:39   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:38:39 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:38:39   plain version 1.1.3238 from OpenLink Software
+13:38:39   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:38:39   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:38:39 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:38:39   ShapefileIO version 0.1virt71 from OpenLink Software
+13:38:39   Shapefile support based on Frank Warmerdam's Shapelib
+13:38:39   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:38:39 OpenLink Virtuoso Universal Server
+13:38:39 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:38:39 uses OpenSSL 1.1.1  11 Sep 2018
+13:38:39 uses parts of PCRE, Html Tidy
+13:38:39 Database version 3126
+13:38:39 SQL Optimizer enabled (max 1000 layouts)
+13:38:40 Compiler unit is timed at 0.000076 msec
+13:38:40 Roll forward started
+13:38:40 Roll forward complete
+13:38:41 Checkpoint started
+13:38:41 Checkpoint finished, log reused
+13:38:41 HTTP/WebDAV server online at 8890
+13:38:41 Server online at 1111 (pid 1)
+13:38:56 Server received signal 2
+13:38:56 Initiating normal shutdown
+13:38:56 Checkpoint started
+13:38:56 Checkpoint finished, log reused
+13:38:56 Server shutdown complete
+
+		Fri Dec 08 2023
+13:39:24 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:39:24   plain version 1.2.3238 from OpenLink Software
+13:39:24   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:39:24   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:39:24 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:39:24   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:39:24   Support functions for GraphQL/SPARQL Bridge
+13:39:24   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:39:24 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:39:24   plain version 1.1.3238 from OpenLink Software
+13:39:24   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:39:24   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:39:24 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:39:24   ShapefileIO version 0.1virt71 from OpenLink Software
+13:39:24   Shapefile support based on Frank Warmerdam's Shapelib
+13:39:24   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:39:24 OpenLink Virtuoso Universal Server
+13:39:24 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:39:24 uses OpenSSL 1.1.1  11 Sep 2018
+13:39:24 uses parts of PCRE, Html Tidy
+13:39:24 Database version 3126
+13:39:24 SQL Optimizer enabled (max 1000 layouts)
+13:39:25 Compiler unit is timed at 0.000071 msec
+13:39:25 Roll forward started
+13:39:25 Roll forward complete
+13:39:25 Checkpoint started
+13:39:25 Checkpoint finished, log reused
+13:39:25 HTTP/WebDAV server online at 8890
+13:39:25 Server online at 1111 (pid 1)
+13:45:32 Server received signal 2
+13:45:32 Initiating normal shutdown
+13:45:32 Checkpoint started
+13:45:32 Checkpoint finished, log reused
+13:45:32 Server shutdown complete
+
+		Fri Dec 08 2023
+13:47:05 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:47:05   plain version 1.2.3238 from OpenLink Software
+13:47:05   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:47:05   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:47:05 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:47:05   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:47:05   Support functions for GraphQL/SPARQL Bridge
+13:47:05   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:47:05 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:47:05   plain version 1.1.3238 from OpenLink Software
+13:47:05   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:47:05   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:47:05 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:47:05   ShapefileIO version 0.1virt71 from OpenLink Software
+13:47:05   Shapefile support based on Frank Warmerdam's Shapelib
+13:47:05   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:47:05 OpenLink Virtuoso Universal Server
+13:47:05 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:47:05 uses OpenSSL 1.1.1  11 Sep 2018
+13:47:05 uses parts of PCRE, Html Tidy
+13:47:05 Database version 3126
+13:47:05 SQL Optimizer enabled (max 1000 layouts)
+13:47:06 Compiler unit is timed at 0.000088 msec
+13:47:06 Roll forward started
+13:47:06 Roll forward complete
+13:47:07 Checkpoint started
+13:47:07 Checkpoint finished, log reused
+13:47:07 HTTP/WebDAV server online at 8890
+13:47:07 Server online at 1111 (pid 1)
+13:47:40 Server received signal 2
+13:47:40 Initiating normal shutdown
+13:47:40 Checkpoint started
+13:47:40 Checkpoint finished, log reused
+13:47:40 Server shutdown complete
+
+		Fri Dec 08 2023
+13:48:25 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:48:25   plain version 1.2.3238 from OpenLink Software
+13:48:25   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:48:25   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:48:25 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:48:25   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:48:25   Support functions for GraphQL/SPARQL Bridge
+13:48:25   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:48:25 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:48:25   plain version 1.1.3238 from OpenLink Software
+13:48:25   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:48:25   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:48:25 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:48:25   ShapefileIO version 0.1virt71 from OpenLink Software
+13:48:25   Shapefile support based on Frank Warmerdam's Shapelib
+13:48:25   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:48:25 OpenLink Virtuoso Universal Server
+13:48:25 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:48:25 uses OpenSSL 1.1.1  11 Sep 2018
+13:48:25 uses parts of PCRE, Html Tidy
+13:48:25 Database version 3126
+13:48:25 SQL Optimizer enabled (max 1000 layouts)
+13:48:26 Compiler unit is timed at 0.000072 msec
+13:48:27 Roll forward started
+13:48:27 Roll forward complete
+13:48:27 Checkpoint started
+13:48:27 Checkpoint finished, log reused
+13:48:27 HTTP/WebDAV server online at 8890
+13:48:27 Server online at 1111 (pid 1)
+13:49:38 Server received signal 2
+13:49:38 Initiating normal shutdown
+13:49:38 Checkpoint started
+13:49:38 Checkpoint finished, log reused
+13:49:38 Server shutdown complete
+
+		Fri Dec 08 2023
+13:49:50 { Loading plugin 1: Type `plain', file `geos' in `../hosting'
+13:49:50   plain version 1.2.3238 from OpenLink Software
+13:49:50   GEOS plugin based on Geometry Engine Open Source library from Open Source Geospatial Foundation
+13:49:50   SUCCESS plugin 1: loaded from ../hosting/geos.so }
+13:49:50 { Loading plugin 2: Type `plain', file `graphql' in `../hosting'
+13:49:50   GraphQL/SPARQL Bridge version 0.9.3 (d89671fa1) from OpenLink Software
+13:49:50   Support functions for GraphQL/SPARQL Bridge
+13:49:50   SUCCESS plugin 2: loaded from ../hosting/graphql.so }
+13:49:50 { Loading plugin 3: Type `plain', file `proj4' in `../hosting'
+13:49:50   plain version 1.1.3238 from OpenLink Software
+13:49:50   Cartographic Projections support based on Frank Warmerdam's proj4 library
+13:49:50   SUCCESS plugin 3: loaded from ../hosting/proj4.so }
+13:49:50 { Loading plugin 4: Type `plain', file `shapefileio' in `../hosting'
+13:49:50   ShapefileIO version 0.1virt71 from OpenLink Software
+13:49:50   Shapefile support based on Frank Warmerdam's Shapelib
+13:49:50   SUCCESS plugin 4: loaded from ../hosting/shapefileio.so }
+13:49:50 OpenLink Virtuoso Universal Server
+13:49:50 Version 07.20.3238-pthreads for Linux as of Sep 26 2023 (d89671fa1)
+13:49:50 uses OpenSSL 1.1.1  11 Sep 2018
+13:49:50 uses parts of PCRE, Html Tidy
+13:49:50 Database version 3126
+13:49:50 SQL Optimizer enabled (max 1000 layouts)
+13:49:51 Compiler unit is timed at 0.000071 msec
+13:49:51 Roll forward started
+13:49:51 Roll forward complete
+13:49:51 Checkpoint started
+13:49:51 Checkpoint finished, log reused
+13:49:51 HTTP/WebDAV server online at 8890
+13:49:51 Server online at 1111 (pid 1)
+13:51:28 Server received signal 2
+13:51:28 Initiating normal shutdown
+13:51:28 Checkpoint started
+13:51:28 Checkpoint finished, log reused
+13:51:28 Server shutdown complete
