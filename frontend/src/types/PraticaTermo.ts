@@ -16,4 +16,5 @@ export type PraticaTermo = {
   termosPratica?: PraticaTermo[];
   produzidoPor?: PraticaTermo[];
   organizadoPor?: PraticaTermo[];
+  contempla?: PraticaTermo[];
 }

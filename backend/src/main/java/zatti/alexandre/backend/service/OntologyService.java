@@ -140,6 +140,16 @@ public class OntologyService {
                             getTermosPraticaGeneric(solution.get("termoUri").toString(), "eProgredidoPor")
                     );
                     listaTermosPratica.add(termoPratica);
+                } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.ESPACO_ATIVIDADE.getUri())) {
+                    var termoPratica = new TermoPraticaEspacoAtividadeDTO(
+                            solution.get("termoUri").toString(),
+                            solution.get("termoNome").toString(),
+                            solution.get("termoDescricao").toString(),
+                            Integer.parseInt(solution.get("termoOrdemEspacoAtividadeString").toString()),
+                            solution.get("termoTipo").toString(),
+                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "contempla")
+                    );
+                    listaTermosPratica.add(termoPratica);
                 }
             }
         }
@@ -540,10 +550,11 @@ public class OntologyService {
         var queryTemplate = """ 
                             PREFIX owl: <http://www.w3.org/2002/07/owl#>
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                            SELECT ?termoUri ?termoNome ?termoDescricao (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo
+                            SELECT ?termoUri ?termoNome ?termoDescricao (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo (STR(?termoOrdemEspacoAtividade) AS ?termoOrdemEspacoAtividadeString)
                             WHERE {
                                 %s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe> ?termoUri .
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?termoOrdem .
+                                OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequenciaEspacoAtividade> ?termoOrdemEspacoAtividade . }
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoDescricao .
                                 ?termoUri rdf:type ?termoTipo .

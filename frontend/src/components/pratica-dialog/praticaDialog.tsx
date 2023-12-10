@@ -27,6 +27,7 @@ import { CausasConsequenciasPratica } from "@/types/CausasConsequenciasPratica";
 import { TermoAtividadePratica } from "@/components/termo-atividade-pratica/TermoAtividadePratica";
 import { TermoAlphaPratica } from "@/components/termo-alpha-pratica/TermoAlphaPratica";
 import { TermoProdutoPratica } from "@/components/termo-produto-pratica/TermoAlphaPratica";
+import { TermoEspacoAtividadePratica } from "@/components/termo-espaco-atividade-pratica/TermoEspacoAtividadePratica";
 
 interface PraticaPageProps {
   isPraticaModalOpen: boolean;
@@ -44,6 +45,7 @@ const PraticaDialog = ({
 
   const dispatch = useDispatch()
   const [openAccordion, setOpenAccordion] = useState<string>('')
+  const [openEspacoAtividadeAccordion, setOpenEspacoAtividadeAccordion] = useState<string>('')
   const [praticaTermos, setPraticaTermos] = useState<PraticaTermo[]>([])
   const [praticaCausasConsequencias, setPraticaCausasConsequencias] = useState<CausasConsequenciasPratica[]>([])
 
@@ -81,7 +83,9 @@ const PraticaDialog = ({
     });
     if (response.ok) {
       const data = await response.json()
-      setPraticaTermos(data.toSorted((a: { termoPraticaOrdem: number; }, b: { termoPraticaOrdem: number; }) => a.termoPraticaOrdem - b.termoPraticaOrdem));
+      setPraticaTermos(data.toSorted((a: { termoPraticaOrdem: number; }, b: {
+        termoPraticaOrdem: number;
+      }) => a.termoPraticaOrdem - b.termoPraticaOrdem));
     }
   }
 
@@ -94,12 +98,20 @@ const PraticaDialog = ({
       case TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO:
         return <Image src="/AtividadeProdutoTrabalho.png" alt="Icon Description" width={size ?? 28}
                       height={size ?? 28}/>
+      case TipoPraticaTermo.ESPACO_ATIVIDADE:
+        return <Image src="/EspacoAtividade.png" alt="Icon Description" width={size ?? 28}
+                      height={size ?? 28}/>
     }
   }
 
   const handleAccordionChange = (panel: string) => {
     const isExpanded = openAccordion === panel;
     setOpenAccordion(isExpanded ? '' : panel);
+  }
+
+  const handleEspacoAtividadeAccordionChange = (panel: string) => {
+    const isExpanded = openEspacoAtividadeAccordion === panel;
+    setOpenEspacoAtividadeAccordion(isExpanded ? '' : panel);
   }
 
   return (
@@ -143,48 +155,103 @@ const PraticaDialog = ({
               </AccordionDetails>
             </Accordion>
 
-            {praticaTermos.map((praticaTermo: PraticaTermo) => {
-              return (
-                <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}
-                           expanded={openAccordion === praticaTermo.termoPraticaUri}
-                           onChange={() => handleAccordionChange(praticaTermo.termoPraticaUri)}>
-                  <AccordionSummary
-                    className={'accordionSummary'}
-                    expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-                  >
-                    <div className={'accordionSummaryContent'}>
-                      {getIconTermoPratica(praticaTermo)}
-                      <Typography variant={'h5'}>
+            {praticaTermos
+              .filter((p) => p.termoPraticaTipo !== TipoPraticaTermo.ESPACO_ATIVIDADE)
+              .map((praticaTermo: PraticaTermo) => {
+                return (
+                  <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}
+                             expanded={openAccordion === praticaTermo.termoPraticaUri}
+                             onChange={() => handleAccordionChange(praticaTermo.termoPraticaUri)}>
+                    <AccordionSummary
+                      className={'accordionSummary'}
+                      expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                    >
+                      <div className={'accordionSummaryContent'}>
+                        {getIconTermoPratica(praticaTermo)}
+                        <Typography variant={'h5'}>
                         <span className={'accordionSummaryTitle'}>
                           <DescriptionRender description={praticaTermo.termoPraticaNome}/>
                         </span>
-                      </Typography>
-                    </div>
+                        </Typography>
+                      </div>
 
-                  </AccordionSummary>
-                  <AccordionDetails className={'accordionDetails'}>
-                    {praticaTermo.termoPraticaTipo === TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO && (
-                      <TermoAtividadePratica praticaTermo={praticaTermo}
-                                             praticaTermos={praticaTermos}
-                                             getIconTermoPratica={getIconTermoPratica}
-                                             setOpenAccordion={setOpenAccordion}/>
-                    )}
+                    </AccordionSummary>
+                    <AccordionDetails className={'accordionDetails'}>
+                      {praticaTermo.termoPraticaTipo === TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO && (
+                        <TermoAtividadePratica praticaTermo={praticaTermo}
+                                               praticaTermos={praticaTermos}
+                                               getIconTermoPratica={getIconTermoPratica}
+                                               setOpenAccordion={setOpenAccordion}/>
+                      )}
 
-                    {praticaTermo.termoPraticaTipo === TipoPraticaTermo.ALPHA && (
-                      <TermoAlphaPratica praticaTermo={praticaTermo}
-                                         getIconTermoPratica={getIconTermoPratica}
-                                         setOpenAccordion={setOpenAccordion}/>
-                    )}
-
-                    {praticaTermo.termoPraticaTipo === TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA && (
-                      <TermoProdutoPratica praticaTermo={praticaTermo}
+                      {praticaTermo.termoPraticaTipo === TipoPraticaTermo.ALPHA && (
+                        <TermoAlphaPratica praticaTermo={praticaTermo}
                                            getIconTermoPratica={getIconTermoPratica}
                                            setOpenAccordion={setOpenAccordion}/>
-                    )}
-                  </AccordionDetails>
-                </Accordion>
-              )
-            })}
+                      )}
+
+                      {praticaTermo.termoPraticaTipo === TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA && (
+                        <TermoProdutoPratica praticaTermo={praticaTermo}
+                                             getIconTermoPratica={getIconTermoPratica}
+                                             setOpenAccordion={setOpenAccordion}/>
+                      )}
+                    </AccordionDetails>
+                  </Accordion>
+                )
+              })}
+
+
+            <Accordion className={'accordionContainer'}
+                       expanded={openAccordion === 'espacoAtividade'}
+                       onChange={() => handleAccordionChange('espacoAtividade')}>
+              <AccordionSummary
+                className={'accordionSummary'}
+                expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+              >
+                <div className={'accordionSummaryContent'}>
+                  <Image src="/EspacoAtividade.png" alt="Icon Description" width={28}
+                         height={28}/>
+                  <Typography variant={'h5'}>
+                    <span className={'accordionSummaryTitle'}>Espaço Atividade</span>
+                  </Typography>
+                </div>
+
+              </AccordionSummary>
+              <AccordionDetails className={'accordionDetails'}>
+                {praticaTermos
+                  .filter((p) => p.termoPraticaTipo === TipoPraticaTermo.ESPACO_ATIVIDADE)
+                  .map((praticaTermo) => {
+                    return (
+                      <Accordion className={'accordionContainer'} key={praticaTermo.termoPraticaUri}
+                                 expanded={openEspacoAtividadeAccordion === praticaTermo.termoPraticaUri}
+                                 onChange={() => handleEspacoAtividadeAccordionChange(praticaTermo.termoPraticaUri)}>
+                        <AccordionSummary
+                          className={'accordionSummary'}
+                          expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
+                        >
+                          <div className={'accordionSummaryContent'}>
+                            {getIconTermoPratica(praticaTermo)}
+                            <Typography variant={'h5'}>
+                              <span className={'accordionSummaryTitle'}>
+                                <DescriptionRender description={praticaTermo.termoPraticaNome}/>
+                              </span>
+                            </Typography>
+                          </div>
+
+                        </AccordionSummary>
+                        <AccordionDetails className={'accordionDetails'}>
+                          <TermoEspacoAtividadePratica praticaTermo={praticaTermo}
+                                                       getIconTermoPratica={getIconTermoPratica}
+                                                       setOpenAccordion={setOpenAccordion}/>
+
+                        </AccordionDetails>
+                      </Accordion>
+                    )
+                  })
+                }
+
+              </AccordionDetails>
+            </Accordion>
 
             <Accordion className={'accordionContainer'}
                        expanded={openAccordion === 'referencias'}
