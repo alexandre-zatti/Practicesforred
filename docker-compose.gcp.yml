@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  virtuoso-server:
+    image: openlink/virtuoso-opensource-7
+    ports:
+      - "1111:1111"
+      - "8890:8890"
+    environment:
+      - DBA_PASSWORD=123
+    volumes:
+      - ./data/database:/database
+    healthcheck:
+          test: ["CMD", "nc", "-z", "localhost", "8890"]
+          interval: 10s
+          timeout: 10s
+          retries: 5
+
+  backend:
+    image: zatti/tcc-backend:ed61d7df09b092fdd1aee260841e0272bf81a6e3
+    ports:
+      - "8080:8080"
+    depends_on:
+      virtuoso-server:
+        condition: service_healthy
+    environment:
+      - VIRTUOSO_JDBC_URL=jdbc:virtuoso://virtuoso-server:1111/
+      - VIRTUOSO_JDBC_USER=dba
+      - VIRTUOSO_JDBC_PASSWORD=123
+      - VIRTUOSO_GRAPH=http://zatti.alexandre/OntoReD
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8080/backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

@@ -1397,3 +1397,9 @@
 19:47:55 Checkpoint finished, log reused
 20:47:56 Checkpoint started
 20:47:56 Checkpoint finished, log reused
+21:35:05 Server received signal 2
+21:35:05 Initiating normal shutdown
+21:35:05 Checkpoint started
+21:35:05 Checkpoint finished, log reused
+21:35:05 Server shutdown complete
+21:35:05 Unable to remove ../database/virtuoso.lck (No such file or directory)
