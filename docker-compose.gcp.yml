@@ -30,10 +30,7 @@ services:
       - VIRTUOSO_GRAPH=http://zatti.alexandre/OntoReD
 
   frontend:
-    build:
-      context: ./frontend
-      args:
-        NEXT_PUBLIC_API_URL: http://localhost:8080/backend
+    image: zatti/tcc-gcp-frontend
     ports:
       - "3000:3000"
     depends_on:
