@@ -8,9 +8,6 @@ on:
       - 'backend/**'
 
 env:
-  GCP_PROJECT_ID: firm-modem-400410
-  GKE_CLUSTER_NAME: tcc-ii
-  GKE_CLUSTER_ZONE: southamerica-east1
   IMAGE: zatti/tcc-backend
 
 jobs:
@@ -32,27 +29,5 @@ jobs:
       with:
         context: ./backend
         push: true
-        tags: ${{ env.IMAGE }}:${{ github.sha }}
-
-    - name: Authenticate to Google Cloud
-      uses: google-github-actions/auth@v0.4.0
-      with:
-        credentials_json: ${{ secrets.GCP_SA_KEY }}
-        
-    - name: Setup Google Cloud SDK
-      uses: google-github-actions/setup-gcloud@v1.1.1
-      with:
-        project_id: ${{ env.GCP_PROJECT_ID }}
-        
-    # Get the GKE credentials so we can deploy to the cluster
-    - uses: google-github-actions/get-gke-credentials@v1.0.2
-      with:
-        cluster_name: ${{ env.GKE_CLUSTER_NAME }}
-        location: ${{ env.GKE_CLUSTER_ZONE }}
-        project_id: ${{ env.GCP_PROJECT_ID }}
-
-    - name: Deploy to Kubernetes
-      run: |
-        # Update the Kubernetes Deployment to use the new image tag
-        kubectl set image deployment/backend-deploy backend=${{ env.IMAGE }}:${{ github.sha }}
+        tags: ${{ env.IMAGE }}:latest
         
