@@ -11,15 +11,13 @@ services:
     volumes:
       - ./data/database:/database
     healthcheck:
-          test: ["CMD", "nc", "-z", "localhost", "8890"]
-          interval: 10s
-          timeout: 10s
-          retries: 5
+      test: ["CMD", "nc", "-z", "localhost", "8890"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
 
   backend:
     image: zatti/tcc-backend:latest
-    # build:
-    #   context: ./backend
     ports:
       - "8080:8080"
     depends_on:
@@ -33,11 +31,29 @@ services:
 
   frontend:
     image: zatti/tcc-frontend:latest
-#     build:
-#       context: ./frontend
-#      args:
-#        NEXT_PUBLIC_API_URL: http://localhost:8080/backend
-    ports:
-      - "80:3000"
     depends_on:
       - backend
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./certs:/etc/letsencrypt
+    depends_on:
+      - frontend
+      - backend
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./certs:/etc/letsencrypt
+      - ./certs-data:/data/letsencrypt
+    depends_on:
+      - nginx
+
+volumes:
+  certs:
+  certs-data:
