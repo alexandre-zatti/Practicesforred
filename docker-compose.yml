@@ -42,17 +42,17 @@ services:
     volumes:
       - ./nginx/conf:/etc/nginx/conf.d
       - ./certs:/etc/letsencrypt
-    depends_on:
-      - frontend
-      - backend
+#    depends_on:
+#      - frontend
+#      - backend
 
   certbot:
     image: certbot/certbot
     volumes:
       - ./certs:/etc/letsencrypt
       - ./certs-data:/data/letsencrypt
-    depends_on:
-      - nginx
+#    depends_on:
+#      - nginx
 
 volumes:
   certs:
