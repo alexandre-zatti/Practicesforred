@@ -40,19 +40,21 @@ services:
       - "80:80"
       - "443:443"
     volumes:
+      - ./data/letsencrypt:/data/letsencrypt
       - ./nginx/conf:/etc/nginx/conf.d
       - ./certs:/etc/letsencrypt
-#    depends_on:
-#      - frontend
-#      - backend
+    depends_on:
+      - frontend
+      - backend
 
   certbot:
     image: certbot/certbot
     volumes:
       - ./certs:/etc/letsencrypt
-      - ./certs-data:/data/letsencrypt
-#    depends_on:
-#      - nginx
+      - ./data/letsencrypt:/data/letsencrypt
+    command: certonly --webroot --webroot-path=/data/letsencrypt --email zatti.alexandre61@gmail.com --agree-tos --no-eff-email --domains practicesforred.online,www.practicesforred.online
+    depends_on:
+      - nginx
 
 volumes:
   certs:
