@@ -9,7 +9,7 @@ services:
     environment:
       - DBA_PASSWORD=123
     volumes:
-      - ./data/database:/database
+      - virtuoso-data:/database
     healthcheck:
       test: ["CMD", "nc", "-z", "localhost", "8890"]
       interval: 10s
@@ -40,7 +40,11 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/conf:/etc/nginx/conf.d
+      - nginx-conf:/etc/nginx/conf.d
     depends_on:
       - frontend
       - backend
+
+volumes:
+  virtuoso-data:
+  nginx-conf:
