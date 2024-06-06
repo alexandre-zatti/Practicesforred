@@ -9,7 +9,7 @@ services:
     environment:
       - DBA_PASSWORD=123
     volumes:
-      - virtuoso-data:/database
+      - virtuoso-database:/database
     healthcheck:
       test: ["CMD", "nc", "-z", "localhost", "8890"]
       interval: 10s
@@ -46,5 +46,15 @@ services:
       - backend
 
 volumes:
-  virtuoso-data:
+  virtuoso-database:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./data/database
+      o: bind
   nginx-conf:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./nginx/conf
+      o: bind
