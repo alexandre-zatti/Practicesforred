@@ -4,6 +4,8 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import virtuoso.jena.driver.VirtGraph;
+import virtuoso.jena.driver.VirtModel;
 import zatti.alexandre.backend.dto.*;
 import zatti.alexandre.backend.enums.ClassificacaoPratica;
 import zatti.alexandre.backend.enums.TermoPraticaTipo;
@@ -18,20 +20,32 @@ public class OntologyService {
 
     private final Dataset dataset;
     private final Model model;
+    private final VirtGraph virtGraph;
 
     @Autowired
-    public OntologyService(Dataset dataset, Model model) {
+    public OntologyService(Dataset dataset, Model model, VirtGraph virtGraph) {
         this.dataset = dataset;
         this.model = model;
+        this.virtGraph = virtGraph;
     }
 
     public boolean loadRdfData(String rdfContent) {
         try {
-            // Clearing existing data
-            dataset.getDefaultModel().removeAll();
+            // Clear existing data in the Virtuoso model
+            virtGraph.clear();
 
+            // Read the new RDF content into the in-memory model
+            model.removeAll();
             model.read(new StringReader(rdfContent), null, "RDF/XML"); // Specify the correct RDF language
+
+            // Add the new RDF data to the Virtuoso model
+            Model virtModel = new VirtModel(virtGraph);
+            virtModel.add(model);
+
+            // Update the Dataset with the new model
+            dataset.getDefaultModel().removeAll();
             dataset.getDefaultModel().add(model);
+
             return true;
         } catch (Exception e) {
             e.printStackTrace();
