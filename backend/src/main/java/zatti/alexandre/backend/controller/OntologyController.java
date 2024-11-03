@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import zatti.alexandre.backend.dto.*;
+import zatti.alexandre.backend.model.Pratica;
 import zatti.alexandre.backend.service.OntologyService;
 
 import java.io.BufferedReader;
@@ -85,5 +86,12 @@ public class OntologyController {
         List<ConsequenciaCausasResponseDTO> resultList = ontologyService.getCausasConsequenciasByPratica(praticaUri);
 
         return new ResponseEntity<>(resultList, HttpStatus.OK);
+    }
+
+    @GetMapping("/pratica")
+    public ResponseEntity<Pratica> getPratica(@RequestParam(value = "praticaUri") String praticaUri) {
+        Pratica result = ontologyService.getPratica(praticaUri);
+
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

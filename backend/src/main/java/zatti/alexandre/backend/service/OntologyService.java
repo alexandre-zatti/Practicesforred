@@ -8,6 +8,7 @@ import virtuoso.jena.driver.VirtGraph;
 import virtuoso.jena.driver.VirtModel;
 import zatti.alexandre.backend.dto.*;
 import zatti.alexandre.backend.enums.ClassificacaoPratica;
+import zatti.alexandre.backend.enums.GrauRelevancia;
 import zatti.alexandre.backend.enums.TermoPraticaTipo;
 import zatti.alexandre.backend.model.*;
 import zatti.alexandre.backend.utils.MatrizImpacto;
@@ -125,10 +126,14 @@ public class OntologyService {
                             Integer.parseInt(solution.get("termoOrdemString").toString()),
                             solution.get("termoTipo").toString(),
                             solutionAtividade.get("termoAtividadeDescricao").toString(),
-                            solutionAtividade.get("termoAtividadeApresentacao").toString(),
-                            solutionAtividade.get("termoAtividadeInformacoes").toString(),
-                            solutionAtividade.get("termoAtividadeAbordagens").toString(),
-                            solutionAtividade.get("allTermoAtividadeProduz").toString()
+                            Optional.ofNullable(solutionAtividade.get("termoAtividadeApresentacao")).map(Object::toString)
+                                .orElse(""),
+                            Optional.ofNullable(solutionAtividade.get("termoAtividadeInformacoes")).map(Object::toString)
+                                .orElse(""),
+                            Optional.ofNullable(solutionAtividade.get("termoAtividadeAbordagens")).map(Object::toString)
+                                .orElse(""),
+                            Optional.ofNullable(solutionAtividade.get("allTermoAtividadeProduz")).map(Object::toString)
+                                .orElse("")
                     );
                     listaTermosPratica.add(termoPratica);
                 } else if (solution.get("termoTipo").toString().equals(TermoPraticaTipo.PRODUTO.getUri())) {
@@ -231,12 +236,43 @@ public class OntologyService {
                         solution.get("termoUri").toString(),
                         solution.get("termoNome").toString(),
                         0,
-                        solution.get("termoTipo").toString()
+                        solution.get("termoTipo").toString(),
+                        Optional.ofNullable(solution.get("termoAcessa")).map(Object::toString)
+                                .orElse("")
                 );
                 listaTermosPratica.add(termoPratica);
             }
         }
         return listaTermosPratica;
+    }
+
+    public Pratica getPratica(String praticaUri) {
+        var queryString = getPraticaQuery(praticaUri);
+        var query = QueryFactory.create(queryString);
+
+        try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
+            ResultSet results = qe.execSelect();
+
+            QuerySolution solution = results.next();
+
+            return new Pratica(
+                solution.get("nomePratica").toString(),
+                praticaUri,
+                solution.get("descricaoPratica").toString(),
+                Optional.ofNullable(solution.get("fluxoAtividadesPratica")).map(Object::toString)
+                        .orElse(""),
+                Optional.ofNullable(solution.get("apresentacaoPratica")).map(Object::toString)
+                        .orElse(""),
+                Optional.ofNullable(solution.get("introducaoPratica")).map(Object::toString)
+                        .orElse(""),
+                Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString)
+                        .orElse(""),
+                Optional.ofNullable(solution.get("referenciasPratica")).map(Object::toString)
+                        .orElse(""),
+                ClassificacaoPratica.fromValue(solution.get("classificacaoPratica").toString()),
+                GrauRelevancia.BAIXO);
+
+        }
     }
 
     private String getPassosElementosByTermoQuery(String termoUri) {
@@ -275,6 +311,9 @@ public class OntologyService {
                             WHERE {
                                  <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#%s> ?termoUri .
                                  ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
+                                 OPTIONAL {
+                                    ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#acessa> ?termoAcessa .
+                                 }
                                  ?termoUri rdf:type ?termoTipo .
                                  FILTER (?termoTipo != owl:NamedIndividual)
                             }
@@ -540,6 +579,34 @@ public class OntologyService {
         return -1;
     }
 
+    private String getPraticaQuery(String praticaUri) {
+        var queryTemplate = """
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            SELECT *
+                            WHERE {
+                                %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?nomePratica .
+                                %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?descricaoPratica .
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#fluxoAtividades> ?fluxoAtividadesPratica .
+                                }
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apresentacao> ?apresentacaoPratica .
+                                }
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#quandoAplicar> ?quandoAplicarPratica .
+                                }
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#introducao> ?introducaoPratica .
+                                }
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#referenciaRE> ?referenciasPratica .
+                                }
+                                %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica> ?classificacaoPratica .
+                             }""";
+
+        return String.format(queryTemplate, praticaUri);
+    }
+
     private String getCausasConsequenciasByPraticaQuery(String praticaUri) {
         var queryTemplate = """
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -582,14 +649,23 @@ public class OntologyService {
         var queryTemplate = """ 
                             PREFIX owl: <http://www.w3.org/2002/07/owl#>
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-                            SELECT ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens (GROUP_CONCAT(?termoAtividadeProduz; SEPARATOR="|") AS ?allTermoAtividadeProduz)
+                            
+                            SELECT ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens
+                                   (GROUP_CONCAT(?termoAtividadeProduz; SEPARATOR="|") AS ?allTermoAtividadeProduz)
                             WHERE {
                                 <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoAtividadeDescricao .
-                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apresAtividade> ?termoAtividadeApresentacao .
-                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#infAdicionais> ?termoAtividadeInformacoes .
-                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#abordagens> ?termoAtividadeAbordagens.
-                                <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz> ?termoAtividadeProduz .
+                                OPTIONAL {
+                                    <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#apresAtividade> ?termoAtividadeApresentacao .
+                                }
+                                OPTIONAL {
+                                    <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#infAdicionais> ?termoAtividadeInformacoes .
+                                }
+                                OPTIONAL {
+                                    <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#abordagens> ?termoAtividadeAbordagens .
+                                }
+                                OPTIONAL {
+                                    <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz> ?termoAtividadeProduz .
+                                }
                             }
                             GROUP BY ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens""";
 
