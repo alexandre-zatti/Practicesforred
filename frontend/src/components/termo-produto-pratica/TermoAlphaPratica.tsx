@@ -1,8 +1,10 @@
 import { PraticaTermo } from "@/types/PraticaTermo"
 import { VerticalStepper } from "@/components/vertical-stepper/verticalStepper";
 import DescriptionRender from "@/components/DescriptionRender";
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/components/termo-produto-pratica/termoProdutoPratica.module.css";
+import { Pratica } from "@/types/Pratica";
+import PraticaDialog from "@/components/pratica-dialog/praticaDialog";
 
 type TermoProdutoPraticaProps = {
   praticaTermo: PraticaTermo
@@ -81,6 +83,27 @@ const DescricaoTermoProdutoPratica = ({
                                         organizadoPor,
                                         produzidoPor
                                       }: DescricaoTermoProdutoPraticaProps) => {
+
+   const [isPraticaModalOpen, setIsPraticaModalOpen] = useState(false)
+   const [praticaSelecionada, setPraticaSelecionada] = useState<Pratica | null>(null)
+
+   const accessPratica = async (praticaUri: string) => {
+
+      const queryParams = new URLSearchParams({praticaUri: `<${praticaUri}>` ?? ''}).toString()
+
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica?${queryParams}`, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      });
+      if (response.ok) {
+        const data = await response.json()
+        setPraticaSelecionada({...data, uri: data.uri.replace(/[<>]/g, "")});
+        setIsPraticaModalOpen(true);
+      }
+  }
+
+
   return (
     <div>
       <DescriptionRender description={descricao}/>
@@ -108,9 +131,10 @@ const DescricaoTermoProdutoPratica = ({
       )}
 
       {produzidoPor?.map(praticaTermo => {
+        console.log('produzidoPor', praticaTermo);
         return (
           <div key={praticaTermo.termoPraticaUri} className={styles.produzTermos}
-               onClick={() => setOpenAccordion(praticaTermo.termoPraticaUri)}>
+               onClick={praticaTermo.termoPraticaAcessa ? () => accessPratica(praticaTermo.termoPraticaAcessa!) : () => setOpenAccordion(praticaTermo.termoPraticaUri)}>
             {getIconTermoPratica(praticaTermo, 24)}
             <DescriptionRender description={praticaTermo.termoPraticaNome ?? ""}/>
           </div>
@@ -132,6 +156,15 @@ const DescricaoTermoProdutoPratica = ({
           </div>
         )
       })}
+
+      {isPraticaModalOpen && (
+        <PraticaDialog
+          praticaSelecionada={praticaSelecionada}
+          setPraticaSelecionada={setPraticaSelecionada}
+          setIsPraticaModalOpen={setIsPraticaModalOpen}
+          isPraticaModalOpen={isPraticaModalOpen}
+        />
+      )}
     </div>
   )
 }

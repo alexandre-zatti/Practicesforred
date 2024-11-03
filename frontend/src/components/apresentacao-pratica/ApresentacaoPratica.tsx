@@ -20,7 +20,7 @@ export const ApresentacaoPratica = ({pratica}: ApresentacaoPraticaProps) => {
       description: <DescriptionRender description={pratica.quandoAplicar}/>,
     },
     {
-      label: 'Fluo de Atividades',
+      label: 'Fluxo de Atividades',
       description: <DescriptionRender description={pratica.fluxoAtividades}/>,
     },
   ];

@@ -11,6 +11,7 @@ export type PraticaTermo = {
   termoPraticaApresentacao?: string;
   termoPraticaInformacoesAdicionais?: string;
   termoPraticaAbordagens?: string;
+  termoPraticaAcessa?: string;
   estadosAlpha?: EstadoAlpha[];
   passosElementos?: PassoElemento[];
   termosPratica?: PraticaTermo[];

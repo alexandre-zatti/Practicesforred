@@ -26,7 +26,8 @@ import { addConsequencia, changeFrequencia, changeImpacto, removeConsequencia } 
 import { Consequencia } from "@/types/Consequencia";
 import Steps from "@/components/steps/Steps";
 import DescriptionRender from "@/components/DescriptionRender";
-import styles from './page.module.css';
+// @ts-ignore
+import styles from "./page.module.css";
 
 const Analise = () => {
   const [entered, setEntered] = useState(false);
