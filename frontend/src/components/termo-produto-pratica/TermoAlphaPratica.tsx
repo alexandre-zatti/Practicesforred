@@ -131,7 +131,6 @@ const DescricaoTermoProdutoPratica = ({
       )}
 
       {produzidoPor?.map(praticaTermo => {
-        console.log('produzidoPor', praticaTermo);
         return (
           <div key={praticaTermo.termoPraticaUri} className={styles.produzTermos}
                onClick={praticaTermo.termoPraticaAcessa ? () => accessPratica(praticaTermo.termoPraticaAcessa!) : () => setOpenAccordion(praticaTermo.termoPraticaUri)}>
