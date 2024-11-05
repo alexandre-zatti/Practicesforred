@@ -2,7 +2,10 @@ import styles from './termoAtividadePratica.module.css';
 import { PraticaTermo } from "@/types/PraticaTermo";
 import DescriptionRender from "@/components/DescriptionRender";
 import { VerticalStepper } from "../vertical-stepper/verticalStepper";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Pratica } from "@/types/Pratica";
+import PraticaDialog from "@/components/pratica-dialog/praticaDialog";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 
 type TermoAtividadePraticaProps = {
   praticaTermo: PraticaTermo
@@ -53,6 +56,29 @@ const DescricaoTermoAtividadePratica = ({
                                           getIconTermoPratica,
                                           setOpenAccordion
                                         }: TermoAtividadePraticaProps) => {
+   const [isPraticaAcessaModalOpen, setIsPraticaAcessaModalOpen] = useState(false)
+   const [praticaAcessa, setPraticaAcessa] = useState<Pratica | null>(null)
+
+   const accessPratica = async (praticaUri: string) => {
+
+      const queryParams = new URLSearchParams({praticaUri: `<${praticaUri}>` ?? ''}).toString()
+
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ontology/pratica?${queryParams}`, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      });
+      if (response.ok) {
+        const data = await response.json()
+        setPraticaAcessa({...data, uri: data.uri.replace(/[<>]/g, "")});
+      }
+  }
+
+  useEffect(() => {
+    if (praticaTermo.termoPraticaAcessa){
+      accessPratica(praticaTermo.termoPraticaAcessa);
+    }
+  }, []);
 
   const splitTermoAtividadePraticaProduz = (termoPraticaProduz: string) => {
     return termoPraticaProduz.split("|");
@@ -79,6 +105,29 @@ const DescricaoTermoAtividadePratica = ({
           </div>
         )
       })}
+
+      {praticaAcessa && (
+        <>
+          <p className={styles.produzTitleContainer}>
+            <span className={styles.produzTitle}>Acessa</span>
+          </p>
+
+          <div className={styles.produzTermos} onClick={() => setIsPraticaAcessaModalOpen((prevState) => !prevState)}>
+            <AutoStoriesIcon/>
+            <DescriptionRender description={praticaAcessa.nome ?? ""}/>
+          </div>
+        </>
+      )
+      }
+
+      {isPraticaAcessaModalOpen && (
+        <PraticaDialog
+          praticaSelecionada={praticaAcessa}
+          setPraticaSelecionada={setPraticaAcessa}
+          setIsPraticaModalOpen={setIsPraticaAcessaModalOpen}
+          isPraticaModalOpen={isPraticaAcessaModalOpen}
+        />
+      )}
     </div>
   )
 }

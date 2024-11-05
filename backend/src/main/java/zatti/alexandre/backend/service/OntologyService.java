@@ -133,6 +133,8 @@ public class OntologyService {
                             Optional.ofNullable(solutionAtividade.get("termoAtividadeAbordagens")).map(Object::toString)
                                 .orElse(""),
                             Optional.ofNullable(solutionAtividade.get("allTermoAtividadeProduz")).map(Object::toString)
+                                .orElse(""),
+                            Optional.ofNullable(solutionAtividade.get("termoAtividadeAcessa")).map(Object::toString)
                                 .orElse("")
                     );
                     listaTermosPratica.add(termoPratica);
@@ -651,7 +653,7 @@ public class OntologyService {
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                             
                             SELECT ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens
-                                   (GROUP_CONCAT(?termoAtividadeProduz; SEPARATOR="|") AS ?allTermoAtividadeProduz)
+                                   (GROUP_CONCAT(?termoAtividadeProduz; SEPARATOR="|") AS ?allTermoAtividadeProduz) ?termoAtividadeAcessa
                             WHERE {
                                 <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoAtividadeDescricao .
                                 OPTIONAL {
@@ -666,8 +668,11 @@ public class OntologyService {
                                 OPTIONAL {
                                     <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#produz> ?termoAtividadeProduz .
                                 }
+                                OPTIONAL {
+                                    <%1$s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#acessa> ?termoAtividadeAcessa .
+                                }
                             }
-                            GROUP BY ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens""";
+                            GROUP BY ?termoAtividadeDescricao ?termoAtividadeApresentacao ?termoAtividadeInformacoes ?termoAtividadeAbordagens ?termoAtividadeAcessa""";
 
         return String.format(queryTemplate, termoUri);
     }
