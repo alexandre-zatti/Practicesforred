@@ -3,9 +3,6 @@ version: '3'
 services:
   virtuoso-server:
     image: openlink/virtuoso-opensource-7
-    ports:
-      - "1111:1111"
-      - "8890:8890"
     environment:
       - DBA_PASSWORD=123
     volumes:
@@ -17,9 +14,8 @@ services:
       retries: 5
 
   backend:
-    image: zatti/tcc-backend:latest
-    ports:
-      - "8080:8080"
+    build:
+      context: ./backend
     depends_on:
       virtuoso-server:
         condition: service_healthy
@@ -30,7 +26,10 @@ services:
       - VIRTUOSO_GRAPH=http://zatti.alexandre/OntoReD
 
   frontend:
-    image: zatti/tcc-frontend:latest
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost/backend 
     depends_on:
       - backend
 

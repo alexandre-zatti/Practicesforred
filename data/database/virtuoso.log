@@ -1,0 +1,310 @@
+
+		Tue Jun 25 2024
+00:33:50 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+00:33:50   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+00:33:50   Support functions for GraphQL/SPARQL Bridge
+00:33:50   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+00:33:50 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+00:33:50   ShapefileIO version 0.1virt71 from OpenLink Software
+00:33:50   Shapefile support based on Frank Warmerdam's Shapelib
+00:33:50   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+00:33:50 OpenLink Virtuoso Universal Server
+00:33:50 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+00:33:50 uses OpenSSL 1.1.1f  31 Mar 2020
+00:33:50 uses parts of PCRE, Html Tidy
+00:33:51 SQL Optimizer enabled (max 1000 layouts)
+00:33:51 Compiler unit is timed at 0.000193 msec
+00:33:52 Checkpoint started
+00:33:52 Checkpoint finished.
+00:33:52 Roll forward started
+00:33:52 Roll forward complete
+00:33:53 PL LOG: Installing Virtuoso Conductor version 1.00.8869 (DAV)
+00:33:53 PL LOG: Installing with dependencies Virtuoso Conductor version 1.00.8869/2024-06-10 15:04 (DAV)
+00:33:53 Checkpoint started
+00:33:53 Checkpoint finished, log reused
+00:33:54 Checkpoint started
+00:33:54 Checkpoint finished, log reused
+00:33:54 PL LOG: Installation with dependencies complete
+00:33:54 Checkpoint started
+00:33:54 Checkpoint finished, log reused
+00:33:54 Server exiting
+
+		Tue Jun 25 2024
+00:33:54 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+00:33:54   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+00:33:54   Support functions for GraphQL/SPARQL Bridge
+00:33:54   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+00:33:54 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+00:33:54   ShapefileIO version 0.1virt71 from OpenLink Software
+00:33:54   Shapefile support based on Frank Warmerdam's Shapelib
+00:33:54   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+00:33:54 OpenLink Virtuoso Universal Server
+00:33:54 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+00:33:54 uses OpenSSL 1.1.1f  31 Mar 2020
+00:33:54 uses parts of PCRE, Html Tidy
+00:33:54 Starting for DBA password change.
+00:33:54 Database version 3126
+00:33:54 SQL Optimizer enabled (max 1000 layouts)
+00:33:55 Compiler unit is timed at 0.000071 msec
+00:33:55 Roll forward started
+00:33:55     3 transactions, 185 bytes replayed (100 %)
+00:33:55 Roll forward complete
+00:33:55 The DBA password is changed.
+00:33:55 The DAV password is changed.
+00:33:55 Checkpoint started
+00:33:55 Checkpoint finished, log reused
+00:33:55 Server exiting
+
+		Tue Jun 25 2024
+00:33:55 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+00:33:55   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+00:33:55   Support functions for GraphQL/SPARQL Bridge
+00:33:55   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+00:33:55 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+00:33:55   ShapefileIO version 0.1virt71 from OpenLink Software
+00:33:55   Shapefile support based on Frank Warmerdam's Shapelib
+00:33:55   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+00:33:55 OpenLink Virtuoso Universal Server
+00:33:55 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+00:33:55 uses OpenSSL 1.1.1f  31 Mar 2020
+00:33:55 uses parts of PCRE, Html Tidy
+00:33:55 Database version 3126
+00:33:55 SQL Optimizer enabled (max 1000 layouts)
+00:33:56 Compiler unit is timed at 0.000070 msec
+00:33:56 Roll forward started
+00:33:56 Roll forward complete
+00:33:56 Checkpoint started
+00:33:56 Checkpoint finished, log reused
+00:33:56 HTTP/WebDAV server online at 8890
+00:33:56 Server online at 1111 (pid 1)
+10:14:51 Checkpoint started
+10:14:51 Checkpoint finished, log reused
+10:46:31 Server received signal 2
+10:46:31 Initiating normal shutdown
+10:46:31 Checkpoint started
+10:46:31 Checkpoint finished, log reused
+10:46:31 Server shutdown complete
+
+		Thu Jan 09 2025
+17:25:22 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+17:25:22   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+17:25:22   Support functions for GraphQL/SPARQL Bridge
+17:25:22   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+17:25:22 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+17:25:22   ShapefileIO version 0.1virt71 from OpenLink Software
+17:25:22   Shapefile support based on Frank Warmerdam's Shapelib
+17:25:22   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+17:25:22 OpenLink Virtuoso Universal Server
+17:25:22 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+17:25:22 uses OpenSSL 1.1.1f  31 Mar 2020
+17:25:22 uses parts of PCRE, Html Tidy
+17:25:22 Database version 3126
+17:25:22 SQL Optimizer enabled (max 1000 layouts)
+17:25:23 Compiler unit is timed at 0.000078 msec
+17:25:23 Roll forward started
+17:25:23 Roll forward complete
+17:25:23 Checkpoint started
+17:25:23 Checkpoint finished, log reused
+17:25:23 HTTP/WebDAV server online at 8890
+17:25:23 Server online at 1111 (pid 1)
+17:48:32 Server received signal 2
+17:48:32 Initiating normal shutdown
+17:48:32 Checkpoint started
+17:48:32 Checkpoint finished, log reused
+17:48:32 Server shutdown complete
+
+		Mon Jan 13 2025
+16:06:55 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:06:55   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:06:55   Support functions for GraphQL/SPARQL Bridge
+16:06:55   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:06:55 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:06:55   ShapefileIO version 0.1virt71 from OpenLink Software
+16:06:55   Shapefile support based on Frank Warmerdam's Shapelib
+16:06:55   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:06:55 OpenLink Virtuoso Universal Server
+16:06:55 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:06:55 uses OpenSSL 1.1.1f  31 Mar 2020
+16:06:55 uses parts of PCRE, Html Tidy
+16:06:55 Database version 3126
+16:06:55 SQL Optimizer enabled (max 1000 layouts)
+16:06:56 Compiler unit is timed at 0.000070 msec
+16:06:56 Roll forward started
+16:06:56 Roll forward complete
+16:06:56 Checkpoint started
+16:06:56 Checkpoint finished, log reused
+16:06:56 HTTP/WebDAV server online at 8890
+16:06:56 Server online at 1111 (pid 1)
+16:24:14 Server received signal 2
+16:24:14 Initiating normal shutdown
+16:24:14 Checkpoint started
+16:24:14 Checkpoint finished, log reused
+16:24:14 Server shutdown complete
+
+		Mon Jan 13 2025
+16:25:08 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:25:08   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:25:08   Support functions for GraphQL/SPARQL Bridge
+16:25:08   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:25:08 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:25:08   ShapefileIO version 0.1virt71 from OpenLink Software
+16:25:08   Shapefile support based on Frank Warmerdam's Shapelib
+16:25:08   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:25:08 OpenLink Virtuoso Universal Server
+16:25:08 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:25:08 uses OpenSSL 1.1.1f  31 Mar 2020
+16:25:08 uses parts of PCRE, Html Tidy
+16:25:08 Database version 3126
+16:25:08 SQL Optimizer enabled (max 1000 layouts)
+16:25:09 Compiler unit is timed at 0.000069 msec
+16:25:09 Roll forward started
+16:25:09 Roll forward complete
+16:25:09 Checkpoint started
+16:25:09 Checkpoint finished, log reused
+16:25:09 HTTP/WebDAV server online at 8890
+16:25:09 Server online at 1111 (pid 1)
+16:26:49 Server received signal 2
+16:26:49 Initiating normal shutdown
+16:26:49 Checkpoint started
+16:26:49 Checkpoint finished, log reused
+16:26:49 Server shutdown complete
+
+		Mon Jan 13 2025
+16:28:31 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:28:31   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:28:31   Support functions for GraphQL/SPARQL Bridge
+16:28:31   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:28:31 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:28:31   ShapefileIO version 0.1virt71 from OpenLink Software
+16:28:31   Shapefile support based on Frank Warmerdam's Shapelib
+16:28:31   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:28:31 OpenLink Virtuoso Universal Server
+16:28:31 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:28:31 uses OpenSSL 1.1.1f  31 Mar 2020
+16:28:31 uses parts of PCRE, Html Tidy
+16:28:31 Database version 3126
+16:28:31 SQL Optimizer enabled (max 1000 layouts)
+16:28:32 Compiler unit is timed at 0.000071 msec
+16:28:33 Roll forward started
+16:28:33 Roll forward complete
+16:28:33 Checkpoint started
+16:28:33 Checkpoint finished, log reused
+16:28:33 HTTP/WebDAV server online at 8890
+16:28:33 Server online at 1111 (pid 1)
+16:32:41 Server received signal 2
+16:32:41 Initiating normal shutdown
+16:32:41 Checkpoint started
+16:32:41 Checkpoint finished, log reused
+16:32:41 Server shutdown complete
+
+		Mon Jan 13 2025
+16:33:34 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:33:34   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:33:34   Support functions for GraphQL/SPARQL Bridge
+16:33:34   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:33:34 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:33:34   ShapefileIO version 0.1virt71 from OpenLink Software
+16:33:34   Shapefile support based on Frank Warmerdam's Shapelib
+16:33:34   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:33:34 OpenLink Virtuoso Universal Server
+16:33:34 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:33:34 uses OpenSSL 1.1.1f  31 Mar 2020
+16:33:34 uses parts of PCRE, Html Tidy
+16:33:34 Database version 3126
+16:33:34 SQL Optimizer enabled (max 1000 layouts)
+16:33:35 Compiler unit is timed at 0.000072 msec
+16:33:35 Roll forward started
+16:33:35 Roll forward complete
+16:33:35 Checkpoint started
+16:33:35 Checkpoint finished, log reused
+16:33:35 HTTP/WebDAV server online at 8890
+16:33:35 Server online at 1111 (pid 1)
+16:34:44 Server received signal 2
+16:34:44 Initiating normal shutdown
+16:34:44 Checkpoint started
+16:34:44 Checkpoint finished, log reused
+16:34:44 Server shutdown complete
+
+		Mon Jan 13 2025
+16:38:59 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:38:59   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:38:59   Support functions for GraphQL/SPARQL Bridge
+16:38:59   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:38:59 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:38:59   ShapefileIO version 0.1virt71 from OpenLink Software
+16:38:59   Shapefile support based on Frank Warmerdam's Shapelib
+16:38:59   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:38:59 OpenLink Virtuoso Universal Server
+16:38:59 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:38:59 uses OpenSSL 1.1.1f  31 Mar 2020
+16:38:59 uses parts of PCRE, Html Tidy
+16:38:59 Database version 3126
+16:38:59 SQL Optimizer enabled (max 1000 layouts)
+16:39:00 Compiler unit is timed at 0.000070 msec
+16:39:01 Roll forward started
+16:39:01 Roll forward complete
+16:39:01 Checkpoint started
+16:39:01 Checkpoint finished, log reused
+16:39:01 HTTP/WebDAV server online at 8890
+16:39:01 Server online at 1111 (pid 1)
+16:52:10 Server received signal 2
+16:52:10 Initiating normal shutdown
+16:52:10 Checkpoint started
+16:52:10 Checkpoint finished, log reused
+16:52:10 Server shutdown complete
+
+		Mon Jan 13 2025
+16:55:21 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+16:55:21   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+16:55:21   Support functions for GraphQL/SPARQL Bridge
+16:55:21   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+16:55:21 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+16:55:21   ShapefileIO version 0.1virt71 from OpenLink Software
+16:55:21   Shapefile support based on Frank Warmerdam's Shapelib
+16:55:21   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+16:55:21 OpenLink Virtuoso Universal Server
+16:55:21 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+16:55:21 uses OpenSSL 1.1.1f  31 Mar 2020
+16:55:21 uses parts of PCRE, Html Tidy
+16:55:21 Database version 3126
+16:55:21 SQL Optimizer enabled (max 1000 layouts)
+16:55:22 Compiler unit is timed at 0.000071 msec
+16:55:23 Roll forward started
+16:55:23 Roll forward complete
+16:55:23 Checkpoint started
+16:55:23 Checkpoint finished, log reused
+16:55:23 HTTP/WebDAV server online at 8890
+16:55:23 Server online at 1111 (pid 1)
+16:56:18 Server received signal 2
+16:56:18 Initiating normal shutdown
+16:56:18 Checkpoint started
+16:56:18 Checkpoint finished, log reused
+16:56:18 Server shutdown complete
+
+		Mon Jan 13 2025
+17:01:07 { Loading plugin 1: Type `plain', file `graphql' in `../hosting'
+17:01:07   GraphQL/SPARQL Bridge version 0.9.3 (a1fd8195bf) from OpenLink Software
+17:01:07   Support functions for GraphQL/SPARQL Bridge
+17:01:07   SUCCESS plugin 1: loaded from ../hosting/graphql.so }
+17:01:07 { Loading plugin 2: Type `plain', file `shapefileio' in `../hosting'
+17:01:07   ShapefileIO version 0.1virt71 from OpenLink Software
+17:01:07   Shapefile support based on Frank Warmerdam's Shapelib
+17:01:07   SUCCESS plugin 2: loaded from ../hosting/shapefileio.so }
+17:01:07 OpenLink Virtuoso Universal Server
+17:01:07 Version 07.20.3240-pthreads for Linux as of Jun 10 2024 (a1fd8195bf)
+17:01:07 uses OpenSSL 1.1.1f  31 Mar 2020
+17:01:07 uses parts of PCRE, Html Tidy
+17:01:07 Database version 3126
+17:01:07 SQL Optimizer enabled (max 1000 layouts)
+17:01:08 Compiler unit is timed at 0.000071 msec
+17:01:09 Roll forward started
+17:01:09 Roll forward complete
+17:01:09 Checkpoint started
+17:01:09 Checkpoint finished, log reused
+17:01:09 HTTP/WebDAV server online at 8890
+17:01:09 Server online at 1111 (pid 1)
+17:08:30 Server received signal 2
+17:08:30 Initiating normal shutdown
+17:08:30 Checkpoint started
+17:08:30 Checkpoint finished, log reused
+17:08:30 Server shutdown complete
