@@ -29,7 +29,7 @@ services:
     build:
       context: ./frontend
       args:
-        NEXT_PUBLIC_API_URL: http://localhost/backend 
+        NEXT_PUBLIC_API_URL: https://practicesforred.com/backend 
     depends_on:
       - backend
 
