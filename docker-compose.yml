@@ -37,7 +37,7 @@ services:
     image: nginx:latest
     ports:
       - "9980:80"
-      - "99443:443"
+      - "9443:443"
     volumes:
       - nginx-conf:/etc/nginx/conf.d
     depends_on:
