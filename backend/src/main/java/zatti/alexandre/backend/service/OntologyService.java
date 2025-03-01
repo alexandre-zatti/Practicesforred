@@ -169,7 +169,7 @@ public class OntologyService {
                             Integer.parseInt(solution.get("termoOrdemEspacoAtividadeString").toString()),
                             solution.get("termoTipo").toString(),
                             getTermosPraticaGeneric(solution.get("termoUri").toString(), "contempla")
-                    );
+                        );
                     listaTermosPratica.add(termoPratica);
                 }
             }
@@ -270,6 +270,8 @@ public class OntologyService {
                 Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString)
                         .orElse(""),
                 Optional.ofNullable(solution.get("referenciasPratica")).map(Object::toString)
+                        .orElse(""),
+                Optional.ofNullable(solution.get("glossarioPratica")).map(Object::toString)
                         .orElse(""),
                 ClassificacaoPratica.fromValue(solution.get("classificacaoPratica").toString()),
                 GrauRelevancia.BAIXO);
@@ -414,6 +416,8 @@ public class OntologyService {
                                             .orElse(""),
                                     Optional.ofNullable(solution.get("referenciasPratica")).map(Object::toString)
                                             .orElse(""),
+                                    Optional.ofNullable(solution.get("glossarioPratica")).map(Object::toString)
+                                            .orElse(""),
                                     ClassificacaoPratica.fromValue(solution.get("classificacaoPratica").toString()),
                                     causa.getGrauRelevancia());
 
@@ -448,6 +452,8 @@ public class OntologyService {
                                     Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString)
                                             .orElse(""),
                                     Optional.ofNullable(solution.get("referenciasPratica")).map(Object::toString)
+                                            .orElse(""),
+                                    Optional.ofNullable(solution.get("glossarioPratica")).map(Object::toString)
                                             .orElse(""),
                                     ClassificacaoPratica.fromValue(solution.get("classificacaoPratica").toString()),
                                     causa.getGrauRelevancia());
@@ -485,6 +491,8 @@ public class OntologyService {
                                 Optional.ofNullable(solution.get("quandoAplicarPratica")).map(Object::toString)
                                         .orElse(""),
                                 Optional.ofNullable(solution.get("referenciasPratica")).map(Object::toString)
+                                        .orElse(""),
+                                Optional.ofNullable(solution.get("glossarioPratica")).map(Object::toString)
                                         .orElse(""),
                                 ClassificacaoPratica.fromValue(solution.get("classificacaoPratica").toString()),
                                 causa.getGrauRelevancia());
@@ -603,6 +611,9 @@ public class OntologyService {
                                 OPTIONAL {
                                     %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#referenciaRE> ?referenciasPratica .
                                 }
+                                OPTIONAL {
+                                    %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#glossario> ?glossarioPratica .
+                                }
                                 %1$s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica> ?classificacaoPratica .
                              }""";
 
@@ -636,7 +647,7 @@ public class OntologyService {
                             SELECT ?termoUri ?termoNome ?termoDescricao (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo (STR(?termoOrdemEspacoAtividade) AS ?termoOrdemEspacoAtividadeString)
                             WHERE {
                                 %s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe> ?termoUri .
-                                ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?termoOrdem .
+                                OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?termoOrdem . }
                                 OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequenciaEspacoAtividade> ?termoOrdemEspacoAtividade . }
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoDescricao .
@@ -699,6 +710,8 @@ public class OntologyService {
                 ".org/vivid/ontologies/2023/2/untitled-ontology-3#introducao>  ?introducaoPratica . }" +
                 "    OPTIONAL { ?uriPratica <http://www.semanticweb" +
                 ".org/vivid/ontologies/2023/2/untitled-ontology-3#referenciaRE>  ?referenciasPratica . }" +
+                "    OPTIONAL { ?uriPratica <http://www.semanticweb" +
+                ".org/vivid/ontologies/2023/2/untitled-ontology-3#glossario>  ?glossarioPratica . }" +
                 "    ?uriPratica <http://www.semanticweb" +
                 ".org/vivid/ontologies/2023/2/untitled-ontology-3#classificacaoPratica>  ?classificacaoPratica ." +
                 "    ?uriPratica <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#implementa> " +

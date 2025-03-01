@@ -13,7 +13,7 @@ export const ApresentacaoPratica = ({pratica}: ApresentacaoPraticaProps) => {
     },
     {
       label: 'Introdução',
-      description: <DescriptionRender description={pratica.descricao}/>,
+      description: <DescriptionRender description={pratica.introducao}/>,
     },
     {
       label: 'Quando Aplicar',

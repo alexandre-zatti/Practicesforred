@@ -348,7 +348,7 @@ const PraticaDialog = ({
 
               </AccordionSummary>
               <AccordionDetails className={'accordionDetails'}>
-                <Typography variant={'h6'}>Em desenvolvimento!</Typography>
+                <DescriptionRender description={praticaSelecionada.glossario ?? ''}/>
               </AccordionDetails>
             </Accordion>
 

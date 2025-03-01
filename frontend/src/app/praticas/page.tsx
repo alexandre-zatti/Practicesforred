@@ -64,6 +64,7 @@ const Praticas = () => {
                         apresentacao: pratica.apresentacao,
                         quandoAplicar: pratica.quandoAplicar,
                         referencias: pratica.referencias,
+                        glossario: pratica.glossario,
                         grauRelevancia: GrauRelevanciaEnum[pratica.grauRelevancia!]
                       }
                     })

@@ -10,6 +10,7 @@ export type Pratica = {
   introducao: string;
   quandoAplicar: string;
   referencias: string;
+  glossario: string;
   classificacao: Classificacao;
   grauRelevancia?: GrauRelevancia;
 }

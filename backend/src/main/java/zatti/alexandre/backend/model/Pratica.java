@@ -21,6 +21,8 @@ public class Pratica implements OntologyModel {
 
     private String referencias;
 
+    private String glossario;
+
     private ClassificacaoPratica classificacaoPratica;
 
     private GrauRelevancia grauRelevancia = null;
@@ -49,7 +51,7 @@ public class Pratica implements OntologyModel {
     }
 
     public Pratica(String nome, String uri, String descricao, String fluxoAtividades, String apresentacao,
-                   String introducao, String quandoAplicar, String referencias,
+                   String introducao, String quandoAplicar, String referencias, String glossario,
                    ClassificacaoPratica classificacaoPratica, GrauRelevancia grauRelevancia) {
         this.nome = nome;
         this.uri = uri;
@@ -61,6 +63,7 @@ public class Pratica implements OntologyModel {
         this.classificacaoPratica = classificacaoPratica;
         this.referencias = referencias;
         this.grauRelevancia = grauRelevancia;
+        this.glossario = glossario;
     }
 
     public GrauRelevancia getGrauRelevancia() {
@@ -142,4 +145,13 @@ public class Pratica implements OntologyModel {
     public void setReferencias(String referencias) {
         this.referencias = referencias;
     }
+
+    public String getGlossario() {
+        return glossario;
+    }
+
+    public void setGlossario(String glossario) {
+        this.glossario = glossario;
+    }
+
 }
