@@ -10,12 +10,13 @@ public final class TermoPraticaProdutoDTO implements TermosPraticaResponseDTO {
     private String termoPraticaNome;
     private Integer termoPraticaOrdem;
     private String termoPraticaTipo;
+    private String termoPraticaAcessa;
     private List<PassosElementos> passosElementos;
     private List<TermosPraticaResponseDTO> produzidoPor;
     private List<TermosPraticaResponseDTO> organizadoPor;
 
     public TermoPraticaProdutoDTO(String termoPraticaDescricao, String termoPraticaUri, String termoPraticaNome,
-                                  Integer termoPraticaOrdem, String termoPraticaTipo,
+                                  Integer termoPraticaOrdem, String termoPraticaTipo, String termoPraticaAcessa,
                                   List<PassosElementos> passosElementos,
                                   List<TermosPraticaResponseDTO> produzidoPor,
                                   List<TermosPraticaResponseDTO> organizadoPor) {
@@ -24,6 +25,7 @@ public final class TermoPraticaProdutoDTO implements TermosPraticaResponseDTO {
         this.termoPraticaNome = termoPraticaNome;
         this.termoPraticaOrdem = termoPraticaOrdem;
         this.termoPraticaTipo = termoPraticaTipo;
+        this.termoPraticaAcessa = termoPraticaAcessa;
         this.passosElementos = passosElementos;
         this.produzidoPor = produzidoPor;
         this.organizadoPor = organizadoPor;
@@ -91,5 +93,13 @@ public final class TermoPraticaProdutoDTO implements TermosPraticaResponseDTO {
 
     public void setTermoPraticaTipo(String termoPraticaTipo) {
         this.termoPraticaTipo = termoPraticaTipo;
+    }
+
+    public String getTermoPraticaAcessa() {
+        return termoPraticaAcessa;
+    }
+
+    public void setTermoPraticaAcessa(String termoPraticaAcessa) {
+        this.termoPraticaAcessa = termoPraticaAcessa;
     }
 }

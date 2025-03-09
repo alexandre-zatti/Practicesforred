@@ -78,7 +78,7 @@ const DescricaoTermoAtividadePratica = ({
     if (praticaTermo.termoPraticaAcessa){
       accessPratica(praticaTermo.termoPraticaAcessa);
     }
-  }, []);
+  }, [praticaTermo.termoPraticaAcessa]);
 
   const splitTermoAtividadePraticaProduz = (termoPraticaProduz: string) => {
     return termoPraticaProduz.split("|");
@@ -123,7 +123,7 @@ const DescricaoTermoAtividadePratica = ({
       {isPraticaAcessaModalOpen && (
         <PraticaDialog
           praticaSelecionada={praticaAcessa}
-          setPraticaSelecionada={setPraticaAcessa}
+          setPraticaSelecionada={() => null}
           setIsPraticaModalOpen={setIsPraticaAcessaModalOpen}
           isPraticaModalOpen={isPraticaAcessaModalOpen}
         />

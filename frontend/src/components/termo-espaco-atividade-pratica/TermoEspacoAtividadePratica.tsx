@@ -1,9 +1,12 @@
 import { PraticaTermo } from "@/types/PraticaTermo"
 import DescriptionRender from "@/components/DescriptionRender";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/components/termo-espaco-atividade-pratica/termoEspacoAtividadePratica.module.css"
 import { Pratica } from "@/types/Pratica";
 import PraticaDialog from "@/components/pratica-dialog/praticaDialog";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { useDispatch } from "react-redux";
+import { hideLoading, showLoading } from "@/store/LoadingSlice";
 
 type TermoEspacoAtividadePraticaProps = {
   praticaTermo: PraticaTermo
@@ -16,24 +19,10 @@ export const TermoEspacoAtividadePratica = ({
                                               getIconTermoPratica,
                                               setOpenAccordion
                                             }: TermoEspacoAtividadePraticaProps) => {
-
-  // const getSteps = (): { label: string, description: React.JSX.Element }[] => {
-  //   let steps: { label: string, description: React.JSX.Element }[] = [
-  //     {
-  //       label: 'Descrição',
-  //       description: <DescricaoTermoAlphaPratica descricao={praticaTermo.termoPraticaDescricao ?? ''}
-  //                                                praticaTermos={praticaTermo.contempla ?? []}
-  //                                                getIconTermoPratica={getIconTermoPratica}
-  //                                                setOpenAccordion={setOpenAccordion} title={'Contempla'}/>
-  //     },
-  //   ]
-  //
-  //   return steps
-  // }
-
   return (
     <div className={styles.container}>
       <DescricaoTermoAlphaPratica descricao={praticaTermo.termoPraticaDescricao ?? ''}
+                                  praticaTermo={praticaTermo}
                                   praticaTermos={praticaTermo.contempla ?? []}
                                   getIconTermoPratica={getIconTermoPratica}
                                   setOpenAccordion={setOpenAccordion} title={'Contempla'}/>
@@ -43,6 +32,7 @@ export const TermoEspacoAtividadePratica = ({
 
 type DescricaoTermoEspacoAtividadePraticaProps = {
   descricao: string
+  praticaTermo: PraticaTermo
   praticaTermos: PraticaTermo[]
   getIconTermoPratica: (praticaTermo: PraticaTermo, size?: number) => React.JSX.Element | undefined
   setOpenAccordion: (openAccordion: string) => void
@@ -51,14 +41,15 @@ type DescricaoTermoEspacoAtividadePraticaProps = {
 
 const DescricaoTermoAlphaPratica = ({
                                       descricao,
+                                      praticaTermo,
                                       praticaTermos,
                                       getIconTermoPratica,
                                       setOpenAccordion,
                                       title
                                     }: DescricaoTermoEspacoAtividadePraticaProps) => {
-
+  const dispatch = useDispatch()
    const [isPraticaModalOpen, setIsPraticaModalOpen] = useState(false)
-   const [praticaSelecionada, setPraticaSelecionada] = useState<Pratica | null>(null)
+   const [praticaAcessa, setPraticaAcessa] = useState<Pratica | null>(null)
 
    const accessPratica = async (praticaUri: string) => {
 
@@ -71,10 +62,16 @@ const DescricaoTermoAlphaPratica = ({
       });
       if (response.ok) {
         const data = await response.json()
-        setPraticaSelecionada({...data, uri: data.uri.replace(/[<>]/g, "")});
-        setIsPraticaModalOpen(true);
+        setPraticaAcessa({...data, uri: data.uri.replace(/[<>]/g, "")});
       }
   }
+
+  useEffect(() => {
+    if (praticaTermo.termoPraticaAcessa){
+      dispatch(showLoading())
+      accessPratica(praticaTermo.termoPraticaAcessa).finally(() => dispatch(hideLoading()));
+    }
+  }, [praticaTermo.termoPraticaAcessa]);
 
   return (
     <div>
@@ -89,19 +86,30 @@ const DescricaoTermoAlphaPratica = ({
       {praticaTermos.map(praticaTermoProduz => {
         return (
           <div key={praticaTermoProduz.termoPraticaUri} className={styles.produzTermos}
-               onClick={praticaTermoProduz.termoPraticaAcessa ?
-                 () => accessPratica(praticaTermoProduz.termoPraticaAcessa!) :
-                 () => setOpenAccordion(praticaTermoProduz.termoPraticaUri)}>
+               onClick={() => setOpenAccordion(praticaTermoProduz.termoPraticaUri)}>
             {getIconTermoPratica(praticaTermoProduz, 24)}
             <DescriptionRender description={praticaTermoProduz.termoPraticaNome ?? ""}/>
           </div>
         )
       })}
 
+      {praticaAcessa && (
+        <>
+          <p className={styles.produzTitleContainer}>
+            <span className={styles.produzTitle}>Acessa</span>
+          </p>
+
+          <div className={styles.produzTermos} onClick={() => setIsPraticaModalOpen((prevState) => !prevState)}>
+            <AutoStoriesIcon/>
+            <DescriptionRender description={praticaAcessa.nome ?? ""}/>
+          </div>
+        </>
+      )}
+
       {isPraticaModalOpen && (
         <PraticaDialog
-          praticaSelecionada={praticaSelecionada}
-          setPraticaSelecionada={setPraticaSelecionada}
+          praticaSelecionada={praticaAcessa}
+          setPraticaSelecionada={() => null}
           setIsPraticaModalOpen={setIsPraticaModalOpen}
           isPraticaModalOpen={isPraticaModalOpen}
         />

@@ -145,6 +145,8 @@ public class OntologyService {
                             solution.get("termoNome").toString(),
                             Integer.parseInt(solution.get("termoOrdemString").toString()),
                             solution.get("termoTipo").toString(),
+                            Optional.ofNullable(solution.get("termoAcessa")).map(Object::toString)
+                                    .orElse(""),
                             getPassosElementos(solution.get("termoUri").toString()),
                             getTermosPraticaGeneric(solution.get("termoUri").toString(), "eProduzidoPor"),
                             getTermosPraticaGeneric(solution.get("termoUri").toString(), "eOrganizadoPor")
@@ -157,6 +159,8 @@ public class OntologyService {
                             solution.get("termoNome").toString(),
                             Integer.parseInt(solution.get("termoOrdemString").toString()),
                             solution.get("termoTipo").toString(),
+                            Optional.ofNullable(solution.get("termoAcessa")).map(Object::toString)
+                                    .orElse(""),
                             getEstadosAlpha(solution.get("termoUri").toString()),
                             getTermosPraticaGeneric(solution.get("termoUri").toString(), "eProgredidoPor")
                     );
@@ -168,7 +172,10 @@ public class OntologyService {
                             solution.get("termoDescricao").toString(),
                             Integer.parseInt(solution.get("termoOrdemEspacoAtividadeString").toString()),
                             solution.get("termoTipo").toString(),
-                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "contempla")
+                            Optional.ofNullable(solution.get("termoAcessa")).map(Object::toString)
+                                    .orElse(""),
+                            getTermosPraticaGeneric(solution.get("termoUri").toString(), "contempla",
+                                    Optional.ofNullable(praticaUri))
                         );
                     listaTermosPratica.add(termoPratica);
                 }
@@ -224,9 +231,12 @@ public class OntologyService {
 
         return listaEstadosAlpha;
     }
-
     private List<TermosPraticaResponseDTO> getTermosPraticaGeneric(String uri, String conexao) {
-        var queryString = getTermoPraticaGenericQuery(uri, conexao);
+        return this.getTermosPraticaGeneric(uri, conexao, Optional.empty());
+    }
+
+    private List<TermosPraticaResponseDTO> getTermosPraticaGeneric(String uri, String conexao, Optional<String> uriFiltrar) {
+        var queryString = getTermoPraticaGenericQuery(uri, conexao, uriFiltrar);
         var query = QueryFactory.create(queryString);
         var listaTermosPratica = new ArrayList<TermosPraticaResponseDTO>();
 
@@ -307,24 +317,39 @@ public class OntologyService {
         return String.format(queryTemplate, termoUri);
     }
 
-    private String getTermoPraticaGenericQuery(String uri, String conexao) {
-        var queryTemplate = """
-                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                            SELECT *
-                            WHERE {
-                                 <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#%s> ?termoUri .
-                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
-                                 OPTIONAL {
-                                    ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#acessa> ?termoAcessa .
-                                 }
-                                 ?termoUri rdf:type ?termoTipo .
-                                 FILTER (?termoTipo != owl:NamedIndividual)
-                            }
-                            """;
+    private String getTermoPraticaGenericQuery(String uri, String conexao, Optional<String> uriFiltrar) {
+        String baseQuery = """
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            SELECT *
+            WHERE {
+                 <%s> <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#%s> ?termoUri .
+                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
+                 OPTIONAL {
+                    ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#acessa> ?termoAcessa .
+                 }
+                 ?termoUri rdf:type ?termoTipo .
+                 FILTER (?termoTipo != owl:NamedIndividual)
+            }
+        """;
 
-        return String.format(queryTemplate, uri, conexao);
+        if (uriFiltrar.isPresent()) {
+            String filterQuery = """
+                {
+                    SELECT DISTINCT ?relatedTerms
+                    WHERE {
+                        %s ?anyRelation ?relatedTerms .
+                    }
+                }
+                FILTER(?termoUri IN (?relatedTerms))
+            """.formatted(uriFiltrar.get());
+
+            baseQuery = baseQuery.replace("}", filterQuery + "\n}");
+        }
+
+        return String.format(baseQuery, uri, conexao);
     }
+
 
     private QuerySolution getTermoAtividadePratica(String termoUri) {
         var queryString = getTermoAtividadeByTermoQuery(termoUri);
@@ -644,11 +669,12 @@ public class OntologyService {
         var queryTemplate = """ 
                             PREFIX owl: <http://www.w3.org/2002/07/owl#>
                             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                            SELECT ?termoUri ?termoNome ?termoDescricao (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo (STR(?termoOrdemEspacoAtividade) AS ?termoOrdemEspacoAtividadeString)
+                            SELECT ?termoUri ?termoNome ?termoDescricao (STR(?termoOrdem) AS ?termoOrdemString) ?termoTipo (STR(?termoOrdemEspacoAtividade) AS ?termoOrdemEspacoAtividadeString) ?termoAcessa
                             WHERE {
                                 %s <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descritoEmTermosDe> ?termoUri .
                                 OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequencia> ?termoOrdem . }
                                 OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#sequenciaEspacoAtividade> ?termoOrdemEspacoAtividade . }
+                                OPTIONAL{ ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#acessa> ?termoAcessa . }
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#nome> ?termoNome .
                                 ?termoUri <http://www.semanticweb.org/vivid/ontologies/2023/2/untitled-ontology-3#descricao> ?termoDescricao .
                                 ?termoUri rdf:type ?termoTipo .
