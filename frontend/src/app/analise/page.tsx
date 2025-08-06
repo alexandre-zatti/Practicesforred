@@ -24,7 +24,6 @@ import { Frequencia } from "@/enums/Frequencia";
 import { Impacto } from "@/enums/Impacto";
 import { addConsequencia, changeFrequencia, changeImpacto, removeConsequencia } from "@/store/ConsequenciasSlice";
 import { Consequencia } from "@/types/Consequencia";
-import Steps from "@/components/steps/Steps";
 import DescriptionRender from "@/components/DescriptionRender";
 // @ts-ignore
 import styles from "./page.module.css";
@@ -81,11 +80,10 @@ const Analise = () => {
 
   return (
     <div className={`pageContainer`}>
-      <Steps/>
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
         <Typography className={'pageTitle'} variant={'h4'}>
-          Informe o(s) problema(s) gaps que ocorre(m) no produto de software
+          Informe o(s) problema(s) gap(s) que ocorre(m) no produto de software da organização ágil na qual atua
         </Typography>
 
         {faseEngenhariaConsequencias.map((faseEngenharia) => {

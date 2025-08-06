@@ -18,7 +18,7 @@ const Home = () => {
 
         <div className={`${styles.titleSecondary}`}>
           <Typography variant={'h5'}>
-            Abordagem de recomendação de práticas para mitigar e prevenir dividas de requisitos em organizações ágeis
+            Abordagem de recomendação de práticas para mitigar e prevenir dívidas de requisitos em organizações ágeis
           </Typography>
         </div>
 

@@ -1,8 +1,27 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 100%;
-    margin-bottom: 5rem;
+    padding: 1rem 3rem 1rem 3rem;
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.stuck {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stuck .stepper,
+.stuck .mobileStepper {
+    background-color: transparent;
 }
 
 .stepper {
@@ -14,8 +33,31 @@
     font-family: 'Playfare Display', 'Poppins', 'serif';
 }
 
+.titlePrimary {
+    font-family: 'Playfare Display', 'Poppins', 'serif';
+    color: var(--mui-primary);
+    font-weight: 600;
+}
+
 .buttonNext {
     margin-left: 2.5rem;
+}
+
+.desktopContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobileButtonContainer {
+    display: flex;
+    gap: 1rem;
 }
 
 .buttonBack {

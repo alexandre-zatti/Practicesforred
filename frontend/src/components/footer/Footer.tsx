@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <div>
         <Typography variant={'h6'} className={styles.authors}>
-          Alexandre Zatti, Viviane Duarte Bonfim & Fabiane Vavassori Benitti. 2023
+          Alexandre Zatti, Viviane Duarte Bonfim & Fabiane Vavassori Benitti. 2025
         </Typography>
       </div>
       <div>

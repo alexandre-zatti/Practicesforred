@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore, createAction } from '@reduxjs/toolkit'
 import { FasesEngenhariaSlice } from "@/store/FasesEngenhariaSlice";
 import { LoadingSlice } from "@/store/LoadingSlice";
 import { ToastSlice } from "@/store/ToastSlice";
@@ -7,16 +7,27 @@ import { EtapasSlice } from "@/store/EtapasSlice";
 import { CausasSlice } from "@/store/CausasSlice";
 import { AreasGestaoPraticasSlice } from "@/store/AreasGestaoPraticasSlice";
 
+export const reset = createAction('reset')
+
+const appReducer = combineReducers({
+  fasesEngenharia: FasesEngenhariaSlice.reducer,
+  consequencias: ConsequenciasSlice.reducer,
+  causas: CausasSlice.reducer,
+  areasGestaoPraticas: AreasGestaoPraticasSlice.reducer,
+  etapas: EtapasSlice.reducer,
+  loading: LoadingSlice.reducer,
+  toast: ToastSlice.reducer
+});
+
+const rootReducer = (state: any, action: any) => {
+  if (action.type === 'reset') {
+    state = undefined;
+  }
+  return appReducer(state, action);
+}
+
 export const store = configureStore({
-  reducer: {
-    fasesEngenharia: FasesEngenhariaSlice.reducer,
-    consequencias: ConsequenciasSlice.reducer,
-    causas: CausasSlice.reducer,
-    areasGestaoPraticas: AreasGestaoPraticasSlice.reducer,
-    etapas: EtapasSlice.reducer,
-    loading: LoadingSlice.reducer,
-    toast: ToastSlice.reducer
-  },
+  reducer: rootReducer
 })
 
 export type RootState = ReturnType<typeof store.getState>

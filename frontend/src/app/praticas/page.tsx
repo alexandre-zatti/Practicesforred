@@ -1,7 +1,5 @@
 'use client'
 
-import styles from './page.module.css';
-import Steps from '@/components/steps/Steps';
 import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
@@ -17,6 +15,7 @@ import GrauRelevancia from "@/components/grau-relevancia/GrauRelevancia";
 import { GrauRelevancia as GrauRelevanciaEnum } from "@/enums/GrauRelevancia";
 import PraticaDialog from '@/components/pratica-dialog/praticaDialog';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import styles from './page.module.css';
 
 const Praticas = () => {
   const [entered, setEntered] = useState(false);
@@ -88,12 +87,11 @@ const Praticas = () => {
   return (
     <>
       <div className={'pageContainer'}>
-        <Steps/>
 
         <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
           <Typography className={'pageTitle'} variant={'h4'}>
-            Práticas gerais e específicas para mitigar as causas das dívidas de requisitos e suas consequências
+            Práticas para mitigar as causas das dívidas de requisitos e suas consequências
           </Typography>
 
           {areasGestaoPraticas.map((areaGestaoPraticas: AreaGestaoPratica) => {

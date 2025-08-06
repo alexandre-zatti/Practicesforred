@@ -1,7 +1,5 @@
 'use client'
 
-import Steps from "@/components/steps/Steps";
-import styles from './page.module.css';
 import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, Checkbox, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
@@ -14,6 +12,7 @@ import { Causa } from "@/types/Causa";
 import { addCausa, removeCausa } from "@/store/CausasSlice";
 import { Consequencia } from "@/types/Consequencia";
 import DescriptionRender from "@/components/DescriptionRender";
+import styles from './page.module.css';
 
 const Gaps = () => {
   const [entered, setEntered] = useState(false);
@@ -97,7 +96,6 @@ const Gaps = () => {
 
   return (
     <div className={'pageContainer'}>
-      <Steps/>
 
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 

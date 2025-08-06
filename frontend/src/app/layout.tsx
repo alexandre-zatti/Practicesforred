@@ -9,6 +9,8 @@ import Loading from "@/components/Loading";
 import Toast from "@/components/Toast";
 import { StyledEngineProvider } from "@mui/material";
 import Footer from "@/components/footer/Footer";
+import Steps from "@/components/steps/Steps";
+import { usePathname } from "next/navigation";
 
 const poppins = Poppins({subsets: ['latin'], weight: ['400', '600']})
 const playfairDisplay = Playfair_Display({subsets: ['latin']})
@@ -16,6 +18,8 @@ const playfairDisplay = Playfair_Display({subsets: ['latin']})
 export default function RootLayout({children}: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+  const showSteps = pathname !== '/'
 
   return (
     <Provider store={store}>
@@ -25,8 +29,11 @@ export default function RootLayout({children}: {
           <body>
           <Loading/>
           <Toast/>
-          {children}
-          <Footer/>
+          <main className={"mainContainer"}>
+            {showSteps && <Steps/>}
+            {children}
+            <Footer/>
+          </main>
           </body>
         </ThemeProvider>
         </html>

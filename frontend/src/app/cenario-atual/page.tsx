@@ -1,8 +1,10 @@
 'use client'
 
-import Steps from "@/components/steps/Steps";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
+import { Impacto } from "@/enums/Impacto";
+import { Frequencia } from "@/enums/Frequencia";
+import React, { useEffect, useState } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -15,10 +17,7 @@ import {
   Select,
   Typography
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Frequencia } from "@/enums/Frequencia";
-import { Impacto } from "@/enums/Impacto";
-import React, { useEffect, useState } from "react";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { FaseEngenharia } from "@/types/FaseEngenharia";
 import { showToast } from "@/store/ToastSlice";
@@ -123,12 +122,11 @@ const CenarioAtual = () => {
 
   return (
     <div className={`pageContainer`}>
-      <Steps/>
 
       <div className={`contentContainer ${entered ? 'entered' : ''}`}>
 
         <Typography className={'pageTitle'} variant={'h4'}>
-          Consequência(s) voltadas as dívidas de requisitos do produto
+          Consequências voltadas às dividas de requisitos do produto de software
         </Typography>
 
         {fasesEngenhariaWithConsequenciasSelecionadas.map((faseEngenharia) => {
