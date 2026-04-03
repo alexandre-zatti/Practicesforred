@@ -573,7 +573,7 @@ public class OntologyService {
                     causasConsequenciasPratica.stream().filter(consequencia -> consequencia.getConsequenciaUri()
                             .equals(solution.get("consequenciaUri").toString())).findFirst().ifPresent(
                             consequencia -> consequencia.addCausa(
-                                    new Causa(solution.get("causaUri").toString(), solution.get("causaNome").toString(),
+                                    new Causa(solution.get("causaNome").toString(), solution.get("causaUri").toString(),
                                             solution.get("causaDescricao").toString())));
                 }
             }
