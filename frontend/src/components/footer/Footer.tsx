@@ -14,7 +14,7 @@ const Footer = () => {
         </Typography>
       </div>
       <div>
-        <Image src={'/logo_unochapeco.png'} alt={'logo ufsc'} width={125} height={125}/>
+        <Image src={'/logo_unochapeco.png'} alt={'logo unochapecó'} width={125} height={125}/>
       </div>
     </div>
   )

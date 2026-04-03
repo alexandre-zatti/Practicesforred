@@ -91,8 +91,8 @@ const Analise = () => {
             <Accordion key={faseEngenharia.faseEngenhariaUri} className={'accordionContainer'}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+                aria-controls={`analise-${faseEngenharia.faseEngenhariaUri}-content`}
+                id={`analise-${faseEngenharia.faseEngenhariaUri}-header`}
                 className={'accordionSummary'}
               >
                 <Typography

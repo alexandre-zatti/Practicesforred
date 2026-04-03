@@ -27,11 +27,12 @@ public class OntologyController {
     @PostMapping("/load")
     public ResponseEntity<String> loadOntology(@RequestParam("file") MultipartFile file) {
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()));
             StringBuilder sb = new StringBuilder();
-            String line;
-            while ((line = br.readLine()) != null) {
-                sb.append(line);
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()))) {
+                String line;
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
             }
 
             if (ontologyService.loadRdfData(sb.toString())) {

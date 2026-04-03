@@ -105,11 +105,11 @@ const Gaps = () => {
 
         {consequenciasSelecionadas.map((consequencia) => {
           return (
-            <Accordion key={consequencia.nome} className={'accordionContainer'}>
+            <Accordion key={consequencia.uri} className={'accordionContainer'}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+                aria-controls={`causas-${consequencia.uri}-content`}
+                id={`causas-${consequencia.uri}-header`}
                 className={'accordionSummary'}
               >
                 <Typography variant={'h5'}>

@@ -5,10 +5,10 @@ import {
   Card,
   CardContent,
   Dialog,
+  DialogContent,
   DialogTitle,
   Typography
 } from "@mui/material";
-import { DialogBody } from "next/dist/client/components/react-dev-overlay/internal/components/Dialog";
 import { Pratica } from "@/types/Pratica";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styles from './praticaDialog.module.css';
@@ -17,9 +17,10 @@ import NotesIcon from '@mui/icons-material/Notes';
 import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import Image from 'next/image';
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 import { ApresentacaoPratica } from "@/components/apresentacao-pratica/ApresentacaoPratica";
 import { PraticaTermo } from "@/types/PraticaTermo";
 import { TipoPraticaTermo } from "@/enums/TipoPraticaTermo";
@@ -44,6 +45,9 @@ const PraticaDialog = ({
                        }: PraticaPageProps) => {
 
   const dispatch = useDispatch()
+  const causasSelecionadas = useSelector((state: RootState) => state.causas.causas)
+  const consequenciasSelecionadas = useSelector((state: RootState) => state.consequencias.consequencias)
+
   const [openAccordion, setOpenAccordion] = useState<string>('')
   const [openEspacoAtividadeAccordion, setOpenEspacoAtividadeAccordion] = useState<string>('')
   const [praticaTermos, setPraticaTermos] = useState<PraticaTermo[]>([])
@@ -54,9 +58,29 @@ const PraticaDialog = ({
     Promise.all([
       getTermosPratica(),
       getContextoReDPratica()
-    ]).then(() => dispatch(hideLoading()))
-
+    ])
+      .catch(() => {})
+      .finally(() => dispatch(hideLoading()))
   }, [])
+
+  const filteredCausasConsequencias = useMemo(() => {
+    const selectedConsequenciaUris = new Set(
+      consequenciasSelecionadas.map((c) => c.uri)
+    );
+    const selectedCausaKeys = new Set(
+      causasSelecionadas.map((c) => `${c.uri}|${c.uriConsequencia}`)
+    );
+
+    return praticaCausasConsequencias
+      .filter((cc) => selectedConsequenciaUris.has(cc.consequenciaUri))
+      .map((cc) => ({
+        ...cc,
+        causas: cc.causas.filter((causa) =>
+          selectedCausaKeys.has(`${causa.uri}|${cc.consequenciaUri}`)
+        ),
+      }))
+      .filter((cc) => cc.causas.length > 0);
+  }, [praticaCausasConsequencias, causasSelecionadas, consequenciasSelecionadas]);
 
   const getContextoReDPratica = async () => {
 
@@ -92,14 +116,14 @@ const PraticaDialog = ({
   const getIconTermoPratica = (praticaTermo: PraticaTermo, size?: number) => {
     switch (praticaTermo.termoPraticaTipo) {
       case TipoPraticaTermo.PRODUTO_TRABALHO_PRATICA:
-        return <Image src="/ProdutoTrabalhoPratica.png" alt="Icon Description" width={size ?? 28} height={size ?? 28}/>
+        return <Image src="/ProdutoTrabalhoPratica.png" alt="Produto de trabalho" width={size ?? 28} height={size ?? 28}/>
       case TipoPraticaTermo.ALPHA:
-        return <Image src="/Alpha.png" alt="Icon Description" width={size ?? 28} height={size ?? 28}/>
+        return <Image src="/Alpha.png" alt="Alpha" width={size ?? 28} height={size ?? 28}/>
       case TipoPraticaTermo.ATIVIDADE_PRODUTO_TRABALHO:
-        return <Image src="/AtividadeProdutoTrabalho.png" alt="Icon Description" width={size ?? 28}
+        return <Image src="/AtividadeProdutoTrabalho.png" alt="Atividade de produto de trabalho" width={size ?? 28}
                       height={size ?? 28}/>
       case TipoPraticaTermo.ESPACO_ATIVIDADE:
-        return <Image src="/EspacoAtividade.png" alt="Icon Description" width={size ?? 28}
+        return <Image src="/EspacoAtividade.png" alt="Espaço de atividade" width={size ?? 28}
                       height={size ?? 28}/>
     }
   }
@@ -134,7 +158,7 @@ const PraticaDialog = ({
             {praticaSelecionada?.nome}
           </DialogTitle>
 
-          <DialogBody className={styles.dialogBody}>
+          <DialogContent className={styles.dialogBody}>
             <Accordion className={'accordionContainer'}
                        expanded={openAccordion === 'apresentacao'}
                        onChange={() => handleAccordionChange('apresentacao')}>
@@ -209,7 +233,7 @@ const PraticaDialog = ({
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               >
                 <div className={'accordionSummaryContent'}>
-                  <Image src="/EspacoAtividade.png" alt="Icon Description" width={28}
+                  <Image src="/EspacoAtividade.png" alt="Espaço de atividade" width={28}
                          height={28}/>
                   <Typography variant={'h5'}>
                     <span className={'accordionSummaryTitle'}>Espaço Atividade</span>
@@ -261,7 +285,7 @@ const PraticaDialog = ({
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
               >
                 <div className={'accordionSummaryContent'}>
-                  <Image src="/ReferenciasApoio.png" alt="Icon Description" width={28} height={28}/>
+                  <Image src="/ReferenciasApoio.png" alt="Referências de apoio" width={28} height={28}/>
                   <Typography variant={'h5'}>
                     <span className={'accordionSummaryTitle'}>Referências de apoio</span>
                   </Typography>
@@ -295,13 +319,13 @@ const PraticaDialog = ({
                   associadas a
                   prática</Typography>
 
-                {praticaCausasConsequencias.map((consequencia) => {
+                {filteredCausasConsequencias.map((consequencia) => {
                   return (
                     <Accordion key={consequencia.consequenciaUri} className={'accordionContainer'}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
+                        aria-controls={`contexto-${consequencia.consequenciaUri}-content`}
+                        id={`contexto-${consequencia.consequenciaUri}-header`}
                         className={'accordionSummary'}
                       >
                         <Typography variant={'h5'}>
@@ -317,7 +341,7 @@ const PraticaDialog = ({
                                 <div className={styles.cardContent}>
                                   <Typography variant={'h6'} className={'cardTitle'}>
                                     <span className={'accordionSummaryPreTitle'}>Causa - </span>
-                                    {causa.uri}
+                                    {causa.nome}
                                   </Typography>
                                 </div>
                                 <DescriptionRender description={causa.descricao ?? ''}/>
@@ -352,7 +376,7 @@ const PraticaDialog = ({
               </AccordionDetails>
             </Accordion>
 
-          </DialogBody>
+          </DialogContent>
         </Dialog>
       )}
     </>

@@ -1,7 +1,7 @@
 package zatti.alexandre.backend.enums;
 
 public enum ClassificacaoPratica {
-    ESPEFICIFICA("Específica"),
+    ESPECIFICA("Específica"),
     COMUM("Comum"),
     GERAL("Geral");
 

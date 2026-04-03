@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { hideLoading, showLoading } from "@/store/LoadingSlice";
 import { Causa } from "@/types/Causa";
+import { RootState } from "@/store/store";
 import { showToast } from "@/store/ToastSlice";
 import { setAreasGestaoPraticas } from "@/store/AreasGestaoPraticasSlice";
 import { AreaGestaoPratica } from "@/types/AreaGestaoPratica";
@@ -22,8 +23,8 @@ const Praticas = () => {
   const [isPraticaModalOpen, setIsPraticaModalOpen] = useState(false)
   const [praticaSelecionada, setPraticaSelecionada] = useState<Pratica | null>(null)
 
-  const areasGestaoPraticas = useSelector((state: any) => state.areasGestaoPraticas.areasGestaoPraticas)
-  const causasSelecionadas = useSelector((state: any) => state.causas.causas)
+  const areasGestaoPraticas = useSelector((state: RootState) => state.areasGestaoPraticas.areasGestaoPraticas)
+  const causasSelecionadas = useSelector((state: RootState) => state.causas.causas)
   const dispatch = useDispatch()
 
   useEffect(() => {

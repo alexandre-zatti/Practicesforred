@@ -265,6 +265,10 @@ public class OntologyService {
         try (QueryExecution qe = QueryExecutionFactory.create(query, dataset.getDefaultModel())) {
             ResultSet results = qe.execSelect();
 
+            if (!results.hasNext()) {
+                return null;
+            }
+
             QuerySolution solution = results.next();
 
             return new Pratica(

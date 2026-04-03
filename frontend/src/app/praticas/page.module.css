@@ -28,10 +28,6 @@
     font-family: 'Playfare Display', 'Poppins', serif;
 }
 
-.praticaDescricao {
-    font-style: oblique;
-}
-
 @media (max-width: 830px) {
     .cardContent {
         grid-template-columns: 1fr;

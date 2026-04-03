@@ -134,8 +134,8 @@ const CenarioAtual = () => {
             <Accordion key={faseEngenharia.faseEngenhariaUri} className={'accordionContainer'}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon className={'accordionExpandIcon'}/>}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+                aria-controls={`cenario-${faseEngenharia.faseEngenhariaUri}-content`}
+                id={`cenario-${faseEngenharia.faseEngenhariaUri}-header`}
                 className={'accordionSummary'}
               >
                 <Typography
