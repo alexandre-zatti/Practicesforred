@@ -1,5 +1,5 @@
 # ---- Build Stage ----
-FROM maven:3.8.5-openjdk AS build
+FROM maven:3.8.5-eclipse-temurin-17 AS build
 # Copy your source code and pom.xml to the image
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
@@ -7,6 +7,6 @@ COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean package -DskipTests
 
 # ---- Runtime Stage ----
-FROM openjdk AS runtime
+FROM eclipse-temurin:17-jre AS runtime
 COPY --from=build /usr/src/app/target/*.jar /app.jar
 CMD ["java","-jar","/app.jar"]
