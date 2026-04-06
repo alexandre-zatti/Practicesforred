@@ -565,17 +565,18 @@ public class OntologyService {
                                     solution.get("consequenciaNome").toString()));
                 }
 
-                var causaAlreadyInList = causasConsequenciasPratica.stream().anyMatch(
-                        consequencia -> consequencia.getCausas().stream()
-                                .anyMatch(causa -> causa.getUri().equals(solution.get("causaUri").toString())));
-
-                if (!causaAlreadyInList) {
-                    causasConsequenciasPratica.stream().filter(consequencia -> consequencia.getConsequenciaUri()
-                            .equals(solution.get("consequenciaUri").toString())).findFirst().ifPresent(
-                            consequencia -> consequencia.addCausa(
-                                    new Causa(solution.get("causaNome").toString(), solution.get("causaUri").toString(),
-                                            solution.get("causaDescricao").toString())));
-                }
+                causasConsequenciasPratica.stream().filter(consequencia -> consequencia.getConsequenciaUri()
+                        .equals(solution.get("consequenciaUri").toString())).findFirst().ifPresent(
+                        consequencia -> {
+                            var causaAlreadyInConsequencia = consequencia.getCausas().stream().anyMatch(
+                                    causa -> causa.getUri().equals(solution.get("causaUri").toString()));
+                            if (!causaAlreadyInConsequencia) {
+                                consequencia.addCausa(
+                                        new Causa(solution.get("causaNome").toString(),
+                                                solution.get("causaUri").toString(),
+                                                solution.get("causaDescricao").toString()));
+                            }
+                        });
             }
         }
 
